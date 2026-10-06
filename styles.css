@@ -25,3 +25,24 @@
 @media(max-width:900px){html{scroll-padding-top:91px}.header-inner{min-height:76px}.menu-toggle{display:flex}.navigation{display:none;position:absolute;top:76px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:14px 24px 24px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 8px 20px #004a590d;max-height:calc(100dvh - 76px);overflow-y:auto;overscroll-behavior:contain}.navigation.is-open{display:flex}.nav-group{border-bottom:1px solid var(--line)}.nav-trigger{width:100%;justify-content:space-between;font-size:15px;min-height:53px;padding:15px 0}.nav-trigger svg{width:15px;height:15px}.current-group::before{left:-12px;top:26px}.nav-submenu,.nav-group:last-of-type .nav-submenu{position:static;width:100%;padding:0 0 13px;background:transparent;border:0;box-shadow:none;border-radius:0;gap:2px}.nav-submenu a{padding:12px 14px;font-size:13px;min-height:44px}.navigation .button{margin-top:18px;font-size:13px;min-height:48px}.review-hero-grid{gap:35px;grid-template-columns:1.2fr 1fr}.review-hero-grid h1{font-size:52px}.review-lead{font-size:15px}.story-note{padding:25px}.story-note blockquote{font-size:28px}.story-note-label{font-size:9px}.review-tools{align-items:flex-start;flex-direction:column;gap:13px}.review-count{padding-left:1px}}
 @media(max-width:680px){.review-intro{padding-bottom:43px}.breadcrumbs{padding-top:22px;font-size:11px}.review-hero-grid{grid-template-columns:1fr;gap:31px;padding-top:32px}.review-hero-grid h1{font-size:49px}.review-hero-grid .eyebrow{font-size:10px;margin-bottom:19px}.review-lead{font-size:15px;margin-top:22px;max-width:none}.story-note{padding:26px 28px;transform:rotate(1deg);min-height:0;max-width:440px;width:100%;justify-self:center}.story-note-mark{font-size:62px;height:43px;margin-top:17px}.story-note blockquote{font-size:29px;max-width:290px}.story-note p{margin-top:16px}.story-note-label{font-size:9px}.story-orbit{width:112px;height:112px}.review-collection{padding:44px 0 46px}.review-collection-head{display:block}.review-collection-head h2{font-size:29px}.review-collection-head>p{margin-top:17px;font-size:12px;max-width:none}.review-tools{margin-top:24px;padding:17px 0}.review-filter{font-size:11px;gap:8px;padding:10px 13px;min-height:44px}.review-filters{gap:8px}.review-grid{grid-template-columns:1fr;gap:19px;margin-top:24px}.review-card{padding:25px 24px;border-radius:14px}.review-card-top{margin-bottom:18px}.review-card h3{font-size:22px}.review-card blockquote{font-size:16px;line-height:1.85}.review-service{font-size:11px}.review-context{text-align:left;font-size:11px;line-height:1.85}.review-card{scroll-margin-top:95px}}
 @media(max-width:360px){.review-hero-grid h1{font-size:43px}.review-card{padding:23px 20px}.story-note{padding:23px}.review-filter{padding:10px 11px;font-size:11px}.review-filters{gap:7px}.review-collection-head h2{font-size:27px}}
+/* Google reviews use their own grid so the student filters stay independent. */
+.google-reviews{padding:88px 0;background:var(--paper,#faf9f6);border-top:1px solid #e1e5e2;scroll-margin-top:88px}
+.google-reviews .section-top{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+.google-reviews h2{font-size:clamp(30px,3vw,44px);font-weight:500;line-height:1.2;margin:18px 0 24px}
+.google-summary{display:flex;align-items:center;gap:50px;padding:28px 0 32px;border-bottom:1px solid #dedfd9;margin-bottom:28px}
+.google-summary>div{flex:0 0 auto;display:grid;gap:6px}
+.google-summary strong{font-size:30px;color:#004a59}
+.google-summary>div>span{font-size:14px}
+.google-summary p{max-width:590px;font-size:14px;line-height:1.7;margin:0}
+.google-stars{color:#b66c07;font-size:18px;letter-spacing:2px;white-space:nowrap}
+.google-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.google-card{display:flex;flex-direction:column;background:#fff;border:1px solid #e3e5e2;border-radius:18px;padding:26px;min-width:0}
+.google-card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.google-card h3{font-size:20px;line-height:1.4;margin:22px 0 14px;overflow-wrap:anywhere}
+.google-card blockquote{font-size:16px;line-height:1.8;margin:0 0 24px}
+.google-empty{font-size:15px;line-height:1.8;color:#637474}
+.google-source{margin-top:auto;font-size:12px;align-self:flex-start}
+.google-more{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:32px;flex-wrap:wrap}
+.google-count{font-size:13px}
+@media(max-width:1000px){.google-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.google-summary{gap:24px}}
+@media(max-width:680px){.google-reviews{padding:56px 0}.google-reviews .section-top{align-items:flex-start;flex-direction:column;gap:0}.google-grid{grid-template-columns:1fr}.google-summary{align-items:flex-start;flex-direction:column;gap:18px}.google-card{padding:24px}.google-summary strong{font-size:27px}.google-more{gap:12px}}

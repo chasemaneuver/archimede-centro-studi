@@ -10,6 +10,7 @@ Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, cre
 
 - Menu comune con tre gruppi (Percorsi, Il centro, Risorse), sottomenu e versione mobile verticale.
 - Pagina `recensioni.html` con le otto testimonianze complete del sito originale e filtri per percorso.
+- Sezione Google Maps: 27 valutazioni consultate il 6 ottobre 2026, con brevi estratti, nomi, stelle e link alla fonte. Caricamento progressivo di sei schede per volta, senza API o aggiornamento automatico; nessun testo duplicato rispetto alle testimonianze originali. Una valutazione è senza commento.
 - Percorsi selezionabili per scuola, università e metodo, anche da tastiera.
 - FAQ espandibili.
 - Link reali a WhatsApp, email, telefono e al Google Form esistente per i preventivi.
