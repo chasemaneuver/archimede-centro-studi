@@ -81,3 +81,5 @@
 - Mission: punto 01 collegato ai contatti, punto 02 a Tutti i servizi; pallino 02 arancione del brand.
 
 - Mission ampliata con testo originale su ascolto, autonomia, personalizzazione, creatività e condivisione; consultati Lambda e CEPU come riferimenti editoriali.
+
+- Mission: eliminati i quattro link dai punti del percorso; mantenuto il collegamento generale ai percorsi.
