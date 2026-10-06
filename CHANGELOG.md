@@ -93,3 +93,5 @@
 - Home: testo dell’illustrazione su due righe entro il foglio; orbite ridisegnate come nel riquadro di Francesco.
 
 - Home: eliminato lo sfondo giallo dal riquadro verticale Parliamo del tuo percorso.
+
+- Home: contatori studenti ed esperienza animati alla comparsa, una sola volta; cifre con bordo sottile arrotondato. Rapporto 1:1 mantenuto fisso, supportate preferenze di movimento ridotto e assenza JavaScript.
