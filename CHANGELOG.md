@@ -69,3 +69,9 @@
 - Percorsi: Tutti i servizi, Laboratori creativi, Materiale personalizzato.
 - Risorse: Pescara Solidale, Lezioni Circolari, Risorse gratuite. Eliminata la voce Archivio e guide.
 - Menu sincronizzati nelle nove pagine e breadcrumb aggiornati per rispecchiare la nuova collocazione.
+
+## 6 ottobre 2026 — La nostra mission
+
+- Rinominata la sezione e tutti i riferimenti in menu/footer delle nove pagine. Conservata l’ancora #metodo per i collegamenti esistenti.
+- Aggiunti in ordine 04 Rimani aggiornato, con materiale personalizzato anche a fine percorso, e 05 Divertiti!, con laboratori creativi. Entrambi con collegamenti alle pagine dedicate.
+- Adeguato lo spazio per cinque punti e il focus dei collegamenti; corretta l’etichetta accessibile della sezione e versionato il CSS in home.
