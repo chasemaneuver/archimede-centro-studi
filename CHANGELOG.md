@@ -87,3 +87,5 @@
 - Spostato il blocco completo Le vostre storie dalla pagina recensioni alla home, tra mission e contatti. Pagina recensioni aperta direttamente su Le vostre recensioni; collegamenti della storia adattati.
 
 - Home: sostituito il testo mission con un riquadro contatti verticale accanto ai punti; eliminato il riquadro contatti finale. Titolo dei punti La nostra mission, ancore menu e contatti conservate.
+
+- Home: freccia del link Leggi le testimonianze orientata verso l'alto a destra.
