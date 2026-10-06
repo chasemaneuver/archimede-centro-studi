@@ -69,3 +69,7 @@
 .review-collection #google{scroll-margin-top:112px}
 
 .unified-card h3{min-height:56px}.unified-card .review-card-action{min-height:38px;margin-top:20px;display:flex;align-items:flex-end}.unified-card .review-source-link{margin-top:0}
+
+/* Dedicated pages after the homepage reorganization. */
+.page-intro{border-bottom:1px solid var(--line)}.page-intro-copy{padding:45px 0 48px;max-width:730px}.page-intro-copy .eyebrow{margin-bottom:19px}.page-intro-copy h1{font-size:clamp(42px,5vw,62px);font-weight:500}.page-intro-copy h1 em{font-family:Georgia,serif;font-weight:400;background:linear-gradient(transparent 75%,var(--cream) 0)}.page-intro-copy p{font-size:16px;max-width:600px;margin-top:22px}.page-next{border-top:1px solid var(--line);padding:27px 0 37px;display:flex;justify-content:space-between;gap:24px;align-items:center}.page-next>a:last-child{font-size:13px;text-decoration:underline;text-underline-offset:4px}.service,.services-foot{scroll-margin-top:112px}.nav-submenu a[aria-current="page"]{background:#e6efeb;font-weight:700}.services-foot:target{border-top-color:var(--orange)}
+@media(max-width:680px){.page-intro-copy{padding:32px 0 36px}.page-intro-copy h1{font-size:43px}.page-intro-copy p{font-size:14px}.page-next{align-items:flex-start;flex-direction:column;gap:18px}.service,.services-foot{scroll-margin-top:95px}}

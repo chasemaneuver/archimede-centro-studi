@@ -1,4 +1,5 @@
-const tabs=[...document.querySelectorAll('[role="tab"]')];
-    function selectTab(name,focus=false){tabs.forEach(tab=>{const active=tab.dataset.tab===name;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;document.getElementById(tab.getAttribute('aria-controls')).hidden=!active;if(active&&focus)tab.focus();});}
-    tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>selectTab(tab.dataset.tab));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft')next=(index-1+tabs.length)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();selectTab(tabs[next].dataset.tab,true);});});
-    document.querySelectorAll('[data-path]').forEach(link=>link.addEventListener('click',()=>selectTab(link.dataset.path)));
+// Preserve links shared before the homepage was shortened.
+const movedSections={servizi:'./percorsi.html#servizi',percorsi:'./percorsi.html#percorsi',risorse:'./risorse.html#risorse',faq:'./domande-frequenti.html#faq',recensioni:'./recensioni.html#testimonianze'};
+function followMovedSection(){const target=movedSections[location.hash.slice(1)];if(target)location.replace(target);}
+followMovedSection();
+window.addEventListener('hashchange',followMovedSection);

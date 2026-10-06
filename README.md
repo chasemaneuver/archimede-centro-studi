@@ -11,6 +11,7 @@ Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, cre
 - Menu comune con tre gruppi (Percorsi, Il centro, Risorse), sottomenu e versione mobile verticale.
 - Pagina `recensioni.html`: raccolta unica di 35 recensioni (8 testimonianze originali e 27 valutazioni Google), con schede uniformi, tre colonne desktop e tre schede iniziali. Il pulsante “Mostra altro” aggiunge tre schede; filtri comuni per percorso. Le categorie Google vengono assegnate secondo le indicazioni di Archimede.
 - Media Google 5,0 su 27 recensioni, consultata il 6 ottobre 2026. Stelle e link diretti per le 26 recensioni con testo; la valutazione senza testo rimanda alla scheda Google. Titoli ricavati dalle recensioni, estratti e nessun aggiornamento automatico.
+- Homepage ridotta a presentazione, approccio e contatti. Nuove pagine `percorsi.html`, `risorse.html` e `domande-frequenti.html`, con menu e footer comuni.
 - Percorsi selezionabili per scuola, università e metodo, anche da tastiera.
 - FAQ espandibili.
 - Link reali a WhatsApp, email, telefono e al Google Form esistente per i preventivi.
@@ -27,9 +28,9 @@ Prima di rendere questa landing il sito commerciale definitivo, verificare l'ido
 
 ## Modifiche
 
-Contenuti in `index.html` e `recensioni.html`; stili comuni in `styles.css`; menu e anno in `site.js`; interazioni della homepage in `home.js`; filtri delle recensioni in `reviews.js`. Nessuna compilazione necessaria.
+Contenuti nelle cinque pagine HTML; stili comuni in `styles.css`; menu e anno in `site.js`; compatibilità dei vecchi link alla homepage in `home.js`; selezione dei percorsi in `percorsi.js`; filtri delle recensioni in `reviews.js`. Nessuna compilazione necessaria.
 
-Homepage e recensioni sono migrate. Le sezioni non ancora migrate (archivio, materiale personalizzato, programmi speciali, collaborazioni e privacy) restano collegate al sito originale. Le testimonianze sono state trascritte integralmente dalle otto pagine pubbliche originali.
+Homepage, percorsi, risorse introduttive, FAQ e recensioni sono migrate. Le sezioni non ancora migrate (archivio, materiale personalizzato, programmi speciali, collaborazioni e privacy) restano collegate al sito originale. Le testimonianze sono state trascritte integralmente dalle otto pagine pubbliche originali.
 
 I numeri, le sedi, i programmi e le testimonianze vanno confermati da Archimede prima della migrazione definitiva. La privacy policy è collegata al sito attuale.
 

@@ -11,3 +11,7 @@ document.addEventListener('keydown',event=>{if(event.key!=='Escape')return;const
 nav.addEventListener('focusout',event=>{if(event.relatedTarget&&!nav.contains(event.relatedTarget))closeGroups();});
 window.matchMedia('(max-width: 900px)').addEventListener('change',closeMenu);
 document.getElementById('year').textContent=new Date().getFullYear();
+
+// Highlight the current page consistently across the shared navigation.
+const currentPage=location.pathname.split('/').pop()||'index.html';
+nav.querySelectorAll('a').forEach(link=>{const target=new URL(link.href,location.href);if(target.origin===location.origin&&target.pathname.split('/').pop()===currentPage&&!target.hash){link.setAttribute('aria-current','page');link.closest('.nav-group')?.classList.add('current-group');}});
