@@ -152,3 +152,5 @@ body.image-viewer-open{overflow:hidden}
 @media(max-width:700px){.home-stories{padding-bottom:40px}.home-stories-box{padding:25px;gap:15px;flex-wrap:wrap}.home-stories-icon{width:32px;font-size:66px;align-self:flex-start}.home-stories-copy{flex-basis:calc(100% - 47px)}.home-stories-copy h2{font-size:25px}.home-stories-box>.button{margin-top:4px;width:100%;justify-content:space-between}}
 
 .path-row:nth-child(2) .step-dot{background:#f07018;color:var(--petrol);border-color:#f07018}
+
+.home-stories-full{padding:0 0 80px}.home-stories-full .review-hero-grid{padding-top:0}.home-stories-full h2{font-size:clamp(38px,4.5vw,56px);font-weight:500;line-height:1.08}.home-stories-full h2 em{font-family:Georgia,serif;font-weight:400}.review-collection-head h1{font-size:34px;line-height:1.2;font-weight:500}@media(max-width:700px){.home-stories-full{padding-bottom:50px}}

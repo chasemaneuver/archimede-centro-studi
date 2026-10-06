@@ -83,3 +83,5 @@
 - Mission ampliata con testo originale su ascolto, autonomia, personalizzazione, creatività e condivisione; consultati Lambda e CEPU come riferimenti editoriali.
 
 - Mission: eliminati i quattro link dai punti del percorso; mantenuto il collegamento generale ai percorsi.
+
+- Spostato il blocco completo Le vostre storie dalla pagina recensioni alla home, tra mission e contatti. Pagina recensioni aperta direttamente su Le vostre recensioni; collegamenti della storia adattati.
