@@ -79,3 +79,5 @@
 - Home: aggiunto il richiamo compatto «Le vostre storie» tra mission e contatti, con link alle recensioni e layout responsive.
 
 - Mission: punto 01 collegato ai contatti, punto 02 a Tutti i servizi; pallino 02 arancione del brand.
+
+- Mission ampliata con testo originale su ascolto, autonomia, personalizzazione, creatività e condivisione; consultati Lambda e CEPU come riferimenti editoriali.
