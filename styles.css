@@ -150,3 +150,5 @@ body.image-viewer-open{overflow:hidden}
 /* Compact invitation to the review collection on the home page. */
 .home-stories{padding:0 0 64px}.home-stories-box{display:flex;align-items:center;gap:28px;padding:30px 36px;border-radius:20px;background:var(--cream)}.home-stories-icon{flex-shrink:0;font:84px/.7 Georgia,serif;color:var(--petrol);width:52px;padding-top:22px}.home-stories-copy{flex:1;min-width:0}.home-stories-copy h2{font-size:28px;line-height:1.2;font-weight:500;margin:0 0 9px}.home-stories-copy p{font-size:14px;line-height:1.7;max-width:570px}.home-stories-box>.button{flex-shrink:0}
 @media(max-width:700px){.home-stories{padding-bottom:40px}.home-stories-box{padding:25px;gap:15px;flex-wrap:wrap}.home-stories-icon{width:32px;font-size:66px;align-self:flex-start}.home-stories-copy{flex-basis:calc(100% - 47px)}.home-stories-copy h2{font-size:25px}.home-stories-box>.button{margin-top:4px;width:100%;justify-content:space-between}}
+
+.path-row:nth-child(2) .step-dot{background:#f07018;color:var(--petrol);border-color:#f07018}

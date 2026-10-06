@@ -77,3 +77,5 @@
 - Adeguato lo spazio per cinque punti e il focus dei collegamenti; corretta l’etichetta accessibile della sezione e versionato il CSS in home.
 
 - Home: aggiunto il richiamo compatto «Le vostre storie» tra mission e contatti, con link alle recensioni e layout responsive.
+
+- Mission: punto 01 collegato ai contatti, punto 02 a Tutti i servizi; pallino 02 arancione del brand.
