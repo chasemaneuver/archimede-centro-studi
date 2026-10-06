@@ -39,3 +39,9 @@
 
 - Otto schede manuali: cinque stelle al posto di Online e provenienza Recensione da WhatsApp al posto del servizio.
 - Testi WhatsApp conservati per intero; nessun troncamento CSS. Estratti Google senza puntini finali e con indicazione Estratto e link originale; testo integrale in attesa di essere fornito dall’utente.
+
+## 6 ottobre 2026 — Materiale personalizzato
+
+- Nuova pagina dedicata con schemi, esercizi svolti e commentati, riassunti e mappe concettuali; servizio a pagamento con richiesta preventivo via WhatsApp/email.
+- Tre immagini scaricate dalla vecchia pagina /risorse/: inglese, chimica e francese. Esempi interi, cliccabili, con descrizioni accessibili.
+- Menu Risorse, footer e nota nei Percorsi collegati alla nuova pagina, mantenendo l’ancora storica nei Percorsi.
