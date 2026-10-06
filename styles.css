@@ -55,3 +55,17 @@
 .review-more{display:flex;justify-content:center;margin-top:32px}
 @media(max-width:1000px){.review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.review-grid{grid-template-columns:1fr}.review-card{padding:24px}}
+
+/* Uniform cards in the single review collection. */
+.unified-card .review-card-top{min-height:28px;margin-bottom:20px;gap:8px}
+.unified-card .review-category{font-size:10px;max-width:65%}
+.unified-card .google-stars{font-size:16px;letter-spacing:1px}
+.unified-card .review-service{min-height:36px}
+.unified-card .review-source-link{align-self:flex-start;font-size:12px;margin-top:20px}
+.review-summary-links{flex:1;display:flex!important;flex-direction:column;align-items:flex-start;gap:10px!important}
+.review-summary-links p{font-size:12px}
+.review-no-text{font-size:16px;line-height:1.8;margin:0 0 26px;color:var(--muted)}
+.review-collection .google-summary{margin:24px 0 0;padding:26px 0}
+.review-collection #google{scroll-margin-top:112px}
+
+.unified-card h3{min-height:56px}.unified-card .review-card-action{min-height:38px;margin-top:20px;display:flex;align-items:flex-end}.unified-card .review-source-link{margin-top:0}

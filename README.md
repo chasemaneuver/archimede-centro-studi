@@ -9,8 +9,8 @@ Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, cre
 ## Funzioni presenti
 
 - Menu comune con tre gruppi (Percorsi, Il centro, Risorse), sottomenu e versione mobile verticale.
-- Pagina `recensioni.html` con le otto testimonianze complete del sito originale, filtri per percorso e pulsante “Mostra altro”: tre schede iniziali e tre aggiuntive per volta. Griglia a tre colonne su PC, due su tablet e una su telefono.
-- Sezione Google Maps: 27 valutazioni consultate il 6 ottobre 2026, con brevi estratti, nomi, stelle e link alla fonte. Caricamento progressivo di sei schede per volta, senza API o aggiornamento automatico; nessun testo duplicato rispetto alle testimonianze originali. Una valutazione è senza commento.
+- Pagina `recensioni.html`: raccolta unica di 35 recensioni (8 testimonianze originali e 27 valutazioni Google), con schede uniformi, tre colonne desktop e tre schede iniziali. Il pulsante “Mostra altro” aggiunge tre schede; filtri comuni per percorso. Le categorie Google vengono assegnate secondo le indicazioni di Archimede.
+- Media Google 5,0 su 27 recensioni, consultata il 6 ottobre 2026. Stelle e link diretti per le 26 recensioni con testo; la valutazione senza testo rimanda alla scheda Google. Titoli ricavati dalle recensioni, estratti e nessun aggiornamento automatico.
 - Percorsi selezionabili per scuola, università e metodo, anche da tastiera.
 - FAQ espandibili.
 - Link reali a WhatsApp, email, telefono e al Google Form esistente per i preventivi.

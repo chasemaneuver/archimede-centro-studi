@@ -15,7 +15,7 @@ function renderReviews() {
   const shown = new Set(matching.slice(0, visibleReviews));
   cards.forEach(card => {card.hidden = !shown.has(card);});
   filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
-  count.textContent = shown.size + ' di ' + matching.length + ' testimonianze';
+  count.textContent = shown.size + ' di ' + matching.length + ' recensioni';
   reviewMoreButton.hidden = visibleReviews >= matching.length;
 }
 filters.forEach(button => button.addEventListener('click', () => {

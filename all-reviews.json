@@ -1,8 +1,19 @@
 {
-  "checkedAt": "2026-10-06",
-  "rating": 5,
-  "count": 27,
+  "googleCheckedAt": "2026-10-06",
+  "googleRating": 5,
+  "googleCount": 27,
   "reviews": [
+    {
+      "id": "francesco",
+      "title": "Ultimo esame della magistrale",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Ho passato l’ultimo esame che ho provato più volte: Theoretical Corporate Finance, ancora non ci credo! Ho passato l’ultima ora a piangere, grazie ancora per le lezioni ed il supporto!",
+      "name": "Francesco",
+      "role": "Ex-studente magistrale, ora Dottore",
+      "category": "universita",
+      "source": "https://archimedecentrostudi.com/recensioni/",
+      "kind": "manual"
+    },
     {
       "id": "google-0",
       "name": "Simona Madeddu",
@@ -14,6 +25,17 @@
       "individualLink": true,
       "kind": "google",
       "truncated": true
+    },
+    {
+      "id": "valentina",
+      "title": "Esame di Risk Management",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Ho preso 27 ad un esame che non riuscivo a capire per niente! Grazie ancora.",
+      "name": "Valentina",
+      "role": "Studentessa magistrale",
+      "category": "universita",
+      "source": "https://archimedecentrostudi.com/recensioni/2/",
+      "kind": "manual"
     },
     {
       "id": "google-1",
@@ -28,6 +50,17 @@
       "truncated": true
     },
     {
+      "id": "ilenia",
+      "title": "Verifica di matematica",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Partendo da un 2 ho preso 8! È merito vostro che sapete spiegare molto bene, complimenti.",
+      "name": "Ilenia",
+      "role": "Studentessa 4° anno Istituto tecnico commerciale",
+      "category": "scuola",
+      "source": "https://archimedecentrostudi.com/recensioni/3/",
+      "kind": "manual"
+    },
+    {
       "id": "google-2",
       "name": "Mery Salierno",
       "title": "mi sono sentita seguita",
@@ -38,6 +71,17 @@
       "individualLink": true,
       "kind": "google",
       "truncated": true
+    },
+    {
+      "id": "daniele",
+      "title": "Verifica di chimica",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Ho recuperato un’insufficienza in chimica prendendo 8!",
+      "name": "Daniele",
+      "role": "Studente 3° anno Liceo sportivo",
+      "category": "scuola",
+      "source": "https://archimedecentrostudi.com/recensioni/4/",
+      "kind": "manual"
     },
     {
       "id": "google-3",
@@ -52,6 +96,17 @@
       "truncated": true
     },
     {
+      "id": "simone",
+      "title": "Valutazione alunno DSA",
+      "service": "Potenziamento DSA-BES-ADHD: modalità online",
+      "quote": "L’insegnante scrive: L’alunno porta a termine il compito in situazioni note, mobilitando una varietà di risorse fornite dall’insegnante, con continuità e in modo autonomo. Nell’interrogazione ha mostrato di aver studiato con precisione ed impegno. È stato molo sicuro ad esporre davanti ai suoi compagni. Complimenti!",
+      "name": "Simone",
+      "role": "Studente 5° anno elementare",
+      "category": "metodo",
+      "source": "https://archimedecentrostudi.com/recensioni/5/",
+      "kind": "manual"
+    },
+    {
       "id": "google-4",
       "name": "Maria Gatto",
       "title": "ti insegna a credere in te.",
@@ -62,6 +117,17 @@
       "individualLink": true,
       "kind": "google",
       "truncated": true
+    },
+    {
+      "id": "serena-chimica",
+      "title": "Verifica di chimica",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Devo ringraziarvi, la prof ha messo i voti di chimica! Ho preso 8+",
+      "name": "Serena",
+      "role": "Studentessa 5° anno Liceo scientifico",
+      "category": "scuola",
+      "source": "https://archimedecentrostudi.com/recensioni/6/",
+      "kind": "manual"
     },
     {
       "id": "google-5",
@@ -76,6 +142,17 @@
       "truncated": true
     },
     {
+      "id": "michael",
+      "title": "Corso di inglese",
+      "service": "Coaching metodo di studio: modalità online",
+      "quote": "Da 6 sono passato a prendere 8 e mezzo alla verifica di inglese!",
+      "name": "Michael",
+      "role": "Studente 1° anno Istituto agrario",
+      "category": "metodo",
+      "source": "https://archimedecentrostudi.com/recensioni/7/",
+      "kind": "manual"
+    },
+    {
       "id": "google-6",
       "name": "Ermanno Marsilii",
       "title": "Professionalità e competenza",
@@ -86,6 +163,17 @@
       "individualLink": true,
       "kind": "google",
       "truncated": true
+    },
+    {
+      "id": "serena-latino",
+      "title": "Interrogazione di latino",
+      "service": "Coaching 1-to-1: modalità online",
+      "quote": "Ringrazi la prof, procede benissimo e non ho mai imparato così velocemente una versione così lunga! All’interrogazione ho preso 8 e mezzo.",
+      "name": "Serena",
+      "role": "Studentessa 5° anno Liceo scientifico",
+      "category": "scuola",
+      "source": "https://archimedecentrostudi.com/recensioni/8/",
+      "kind": "manual"
     },
     {
       "id": "google-7",
