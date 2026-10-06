@@ -46,3 +46,12 @@
 .google-count{font-size:13px}
 @media(max-width:1000px){.google-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.google-summary{gap:24px}}
 @media(max-width:680px){.google-reviews{padding:56px 0}.google-reviews .section-top{align-items:flex-start;flex-direction:column;gap:0}.google-grid{grid-template-columns:1fr}.google-summary{align-items:flex-start;flex-direction:column;gap:18px}.google-card{padding:24px}.google-summary strong{font-size:27px}.google-more{gap:12px}}
+
+/* Shared grid and spacing for testimonials and Google reviews. */
+.review-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.review-card{padding:26px;border-radius:18px}
+.review-card h3{font-size:20px;line-height:1.4}
+.review-card blockquote{line-height:1.8}
+.review-more{display:flex;justify-content:center;margin-top:32px}
+@media(max-width:1000px){.review-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.review-grid{grid-template-columns:1fr}.review-card{padding:24px}}
