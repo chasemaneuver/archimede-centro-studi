@@ -75,3 +75,5 @@
 - Rinominata la sezione e tutti i riferimenti in menu/footer delle nove pagine. Conservata l’ancora #metodo per i collegamenti esistenti.
 - Aggiunti in ordine 04 Rimani aggiornato, con materiale personalizzato anche a fine percorso, e 05 Divertiti!, con laboratori creativi. Entrambi con collegamenti alle pagine dedicate.
 - Adeguato lo spazio per cinque punti e il focus dei collegamenti; corretta l’etichetta accessibile della sezione e versionato il CSS in home.
+
+- Home: aggiunto il richiamo compatto «Le vostre storie» tra mission e contatti, con link alle recensioni e layout responsive.
