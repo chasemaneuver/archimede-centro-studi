@@ -128,3 +128,15 @@
 
 /* Preserve original review paragraphs and let long text determine card height. */
 .review-card blockquote{white-space:pre-line}.review-grid{align-items:start}
+
+/* Native modal: focus stays inside and Escape closes without navigation. */
+body.image-viewer-open{overflow:hidden}
+.image-viewer{margin:auto;padding:58px 20px 20px;border:0;border-radius:20px;width:min(1040px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 40px);background:#fff;color:var(--petrol);box-shadow:0 20px 70px #0005;overflow:auto}
+.image-viewer::backdrop{background:#002c36d9}
+.image-viewer figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:14px}
+.image-viewer figure img{display:block;max-width:100%;width:auto;height:auto;max-height:calc(100dvh - 190px);object-fit:contain}
+.image-viewer figcaption{max-width:800px;font-size:14px;line-height:1.5;text-align:center;white-space:pre-line;color:var(--muted)}
+.image-viewer-close{position:absolute;right:12px;top:10px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--petrol);font-size:32px;line-height:1;cursor:pointer;display:grid;place-items:center}
+.image-viewer-close:hover{background:var(--mint)}
+.image-viewer-close:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}
+@media(max-width:550px){.image-viewer{width:calc(100vw - 20px);max-height:calc(100dvh - 20px);padding:58px 12px 16px;border-radius:14px}.image-viewer figure img{max-height:calc(100dvh - 210px)}}

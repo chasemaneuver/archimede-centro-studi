@@ -1,5 +1,11 @@
 # Registro delle modifiche
 
+## 6 ottobre 2026 — Immagini in pop-up
+
+- Tutti i collegamenti di ingrandimento immagini aprono un dialogo nella pagina corrente: tre esempi del materiale personalizzato e locandina Pescara Solidale.
+- X in alto a destra, chiusura con Esc o clic sullo sfondo. Focus confinato nel dialogo e restituito all’immagine di origine alla chiusura; scorrimento della pagina bloccato durante la visualizzazione.
+- Immagine intera adattata allo schermo e didascalia, senza cambiare indirizzo o cronologia. Comportamento condiviso anche per futuri collegamenti a immagini.
+
 ## 6 ottobre 2026 — Nuovi programmi e menu Percorsi
 
 - Menu sincronizzato nelle otto pagine: Tutti i servizi, Laboratori creativi, Lezioni Circolari, Pescara Solidale. Eliminati i quattro link diretti ai servizi e il precedente Programmi speciali.
