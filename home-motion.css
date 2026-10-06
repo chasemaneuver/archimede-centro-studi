@@ -12,3 +12,24 @@
   .hero-art>svg{transform:none!important}
   .motion-enabled .path-map::before{transform:none}
 }
+
+/* Assemble the illustration once; individual transforms retain SVG rotations. */
+.assembly-piece{transform-box:fill-box;transform-origin:center;--piece-x:0px;--piece-y:0px;--piece-turn:0deg;--piece-scale:1;--piece-delay:0s}
+.assembly-backdrop{--piece-x:-35px;--piece-y:35px;--piece-scale:.84}
+.assembly-notebook{--piece-x:-85px;--piece-y:55px;--piece-turn:-9deg;--piece-scale:.88;--piece-delay:.1s}
+.assembly-pencil{--piece-x:110px;--piece-y:-55px;--piece-turn:20deg;--piece-delay:.3s}
+.assembly-orbit{--piece-x:-95px;--piece-y:-80px;--piece-turn:-25deg;--piece-delay:.4s}
+.assembly-sun{--piece-x:65px;--piece-y:-55px;--piece-scale:.6;--piece-delay:.15s}
+.assembly-spark-right{--piece-x:80px;--piece-y:35px;--piece-turn:45deg;--piece-delay:.5s}
+.assembly-spark-left{--piece-x:-65px;--piece-y:65px;--piece-turn:-45deg;--piece-delay:.55s}
+.assembly-note{--piece-x:65px;--piece-y:65px;--piece-turn:8deg;--piece-delay:.65s}
+.assembly-ready .assembly-piece{opacity:0;translate:var(--piece-x) var(--piece-y);rotate:var(--piece-turn);scale:var(--piece-scale)}
+.assembly-enter .assembly-piece{animation:assemble-notebook 2.4s cubic-bezier(.22,.61,.36,1) var(--piece-delay) both}
+@keyframes assemble-notebook{
+  0%{opacity:0;translate:var(--piece-x) var(--piece-y);rotate:var(--piece-turn);scale:var(--piece-scale)}
+  18%{opacity:1}
+  100%{opacity:1;translate:0 0;rotate:0deg;scale:1}
+}
+@media(max-width:680px){.assembly-piece{--piece-x-mobile:0}.assembly-notebook{--piece-x:-40px;--piece-y:35px}.assembly-pencil{--piece-x:55px;--piece-y:-35px}.assembly-orbit{--piece-x:-45px;--piece-y:-40px}.assembly-note{--piece-x:35px;--piece-y:40px}}
+@media(prefers-reduced-motion:reduce){.assembly-ready .assembly-piece,.assembly-enter .assembly-piece{animation:none;opacity:1;translate:none;rotate:0deg;scale:1}}
+.hero-art svg .assembly-piece{transform-box:view-box;transform-origin:0 0}

@@ -40,7 +40,7 @@ window.addEventListener('hashchange',followMovedSection);
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
   if (preference.matches || !('IntersectionObserver' in window)) return;
   document.body.classList.add('motion-enabled');
-  const reveals = [...document.querySelectorAll('.hero-art, .method-visual, .mission-contact, .path-row, .home-stories .review-hero-grid > div')];
+  const reveals = [...document.querySelectorAll('.method-visual, .mission-contact, .path-row, .home-stories .review-hero-grid > div')];
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(({target, isIntersecting}) => {
       if (!isIntersecting) return;
@@ -52,6 +52,18 @@ window.addEventListener('hashchange',followMovedSection);
     element.classList.add('motion-reveal', 'motion-pending');
     revealObserver.observe(element);
   });
+
+  const illustration = document.querySelector('.hero-art');
+  illustration?.classList.add('assembly-ready');
+  const assemblyObserver = new IntersectionObserver(entries => {
+    entries.forEach(({target,isIntersecting}) => {
+      if (!isIntersecting) return;
+      target.classList.remove('assembly-ready');
+      target.classList.add('assembly-enter');
+      assemblyObserver.unobserve(target);
+    });
+  }, {threshold:.15});
+  if (illustration) assemblyObserver.observe(illustration);
 
   const map = document.querySelector('.path-map');
   let scrollFrame = 0;
@@ -104,6 +116,8 @@ window.addEventListener('hashchange',followMovedSection);
   preference.addEventListener('change', () => {
     if (!preference.matches) { startOrbit(); return; }
     revealObserver.disconnect();
+    assemblyObserver.disconnect();
+    illustration?.classList.remove('assembly-ready', 'assembly-enter');
     reveals.forEach(element => element.classList.remove('motion-pending'));
     satellites.forEach(satellite => { satellite.setAttribute('cx',124); satellite.setAttribute('cy',46); });
     if (orbitFrame) cancelAnimationFrame(orbitFrame);
