@@ -125,3 +125,6 @@
 
 /* Personalized materials: four tools and full, uncropped examples. */
 .material-types{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.material-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px;align-items:start}.material-gallery figure{margin:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}.material-gallery a{display:block;padding:16px;background:#fff}.material-gallery img{display:block;width:100%;height:auto}.material-gallery figcaption{padding:20px 24px;border-top:1px solid var(--line)}.material-gallery strong,.material-gallery span{display:block}.material-gallery strong{font-size:20px;margin-bottom:8px}.material-gallery span{font-size:15px;color:var(--muted)}.material-gallery a:focus-visible{outline:3px solid var(--petrol);outline-offset:-3px}@media(max-width:700px){.material-types,.material-gallery{grid-template-columns:1fr}.material-gallery{max-width:520px}}
+
+/* Preserve original review paragraphs and let long text determine card height. */
+.review-card blockquote{white-space:pre-line}.review-grid{align-items:start}

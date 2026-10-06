@@ -45,3 +45,9 @@
 - Nuova pagina dedicata con schemi, esercizi svolti e commentati, riassunti e mappe concettuali; servizio a pagamento con richiesta preventivo via WhatsApp/email.
 - Tre immagini scaricate dalla vecchia pagina /risorse/: inglese, chimica e francese. Esempi interi, cliccabili, con descrizioni accessibili.
 - Menu Risorse, footer e nota nei Percorsi collegati alla nuova pagina, mantenendo l’ancora storica nei Percorsi.
+
+## 6 ottobre 2026 — Testi Google integrali forniti dal centro
+
+- Sostituiti 26 estratti con i testi completi di recensioni.txt, conservando punteggiatura, emoji e a capo originali. Nessun taglio o puntino aggiunto.
+- Conservati titoli, tag assegnati, stelle, collegamenti individuali, ordine, filtri e Mostra altro. Monica Perfetti resta una valutazione senza testo.
+- Rimossa l’indicazione Estratto; schede con altezza naturale per i testi lunghi su PC e telefono.
