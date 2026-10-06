@@ -1,0 +1,90 @@
+[
+  {
+    "id": "francesco",
+    "title": "Ultimo esame della magistrale",
+    "service": "Recensione da WhatsApp",
+    "quote": "Ho passato l’ultimo esame che ho provato più volte: Theoretical Corporate Finance, ancora non ci credo! Ho passato l’ultima ora a piangere, grazie ancora per le lezioni ed il supporto!",
+    "name": "Francesco",
+    "role": "Ex-studente magistrale, ora Dottore",
+    "category": "universita",
+    "source": "https://archimedecentrostudi.com/recensioni/",
+    "rating": 5
+  },
+  {
+    "id": "valentina",
+    "title": "Esame di Risk Management",
+    "service": "Recensione da WhatsApp",
+    "quote": "Ho preso 27 ad un esame che non riuscivo a capire per niente! Grazie ancora.",
+    "name": "Valentina",
+    "role": "Studentessa magistrale",
+    "category": "universita",
+    "source": "https://archimedecentrostudi.com/recensioni/2/",
+    "rating": 5
+  },
+  {
+    "id": "ilenia",
+    "title": "Verifica di matematica",
+    "service": "Recensione da WhatsApp",
+    "quote": "Partendo da un 2 ho preso 8! È merito vostro che sapete spiegare molto bene, complimenti.",
+    "name": "Ilenia",
+    "role": "Studentessa 4° anno Istituto tecnico commerciale",
+    "category": "scuola",
+    "source": "https://archimedecentrostudi.com/recensioni/3/",
+    "rating": 5
+  },
+  {
+    "id": "daniele",
+    "title": "Verifica di chimica",
+    "service": "Recensione da WhatsApp",
+    "quote": "Ho recuperato un’insufficienza in chimica prendendo 8!",
+    "name": "Daniele",
+    "role": "Studente 3° anno Liceo sportivo",
+    "category": "scuola",
+    "source": "https://archimedecentrostudi.com/recensioni/4/",
+    "rating": 5
+  },
+  {
+    "id": "simone",
+    "title": "Valutazione alunno DSA",
+    "service": "Recensione da WhatsApp",
+    "quote": "L’insegnante scrive: L’alunno porta a termine il compito in situazioni note, mobilitando una varietà di risorse fornite dall’insegnante, con continuità e in modo autonomo. Nell’interrogazione ha mostrato di aver studiato con precisione ed impegno. È stato molo sicuro ad esporre davanti ai suoi compagni. Complimenti!",
+    "name": "Simone",
+    "role": "Studente 5° anno elementare",
+    "category": "metodo",
+    "source": "https://archimedecentrostudi.com/recensioni/5/",
+    "rating": 5
+  },
+  {
+    "id": "serena-chimica",
+    "title": "Verifica di chimica",
+    "service": "Recensione da WhatsApp",
+    "quote": "Devo ringraziarvi, la prof ha messo i voti di chimica! Ho preso 8+",
+    "name": "Serena",
+    "role": "Studentessa 5° anno Liceo scientifico",
+    "category": "scuola",
+    "source": "https://archimedecentrostudi.com/recensioni/6/",
+    "rating": 5
+  },
+  {
+    "id": "michael",
+    "title": "Corso di inglese",
+    "service": "Recensione da WhatsApp",
+    "quote": "Da 6 sono passato a prendere 8 e mezzo alla verifica di inglese!",
+    "name": "Michael",
+    "role": "Studente 1° anno Istituto agrario",
+    "category": "metodo",
+    "source": "https://archimedecentrostudi.com/recensioni/7/",
+    "rating": 5
+  },
+  {
+    "id": "serena-latino",
+    "title": "Interrogazione di latino",
+    "service": "Recensione da WhatsApp",
+    "quote": "Ringrazi la prof, procede benissimo e non ho mai imparato così velocemente una versione così lunga! All’interrogazione ho preso 8 e mezzo.",
+    "name": "Serena",
+    "role": "Studentessa 5° anno Liceo scientifico",
+    "category": "scuola",
+    "source": "https://archimedecentrostudi.com/recensioni/8/",
+    "rating": 5
+  }
+]

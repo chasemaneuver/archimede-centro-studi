@@ -119,3 +119,6 @@
 
 /* Voucher poster: show the complete original, with a stacked mobile layout. */
 .voucher-with-poster{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,340px);gap:40px;align-items:center}.voucher-poster{margin:0}.voucher-poster a{display:block;border-radius:16px;overflow:hidden}.voucher-poster img{display:block;width:100%;height:auto}.voucher-poster a:focus-visible{outline:3px solid #006274;outline-offset:5px}@media(max-width:850px){.voucher-with-poster{grid-template-columns:1fr;gap:28px}.voucher-poster{width:100%;max-width:340px;justify-self:center}}
+
+/* Review text always flows without clipping or visual ellipsis. */
+.review-card blockquote{display:block;overflow:visible;max-height:none;height:auto;-webkit-line-clamp:unset;line-clamp:unset;white-space:normal;text-overflow:clip;overflow-wrap:anywhere}

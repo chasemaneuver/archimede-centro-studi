@@ -34,3 +34,8 @@
 - Il centro precede Percorsi in tutte le otto pagine, anche nel menu mobile.
 - Locandina originale del post Instagram del 20 agosto 2026 inserita nel riquadro giallo Hai già un voucher: testo e immagine affiancati su PC, impilati sul telefono; nessun ritaglio.
 - Asset salvato localmente per evitare dipendenza dai link temporanei Instagram, con testo alternativo e apertura della locandina intera.
+
+## 6 ottobre 2026 — Schede recensioni WhatsApp
+
+- Otto schede manuali: cinque stelle al posto di Online e provenienza Recensione da WhatsApp al posto del servizio.
+- Testi WhatsApp conservati per intero; nessun troncamento CSS. Estratti Google senza puntini finali e con indicazione Estratto e link originale; testo integrale in attesa di essere fornito dall’utente.
