@@ -154,3 +154,6 @@ body.image-viewer-open{overflow:hidden}
 .path-row:nth-child(2) .step-dot{background:#f07018;color:var(--petrol);border-color:#f07018}
 
 .home-stories-full{padding:0 0 80px}.home-stories-full .review-hero-grid{padding-top:0}.home-stories-full h2{font-size:clamp(38px,4.5vw,56px);font-weight:500;line-height:1.08}.home-stories-full h2 em{font-family:Georgia,serif;font-weight:400}.review-collection-head h1{font-size:34px;line-height:1.2;font-weight:500}@media(max-width:700px){.home-stories-full{padding-bottom:50px}}
+
+/* Contact panel beside the mission steps. */
+.method-grid>.mission-contact{display:flex;flex-direction:column;align-items:stretch;gap:30px;padding:40px 36px;background:var(--cream);border-radius:24px;width:100%;min-width:0}.mission-contact .contact-copy h2{font-size:clamp(36px,3.7vw,48px);line-height:1.1}.mission-contact .contact-copy p{font-size:15px;line-height:1.8}.mission-contact .contact-actions{width:100%;min-width:0}.mission-contact .button{width:100%;justify-content:space-between}.mission-contact .eyebrow{line-height:1.6}.method-visual h2.small-title{font-weight:500;line-height:1.5}#contatti.mission-contact{scroll-margin-top:110px}@media(max-width:700px){.method-grid>.mission-contact{padding:30px 25px}}
