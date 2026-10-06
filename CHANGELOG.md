@@ -28,3 +28,9 @@
 - Conservati gli ID dei quattro moduli, la nota sul materiale personalizzato e l’ancora #percorsi per i vecchi collegamenti.
 - Informazioni integrate dalle pagine originali per-saperne-di-piu e modalita: tutor dedicato, strategie personalizzate, compiti e materiali Drive. Nessuna nuova pagina Modalità.
 - Home e FAQ ora rimandano ai nuovi Percorsi invece che alla vecchia pagina Modalità.
+
+## 6 ottobre 2026 — Ordine menu e locandina voucher
+
+- Il centro precede Percorsi in tutte le otto pagine, anche nel menu mobile.
+- Locandina originale del post Instagram del 20 agosto 2026 inserita nel riquadro giallo Hai già un voucher: testo e immagine affiancati su PC, impilati sul telefono; nessun ritaglio.
+- Asset salvato localmente per evitare dipendenza dai link temporanei Instagram, con testo alternativo e apertura della locandina intera.
