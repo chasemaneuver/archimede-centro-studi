@@ -1,14 +1,15 @@
-# Archimede Centro Studi — prima landing
+# Archimede Centro Studi
 
 Prima proposta del nuovo sito di Archimede: landing informativa responsive, realizzata in HTML, CSS e JavaScript, senza framework o dipendenze di compilazione.
 
 ## Brand
 
-Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, crema `#FFF5CB`, verde acqua `#B6E3D4` e azzurro `#33A7B5`. Logo originale incorporato nella pagina. Illustrazione del quaderno realizzata in SVG.
+Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, crema `#FFF5CB`, verde acqua `#B6E3D4` e azzurro `#33A7B5`. Logo originale in `logo.png`. Illustrazione del quaderno realizzata in SVG.
 
 ## Funzioni presenti
 
-- Menu mobile, navigazione interna e link ai contenuti del sito attuale.
+- Menu comune con tre gruppi (Percorsi, Il centro, Risorse), sottomenu e versione mobile verticale.
+- Pagina `recensioni.html` con le otto testimonianze complete del sito originale e filtri per percorso.
 - Percorsi selezionabili per scuola, università e metodo, anche da tastiera.
 - FAQ espandibili.
 - Link reali a WhatsApp, email, telefono e al Google Form esistente per i preventivi.
@@ -19,13 +20,15 @@ Questa prima versione non sostituisce il sito attuale e non include un nuovo bac
 
 ## Pubblicazione
 
-GitHub Pages: pubblicazione da branch `main`, cartella `/ (root)`. `index.html` è autonomo; `.nojekyll` evita elaborazioni Jekyll. Il dominio esistente non è configurato in questa anteprima.
+GitHub Pages: pubblicazione da branch `main`, cartella `/ (root)`. `.nojekyll` evita elaborazioni Jekyll. Il dominio esistente non è configurato in questa anteprima.
 
 Prima di rendere questa landing il sito commerciale definitivo, verificare l'idoneità dell'hosting: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits . GitHub limita i siti dedicati principalmente a transazioni commerciali. Un hosting alternativo può usare lo stesso repository.
 
 ## Modifiche
 
-Stili nel blocco `<style>`, contenuti HTML nel `<body>` e interazioni nel blocco `<script>` di `index.html`.
+Contenuti in `index.html` e `recensioni.html`; stili comuni in `styles.css`; menu e anno in `site.js`; interazioni della homepage in `home.js`; filtri delle recensioni in `reviews.js`. Nessuna compilazione necessaria.
+
+Homepage e recensioni sono migrate. Le sezioni non ancora migrate (archivio, materiale personalizzato, programmi speciali, collaborazioni e privacy) restano collegate al sito originale. Le testimonianze sono state trascritte integralmente dalle otto pagine pubbliche originali.
 
 I numeri, le sedi, i programmi e le testimonianze vanno confermati da Archimede prima della migrazione definitiva. La privacy policy è collegata al sito attuale.
 
