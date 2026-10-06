@@ -63,3 +63,9 @@
 - Aggiunta immagine di fisica fornita dall’utente, con ingrandimento nel pop-up condiviso. Quattro esempi in una riga desktop, due colonne tablet e una sul telefono.
 - Rimossa la dicitura a pagamento dall’introduzione; aggiunta spiegazione della richiesta su preventivo con collegamenti a preventivo e contatti.
 - Grafica SVG originale nei colori del brand, con libri e mappamondo accanto al testo, adattata al mobile.
+
+## 6 ottobre 2026 — Menu per servizi e risorse
+
+- Percorsi: Tutti i servizi, Laboratori creativi, Materiale personalizzato.
+- Risorse: Pescara Solidale, Lezioni Circolari, Risorse gratuite. Eliminata la voce Archivio e guide.
+- Menu sincronizzati nelle nove pagine e breadcrumb aggiornati per rispecchiare la nuova collocazione.
