@@ -1,5 +1,15 @@
 # Registro delle modifiche
 
+## 6 ottobre 2026 — Nuovi programmi e menu Percorsi
+
+- Menu sincronizzato nelle otto pagine: Tutti i servizi, Laboratori creativi, Lezioni Circolari, Pescara Solidale. Eliminati i quattro link diretti ai servizi e il precedente Programmi speciali.
+- Tre nuove pagine responsive; footer e risorse collegati ai nuovi programmi.
+- Laboratori: tre fotografie estratte dal curriculum fornito, pagine 8 e 10; conservati gli oscuramenti dei volti già presenti. Le immagini documentano attività passate, senza promettere calendari o gratuità attuali.
+- Lezioni Circolari: fondo comune e contributi differenziati secondo ISEE; rimossi riferimenti alle lezioni gratuite della domenica.
+- Pescara Solidale: Archimede verificato nel catalogo comunale del 6 ottobre 2026. Prescuola e doposcuola per le fasce 3–17 anni; istruzioni per voucher attivi, documento del titolare e registrazione da parte dell’operatore.
+- Evidenziate la chiusura domande del 12 giugno, la scadenza già trascorsa di attivazione del 30 settembre e il termine di utilizzo del 31 dicembre 2026. Nessuna proroga presunta.
+- Verificati 222 collegamenti interni e menu identici su otto pagine.
+
 ## 6 ottobre 2026 — Riorganizzazione della landing
 
 - Home: conservati presentazione “A Pescara e online”, “Il nostro approccio” e contatti “Il primo passo è una conversazione”.

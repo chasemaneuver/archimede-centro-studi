@@ -42,3 +42,9 @@ I numeri, le sedi, i programmi e le testimonianze vanno confermati da Archimede 
 - https://centrostudibrianza.it/ripetizioni/ — organizzazione dei servizi (risultato indicizzato)
 
 I riferimenti sono stati usati per studiare l'organizzazione dei contenuti. Nessun testo, foto, marchio o garanzia dei concorrenti è stato copiato.
+# Programmi aggiunti il 6 ottobre 2026
+
+Pagine: laboratori-creativi.html, lezioni-circolari.html, pescara-solidale.html. Foto estratte dal curriculum Archimede fornito: laboratorio-colori.jpg e laboratorio-pittura.jpg (pagina 8), laboratorio-gruppo.jpg (pagina 10). Il PDF completo non viene pubblicato.
+
+Fonti: curriculum Archimede 2026; https://archimedecentrostudi.com/per-saperne-di-piu/#programmi ; profilo pubblico Instagram amcentrostudi (post adesione del 20 agosto 2026); https://www.comune.pescara.it/documento_pubblico/catalogo-pescara-solidale-2026/ ; avviso attività socioeducative https://www.comune.pescara.it/app/uploads/2026/05/Avviso-attivita-socieducative-2026.pdf ; https://buonispesa.lascaux.it/ per formato e utilizzo dei voucher. Informazioni verificate il 6 ottobre 2026. Aggiornare la pagina comunale quando cambiano scadenze o catalogo.
+
