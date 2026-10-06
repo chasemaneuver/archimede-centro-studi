@@ -36,8 +36,9 @@
 
 /* Spin each star around its own center after the entrance has settled. */
 .hero-art svg .notebook-star{transform-box:fill-box;transform-origin:center}
-.assembly-enter .notebook-star{animation:notebook-star-spin 16s linear 3.05s infinite;animation-play-state:paused}
+.assembly-enter .notebook-star{animation:notebook-star-spin 16s linear infinite;animation-play-state:paused}
 .assembly-enter.orbit-visible .notebook-star{animation-play-state:running}
 .assembly-enter .star-counterclockwise{animation-direction:reverse}
 @keyframes notebook-star-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.assembly-enter .notebook-star{animation:none;transform:none}}
+
