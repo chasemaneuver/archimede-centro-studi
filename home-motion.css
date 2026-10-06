@@ -42,3 +42,10 @@
 @keyframes notebook-star-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.assembly-enter .notebook-star{animation:none;transform:none}}
 
+
+/* Francesco's note settles into its existing two-degree tilt once. */
+.story-note.motion-reveal{transition:opacity 1s ease,translate 1s cubic-bezier(.22,.61,.36,1),rotate 1s cubic-bezier(.22,.61,.36,1)}
+.story-note.motion-reveal.motion-pending{translate:32px 48px;rotate:7deg}
+.story-note.motion-reveal:not(.motion-pending){translate:0 0;rotate:0deg}
+@media(max-width:680px){.story-note.motion-reveal.motion-pending{translate:16px 32px;rotate:5deg}}
+@media(prefers-reduced-motion:reduce){.story-note.motion-reveal.motion-pending,.story-note.motion-reveal:not(.motion-pending){opacity:1;translate:none;rotate:0deg;transition:none}}
