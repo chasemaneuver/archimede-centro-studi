@@ -33,3 +33,11 @@
 @media(max-width:680px){.assembly-piece{--piece-x-mobile:0}.assembly-notebook{--piece-x:-40px;--piece-y:35px}.assembly-pencil{--piece-x:55px;--piece-y:-35px}.assembly-orbit{--piece-x:-45px;--piece-y:-40px}.assembly-note{--piece-x:35px;--piece-y:40px}}
 @media(prefers-reduced-motion:reduce){.assembly-ready .assembly-piece,.assembly-enter .assembly-piece{animation:none;opacity:1;translate:none;rotate:0deg;scale:1}}
 .hero-art svg .assembly-piece{transform-box:view-box;transform-origin:0 0}
+
+/* Spin each star around its own center after the entrance has settled. */
+.hero-art svg .notebook-star{transform-box:fill-box;transform-origin:center}
+.assembly-enter .notebook-star{animation:notebook-star-spin 16s linear 3.05s infinite;animation-play-state:paused}
+.assembly-enter.orbit-visible .notebook-star{animation-play-state:running}
+.assembly-enter .star-counterclockwise{animation-direction:reverse}
+@keyframes notebook-star-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.assembly-enter .notebook-star{animation:none;transform:none}}

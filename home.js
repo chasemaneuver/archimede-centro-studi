@@ -97,6 +97,7 @@ window.addEventListener('hashchange',followMovedSection);
   const startOrbit = () => { if (!orbitFrame && !document.hidden && !preference.matches && visible.size) orbitFrame = requestAnimationFrame(animate); };
   const orbitObserver = new IntersectionObserver(entries => {
     entries.forEach(({target,isIntersecting}) => {
+      target.classList.toggle('orbit-visible', isIntersecting);
       target.querySelectorAll('.orbit-satellite').forEach(satellite => isIntersecting ? visible.add(satellite) : visible.delete(satellite));
     });
     startOrbit();
