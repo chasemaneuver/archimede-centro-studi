@@ -91,3 +91,5 @@
 - Home: freccia del link Leggi le testimonianze orientata verso l'alto a destra.
 
 - Home: testo dell’illustrazione su due righe entro il foglio; orbite ridisegnate come nel riquadro di Francesco.
+
+- Home: eliminato lo sfondo giallo dal riquadro verticale Parliamo del tuo percorso.
