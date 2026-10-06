@@ -17,12 +17,14 @@ window.addEventListener('hashchange',followMovedSection);
       const element = entry.target;
       const output = element.querySelector('span');
       const target = Number(element.dataset.count);
+      const decimals = Number(element.dataset.decimals || 0);
+      const numberFormat = decimals ? new Intl.NumberFormat('it-IT', {minimumFractionDigits: decimals, maximumFractionDigits: decimals}) : formatter;
       const suffix = element.dataset.suffix || '';
       const start = performance.now();
       const tick = now => {
         const progress = motion.matches ? 1 : Math.min((now - start) / 1600, 1);
-        const value = Math.round(target * (1 - Math.pow(1 - progress, 3)));
-        output.textContent = formatter.format(value) + suffix;
+        const value = Math.round(target * (1 - Math.pow(1 - progress, 3)) * 10 ** decimals) / 10 ** decimals;
+        output.textContent = numberFormat.format(value) + suffix;
         if (progress < 1) requestAnimationFrame(tick);
       };
       output.textContent = '0' + suffix;
@@ -31,3 +33,4 @@ window.addEventListener('hashchange',followMovedSection);
   }, {threshold: 0.6});
   figures.forEach(element => observer.observe(element));
 })();
+
