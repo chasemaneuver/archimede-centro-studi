@@ -57,3 +57,9 @@
 - Sostituiti 26 estratti con i testi completi di recensioni.txt, conservando punteggiatura, emoji e a capo originali. Nessun taglio o puntino aggiunto.
 - Conservati titoli, tag assegnati, stelle, collegamenti individuali, ordine, filtri e Mostra altro. Monica Perfetti resta una valutazione senza testo.
 - Rimossa l’indicazione Estratto; schede con altezza naturale per i testi lunghi su PC e telefono.
+
+## 6 ottobre 2026 — Quarto esempio e introduzione materiale
+
+- Aggiunta immagine di fisica fornita dall’utente, con ingrandimento nel pop-up condiviso. Quattro esempi in una riga desktop, due colonne tablet e una sul telefono.
+- Rimossa la dicitura a pagamento dall’introduzione; aggiunta spiegazione della richiesta su preventivo con collegamenti a preventivo e contatti.
+- Grafica SVG originale nei colori del brand, con libri e mappamondo accanto al testo, adattata al mobile.

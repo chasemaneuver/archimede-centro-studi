@@ -140,3 +140,6 @@ body.image-viewer-open{overflow:hidden}
 .image-viewer-close:hover{background:var(--mint)}
 .image-viewer-close:focus-visible{outline:3px solid var(--petrol);outline-offset:3px}
 @media(max-width:550px){.image-viewer{width:calc(100vw - 20px);max-height:calc(100dvh - 20px);padding:58px 12px 16px;border-radius:14px}.image-viewer figure img{max-height:calc(100dvh - 210px)}}
+
+.material-intro{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:center}.material-intro-copy p{max-width:680px}.material-intro-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:26px}.material-illustration svg{display:block;width:100%;max-width:420px;margin:auto}.material-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.material-gallery figcaption{padding:20px}.material-gallery a{padding:12px}#preventivo-materiale{scroll-margin-top:100px}@media(max-width:1000px){.material-gallery{grid-template-columns:1fr 1fr}}@media(max-width:800px){.material-intro{grid-template-columns:1fr;gap:28px}.material-illustration svg{max-width:300px}}@media(max-width:550px){.material-gallery{grid-template-columns:1fr}.material-intro-actions{align-items:flex-start;flex-direction:column}}
+.material-intro-copy p+p{margin-top:16px}
