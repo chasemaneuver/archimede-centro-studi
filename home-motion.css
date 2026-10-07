@@ -50,31 +50,8 @@
 @media(max-width:680px){.story-note.motion-reveal.motion-pending{translate:16px 32px;rotate:5deg}}
 @media(prefers-reduced-motion:reduce){.story-note.motion-reveal.motion-pending,.story-note.motion-reveal:not(.motion-pending){opacity:1;translate:none;rotate:0deg;transition:none}}
 
-/* A flowing ribbon winds into the existing mint shape behind the notebook. */
-.assembly-enter .assembly-backdrop{animation:water-arrival 4.2s cubic-bezier(.25,.6,.3,1) both}
-@keyframes water-arrival{
-  0%{opacity:0;translate:330px -480px;rotate:-35deg;scale:.65}
-  12%{opacity:.8;translate:200px -290px;rotate:-25deg;scale:.85}
-  40%{opacity:1;translate:35px -70px;rotate:15deg;scale:.96}
-  65%{opacity:1;translate:0px -10px;rotate:125deg;scale:.93}
-  83%{opacity:1;translate:0px 0px;rotate:220deg;scale:1.03}
-  100%{opacity:1;translate:0px 0px;rotate:360deg;scale:1}
-}
-/* Rotate around the center without altering the notebook's SVG transforms. */
-.hero-art svg .water-shape{transform-box:fill-box;transform-origin:center}
-.assembly-enter .water-shape{animation-name:water-arrival,water-form;animation-duration:4.2s,4.2s;animation-timing-function:cubic-bezier(.25,.6,.3,1),ease-in-out;animation-fill-mode:both;animation-delay:0s;animation-iteration-count:1}
-@keyframes water-form{
-  0%,12%{d:path("M210 240C160 120 300-120 380-220c50-80 110-140 130-80 22 112-220 260-245 450-20 130-90 210-100 125-10-49-20-104-55-155Z");scale:.45 1.3}
-  40%{d:path("M80 211C10 80 140 80 227 32c146-2 253 42 276 157 22 112-36 234-150 275-108 39-60-100-120-180-35-49-160 31-153-73Z");scale:.8 1.1}
-  65%{d:path("M43 211C110 180 120 45 227 32c146-2 253 42 276 157 22 112-36 234-150 275-108 39-80-120-90-195-5-80-210-18-220-58Z");scale:.9 .95}
-  100%{d:path("M43 211C22 107 111 33 227 32c146-2 253 42 276 157 22 112-36 234-150 275-108 39-218-18-272-98-35-49-28-104-38-155Z");scale:1}
-}
-@media(max-width:680px){
-  @keyframes water-arrival{0%{opacity:0;translate:150px -280px;rotate:-35deg}12%{opacity:.8;translate:90px -160px;rotate:-25deg}40%{opacity:1;translate:15px -35px;rotate:15deg}65%{opacity:1;translate:0px -5px;rotate:125deg}83%{opacity:1;translate:0px 0px;rotate:220deg}100%{opacity:1;translate:0px 0px;rotate:360deg}}
-}
-@media(prefers-reduced-motion:reduce){.assembly-enter .water-shape{animation:none;opacity:1;translate:none;rotate:0deg;scale:1}}
-
-
+/* Water is animated as one continuous motion around a fixed SVG origin. */
+.assembly-enter .water-shape{animation:none;opacity:1;translate:none;rotate:0deg;scale:1;transform-box:view-box;transform-origin:0 0}
 /* Compact contact actions and an automatically scrolling photo strip. */
 .mission-contact .mission-contact-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mission-contact .mission-contact-buttons .button{padding:12px 13px;font-size:12px;gap:7px;min-width:0;justify-content:center}

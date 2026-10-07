@@ -53,6 +53,40 @@ window.addEventListener('hashchange',followMovedSection);
     revealObserver.observe(element);
   });
 
+  let waterFrame = 0;
+  const animateWater = container => {
+    const shape = container.querySelector('.water-shape');
+    if (!shape || preference.matches) return;
+    const original = shape.getAttribute('d');
+    const final = [43,211,22,107,111,33,227,32,373,30,480,74,503,189,525,301,467,423,353,464,245,503,135,446,81,366,46,317,53,262,43,211];
+    const ribbon = [400,-250,450,-280,480,-160,420,-100,340,-20,200,80,210,170,220,240,320,240,280,300,240,360,160,300,170,230,180,130,360,-200,400,-250];
+    const start = performance.now();
+    const restore = () => {
+      shape.setAttribute('d', original);
+      shape.removeAttribute('transform');
+      shape.style.opacity = '';
+    };
+    const tick = now => {
+      const p = Math.min((now - start) / 5500, 1);
+      if (preference.matches || p === 1) { restore(); waterFrame = 0; return; }
+      // Continuous easing, with no intermediate stops or changing bounding-box origin.
+      const ease = p * p * (3 - 2 * p);
+      const ripple = Math.sin(Math.PI * p) ** 2 * 19;
+      const points = final.map((value, i) => {
+        const point = Math.floor(i / 2) % 15;
+        return ribbon[i] * (1 - ease) + value * ease + ripple * Math.sin(p * Math.PI * 4 + point * .65 + (i % 2) * 1.2);
+      });
+      let path = `M${points[0].toFixed(2)} ${points[1].toFixed(2)}`;
+      for (let i = 2; i < points.length; i += 6) path += 'C' + points.slice(i, i + 6).map(n => n.toFixed(2)).join(' ');
+      shape.setAttribute('d', path + 'Z');
+      const x = 160 * (1 - ease) ** 2, y = -160 * (1 - ease) ** 2;
+      const angle = -30 + 390 * ease;
+      shape.setAttribute('transform', `translate(${x.toFixed(2)} ${y.toFixed(2)}) rotate(${angle.toFixed(2)} 270 250)`);
+      shape.style.opacity = Math.min(1, p * 6);
+      waterFrame = requestAnimationFrame(tick);
+    };
+    waterFrame = requestAnimationFrame(tick);
+  };
   const illustration = document.querySelector('.hero-art');
   illustration?.classList.add('assembly-ready');
   const assemblyObserver = new IntersectionObserver(entries => {
@@ -60,6 +94,7 @@ window.addEventListener('hashchange',followMovedSection);
       if (!isIntersecting) return;
       target.classList.remove('assembly-ready');
       target.classList.add('assembly-enter');
+      animateWater(target);
       assemblyObserver.unobserve(target);
     });
   }, {threshold:.15});
