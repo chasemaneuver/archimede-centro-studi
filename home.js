@@ -127,3 +127,23 @@ window.addEventListener('hashchange',followMovedSection);
     updateLine();
   });
 })();
+
+
+// Pauseable photo strip; shared site.js handles the image enlargement dialog.
+(() => {
+  const gallery = document.querySelector('.mission-gallery');
+  const button = gallery?.querySelector('.gallery-motion-toggle');
+  const preference = matchMedia('(prefers-reduced-motion: reduce)');
+  if (!gallery || !button) return;
+  const update = () => {
+    gallery.classList.toggle('is-running', !preference.matches);
+    button.hidden = preference.matches;
+  };
+  update();
+  preference.addEventListener('change', update);
+  button.addEventListener('click', () => {
+    const paused = gallery.classList.toggle('is-paused');
+    button.setAttribute('aria-pressed', String(paused));
+    button.textContent = paused ? 'Riprendi scorrimento' : 'Pausa scorrimento';
+  });
+})();

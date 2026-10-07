@@ -74,3 +74,26 @@
 }
 @media(prefers-reduced-motion:reduce){.assembly-enter .water-shape{animation:none;opacity:1;translate:none;rotate:0deg;scale:1}}
 
+
+/* Compact contact actions and an automatically scrolling photo strip. */
+.mission-contact .mission-contact-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mission-contact .mission-contact-buttons .button{padding:12px 13px;font-size:12px;gap:7px;min-width:0;justify-content:center}
+.method-grid>.mission-contact{gap:23px;padding-inline:25px}
+.mission-gallery{min-width:0;width:100%}
+.mission-gallery-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;color:var(--petrol);font-size:11px}
+.gallery-motion-toggle{border:0;background:none;color:var(--petrol);padding:4px 0;font-size:10px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.mission-gallery-window{overflow-x:auto;border-radius:12px;scrollbar-width:thin}
+.mission-gallery-track{display:flex;width:max-content;gap:0}
+.mission-gallery-group{display:flex;gap:12px;padding-right:12px;flex-shrink:0}
+.mission-photo{display:block;width:180px;height:118px;flex-shrink:0;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.mission-photo img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.mission-photo:hover img{transform:scale(1.04)}
+.mission-gallery-caption{font-size:10px;margin-top:8px;line-height:1.5}
+.mission-gallery .gallery-copy{display:none}
+.mission-gallery.is-running .gallery-copy{display:flex}
+.mission-gallery.is-running .mission-gallery-window{overflow:hidden}
+.mission-gallery.is-running .mission-gallery-track{animation:mission-photos 28s linear infinite}
+.mission-gallery:hover .mission-gallery-track,.mission-gallery:focus-within .mission-gallery-track,.mission-gallery.is-paused .mission-gallery-track,.image-viewer-open .mission-gallery-track{animation-play-state:paused}
+@keyframes mission-photos{to{transform:translateX(-50%)}}
+@media(max-width:380px){.mission-contact .mission-contact-buttons .button{font-size:11px;padding-inline:8px}}
+@media(prefers-reduced-motion:reduce){.mission-gallery.is-running .mission-gallery-track{animation:none}.mission-gallery.is-running .mission-gallery-window{overflow-x:auto}.mission-gallery.is-running .gallery-copy{display:none}.gallery-motion-toggle{display:none}}
