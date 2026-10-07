@@ -1,8 +1,8 @@
 # Lavorare sul sito Archimede
 
-Prima di modificare il sito, leggere [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md).
+Prima di modificare il sito, leggere [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md) e [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md).
 
-La guida documenta le richieste di Archimede per articoli, eventi, foto, recensioni, menu, stile e manutenzione. Verificare il repository corrente prima di usare una copia locale precedente. Le istruzioni esplicite dell’utente hanno precedenza.
+La guida documenta articoli, eventi, foto, recensioni e manutenzione. Il riferimento di stile descrive titoli, grafica Classe A/B, animazioni, componenti, menu e link ricorrenti. Verificare il repository corrente prima di usare una copia locale precedente. Le istruzioni esplicite dell’utente hanno precedenza.
 
 Aggiornare insieme pagine, archivi, dati di supporto, collegamenti e metadati pertinenti. I JSON non generano automaticamente l’HTML; header e footer sono ripetuti. Conservare gli URL delle iniziative concluse.
 

@@ -103,3 +103,10 @@
 - Aggiunto AGENTS.md come riferimento alla guida per le prossime sessioni Codex; riscritto README.md per descrivere il sito attuale.
 - Annotati media Google non coerente fra home e Recensioni, fine edizione Pescara Solidale, migrazione Collaborazioni/Privacy e passaggio del dominio.
 - Aggiornamento documentale: nessuna modifica ai contenuti o al comportamento delle pagine pubbliche, nessuna automazione periodica creata.
+
+## 7 ottobre 2026 — Stile e prompt per i prossimi aggiornamenti
+
+- Aggiunto STILE-E-COMPONENTI.md con identità visiva, titoli/corsivo/evidenziatore, grafiche Classe A/B, ingresso, acqua, stelle, ellissi/satelliti, interazioni, popup, schede foto, menu e destinazioni ricorrenti.
+- Documentati i riferimenti effettivi del codice e le eccezioni per articoli, touch, movimento ridotto e più grafiche sulla stessa pagina.
+- Inserito un prompt riutilizzabile nella guida di gestione; collegato il nuovo riferimento da README e AGENTS.md.
+- Modifiche alla documentazione; comportamento e contenuti delle pagine invariati.

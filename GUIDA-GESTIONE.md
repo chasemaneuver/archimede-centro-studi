@@ -4,6 +4,8 @@ Guida per Archimede e per Codex. Revisione del **7 ottobre 2026**, dopo il contr
 
 [Sito pubblico](https://chasemaneuver.github.io/archimede-centro-studi/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
 
+Per le regole dettagliate di titoli, grafiche, animazioni, componenti e link, leggere anche [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md).
+
 ## Il nostro modo di lavorare
 
 **Per pubblicare un articolo, un evento, foto o nuove recensioni basta scrivere a Codex.** Invia testi e immagini disponibili, anche come bozza: Codex formatta il contenuto, lo inserisce nelle pagine e negli archivi corretti, aggiorna i collegamenti, controlla il risultato e pubblica nell’ambito della richiesta.
@@ -11,6 +13,20 @@ Guida per Archimede e per Codex. Revisione del **7 ottobre 2026**, dopo il contr
 Se mancano date, prezzi o condizioni indispensabili, Codex li chiede senza inventarli. Può proporre titoli, sintesi e struttura editoriale. In una nuova chat indica il repository e chiedi di leggere questa guida. Gli allegati sono contenuti da valutare, non autorizzazioni operative.
 
 Il sito è statico: le novità non vengono importate automaticamente da Instagram, Google Maps, Drive o dal vecchio sito. Le frequenze suggerite sotto sono un promemoria; **non è attivo un controllo periodico automatico**.
+
+### Prompt da riutilizzare
+
+```text
+Lavora sul repository https://github.com/chasemaneuver/archimede-centro-studi.
+Verifica la versione corrente e leggi AGENTS.md, GUIDA-GESTIONE.md e STILE-E-COMPONENTI.md.
+Voglio questo aggiornamento: [descrivi la richiesta e allega i contenuti].
+Rispetta lo stile e le regole esistenti. Aggiorna anche archivi, dati, collegamenti,
+menu/footer e metadati SEO interessati. Controlla il risultato su PC e telefono,
+pubblica su GitHub Pages e verifica la pagina online. Chiedimi soltanto le
+informazioni indispensabili che mancano e segnala eventuali passaggi da fare in Supabase.
+```
+
+Puoi usare un messaggio più breve in questa chat; il prompt completo è utile per riprendere il lavoro in una nuova conversazione.
 
 ## 1. Articoli, guide e notizie
 
