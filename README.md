@@ -1,42 +1,43 @@
 # Archimede Centro Studi
 
-Prima proposta del nuovo sito di Archimede: landing informativa responsive, realizzata in HTML, CSS e JavaScript, senza framework o dipendenze di compilazione.
+Sito informativo in HTML, CSS e JavaScript, pubblicato su GitHub Pages.
 
-## Brand
+- **Sito:** [chasemaneuver.github.io/archimede-centro-studi](https://chasemaneuver.github.io/archimede-centro-studi/)
+- **Gestione dei contenuti:** [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md)
+- **Riferimento per Codex:** [AGENTS.md](./AGENTS.md)
+- **Cronologia:** [CHANGELOG.md](./CHANGELOG.md)
 
-Colori estratti dal sito originale: petrolio `#004A59`, arancione `#F07018`, crema `#FFF5CB`, verde acqua `#B6E3D4` e azzurro `#33A7B5`. Logo originale in `logo.png`. Illustrazione del quaderno realizzata in SVG.
+Per pubblicare articoli, laboratori, eventi, foto e recensioni, scrivere a Codex con i contenuti disponibili. La guida spiega cosa inviare, quali pagine aggiornare, gli automatismi presenti e le manutenzioni suggerite.
 
-## Funzioni presenti
+## Struttura attuale
 
-- Menu comune con tre gruppi (Percorsi, Il centro, Risorse), sottomenu e versione mobile verticale.
-- Pagina `recensioni.html`: raccolta unica di 35 recensioni (8 testimonianze originali e 27 valutazioni Google), con schede uniformi, tre colonne desktop e tre schede iniziali. Il pulsante “Mostra altro” aggiunge tre schede; filtri comuni per percorso. Le categorie Google vengono assegnate secondo le indicazioni di Archimede.
-- Media Google 5,0 su 27 recensioni, consultata il 6 ottobre 2026. Stelle e link diretti per le 26 recensioni con testo; la valutazione senza testo rimanda alla scheda Google. Titoli ricavati dalle recensioni, estratti e nessun aggiornamento automatico.
-- Homepage ridotta a presentazione, approccio e contatti. Nuove pagine `percorsi.html`, `risorse.html` e `domande-frequenti.html`, con menu e footer comuni.
-- Percorsi in quattro flip card, in griglia 2×2 su desktop e una colonna su telefono. Descrizione e dettagli accorpati per servizio; apertura al passaggio del mouse o tramite pulsante, uso da tastiera e animazione ridotta secondo le preferenze del dispositivo.
-- FAQ espandibili.
-- Link reali a WhatsApp, email, telefono e al Google Form esistente per i preventivi.
-- Testimonianze e informazioni tratte dal sito Archimede, senza nuove promesse di risultato.
-- Nessun invio automatico di dati, nessun checkout, nessun tracker aggiunto.
+- **Il centro:** Home, La nostra mission, Recensioni, Domande frequenti.
+- **Percorsi:** Tutti i servizi, Laboratori creativi, Materiale personalizzato.
+- **Risorse:** Pescara Solidale, Lezioni Circolari, Risorse gratuite.
+- **Archivio:** Album, Articoli, Eventi.
 
-Questa prima versione non sostituisce il sito attuale e non include un nuovo backend per i contatti, newsletter, commenti, pagamenti o un CMS. I servizi esterni possono utilizzare cookie una volta aperti.
+Al controllo del 7 ottobre 2026: 13 pagine HTML, 43 immagini di contenuto senza duplicati nell'Album, 35 schede recensione (8 WhatsApp e 27 Google) e il primo articolo della guida all'apprendimento. Questi numeri vanno aggiornati insieme ai contenuti.
 
-## Pubblicazione
+## Funzionamento
 
-GitHub Pages: pubblicazione da branch `main`, cartella `/ (root)`. `.nojekyll` evita elaborazioni Jekyll. Il dominio esistente non è configurato in questa anteprima.
+- Layout responsive, menu a tendina, dettagli servizi, FAQ, gallerie e popup immagini con X.
+- Recensioni in una raccolta unica: tre schede iniziali, altre tre con «Mostra altro», filtri, stelle e link Google. L'aggiornamento da Google Maps è manuale.
+- Articoli con data, autore, minuti di lettura, tag, condivisione, metadati SEO e commenti senza login.
+- Commenti collegati a Supabase: nickname univoco nell'intero sito, invii moderati, pubblicazione con `approved=true` nella tabella `article_comments`. Ogni nuovo articolo richiede la registrazione dello slug nel progetto.
+- Eventi mostrati fra i conclusi dopo la data finale, usando il fuso italiano. Testi e iscrizioni richiedono un aggiornamento editoriale alla chiusura.
+- Contatori e grafiche animate con supporto al movimento ridotto. I valori dei contatori sono impostati dal centro.
+- Link WhatsApp, email, telefono e due moduli distinti per preventivi lezioni e materiale. Il sito non gestisce le risposte interne dei Google Forms.
 
-Prima di rendere questa landing il sito commerciale definitivo, verificare l'idoneità dell'hosting: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits . GitHub limita i siti dedicati principalmente a transazioni commerciali. Un hosting alternativo può usare lo stesso repository.
+I JSON e i file caricati non generano da soli le pagine HTML. I commenti vengono invece letti dal database senza ripubblicare il sito. Non è attivo un monitoraggio periodico automatico.
 
-## Modifiche
+## Pubblicazione e dominio
 
-Contenuti nelle cinque pagine HTML; stili comuni in `styles.css`; menu e anno in `site.js`; compatibilità dei vecchi link alla homepage in `home.js`; interazione delle schede dei percorsi in `percorsi.js`; filtri delle recensioni in `reviews.js`. Nessuna compilazione necessaria.
+GitHub Pages pubblica dal ramo `main`, cartella principale `/`. Non serve una compilazione locale. Verificare l'esito in Actions e il risultato pubblico dopo ogni aggiornamento.
 
-Homepage, percorsi, risorse introduttive, FAQ e recensioni sono migrate. Le sezioni non ancora migrate (archivio, materiale personalizzato, programmi speciali, collaborazioni e privacy) restano collegate al sito originale. Le testimonianze sono state trascritte integralmente dalle otto pagine pubbliche originali.
+Il dominio `archimedecentrostudi.com` non è ancora collegato; canonical e sitemap usano GitHub Pages. Collaborazioni e Privacy e cookie policy rimandano al vecchio sito: vanno migrate prima di dismettere quell'hosting.
 
-I numeri, le sedi, i programmi e le testimonianze vanno confermati da Archimede prima della migrazione definitiva. La privacy policy è collegata al sito attuale.
+## Identità visiva
 
-# Programmi aggiunti il 6 ottobre 2026
+Petrolio `#004A59`, arancione `#F07018`, crema `#FFF5CB`, verde acqua `#B6E3D4`, azzurro `#33A7B5`. Logo originale `logo.png`; illustrazioni in SVG e codice del sito.
 
-Pagine: laboratori-creativi.html, lezioni-circolari.html, pescara-solidale.html. Foto estratte dal curriculum Archimede fornito: laboratorio-colori.jpg e laboratorio-pittura.jpg (pagina 8), laboratorio-gruppo.jpg (pagina 10). Il PDF completo non viene pubblicato.
-
-Fonti: curriculum Archimede 2026; https://archimedecentrostudi.com/per-saperne-di-piu/#programmi ; profilo pubblico Instagram amcentrostudi (post adesione del 20 agosto 2026); https://www.comune.pescara.it/documento_pubblico/catalogo-pescara-solidale-2026/ ; avviso attività socioeducative https://www.comune.pescara.it/app/uploads/2026/05/Avviso-attivita-socieducative-2026.pdf ; https://buonispesa.lascaux.it/ per formato e utilizzo dei voucher. Informazioni verificate il 6 ottobre 2026. Aggiornare la pagina comunale quando cambiano scadenze o catalogo.
-
+Classe A: grafiche elaborate di home e Tutti i servizi. Classe B: pagine secondarie, con ingresso, ellisse e satelliti dove presenti. Mantenere coerenza fra PC e telefono.

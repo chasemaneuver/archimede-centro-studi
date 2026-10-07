@@ -95,3 +95,11 @@
 - Home: eliminato lo sfondo giallo dal riquadro verticale Parliamo del tuo percorso.
 
 - Home: contatori studenti ed esperienza animati alla comparsa, una sola volta; cifre con bordo sottile arrotondato. Rapporto 1:1 mantenuto fisso, supportate preferenze di movimento ridotto e assenza JavaScript.
+
+## 7 ottobre 2026 — Guida di gestione
+
+- Controllate tutte le 13 pagine pubbliche e gli automatismi degli archivi e dei commenti.
+- Aggiunta GUIDA-GESTIONE.md: flussi per articoli, eventi, foto e recensioni; informazioni da fornire, file e collegamenti da aggiornare, manutenzioni suggerite e punti aperti.
+- Aggiunto AGENTS.md come riferimento alla guida per le prossime sessioni Codex; riscritto README.md per descrivere il sito attuale.
+- Annotati media Google non coerente fra home e Recensioni, fine edizione Pescara Solidale, migrazione Collaborazioni/Privacy e passaggio del dominio.
+- Aggiornamento documentale: nessuna modifica ai contenuti o al comportamento delle pagine pubbliche, nessuna automazione periodica creata.
