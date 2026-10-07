@@ -87,7 +87,7 @@ window.addEventListener('hashchange',followMovedSection);
     };
     waterFrame = requestAnimationFrame(tick);
   };
-  const illustration = document.querySelector('.hero-art');
+  const illustration = document.querySelector('.hero-art, .review-connections');
   illustration?.classList.add('assembly-ready');
   const assemblyObserver = new IntersectionObserver(entries => {
     entries.forEach(({target,isIntersecting}) => {
@@ -137,10 +137,10 @@ window.addEventListener('hashchange',followMovedSection);
     });
     startOrbit();
   });
-  document.querySelectorAll('.hero-art, .story-note').forEach(element => orbitObserver.observe(element));
+  document.querySelectorAll('.hero-art, .review-connections, .story-note').forEach(element => orbitObserver.observe(element));
   document.addEventListener('visibilitychange', startOrbit);
 
-  const art = document.querySelector('.hero-art');
+  const art = document.querySelector('.hero-art, .review-connections');
   const drawing = art?.querySelector('svg');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   art?.addEventListener('pointermove', event => {
@@ -158,7 +158,7 @@ window.addEventListener('hashchange',followMovedSection);
     satellites.forEach(satellite => { satellite.setAttribute('cx',124); satellite.setAttribute('cy',46); });
     if (orbitFrame) cancelAnimationFrame(orbitFrame);
     orbitFrame = 0;
-    drawing.style.transform = '';
+    if (drawing) drawing.style.transform = '';
     updateLine();
   });
 })();
