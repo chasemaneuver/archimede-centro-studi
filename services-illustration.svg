@@ -1,43 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" fill="none" role="img" aria-label="Un quaderno di studio aperto, con una mappa del percorso, libri, una bussola e strumenti per imparare su misura.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" fill="none" role="img" aria-label="Quaderno aperto, mappa del metodo, bussola e libri: strumenti per un percorso su misura.">
 <defs>
-<filter id="s-shadow" x="-35%" y="-35%" width="180%" height="180%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#004a59" flood-opacity=".13"/></filter>
-<pattern id="s-grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" stroke="#004a59" stroke-opacity=".075" stroke-width=".8"/></pattern>
-<linearGradient id="s-paper" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffdf3"/><stop offset=".92" stop-color="#fffdf3"/><stop offset="1" stop-color="#ece6cf"/></linearGradient>
-<linearGradient id="s-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#086272"/><stop offset="1" stop-color="#004a59"/></linearGradient>
+<filter id="s-shadow" x="-35%" y="-35%" width="180%" height="180%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#004a59" flood-opacity=".13" /></filter>
+<pattern id="s-grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" stroke="#004a59" stroke-opacity=".075" stroke-width=".8" /></pattern>
+<linearGradient id="s-paper" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fffdf3" /><stop offset=".92" stop-color="#fffdf3" /><stop offset="1" stop-color="#ece6cf" /></linearGradient>
+<linearGradient id="s-cover" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#086272" /><stop offset="1" stop-color="#004a59" /></linearGradient>
 </defs>
-<path d="M85 242C37 137 118 70 235 60C354 45 512 47 550 176C594 318 471 442 320 450C191 458 131 356 85 242Z" fill="#d3ebe6"/>
-<circle cx="505" cy="84" r="43" fill="#fff5cb"/><path d="M81 117C188 19 416 28 539 185M78 366C181 472 450 460 555 313" stroke="#77b7b1" stroke-width="1.5" stroke-dasharray="4 8" stroke-linecap="round"/>
-<!-- Open notebook: layered cover, page edges, squared paper and a hand-drawn study route. -->
-<g transform="rotate(-7 299 280)" filter="url(#s-shadow)">
-<path d="M113 165Q208 142 303 167Q396 144 489 164V403Q394 383 303 407Q210 381 113 403Z" fill="url(#s-cover)"/>
-<path d="M121 162Q215 141 303 163Q392 141 481 161V393Q392 374 303 398Q214 375 121 393Z" fill="#d6d6bd"/>
-<path d="M126 155Q215 136 302 159Q392 137 476 155V386Q393 366 302 390Q215 367 126 386Z" fill="#fff5cb"/>
-<path d="M132 148Q218 131 302 156V382Q216 359 132 380Z" fill="url(#s-paper)"/>
-<path d="M302 156Q388 132 470 147V378Q388 361 302 382Z" fill="#fffdf3"/>
-<path d="M132 148Q218 131 302 156V382Q216 359 132 380Z" fill="url(#s-grid)"/>
-<path d="M302 156Q388 132 470 147V378Q388 361 302 382Z" fill="url(#s-grid)"/>
-<path d="M302 157V383" stroke="#c7ccb8" stroke-width="2"/><path d="M145 167v194" stroke="#f07018" stroke-opacity=".3"/>
+<g transform="translate(60 28) scale(1 .86)"><path d="M43 211C22 107 111 33 227 32C373 30 480 74 503 189C525 301 467 423 353 464C245 503 135 446 81 366C46 317 53 262 43 211Z" fill="#d3ebe6" class="assembly-piece assembly-backdrop water-shape" />
+</g><ellipse cx="310" cy="250" rx="267" ry="199" transform="rotate(-10 310 250)" stroke="#77b7b1" stroke-width="1.5" stroke-dasharray="4 8" class="services-orbit-track" /><circle cx="505" cy="84" r="43" fill="#fff5cb" class="assembly-piece assembly-sun" /><g transform="rotate(-7 299 280)" filter="url(#s-shadow)" class="assembly-piece assembly-notebook">
+<path d="M113 165Q208 142 303 167Q396 144 489 164V403Q394 383 303 407Q210 381 113 403Z" fill="url(#s-cover)" />
+<path d="M121 162Q215 141 303 163Q392 141 481 161V393Q392 374 303 398Q214 375 121 393Z" fill="#d6d6bd" />
+<path d="M126 155Q215 136 302 159Q392 137 476 155V386Q393 366 302 390Q215 367 126 386Z" fill="#fff5cb" />
+<path d="M132 148Q218 131 302 156V382Q216 359 132 380Z" fill="url(#s-paper)" />
+<path d="M302 156Q388 132 470 147V378Q388 361 302 382Z" fill="#fffdf3" />
+<path d="M132 148Q218 131 302 156V382Q216 359 132 380Z" fill="url(#s-grid)" />
+<path d="M302 156Q388 132 470 147V378Q388 361 302 382Z" fill="url(#s-grid)" />
+<path d="M302 157V383" stroke="#c7ccb8" stroke-width="2" /><path d="M145 167v194" stroke="#f07018" stroke-opacity=".3" />
 <text x="162" y="189" fill="#004a59" font-family="Georgia,serif" font-size="17" font-style="italic"><tspan x="162" y="174">Il tuo punto</tspan><tspan x="162" y="191">di partenza</tspan></text>
-<path d="M164 203q49-6 112 3" stroke="#ffd562" stroke-width="7" stroke-linecap="round"/>
-<circle cx="168" cy="229" r="10" fill="#004a59"/><path d="m164 229 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M188 225h73M188 234h53" stroke="#86a9a1" stroke-width="3" stroke-linecap="round"/>
-<circle cx="168" cy="265" r="10" fill="#f07018"/><path d="m164 265 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round"/><path d="M188 261h79M188 270h58" stroke="#86a9a1" stroke-width="3" stroke-linecap="round"/>
-<circle cx="168" cy="301" r="10" fill="#33a7b5"/><path d="m164 301 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round"/><path d="M188 297h69M188 306h42" stroke="#86a9a1" stroke-width="3" stroke-linecap="round"/>
-<text x="164" y="349" fill="#004a59" font-family="Georgia,serif" font-size="17" font-style="italic">Un passo alla volta.</text>
+<path d="M164 203q49-6 112 3" stroke="#ffd562" stroke-width="7" stroke-linecap="round" />
+<circle cx="168" cy="229" r="10" fill="#004a59" /><path d="m164 229 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M188 225h73M188 234h53" stroke="#86a9a1" stroke-width="3" stroke-linecap="round" />
+<circle cx="168" cy="265" r="10" fill="#f07018" /><path d="m164 265 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round" /><path d="M188 261h79M188 270h58" stroke="#86a9a1" stroke-width="3" stroke-linecap="round" />
+<circle cx="168" cy="301" r="10" fill="#33a7b5" /><path d="m164 301 3 3 5-7" stroke="#fffdf3" stroke-width="2" stroke-linecap="round" /><path d="M188 297h69M188 306h42" stroke="#86a9a1" stroke-width="3" stroke-linecap="round" />
 <text x="328" y="189" fill="#004a59" font-family="Georgia,serif" font-size="17" font-style="italic"><tspan x="328" y="174">Troviamo il</tspan><tspan x="328" y="191">tuo metodo</tspan></text>
-<path d="M333 205Q385 213 452 202" stroke="#ffd562" stroke-width="7" stroke-linecap="round"/>
-<path d="M337 324C383 326 351 265 398 268S430 234 443 231" stroke="#33a7b5" stroke-width="2.5" stroke-dasharray="4 5" stroke-linecap="round"/>
-<circle cx="340" cy="323" r="15" fill="#004a59"/><text x="340" y="328" text-anchor="middle" fill="#fffdf3" font-family="Arial,sans-serif" font-size="13">01</text>
-<circle cx="376" cy="285" r="15" fill="#f07018"/><text x="376" y="290" text-anchor="middle" fill="#fffdf3" font-family="Arial,sans-serif" font-size="13">02</text>
-<circle cx="420" cy="261" r="15" fill="#fff5cb" stroke="#d3b859"/><path d="m414 261 4 4 8-10" stroke="#004a59" stroke-width="2" stroke-linecap="round"/>
-<path d="M376 346h69M390 356h55" stroke="#86a9a1" stroke-width="3" stroke-linecap="round"/>
-<path d="M315 382v37l10-9 10 9v-41" fill="#f07018"/>
+<path d="M333 205Q385 213 452 202" stroke="#ffd562" stroke-width="7" stroke-linecap="round" />
+<path d="M337 324C383 326 351 265 398 268S430 234 443 231" stroke="#33a7b5" stroke-width="2.5" stroke-dasharray="4 5" stroke-linecap="round" />
+<circle cx="340" cy="323" r="15" fill="#004a59" /><text x="340" y="328" text-anchor="middle" fill="#fffdf3" font-family="Arial,sans-serif" font-size="13">01</text>
+<circle cx="376" cy="285" r="15" fill="#f07018" /><text x="376" y="290" text-anchor="middle" fill="#fffdf3" font-family="Arial,sans-serif" font-size="13">02</text>
+<circle cx="420" cy="261" r="15" fill="#fff5cb" stroke="#d3b859" /><path d="m414 261 4 4 8-10" stroke="#004a59" stroke-width="2" stroke-linecap="round" />
+<path d="M376 346h69M390 356h55" stroke="#86a9a1" stroke-width="3" stroke-linecap="round" />
+<path d="M315 382v37l10-9 10 9v-41" fill="#f07018" />
 </g>
-<!-- A concept map on a loose sheet. -->
-<g transform="rotate(12 432 99)" filter="url(#s-shadow)"><rect x="359" y="42" width="146" height="105" rx="9" fill="#fffdf3"/><path d="M368 58h58" stroke="#f07018" stroke-width="3" stroke-linecap="round"/><path d="M433 86v-16M433 86l-40 30M433 86l42 28" stroke="#71aaa2" stroke-width="2"/><rect x="409" y="74" width="48" height="23" rx="7" fill="#004a59"/><rect x="374" y="112" width="41" height="19" rx="6" fill="#b6e3d4"/><rect x="453" y="110" width="39" height="19" rx="6" fill="#fff5cb"/><path d="M420 85h26M382 121h24M462 119h20" stroke="#fffdf3" stroke-width="2" stroke-linecap="round"/><path d="M465 57h24" stroke="#9bbab3" stroke-width="2"/></g>
-<!-- Compass: orientation, choice and autonomy. -->
-<g transform="rotate(12 519 294)" filter="url(#s-shadow)"><circle cx="519" cy="294" r="43" fill="#fffdf3" stroke="#004a59" stroke-width="3"/><circle cx="519" cy="294" r="34" stroke="#b6e3d4" stroke-width="2"/><path d="M519 259v8M519 321v8M485 294h8M545 294h8" stroke="#004a59" stroke-width="2"/><path d="m519 270 9 24-9 24-9-24Z" fill="#004a59"/><path d="m519 270 9 24h-18Z" fill="#f07018"/><circle cx="519" cy="294" r="4" fill="#fffdf3"/></g>
-<!-- Books and pencil bring depth and material detail. -->
-<g transform="rotate(5 141 413)" filter="url(#s-shadow)"><path d="M52 399h167v25H52q-10-12 0-25Z" fill="#004a59"/><path d="M58 407h152M58 415h152" stroke="#d3ebe6" stroke-width="2"/><path d="M72 373h144v24H72q-10-12 0-24Z" fill="#ffd562"/><path d="M78 381h129M78 389h129" stroke="#fffdf3" stroke-width="2"/><path d="M69 398v26l9-6 9 6v-26" fill="#f07018"/></g>
-<g transform="rotate(29 490 389)" filter="url(#s-shadow)"><path d="M482 340h16v103l-8 19-8-19Z" fill="#ffd562"/><path d="M486 343h4v100h-4Z" fill="#f07018"/><path d="m482 443 8 19 8-19Z" fill="#e5c5a0"/><path d="m487 454 3 8 3-8Z" fill="#004a59"/><rect x="482" y="327" width="16" height="14" rx="4" fill="#f07018"/><path d="M482 341h16" stroke="#004a59" stroke-width="3"/></g>
-<path d="m50 218 5-14 5 14 14 5-14 5-5 14-5-14-14-5Z" fill="#f07018"/><path d="m558 397 4-11 4 11 11 4-11 4-4 11-4-11-11-4Z" fill="#004a59"/><circle cx="289" cy="56" r="5" fill="#33a7b5"/><circle cx="382" cy="458" r="5" fill="#f07018"/>
-</svg>
+
+<g transform="rotate(12 432 99)" filter="url(#s-shadow)" class="assembly-piece assembly-note"><rect x="359" y="42" width="146" height="105" rx="9" fill="#fffdf3" /><path d="M368 58h58" stroke="#f07018" stroke-width="3" stroke-linecap="round" /><path d="M433 86v-16M433 86l-40 30M433 86l42 28" stroke="#71aaa2" stroke-width="2" /><rect x="409" y="74" width="48" height="23" rx="7" fill="#004a59" /><rect x="374" y="112" width="41" height="19" rx="6" fill="#b6e3d4" /><rect x="453" y="110" width="39" height="19" rx="6" fill="#fff5cb" /><path d="M420 85h26M382 121h24M462 119h20" stroke="#fffdf3" stroke-width="2" stroke-linecap="round" /><path d="M465 57h24" stroke="#9bbab3" stroke-width="2" /></g>
+
+<g transform="rotate(12 519 294)" filter="url(#s-shadow)" class="assembly-piece assembly-pencil"><circle cx="519" cy="294" r="43" fill="#fffdf3" stroke="#004a59" stroke-width="3" /><circle cx="519" cy="294" r="34" stroke="#b6e3d4" stroke-width="2" /><path d="M519 259v8M519 321v8M485 294h8M545 294h8" stroke="#004a59" stroke-width="2" /><path d="m519 270 9 24-9 24-9-24Z" fill="#004a59" /><path d="m519 270 9 24h-18Z" fill="#f07018" /><circle cx="519" cy="294" r="4" fill="#fffdf3" /></g>
+
+<g transform="rotate(5 141 413)" filter="url(#s-shadow)" class="assembly-piece assembly-note"><path d="M52 399h167v25H52q-10-12 0-25Z" fill="#004a59" /><path d="M58 407h152M58 415h152" stroke="#d3ebe6" stroke-width="2" /><path d="M72 373h144v24H72q-10-12 0-24Z" fill="#ffd562" /><path d="M78 381h129M78 389h129" stroke="#fffdf3" stroke-width="2" /><path d="M69 398v26l9-6 9 6v-26" fill="#f07018" /></g>
+<g class="assembly-piece assembly-spark-left"><path d="m50 218 5-14 5 14 14 5-14 5-5 14-5-14-14-5Z" fill="#f07018" class="notebook-star" /></g><g class="assembly-piece assembly-spark-right"><path d="m558 397 4-11 4 11 11 4-11 4-4 11-4-11-11-4Z" fill="#004a59" class="notebook-star star-counterclockwise" /></g><circle cx="310" cy="250" r="5" fill="#33a7b5" class="services-satellite" data-phase="0" /><circle cx="310" cy="250" r="5" fill="#f07018" class="services-satellite" data-phase="3.141592653589793" /></svg>
