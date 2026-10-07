@@ -69,7 +69,7 @@
 .mission-gallery .gallery-copy{display:none}
 .mission-gallery.is-running .gallery-copy{display:flex}
 .mission-gallery.is-running .mission-gallery-window{overflow:hidden}
-.mission-gallery.is-running .mission-gallery-track{animation:mission-photos 28s linear infinite}
+.mission-gallery.is-running .mission-gallery-track{animation:mission-photos 240s linear infinite}
 .mission-gallery:hover .mission-gallery-track,.mission-gallery:focus-within .mission-gallery-track,.mission-gallery.is-paused .mission-gallery-track,.image-viewer-open .mission-gallery-track{animation-play-state:paused}
 @keyframes mission-photos{to{transform:translateX(-50%)}}
 @media(max-width:380px){.mission-contact .mission-contact-buttons .button{font-size:11px;padding-inline:8px}}
