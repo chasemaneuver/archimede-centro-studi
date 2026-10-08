@@ -160,7 +160,7 @@ Nel repository va soltanto la configurazione pubblica Supabase: mai password, ch
 
 La guida registra questi punti senza modificare i contenuti delle pagine.
 
-- **Media da riallineare:** home `4,9/5`; Recensioni `5,0`, 27 recensioni, consultazione del 6 ottobre. Al prossimo aggiornamento verificare Google e correggere insieme entrambe.
+- **Media verificata il 9 ottobre 2026:** Google Maps mostra `5,0`, 27 recensioni. Home e Recensioni sincronizzate; aggiornare insieme anche i JSON alle prossime verifiche.
 - **Fine Pescara Solidale 2026:** conclusione registrata il 31 dicembre. Il passaggio automatico in Eventi non riscrive il voucher né rimuove menu e richiami nelle altre pagine. Serve un intervento di fine edizione.
 - **Vecchio sito:** Collaborazioni (`/legal/`) rimanda ancora lì. Privacy e cookie policy è ora locale (`privacy.html`). Migrare Collaborazioni prima di dismettere l’hosting.
 - **Dominio:** indirizzo pubblico e metadati usano GitHub Pages. Collegando `archimedecentrostudi.com`, aggiornare canonical, sitemap, anteprime social e dati strutturati; predisporre la continuità dei vecchi permalink.
@@ -200,3 +200,4 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 | `README.md`, `GUIDA-GESTIONE.md`, `CHANGELOG.md`, `AGENTS.md` | Presentazione, gestione, cronologia e riferimento Codex |
 
 Il solo caricamento di una foto o la sola modifica di un JSON non aggiorna tutte le pagine: elenchi, miniature e conteggi statici devono essere mantenuti insieme.
+

@@ -15,15 +15,17 @@ document.querySelectorAll('.flip-card').forEach(card=>{
     back.setAttribute('aria-hidden',String(!open));
     back.inert=!open;
     button.setAttribute('aria-expanded',String(open));
-    button.setAttribute('aria-label',`${open?'Torna alla descrizione':'Scopri i dettagli'}: ${title}`);
-    label.textContent=open?'Torna alla descrizione':'Scopri i dettagli';
+    const action=open?(pinned?'Torna alla descrizione':'Mantieni aperti i dettagli'):'Scopri i dettagli';
+    button.setAttribute('aria-label',`${action}: ${title}`);
+    label.textContent=action;
   }
   card.classList.add('is-enhanced');
   button.hidden=false;
   showDetails(false);
   card.addEventListener('pointerenter',event=>{if(canHover.matches&&event.pointerType==='mouse'&&!pinned)showDetails(true);});
   card.addEventListener('pointerleave',()=>{if(!pinned&&!card.contains(document.activeElement))showDetails(false);});
-  button.addEventListener('click',()=>{pinned=!expanded;showDetails(!expanded);});
+  button.addEventListener('click',()=>{if(pinned){pinned=false;showDetails(false);}else{pinned=true;showDetails(true);}});
   card.addEventListener('focusout',event=>{if(event.relatedTarget&&!card.contains(event.relatedTarget)&&!pinned)showDetails(false);});
   card.addEventListener('keydown',event=>{if(event.key==='Escape'&&expanded){event.preventDefault();pinned=false;showDetails(false);button.focus();}});
 });
+

@@ -18,3 +18,24 @@
 .service-source{font-size:11px;color:var(--mint);text-decoration:underline;text-underline-offset:3px;margin-bottom:18px;align-self:flex-start}
 @media(max-width:1050px){.flip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.flip-grid{grid-template-columns:1fr;gap:21px}.flip-face{padding:28px 25px;min-height:420px}.flip-card h3{font-size:28px}.flip-back h3{font-size:24px}.flip-toggle{padding-inline:25px}}
+
+/* On phones only the visible face determines the card height. */
+@media(max-width:680px){
+ .flip-stage{flex:none}
+ .flip-inner{height:auto}
+ .flip-face{min-height:0;padding:24px}
+ .flip-card-top{margin-bottom:18px}
+ .flip-card .service-icon{width:44px;height:44px}
+ .flip-number{font-size:36px}
+ .flip-card h3{font-size:25px;margin-bottom:12px}
+ .flip-card p{line-height:1.65}
+ .flip-audience{padding-top:18px}
+ .flip-card.is-enhanced .flip-front{position:relative}
+ .flip-card.is-enhanced .flip-back{position:absolute;inset:0}
+ .flip-card.is-enhanced.is-flipped .flip-front{position:absolute;inset:0}
+ .flip-card.is-enhanced.is-flipped .flip-back{position:relative;inset:auto}
+ .flip-back h3{font-size:23px}
+ .flip-back ul{margin:16px 0 20px;gap:8px}
+ .flip-toggle{padding:14px 24px;min-height:50px}
+}
+

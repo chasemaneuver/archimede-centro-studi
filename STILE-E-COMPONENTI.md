@@ -99,11 +99,11 @@ Le illustrazioni sono SVG e codice del sito, con elementi riconoscibili, curati 
 
 - Gli ingrandimenti fotografici usano il dialog condiviso di `site.js`: foto sulla pagina corrente, X in alto a destra, chiusura con Escape/sfondo e ritorno del focus. Non aprire la foto in un’altra pagina costringendo a usare «Indietro».
 - I loghi sponsor fanno eccezione: aprono le destinazioni esterne e non il popup. Comune di Pescara → pagina comunale del programma; BuoniSpesa → `https://buonispesa.lascaux.it/`.
-- Ventaglio dei laboratori: tre card sovrapposte, inclinazione complessiva `+2deg`, angoli iniziali distanziati per rendere raggiungibili la seconda e la terza foto. Il componente attuale usa circa 0/11/22 gradi relativi, oltre all’inclinazione del gruppo.
+- Ventaglio dei laboratori: tre card sovrapposte, inclinazione complessiva `+2deg`, angoli iniziali distanziati per rendere raggiungibili la seconda e la terza foto. Il componente attuale usa circa 0/11/22 gradi relativi, oltre all’inclinazione del gruppo. Su telefono il ventaglio ha larghezza massima 240px e proporzioni ridotte per contenere tutte le card nello schermo.
 - Hover sulla seconda/terza: la scelta sale e le altre si aprono ai lati; mantenerla stabile finché il puntatore non esce dal ventaglio, poi ripristinare. Supportare focus da tastiera; su touch il clic continua ad aprire la foto senza richiedere hover.
 - Card fotografica singola delle Lezioni Circolari: inclinata `+2deg`, bordo carta e ombra lieve.
 - Gallerie laboratori: Studio, Laboratori e Locandine, tre riquadri sulla stessa riga PC e impilati su telefono; locandine/articolo interi e leggibili, senza ritaglio indiscriminato.
-- Tutti i servizi: nove flip card, griglia 3×3 PC, due colonne tablet e una colonna telefono; gli adattamenti sono in `servizi-grid.css`. Dettagli su hover o con il pulsante; tastiera ed Escape supportati. Non reintrodurre link ridondanti a una seconda sezione con gli stessi servizi.
+- Tutti i servizi: nove flip card, griglia 3×3 PC, due colonne tablet e una colonna telefono; gli adattamenti sono in `servizi-grid.css`. Dettagli temporanei su hover; il primo clic li mantiene aperti, il secondo li chiude. Tastiera ed Escape supportati. Su telefono la sola faccia visibile determina l’altezza, senza spazio riservato al retro. Non reintrodurre link ridondanti a una seconda sezione con gli stessi servizi.
 - Recensioni: raccolta unica, tre colonne PC, tre schede iniziali e altre tre con «Mostra altro». Layout uniforme, testo completo, tag concordati, stelle e link Google, dicitura WhatsApp per le testimonianze manuali.
 - FAQ: domande espandibili. Il riquadro finale «Il primo passo è una conversazione» deve restare uguale a quello finale delle Recensioni.
 
@@ -146,3 +146,4 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 - Gli SVG possono essere incorporati nell’HTML. Modificare la grafica effettivamente renderizzata e tenere coerente l’eventuale file SVG sorgente: un asset esterno non usato dalla pagina può essere una versione vecchia.
 - Stili condivisi: `styles.css`, `home-motion.css`, `services-illustration.css`, `album.css`, `archive.css`. Script condivisi: `site.js`, `home.js`, `services-motion.js`, `album.js`, `percorsi.js`, `reviews.js`, `archive.js`.
 - Dopo il deployment, verificare la pagina pubblica. Non dichiarare una verifica mobile o un controllo non effettuato; riferire eventuali limiti concreti.
+

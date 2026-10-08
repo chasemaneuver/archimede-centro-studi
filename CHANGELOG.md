@@ -1,5 +1,12 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Correzioni mobile, servizi e media recensioni
+
+- Ridimensionato il ventaglio fotografico dei laboratori su telefono per contenerne le card inclinate.
+- Separata l’anteprima da hover dall’apertura fissata del pulsante; primo clic mantiene i dettagli, secondo clic chiude, Escape torna al fronte.
+- Schede servizi più compatte su telefono: la sola faccia visibile determina l’altezza, mantenendo tutti i testi e i collegamenti.
+- Google Maps verificato il 9 ottobre: 5,0/5 su 27 recensioni. Home, riepilogo recensioni e date nei JSON sincronizzati.
+
 ## 9 ottobre 2026 — Collegamento social dei tirocini
 
 - Rimosso dalla scheda Tirocini · Università dell’Aquila il collegamento all’annuncio social, su richiesta del centro; mantenuti descrizione e contatti.
@@ -133,4 +140,5 @@
 - Layout leggibile e responsive, titolo nello stile del sito, canonical e sitemap aggiornati.
 - Sostituito il collegamento al vecchio hosting nei footer di tutte le pagine; aggiunto avviso e link privacy prima dell’invio dei commenti.
 - Documentate le procedure di conservazione approvate dal centro e i controlli organizzativi ancora aperti. Nessuna modifica al database né ai moduli Google esterni.
+
 
