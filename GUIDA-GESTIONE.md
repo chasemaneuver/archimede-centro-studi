@@ -1,6 +1,6 @@
 # Come aggiorniamo il sito Archimede
 
-Guida per Archimede e per Codex. Revisione del **7 ottobre 2026**, dopo il controllo delle 13 pagine pubblicate.
+Guida per Archimede e per Codex. Revisione del **8 ottobre 2026**. Il sito comprende 14 pagine, inclusa l’informativa privacy locale.
 
 [Sito pubblico](https://chasemaneuver.github.io/archimede-centro-studi/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
 
@@ -130,7 +130,7 @@ Frequenze suggerite, non attività già pianificate.
 | Numeri della home | A nuovi dati; verifica annuale | Studenti seguiti, esperienza e media Google. Le animazioni usano valori impostati: non raccolgono dati né aumentano automaticamente gli anni di esperienza. |
 | Risorse gratuite | A nuove guide/materiali | Schede, articoli collegati e file scaricabili, evitando copie dello stesso articolo con URL differenti. |
 | Collaborazioni e sponsor | A nuovi partner o variazioni | Nomi, loghi, link e contesto/edizione delle iniziative. |
-| Privacy e cookie | A cambiamenti dei servizi; prima del passaggio definitivo al dominio | L’informativa è sul vecchio sito. Verificare che includa commenti Supabase e moduli esterni; predisporre una pagina locale prima di dismettere il vecchio hosting. |
+| Privacy e cookie | A cambiamenti dei servizi; prima del passaggio definitivo al dominio | Informativa locale `privacy.html`: aggiornare fornitori, basi giuridiche, conservazione, cookie e collegamenti quando cambiano i trattamenti. Verificare anche gli avvisi nei commenti e nei moduli esterni. |
 | Link e funzionamento | Ogni trimestre e dopo modifiche importanti | Pagine, immagini, moduli, Maps/Comune, popup, menu PC/telefono, filtri, animazioni e accessibilità. |
 | Ricerca e indicizzazione | Dopo nuove pagine; verifica trimestrale | Sitemap, canonical, errori di scansione e Search Console se disponibile. SEO non garantisce tempi di indicizzazione o posizionamento. |
 | Hosting e Supabase | A errori; verifica mensile | Esito dei deployment e disponibilità del progetto. Codex può diagnosticare con gli accessi disponibili; non monitora continuativamente. |
@@ -145,13 +145,24 @@ La regola attuale è un nickname unico **su tutti gli articoli**, senza distinzi
 
 Nel repository va soltanto la configurazione pubblica Supabase: mai password, chiavi segrete o `service_role`. Riutilizzare il progetto esistente per gli articoli futuri.
 
-## 6. Punti aperti al 7 ottobre 2026
+### Privacy: procedure adottate l’8 ottobre 2026
+
+- Richieste/preventivi senza successivo rapporto: eliminare dopo 24 mesi dall’ultimo contatto, anche dalle copie operative pertinenti su email/Drive.
+- Commenti in attesa o respinti: eliminare entro 90 giorni dall’invio. La policy non attiva una cancellazione automatica; al controllo Supabase non risulta installato `pg_cron`.
+- Commenti approvati: fino alla pubblicazione dell’articolo, con riesame annuale e gestione delle richieste di rimozione.
+- Foto/testimonianze: riesame annuale di pertinenza e autorizzazioni, rimozione in caso di revoca del consenso. Gestire anche le copie del repository sotto il controllo del centro: modificare la pagina non elimina la cronologia Git.
+- Moderare prima di pubblicare, evitando dati sanitari, recapiti e dati personali di terzi; particolare attenzione ai minori. Non aggiungere una casella di consenso ai commenti senza rivalutare la base giuridica e la procedura.
+- Collegare l’informativa anche nei Google Forms esterni; un link nel footer del sito non modifica i moduli Google. L’account personale Gmail non equivale a Google Workspace.
+- La verifica del database conferma RLS e moderazione; accessi amministrativi/MFA, log, backup e accordi dei fornitori restano controlli organizzativi da completare. Il filtro RPC dei link `www.` e la protezione contro invii ripetuti richiedono un successivo intervento autorizzato sul database.
+- Informativa di iscrizione e tempi di conservazione delle diagnosi richiedono una verifica separata; la pagina del sito non li convalida. Rivedere anche eventuali testimonianze pubblicate che rivelino DSA o altri dati sanitari.
+
+## 6. Punti aperti al 8 ottobre 2026
 
 La guida registra questi punti senza modificare i contenuti delle pagine.
 
 - **Media da riallineare:** home `4,9/5`; Recensioni `5,0`, 27 recensioni, consultazione del 6 ottobre. Al prossimo aggiornamento verificare Google e correggere insieme entrambe.
 - **Fine Pescara Solidale 2026:** conclusione registrata il 31 dicembre. Il passaggio automatico in Eventi non riscrive il voucher né rimuove menu e richiami nelle altre pagine. Serve un intervento di fine edizione.
-- **Vecchio sito:** Collaborazioni (`/legal/`) e Privacy (`/privacy-and-cookie-policy/`) rimandano ancora lì. Migrarle prima di dismettere l’hosting.
+- **Vecchio sito:** Collaborazioni (`/legal/`) rimanda ancora lì. Privacy e cookie policy è ora locale (`privacy.html`). Migrare Collaborazioni prima di dismettere l’hosting.
 - **Dominio:** indirizzo pubblico e metadati usano GitHub Pages. Collegando `archimedecentrostudi.com`, aggiornare canonical, sitemap, anteprime social e dati strutturati; predisporre la continuità dei vecchi permalink.
 - **Prove commenti:** tre invii tecnici del 7 ottobre, non pubblicati, hanno nickname che iniziano con «Verifica». Il proprietario può eliminarli dal progetto.
 
@@ -184,6 +195,7 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 | `article-comments.js`, `comments-config.js` | Commenti e configurazione pubblica Supabase |
 | `styles.css`, `archive.css` | Stile comune e impaginazione archivi |
 | `site.js`, `home.js`, `services-motion.js`, `percorsi.js` | Menu, popup, anno footer, animazioni e schede servizi |
+| `privacy.html`, `privacy.css` | Informativa privacy e cookie, indice e impaginazione leggibile |
 | `sitemap.xml`, `robots.txt` | Pagine e scansione |
 | `README.md`, `GUIDA-GESTIONE.md`, `CHANGELOG.md`, `AGENTS.md` | Presentazione, gestione, cronologia e riferimento Codex |
 

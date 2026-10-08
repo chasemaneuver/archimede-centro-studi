@@ -110,3 +110,10 @@
 - Documentati i riferimenti effettivi del codice e le eccezioni per articoli, touch, movimento ridotto e più grafiche sulla stessa pagina.
 - Inserito un prompt riutilizzabile nella guida di gestione; collegato il nuovo riferimento da README e AGENTS.md.
 - Modifiche alla documentazione; comportamento e contenuti delle pagine invariati.
+
+## 2026-10-08 — Privacy e cookie policy
+
+- Nuova informativa locale `privacy.html` con indice, identità del titolare, contatti/preventivi, commenti pseudonimi moderati, foto/recensioni, fornitori, trasferimenti, conservazione e diritti.
+- Layout leggibile e responsive, titolo nello stile del sito, canonical e sitemap aggiornati.
+- Sostituito il collegamento al vecchio hosting nei footer di tutte le pagine; aggiunto avviso e link privacy prima dell’invio dei commenti.
+- Documentate le procedure di conservazione approvate dal centro e i controlli organizzativi ancora aperti. Nessuna modifica al database né ai moduli Google esterni.

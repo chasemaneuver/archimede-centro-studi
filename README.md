@@ -6,6 +6,7 @@ Sito informativo in HTML, CSS e JavaScript, pubblicato su GitHub Pages.
 - **Gestione dei contenuti:** [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md)
 - **Titoli, grafiche, animazioni e link:** [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md)
 - **Riferimento per Codex:** [AGENTS.md](./AGENTS.md)
+- **Privacy e cookie:** [informativa](./privacy.html)
 - **Cronologia:** [CHANGELOG.md](./CHANGELOG.md)
 
 Per pubblicare articoli, laboratori, eventi, foto e recensioni, scrivere a Codex con i contenuti disponibili. La guida spiega cosa inviare, quali pagine aggiornare, gli automatismi presenti e le manutenzioni suggerite.
@@ -17,7 +18,7 @@ Per pubblicare articoli, laboratori, eventi, foto e recensioni, scrivere a Codex
 - **Risorse:** Pescara Solidale, Lezioni Circolari, Risorse gratuite.
 - **Archivio:** Album, Articoli, Eventi.
 
-Al controllo del 7 ottobre 2026: 13 pagine HTML, 43 immagini di contenuto senza duplicati nell'Album, 35 schede recensione (8 WhatsApp e 27 Google) e il primo articolo della guida all'apprendimento. Questi numeri vanno aggiornati insieme ai contenuti.
+Al controllo del 8 ottobre 2026: 14 pagine HTML, 43 immagini di contenuto senza duplicati nell'Album, 35 schede recensione (8 WhatsApp e 27 Google) e il primo articolo della guida all'apprendimento. Questi numeri vanno aggiornati insieme ai contenuti.
 
 ## Funzionamento
 
@@ -35,7 +36,7 @@ I JSON e i file caricati non generano da soli le pagine HTML. I commenti vengono
 
 GitHub Pages pubblica dal ramo `main`, cartella principale `/`. Non serve una compilazione locale. Verificare l'esito in Actions e il risultato pubblico dopo ogni aggiornamento.
 
-Il dominio `archimedecentrostudi.com` non è ancora collegato; canonical e sitemap usano GitHub Pages. Collaborazioni e Privacy e cookie policy rimandano al vecchio sito: vanno migrate prima di dismettere quell'hosting.
+Il dominio `archimedecentrostudi.com` non è ancora collegato; canonical e sitemap usano GitHub Pages. Collaborazioni rimanda al vecchio sito e va migrata prima di dismettere quell'hosting. Privacy e cookie policy è disponibile localmente in `privacy.html`.
 
 ## Identità visiva
 
