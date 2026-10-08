@@ -1,5 +1,9 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Collegamento social dei tirocini
+
+- Rimosso dalla scheda Tirocini · Università dell’Aquila il collegamento all’annuncio social, su richiesta del centro; mantenuti descrizione e contatti.
+
 ## 9 ottobre 2026 — Nove servizi nella pagina Percorsi
 
 - Aggiunti tirocini con l’Università dell’Aquila, preparazione concorsi, test d’ingresso universitari, concorsi militari e recupero anni scolastici.
@@ -129,3 +133,4 @@
 - Layout leggibile e responsive, titolo nello stile del sito, canonical e sitemap aggiornati.
 - Sostituito il collegamento al vecchio hosting nei footer di tutte le pagine; aggiunto avviso e link privacy prima dell’invio dei commenti.
 - Documentate le procedure di conservazione approvate dal centro e i controlli organizzativi ancora aperti. Nessuna modifica al database né ai moduli Google esterni.
+
