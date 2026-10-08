@@ -1,5 +1,10 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Testi della pagina privacy
+
+- Rimosse le frasi indicate dal centro su DPO, conservazione delle risposte, Google Workspace, collegamenti al Comune e strumenti non incorporati. Conservati i riferimenti ai fornitori, alle informative esterne e ai cookie tecnici.
+- Aggiornata la data dell’informativa; struttura, contatti e componenti invariati.
+
 ## 6 ottobre 2026 — Immagini in pop-up
 
 - Tutti i collegamenti di ingrandimento immagini aprono un dialogo nella pagina corrente: tre esempi del materiale personalizzato e locandina Pescara Solidale.
