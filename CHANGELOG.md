@@ -1,5 +1,12 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Nove servizi nella pagina Percorsi
+
+- Aggiunti tirocini con l’Università dell’Aquila, preparazione concorsi, test d’ingresso universitari, concorsi militari e recupero anni scolastici.
+- Griglia 3×3 su PC, due colonne tablet e una su telefono; mantenuti il componente flip, pulsanti e accessibilità da tastiera.
+- Tirocini descritti dal post Instagram del centro del 4 marzo 2026; contatti per informazioni e candidature. Menu e footer mantengono il collegamento unico a Tutti i servizi.
+- Aggiornati introduzione, metadati e guide di gestione e stile.
+
 ## 9 ottobre 2026 — Testi della pagina privacy
 
 - Rimosse le frasi indicate dal centro su DPO, conservazione delle risposte, Google Workspace, collegamenti al Comune e strumenti non incorporati. Conservati i riferimenti ai fornitori, alle informative esterne e ai cookie tecnici.

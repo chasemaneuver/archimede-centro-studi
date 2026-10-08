@@ -1,6 +1,6 @@
 # Come aggiorniamo il sito Archimede
 
-Guida per Archimede e per Codex. Revisione del **8 ottobre 2026**. Il sito comprende 14 pagine, inclusa l’informativa privacy locale.
+Guida per Archimede e per Codex. Revisione del **9 ottobre 2026**. Il sito comprende 14 pagine, inclusa l’informativa privacy locale.
 
 [Sito pubblico](https://chasemaneuver.github.io/archimede-centro-studi/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
 
@@ -182,7 +182,7 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 | File | Ruolo |
 | --- | --- |
 | `index.html` | Home, numeri, mission, contatti, foto e storie |
-| `percorsi.html` | Tutti i servizi e quattro schede di dettaglio |
+| `percorsi.html`, `percorsi.js`, `servizi-grid.css` | Tutti i servizi: nove schede flip, griglia 3×3 PC, due colonne tablet, una su telefono |
 | `laboratori-creativi.html`, `album.js` | Laboratori e tre gallerie |
 | `materiale-personalizzato.html` | Strumenti, esempi e preventivo materiale |
 | `pescara-solidale.html`, `lezioni-circolari.html` | Programmi solidali |

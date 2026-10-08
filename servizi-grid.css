@@ -1,0 +1,20 @@
+/* Nine services: the shared flip component, sized for three columns. */
+.flip-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.flip-card{display:flex;flex-direction:column}
+.flip-stage{flex:1;display:grid}
+.flip-inner{height:100%}
+.flip-face{padding:28px;min-height:440px}
+.flip-card-top{margin-bottom:25px}
+.flip-card h3{font-size:27px;line-height:1.18;overflow-wrap:break-word}
+.flip-back h3{font-size:23px}
+.flip-toggle{padding-inline:28px}
+.flip-card:nth-child(3n+1) .flip-front{background:#edf6f6}
+.flip-card:nth-child(3n+2) .flip-front{background:#edf6f0}
+.flip-card:nth-child(3n) .flip-front{background:#fff5eb}
+.flip-card:nth-child(3n+1) .service-icon{background:#d2e9e7}
+.flip-card:nth-child(3n+2) .service-icon{background:var(--mint)}
+.flip-card:nth-child(3n) .service-icon{background:#fae1cc}
+.service-mode{line-height:1.6}
+.service-source{font-size:11px;color:var(--mint);text-decoration:underline;text-underline-offset:3px;margin-bottom:18px;align-self:flex-start}
+@media(max-width:1050px){.flip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.flip-grid{grid-template-columns:1fr;gap:21px}.flip-face{padding:28px 25px;min-height:420px}.flip-card h3{font-size:28px}.flip-back h3{font-size:24px}.flip-toggle{padding-inline:25px}}

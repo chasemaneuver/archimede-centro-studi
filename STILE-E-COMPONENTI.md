@@ -1,6 +1,6 @@
 # Stile e componenti Archimede
 
-Riferimento per creare nuove sezioni e aggiornare quelle esistenti. Revisione: **7 ottobre 2026**. Integra [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md); leggere entrambi prima di intervenire.
+Riferimento per creare nuove sezioni e aggiornare quelle esistenti. Revisione: **9 ottobre 2026**. Integra [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md); leggere entrambi prima di intervenire.
 
 Le istruzioni esplicite più recenti di Archimede hanno precedenza. Le regole descrivono il sito attuale: non impongono di ridisegnare le pagine già approvate a ogni aggiornamento. Prima di riutilizzare un componente, confrontare codice e risultato della pagina pubblicata.
 
@@ -103,7 +103,7 @@ Le illustrazioni sono SVG e codice del sito, con elementi riconoscibili, curati 
 - Hover sulla seconda/terza: la scelta sale e le altre si aprono ai lati; mantenerla stabile finché il puntatore non esce dal ventaglio, poi ripristinare. Supportare focus da tastiera; su touch il clic continua ad aprire la foto senza richiedere hover.
 - Card fotografica singola delle Lezioni Circolari: inclinata `+2deg`, bordo carta e ombra lieve.
 - Gallerie laboratori: Studio, Laboratori e Locandine, tre riquadri sulla stessa riga PC e impilati su telefono; locandine/articolo interi e leggibili, senza ritaglio indiscriminato.
-- Tutti i servizi: quattro flip card, griglia 2×2 PC e una colonna telefono. Dettagli su hover o con il pulsante; tastiera ed Escape supportati. Non reintrodurre link ridondanti a una seconda sezione con gli stessi servizi.
+- Tutti i servizi: nove flip card, griglia 3×3 PC, due colonne tablet e una colonna telefono; gli adattamenti sono in `servizi-grid.css`. Dettagli su hover o con il pulsante; tastiera ed Escape supportati. Non reintrodurre link ridondanti a una seconda sezione con gli stessi servizi.
 - Recensioni: raccolta unica, tre colonne PC, tre schede iniziali e altre tre con «Mostra altro». Layout uniforme, testo completo, tag concordati, stelle e link Google, dicitura WhatsApp per le testimonianze manuali.
 - FAQ: domande espandibili. Il riquadro finale «Il primo passo è una conversazione» deve restare uguale a quello finale delle Recensioni.
 
