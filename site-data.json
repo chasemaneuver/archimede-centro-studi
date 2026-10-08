@@ -1,0 +1,172 @@
+{
+  "contacts": {
+    "email": "segreteria@archimedecentrostudi.com",
+    "phone": "+393283861422",
+    "secondaryPhone": "+393292756109"
+  },
+  "links": {
+    "lessonQuote": "https://forms.gle/VLtMAeRPK9gQAc4CA",
+    "materialQuote": "https://docs.google.com/forms/d/e/1FAIpQLSezMR2AhGpUyTZm1FscXnVwlMP3F2pmwX_RkVskhLWrc27QBg/viewform",
+    "map": "https://www.google.com/maps/search/?api=1&query=Archimede+Centro+Studi+Strada+comunale+piana+21+Pescara",
+    "instagram": "https://www.instagram.com/amcentrostudi/",
+    "facebook": "https://www.facebook.com/archimedecentrostudi",
+    "tiktok": "https://www.tiktok.com/@archimedecentrostudi",
+    "collaborations": "https://archimedecentrostudi.com/legal/"
+  },
+  "google": {
+    "rating": 5,
+    "maximum": 5,
+    "count": 27,
+    "checkedAt": "2026-10-09",
+    "url": "https://www.google.it/maps/place/Archimede+Centro+Studi/@42.4515746,14.2072506,17z/data=!4m8!3m7!1s0x1331a7ec00d4c935:0x4f2a736aa805fc42!8m2!3d42.4515746!4d14.2098255!9m1!1b1!16s%2Fg%2F11tx68jhx4"
+  },
+  "navigation": [
+    {
+      "id": "centro-menu",
+      "label": "Il centro",
+      "links": [
+        {
+          "url": "./index.html",
+          "label": "Home"
+        },
+        {
+          "url": "./index.html#metodo",
+          "label": "La nostra mission"
+        },
+        {
+          "url": "./recensioni.html",
+          "label": "Recensioni"
+        },
+        {
+          "url": "./domande-frequenti.html",
+          "label": "Domande frequenti"
+        }
+      ]
+    },
+    {
+      "id": "percorsi-menu",
+      "label": "Percorsi",
+      "links": [
+        {
+          "url": "./percorsi.html",
+          "label": "Tutti i servizi"
+        },
+        {
+          "url": "./laboratori-creativi.html",
+          "label": "Laboratori creativi"
+        },
+        {
+          "url": "./materiale-personalizzato.html",
+          "label": "Materiale personalizzato"
+        }
+      ]
+    },
+    {
+      "id": "risorse-menu",
+      "label": "Risorse",
+      "links": [
+        {
+          "url": "./pescara-solidale.html",
+          "label": "Pescara Solidale"
+        },
+        {
+          "url": "./lezioni-circolari.html",
+          "label": "Lezioni Circolari"
+        },
+        {
+          "url": "./risorse.html",
+          "label": "Risorse gratuite"
+        }
+      ]
+    },
+    {
+      "id": "archivio-menu",
+      "label": "Archivio",
+      "links": [
+        {
+          "url": "./album.html",
+          "label": "Album"
+        },
+        {
+          "url": "./articoli.html",
+          "label": "Articoli"
+        },
+        {
+          "url": "./eventi.html",
+          "label": "Eventi"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "url": "./index.html#metodo",
+      "label": "La nostra mission",
+      "external": false
+    },
+    {
+      "url": "./recensioni.html",
+      "label": "Le vostre storie",
+      "external": false
+    },
+    {
+      "url": "./domande-frequenti.html",
+      "label": "Domande frequenti",
+      "external": false
+    },
+    {
+      "url": "./percorsi.html",
+      "label": "Tutti i servizi",
+      "external": false
+    },
+    {
+      "url": "./laboratori-creativi.html",
+      "label": "Laboratori creativi",
+      "external": false
+    },
+    {
+      "url": "./materiale-personalizzato.html",
+      "label": "Materiale personalizzato",
+      "external": false
+    },
+    {
+      "url": "./lezioni-circolari.html",
+      "label": "Lezioni Circolari",
+      "external": false
+    },
+    {
+      "url": "./pescara-solidale.html",
+      "label": "Pescara Solidale",
+      "external": false
+    },
+    {
+      "url": "./risorse.html",
+      "label": "Risorse gratuite",
+      "external": false
+    },
+    {
+      "url": "./album.html",
+      "label": "Album",
+      "external": false
+    },
+    {
+      "url": "./articoli.html",
+      "label": "Articoli",
+      "external": false
+    },
+    {
+      "url": "./eventi.html",
+      "label": "Eventi",
+      "external": false
+    },
+    {
+      "label": "Collaborazioni ↗",
+      "external": true,
+      "linkKey": "collaborations"
+    }
+  ],
+  "addresses": {
+    "display1": "Strada Comunale Piana 21/1 — 65129 Pescara",
+    "display2": "Strada comunale piana, 21"
+  }
+}

@@ -135,7 +135,7 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 - Sede attuale: Strada comunale piana, 21 — 65129 Pescara. Social: Instagram `amcentrostudi`, Facebook `archimedecentrostudi`, TikTok `@archimedecentrostudi`. Verificare prima di modificarli.
 - Link Google delle recensioni individuali e link comunali variano secondo recensione/edizione: riutilizzare la fonte corretta, non un URL generico inventato.
 - Link interni relativi coerenti con GitHub Pages; link esterni con `rel="noopener"` se aperti in nuova scheda. File immagine usati nei popup non devono avere apertura in nuova scheda.
-- Header/footer ripetuti: riportare le modifiche in tutte le pagine. Conservare breadcrumb, ancore storiche e logica di compatibilità dei vecchi link in `home.js`.
+- Header/footer condivisi: modificare `site-data.json` e i componenti `.html.in`, poi rigenerare. Conservare breadcrumb, ancore storiche e logica di compatibilità dei vecchi link in `home.js`.
 
 ## 8. Verifiche prima della pubblicazione
 
@@ -147,3 +147,13 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 - Stili condivisi: `styles.css`, `home-motion.css`, `services-illustration.css`, `album.css`, `archive.css`. Script condivisi: `site.js`, `home.js`, `services-motion.js`, `album.js`, `percorsi.js`, `reviews.js`, `archive.js`.
 - Dopo il deployment, verificare la pagina pubblica. Non dichiarare una verifica mobile o un controllo non effettuato; riferire eventuali limiti concreti.
 
+
+## Fonti condivise e generazione statica (9 ottobre 2026)
+
+- `site-data.json` è la fonte unica per contatti, link dei due preventivi, social, indirizzi, menu/footer e riepilogo Google (media, massimo, quantità, data verificata e URL). I form lezioni e materiale sono distinti. Il numero WhatsApp deriva dal telefono principale. Gli indirizzi pubblico e legale mantengono le formulazioni approvate.
+- `header.html.in` e `footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
+- `python build_site.py` rigenera le 14 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
+- Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
+- `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
+- Aggiungendo una pagina, creare il relativo `nome.html.in` con `{{header}}` e `{{footer}}`, inserirla dove pertinente in navigazione/footer, rigenerare e aggiornare sitemap e archivi. Gli URL pubblici, il JavaScript, i CSS e le animazioni rimangono quelli esistenti.
+- Articoli, eventi e relative raccolte non sono ancora migrati a un nuovo modello dati: questa è la prima fase della centralizzazione. Nessun servizio esterno o cookie nuovo.

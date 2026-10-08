@@ -172,7 +172,7 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 
 1. Verificare il repository corrente, soprattutto in una nuova chat; non usare una vecchia copia locale come versione definitiva.
 2. Conservare contenuti e stile non interessati. Classe A: grafiche elaborate di home e Tutti i servizi. Classe B: pagine secondarie con ingresso, ellisse e satelliti dove presenti. Rispettare movimento ridotto e uso da telefono.
-3. Aggiornare pagina, archivi, dati di supporto e link pertinenti. Header e footer sono ripetuti: le modifiche al menu vanno riportate in tutte le pagine. Non aggiungere ogni articolo/evento al menu.
+3. Aggiornare pagina, archivi, dati di supporto e link pertinenti. Header e footer derivano dalle fonti comuni: modificare `site-data.json` o i componenti e rigenerare le pagine. Non aggiungere ogni articolo/evento al menu.
 4. Verificare PC/telefono, link, immagini, popup, interazioni e metadati. Validare i dati strutturati usando informazioni reali.
 5. Pubblicare nel ramo `main`, cartella principale; verificare GitHub Pages e risultato pubblico. Versionare gli script modificati quando necessario per evitare codice vecchio in cache.
 6. Annotare in `CHANGELOG.md`; aggiornare guida e README se cambiano struttura/procedure. Riferire modifiche, verifiche e passaggi ancora necessari.
@@ -201,3 +201,13 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 
 Il solo caricamento di una foto o la sola modifica di un JSON non aggiorna tutte le pagine: elenchi, miniature e conteggi statici devono essere mantenuti insieme.
 
+
+## Fonti condivise e generazione statica (9 ottobre 2026)
+
+- `site-data.json` è la fonte unica per contatti, link dei due preventivi, social, indirizzi, menu/footer e riepilogo Google (media, massimo, quantità, data verificata e URL). I form lezioni e materiale sono distinti. Il numero WhatsApp deriva dal telefono principale. Gli indirizzi pubblico e legale mantengono le formulazioni approvate.
+- `header.html.in` e `footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
+- `python build_site.py` rigenera le 14 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
+- Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
+- `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
+- Aggiungendo una pagina, creare il relativo `nome.html.in` con `{{header}}` e `{{footer}}`, inserirla dove pertinente in navigazione/footer, rigenerare e aggiornare sitemap e archivi. Gli URL pubblici, il JavaScript, i CSS e le animazioni rimangono quelli esistenti.
+- Articoli, eventi e relative raccolte non sono ancora migrati a un nuovo modello dati: questa è la prima fase della centralizzazione. Nessun servizio esterno o cookie nuovo.

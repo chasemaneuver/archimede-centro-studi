@@ -142,3 +142,7 @@
 - Documentate le procedure di conservazione approvate dal centro e i controlli organizzativi ancora aperti. Nessuna modifica al database né ai moduli Google esterni.
 
 
+
+## 2026-10-09 — Fonti condivise, prima fase
+
+Centralizzati contatti, preventivi distinti, menu/footer e riepilogo Google in `site-data.json`; estratti componenti comuni e modelli HTML leggibili. Aggiunto generatore Python senza dipendenze, controlli di sincronizzazione e regressione, workflow Pages per pubblicare solo i file statici generati. Layout, testi approvati, recensioni individuali e animazioni conservati. Articoli/eventi restano nella fase successiva. Aggiornate le istruzioni per tutte le modifiche future.
