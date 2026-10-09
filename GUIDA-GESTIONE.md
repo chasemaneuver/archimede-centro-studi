@@ -2,7 +2,7 @@
 
 Guida per Archimede e per Codex. Revisione del **9 ottobre 2026**. Il sito comprende 15 pagine, inclusa l’informativa privacy locale.
 
-[Sito pubblico](https://chasemaneuver.github.io/archimede-centro-studi/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
+[Sito pubblico](https://archimedecentrostudi.com/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
 
 Per le regole dettagliate di titoli, grafiche, animazioni, componenti e link, leggere anche [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md).
 

@@ -2,7 +2,7 @@
 
 Sito informativo in HTML, CSS e JavaScript, pubblicato su GitHub Pages.
 
-- **Sito:** [chasemaneuver.github.io/archimede-centro-studi](https://chasemaneuver.github.io/archimede-centro-studi/)
+- **Sito:** [chasemaneuver.github.io/archimede-centro-studi](https://archimedecentrostudi.com/)
 - **Gestione dei contenuti:** [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md)
 - **Titoli, grafiche, animazioni e link:** [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md)
 - **Riferimento per Codex:** [AGENTS.md](./AGENTS.md)

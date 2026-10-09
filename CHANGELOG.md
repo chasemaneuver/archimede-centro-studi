@@ -1,3 +1,8 @@
+## 9 ottobre 2026 — Dominio ufficiale e indicizzazione
+
+- URL SEO, canonical, sitemap e robots.txt aggiornati al dominio https://archimedecentrostudi.com/.
+- Aggiornati i riferimenti nelle guide al sito pubblico.
+
 ## 9 ottobre 2026 — Descrizione per i motori di ricerca
 
 - Aggiornate meta description e anteprima social della home con formazione, tutoraggio, ripetizioni, tirocini universitari e laboratori creativi, Pescara e modalità in presenza/online.
