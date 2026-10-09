@@ -1,5 +1,11 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — FAQ e collegamenti utili
+
+- Aggiunte le domande su voucher Pescara Solidale e 5×1000, con risposte brevi e link alle pagine dedicate.
+- Collegati anche servizi universitari, materiale personalizzato e contatti nelle risposte esistenti; mantenuti distinti i due preventivi.
+
+
 ## 9 ottobre 2026 — Footer, dati dell’associazione e 5×1000
 
 - Dati confermati dall’utente: Archimede Centro Studi APS/ETS iscritta al RUNTS, CF 91178750682, sede legale al numero 21. Denominazione e CF nella configurazione condivisa, riutilizzati in footer e privacy. Nessun numero di iscrizione inventato.
