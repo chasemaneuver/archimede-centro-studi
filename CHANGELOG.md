@@ -1,5 +1,12 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Footer, dati dell’associazione e 5×1000
+
+- Dati confermati dall’utente: Archimede Centro Studi APS/ETS iscritta al RUNTS, CF 91178750682, sede legale al numero 21. Denominazione e CF nella configurazione condivisa, riutilizzati in footer e privacy. Nessun numero di iscrizione inventato.
+- Navigazione footer su due colonne, ordine conservato, titolo Esplora Archimede centrato. Su telefono le sezioni si impilano e i link restano su due colonne.
+- Conservati entrambi i telefoni e WhatsApp esclusivamente sul numero del centro.
+- Nuova pagina Il tuo 5×1000 con codice fiscale copiabile, istruzioni e fonti ufficiali; link nel menu Il centro e footer. Accreditamento AF 2026 verificato nell’elenco ministeriale aggiornato dell’8 maggio 2026 (CSV, riga CF 91178750682); denominazione ETS/APS ARCHIMEDE CENTRO STUDI e sezione APS. Verifica 9 ottobre 2026. Nessuna scadenza o accreditamento futuro inventato.
+
 ## 9 ottobre 2026 — Secondo contatto telefonico
 
 - Aggiunto +39 329 275 6109 come collegamento telefonico nei footer di tutte le pagine e nei riquadri contatti di Home, Recensioni e Domande frequenti.

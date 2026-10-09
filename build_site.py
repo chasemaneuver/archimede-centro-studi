@@ -41,7 +41,7 @@ def values_for(config):
         match = re.fullmatch(r'\+39([0-9]{3})([0-9]{3})([0-9]{4})',number)
         data['contacts'][label_key] = '+39 ' + ' '.join(match.groups()) if match else number
     values = {}
-    for section in ('contacts', 'links', 'google', 'addresses', 'publishing'):
+    for section in ('contacts', 'links', 'google', 'addresses', 'publishing', 'organization'):
         for key, value in data[section].items():
             values[section + '.' + key] = escape(str(value), quote=True)
     def link(item):

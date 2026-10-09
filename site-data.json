@@ -11,7 +11,9 @@
     "instagram": "https://www.instagram.com/amcentrostudi/",
     "facebook": "https://www.facebook.com/archimedecentrostudi",
     "tiktok": "https://www.tiktok.com/@archimedecentrostudi",
-    "collaborations": "https://archimedecentrostudi.com/legal/"
+    "collaborations": "https://archimedecentrostudi.com/legal/",
+    "fivePerMilleOfficial": "https://www.lavoro.gov.it/temi-e-priorita/terzo-settore-e-responsabilita-sociale-delle-imprese/focus/cinque-mille/pagine/anno-2026",
+    "fivePerMilleInstructions": "https://infoprecompilata.agenziaentrate.gov.it/portale/otto-cinque-e-due-per-mille"
   },
   "google": {
     "rating": 5,
@@ -40,6 +42,10 @@
         {
           "url": "./domande-frequenti.html",
           "label": "Domande frequenti"
+        },
+        {
+          "url": "./cinque-per-mille.html",
+          "label": "Il tuo 5×1000"
         }
       ]
     },
@@ -160,16 +166,27 @@
       "external": false
     },
     {
+      "url": "./cinque-per-mille.html",
+      "label": "Il tuo 5×1000"
+    },
+    {
       "label": "Collaborazioni ↗",
       "external": true,
       "linkKey": "collaborations"
     }
   ],
   "addresses": {
-    "display1": "Strada Comunale Piana 21/1 — 65129 Pescara",
+    "display1": "Strada Comunale Piana 21 — 65129 Pescara",
     "display2": "Strada comunale piana, 21"
   },
   "publishing": {
     "baseUrl": "https://chasemaneuver.github.io/archimede-centro-studi/"
+  },
+  "organization": {
+    "name": "ETS/APS Archimede Centro Studi",
+    "taxCode": "91178750682",
+    "registerLabel": "Iscritta al RUNTS",
+    "fivePerMilleYear": 2026,
+    "fivePerMilleCheckedAt": "2026-10-09"
   }
 }

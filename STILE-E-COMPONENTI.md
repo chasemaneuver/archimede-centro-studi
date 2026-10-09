@@ -188,3 +188,9 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 - Nessuna scheda vuota viene pubblicata come esempio. I test dei nuovi articoli/eventi usano contenuti di prova soltanto in memoria.
 - Fonti JSON editoriali, corpi `.content.html`, modelli e script Python non entrano nell’artefatto pubblico `_site`; il visitatore riceve le pagine complete.
 - Questa fase completa i modelli articolo/evento. Gallerie fotografiche e testi delle recensioni mantengono le procedure di aggiornamento documentate.
+
+## Dati associativi e footer (9 ottobre 2026)
+
+- `organization` in `site-data.json` contiene denominazione, CF e dicitura RUNTS confermati dall’utente. Sede legale confermata: Strada Comunale Piana 21, 65129 Pescara (PE). Non inventare estremi del registro.
+- Il footer mostra questi dati senza cifre delle entrate. Esplora Archimede è centrato sopra due colonne di link che mantengono l’ordine di lettura; su telefono i blocchi si impilano.
+- L’iscrizione RUNTS non equivale da sola all’accreditamento al 5×1000: prima di pubblicare un invito verificare l’accreditamento pertinente. Gli eventuali adempimenti di trasparenza vanno valutati annualmente; questa modifica non li certifica.

@@ -1,6 +1,6 @@
 # Come aggiorniamo il sito Archimede
 
-Guida per Archimede e per Codex. Revisione del **9 ottobre 2026**. Il sito comprende 14 pagine, inclusa l’informativa privacy locale.
+Guida per Archimede e per Codex. Revisione del **9 ottobre 2026**. Il sito comprende 15 pagine, inclusa l’informativa privacy locale.
 
 [Sito pubblico](https://chasemaneuver.github.io/archimede-centro-studi/) · [Repository](https://github.com/chasemaneuver/archimede-centro-studi)
 
@@ -206,7 +206,7 @@ Il solo caricamento di una foto o la sola modifica di un JSON non aggiorna tutte
 
 - `site-data.json` è la fonte unica per contatti, link dei due preventivi, social, indirizzi, menu/footer e riepilogo Google (media, massimo, quantità, data verificata e URL). I form lezioni e materiale sono distinti. Il numero WhatsApp deriva dal telefono principale. Gli indirizzi pubblico e legale mantengono le formulazioni approvate.
 - `header.html.in` e `footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
-- `python build_site.py` rigenera le 14 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
+- `python build_site.py` rigenera le 15 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
 - Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
 - `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
 - Aggiungendo una pagina, creare il relativo `nome.html.in` con `{{header}}` e `{{footer}}`, inserirla dove pertinente in navigazione/footer, rigenerare e aggiornare sitemap e archivi. Gli URL pubblici, il JavaScript, i CSS e le animazioni rimangono quelli esistenti.
@@ -241,3 +241,11 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 - Nessuna scheda vuota viene pubblicata come esempio. I test dei nuovi articoli/eventi usano contenuti di prova soltanto in memoria.
 - Fonti JSON editoriali, corpi `.content.html`, modelli e script Python non entrano nell’artefatto pubblico `_site`; il visitatore riceve le pagine complete.
 - Questa fase completa i modelli articolo/evento. Gallerie fotografiche e testi delle recensioni mantengono le procedure di aggiornamento documentate.
+
+## Associazione e 5×1000 (9 ottobre 2026)
+
+Denominazione e CF provengono da `organization` in `site-data.json`; sede legale confermata dall’utente al numero 21. Il footer mostra i dati associativi e due colonne di navigazione.
+
+La pagina `cinque-per-mille.html.in` usa il CF condiviso, mostra l’anno finanziario effettivamente verificato e collega le fonti ufficiali. Accreditamento AF 2026 verificato il 9 ottobre nell’elenco aggiornato dell’8 maggio 2026 del Ministero; CF 91178750682, ETS/APS ARCHIMEDE CENTRO STUDI, sezione APS. Il numero di repertorio 154455 compare nella fonte ma non è aggiunto al footer su richiesta dell’utente.
+
+Prima di una nuova campagna verificare l’accreditamento e aggiornare anno/fonti/data, istruzioni e scadenze della dichiarazione. Non presentare l’iscrizione RUNTS come prova sufficiente dell’accreditamento al 5×1000. Controllare separatamente gli eventuali obblighi di rendicontazione/pubblicazione per somme effettivamente ricevute. Non pubblicare IBAN, nomi dei donatori o dati della dichiarazione senza una richiesta specifica. Nessun pagamento o raccolta di dati avviene nella pagina; il pulsante copia soltanto il CF negli appunti su azione dell’utente.
