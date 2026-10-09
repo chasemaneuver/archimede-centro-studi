@@ -4,3 +4,8 @@
 .review-platforms .platform-summary>div{flex:none;max-width:100%}
 .review-platforms .text-link{font-size:14px;line-height:1.6}
 @media(max-width:680px){.review-platforms{grid-template-columns:1fr;gap:22px}.review-platforms .platform-summary+ .platform-summary{border-left:0;border-top:1px solid #c9ccc8;padding-left:0;padding-top:22px}}
+
+.review-write-badge{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 16px;border:1px solid #004a59;border-radius:999px;background:#fffdf7;color:#004a59;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;transition:background .2s,color .2s}
+.review-write-badge:hover{background:#004a59;color:#fffdf7}
+.review-write-badge:focus-visible{outline:3px solid #f07018;outline-offset:4px}
+.review-write-badge>span:first-child{font-size:21px;line-height:1}

@@ -261,3 +261,7 @@ Prima di una nuova campagna verificare l’accreditamento e aggiornare anno/font
 ## Preferenze editoriali — 9 ottobre 2026
 
 Nessuna firma visibile; mantenere autore organizzazione nei metadati SEO. Usare immagini pertinenti, poche emoji, fonti finali con 🏷️ e il blockquote celeste del template. Per immagini esterne verificare fonte e diritti. Per immagini generate conservare il prompt editoriale.
+
+## Badge per lasciare recensioni
+
+I badge personalizzati sotto i riepiloghi Google e Facebook sono link statici, senza SDK o widget esterni. Usano gli URL centralizzati `google.url` e `facebook.url` in `site-data.json`: aprono le pagine recensioni, dove il visitatore può scrivere il proprio contributo (la piattaforma può richiedere accesso). Stile comune in `review-platforms.css`. Per Trustpilot attendere il profilo e il codice/badge forniti dal centro.

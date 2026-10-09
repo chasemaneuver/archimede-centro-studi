@@ -1,3 +1,7 @@
+# 9 ottobre 2026 — Badge recensioni
+
+Aggiunti badge «Lascia una recensione» sotto i riepiloghi Google Maps e Facebook, con link esterni alle rispettive recensioni e stile/accessibilità condivisi.
+
 ## 9 ottobre 2026 — Statistiche home in grassetto
 
 - Evidenziati numeri, etichette e messaggio In presenza e online / Vicini, anche a distanza nel riepilogo della home.
