@@ -257,3 +257,7 @@ Prima di una nuova campagna verificare l’accreditamento e aggiornare anno/font
 - La home usa una media unica calcolata automaticamente da build_site.py sulle schede uniche Google e Facebook in all-reviews.json. Convenzione esplicitamente approvata: una raccomandazione positiva Facebook vale 5/5. Le stelle decorative WhatsApp non sono voti e non entrano nel calcolo. La pagina Recensioni conserva la media originale Google e il riepilogo Facebook; non alterare google.rating per farlo coincidere con la home.
 - Le schede Facebook indicano Consiglia senza attribuire stelle native alla piattaforma. Testi coincidenti: aggiungere additionalSources alla scheda esistente, senza un secondo record valutato. Testi differenti dello stesso autore possono restare separati. Preservare gli ID e i tag approvati.
 - Per aggiornamenti futuri: verificare accesso e testi completi, evitare commenti/copie di scorrimento, rimuovere parametri di tracking dai link, aggiornare i filtri e la data. Una raccomandazione negativa richiede una convenzione esplicita prima del nuovo calcolo.
+
+## Preferenze editoriali — 9 ottobre 2026
+
+Nessuna firma visibile; mantenere autore organizzazione nei metadati SEO. Usare immagini pertinenti, poche emoji, fonti finali con 🏷️ e il blockquote celeste del template. Per immagini esterne verificare fonte e diritti. Per immagini generate conservare il prompt editoriale.

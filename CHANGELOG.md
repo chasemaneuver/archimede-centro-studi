@@ -1,3 +1,8 @@
+## 9 ottobre 2026 — Capitolo 2 della guida
+
+- Pubblicato Studiare per ricordare, con illustrazione originale, fonti, riquadro celeste e tag approvati.
+- Aggiornati archivio, risorse, sitemap e metadati. Rimossa la firma visibile dal modello articolo.
+
 ## 9 ottobre 2026 — Riepiloghi recensioni
 
 - Google e Facebook affiancati con stesso stile e divisore grigio; su telefono impilati con separatore orizzontale.

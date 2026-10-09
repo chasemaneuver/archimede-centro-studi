@@ -33,5 +33,39 @@
     "featuredInResources": true,
     "resourceSummary": "Uno spunto per conoscere i diversi modi di accedere alle informazioni.",
     "sidebarDescription": "Spunti per studenti, famiglie e insegnanti."
+  },
+  {
+    "slug": "studiare-per-ricordare",
+    "url": "studiare-per-ricordare.html",
+    "title": "Studiare per ricordare: richiamare, controllare, riprendere",
+    "titleFirst": "Studiare per ricordare,",
+    "titleEmphasis": "un passo alla volta.",
+    "seoTitle": "Capitolo 2: Studiare per ricordare",
+    "description": "Richiamare, controllare e riprendere: strategie e spunti pratici per organizzare lo studio e il ripasso, con fonti della ricerca.",
+    "summary": "Tre momenti per un ripasso consapevole: provare, verificare e tornare sugli argomenti.",
+    "section": "Guida all’apprendimento",
+    "chapter": 2,
+    "datePublished": "2026-10-09T18:00:00+02:00",
+    "dateModified": "2026-10-09T18:00:00+02:00",
+    "author": {
+      "name": "Archimede Centro Studi",
+      "type": "Organization"
+    },
+    "tags": [
+      "Metodo di studio",
+      "Memoria"
+    ],
+    "image": {
+      "path": "articolo-studiare-per-ricordare.webp",
+      "alt": "Quaderno, lente e calendario illustrano richiamare, controllare e riprendere lo studio",
+      "cardAlt": "Studiare per ricordare: quaderno, lente e calendario",
+      "width": 1774,
+      "height": 887
+    },
+    "contentFile": "studiare-per-ricordare.content.html",
+    "comments": true,
+    "featuredInResources": true,
+    "resourceSummary": "Recupero attivo, controllo degli errori e ripasso distribuito: spunti per studiare con più consapevolezza.",
+    "sidebarDescription": "Spunti per studenti, famiglie e insegnanti."
   }
 ]
