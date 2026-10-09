@@ -129,6 +129,7 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 | WhatsApp | `https://wa.me/393283861422`; conservare i messaggi precompilati pertinenti quando presenti |
 | Email | `mailto:segreteria@archimedecentrostudi.com`; oggetto coerente con consulenza/materiale se presente |
 | Telefono | `tel:+393283861422` |
+| Secondo telefono | `tel:+393292756109`; mostrarlo nei footer e nei riquadri contatti, senza usarlo per WhatsApp |
 | BuoniSpesa | `https://buonispesa.lascaux.it/` |
 
 - Non scambiare i due preventivi. Un invito a richiedere materiale va al suo modulo; i contatti restano un’alternativa. Non aggiungere un nuovo form locale che simuli un invio non configurato.

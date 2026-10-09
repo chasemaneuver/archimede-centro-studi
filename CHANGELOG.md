@@ -1,5 +1,10 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Secondo contatto telefonico
+
+- Aggiunto +39 329 275 6109 come collegamento telefonico nei footer di tutte le pagine e nei riquadri contatti di Home, Recensioni e Domande frequenti.
+- Riutilizzato il numero secondario della configurazione centrale; tutti i collegamenti WhatsApp restano sul numero del centro +39 328 386 1422.
+
 ## 9 ottobre 2026 — Correzioni mobile, servizi e media recensioni
 
 - Ridimensionato il ventaglio fotografico dei laboratori su telefono per contenerne le card inclinate.
