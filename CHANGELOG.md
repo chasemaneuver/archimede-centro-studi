@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Allineamento footer
+
+- Centrate le due colonne dei collegamenti rispetto al titolo Esplora Archimede; trattino corto nella sede legale condivisa.
+
 ## 9 ottobre 2026 — Sfondo home
 
 - Rimossa la dicitura visibile dello sfondo su richiesta; visibilità aumentata del 10% su PC e telefono.
