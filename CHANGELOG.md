@@ -1,5 +1,10 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Fondo Lezioni Circolari
+
+- Aggiunti i contributi del 5×1000 alle fonti di sostegno del progetto, su indicazione del centro, con collegamento alla pagina dedicata.
+
+
 ## 9 ottobre 2026 — FAQ e collegamenti utili
 
 - Aggiunte le domande su voucher Pescara Solidale e 5×1000, con risposte brevi e link alle pagine dedicate.
