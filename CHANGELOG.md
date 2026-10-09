@@ -1,5 +1,11 @@
 # Registro delle modifiche
 
+## 9 ottobre 2026 — Sfondo aula verde nella home
+
+- Inserita la ricostruzione generata dell’aula verde come sfondo tenue della prima sezione, con velatura e dicitura della natura illustrativa.
+- Asset WebP ottimizzato; nessuna foto privata di riferimento pubblicata. Immagine decorativa esclusa dall’Album documentario.
+
+
 ## 9 ottobre 2026 — Fondo Lezioni Circolari
 
 - Aggiunti i contributi del 5×1000 alle fonti di sostegno del progetto, su indicazione del centro, con collegamento alla pagina dedicata.
