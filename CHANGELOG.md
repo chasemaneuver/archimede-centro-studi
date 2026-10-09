@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Trustpilot Review Collector
+
+Integrato il widget ufficiale fornito dal centro nella pagina Recensioni, terzo riquadro responsive con fallback al profilo. Aggiornata privacy e documentazione; nessun punteggio Trustpilot inventato o aggiunto alla media.
+
 ## 9 ottobre 2026 — Home fotografica
 
 Prima schermata a piena altezza disponibile, foto al 75%, solo titolo e freccia alla mission. Numeri spostati sotto la foto, tre pulsanti nel riquadro conversazione. Quaderno conservato come SVG riutilizzabile.

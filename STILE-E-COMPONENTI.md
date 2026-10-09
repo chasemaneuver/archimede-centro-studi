@@ -206,3 +206,7 @@ Stesso layout delle altre schede; badge Consiglia al posto delle stelle per le r
 ## Home fotografica — 9 ottobre 2026
 
 La prima schermata mostra solo eyebrow e titolo originali sopra la foto dell’aula verde, con opacità 75% su PC e telefono e ombra nera leggera sul testo. La freccia porta a `#metodo`, dove sono collocati prima i quattro dati di Archimede, poi mission e conversazione. Tre azioni affiancate nella conversazione: WhatsApp, email e percorsi (`percorsi.html`, Tutti i servizi). Il quaderno rimosso dalla home è conservato in `quaderno-home.svg`; CSS/JS condivisi delle animazioni restano per le altre grafiche. `home-layout.css` contiene le nuove regole dedicate: gli altri sfondi conservano opacità 20% PC / 15% telefono.
+
+## Trustpilot Review Collector — 9 ottobre 2026
+
+Solo Recensioni carica il bootstrap TrustBox ufficiale HTTPS, asincrono, e il widget fornito dall’utente (template 56278e9abfbbba0bdcd568bc, businessunit 6ac9236aca514bb722fefa34). Il data-token è parte del codice pubblico del widget, non una chiave amministrativa. Tre riquadri su PC, impilati fino a 950px. Il Collector non mostra punteggio o conteggio: non inventarli né aggiungerli alla media della home. Il link nel widget è il fallback senza script. Per aggiungere un riepilogo Trustpilot usare un codice/valori verificati successivamente. Privacy aggiornata per richieste al fornitore e misurazioni del widget; FAQ ufficiali consultate dichiarano assenza di cookie e tecnologie analoghe nel TrustBox. Ricontrollare al cambio di widget.
