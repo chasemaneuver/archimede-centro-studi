@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Verifica Search Console
+
+- Inserito il tag di verifica della proprietà HTTPS per l’account del centro, su conferma dell’utente. Conservare il tag per mantenere la verifica.
+
 ## 9 ottobre 2026 — Dominio ufficiale e indicizzazione
 
 - URL SEO, canonical, sitemap e robots.txt aggiornati al dominio https://archimedecentrostudi.com/.
