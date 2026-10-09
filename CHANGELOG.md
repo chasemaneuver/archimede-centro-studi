@@ -1,3 +1,8 @@
+## 9 ottobre 2026 — Descrizione per i motori di ricerca
+
+- Aggiornate meta description e anteprima social della home con formazione, tutoraggio, ripetizioni, tirocini universitari e laboratori creativi, Pescara e modalità in presenza/online.
+- robots.txt del repository consente la scansione. La descrizione visualizzata da Google dipende dalla nuova scansione e dalla scelta dello snippet; questa pubblicazione non certifica lo stato del dominio in Search Console.
+
 ## 9 ottobre 2026 — Recensioni Facebook
 
 - 15 nuove schede Facebook nella raccolta unica, 50 schede complessive. Beatrice e Selene unite ai duplicati Google; recensione Robert Frasheri esclusa su richiesta.
