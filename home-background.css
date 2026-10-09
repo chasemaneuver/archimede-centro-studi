@@ -1,5 +1,4 @@
 .hero-classroom{position:relative;isolation:isolate;background:var(--paper)}
-.hero-classroom::before{content:"";position:absolute;inset:0;z-index:-1;background:url("./aula-verde-sfondo.webp") center 58%/cover no-repeat;opacity:.13;pointer-events:none}
+.hero-classroom::before{content:"";position:absolute;inset:0;z-index:-1;background:url("./aula-verde-sfondo.webp") center 58%/cover no-repeat;opacity:.143;pointer-events:none}
 .hero-classroom::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(250,249,245,.55),rgba(250,249,245,.1) 70%);pointer-events:none}
-.hero-image-credit{font-size:10px;line-height:1.5;color:var(--muted);margin-top:0;margin-bottom:14px;text-align:right}
-@media(max-width:780px){.hero-classroom::before{background-position:43% center;opacity:.1}.hero-image-credit{text-align:left;font-size:9px}}
+@media(max-width:780px){.hero-classroom::before{background-position:43% center;opacity:.11}}

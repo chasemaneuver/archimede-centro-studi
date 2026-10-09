@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Sfondo home
+
+- Rimossa la dicitura visibile dello sfondo su richiesta; visibilità aumentata del 10% su PC e telefono.
+
 # Registro delle modifiche
 
 ## 9 ottobre 2026 — Sfondo aula verde nella home
