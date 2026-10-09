@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Statistiche home in grassetto
+
+- Evidenziati numeri, etichette e messaggio In presenza e online / Vicini, anche a distanza nel riepilogo della home.
+
 ## 9 ottobre 2026 — Capitolo 2 della guida
 
 - Pubblicato Studiare per ricordare, con illustrazione originale, fonti, riquadro celeste e tag approvati.
