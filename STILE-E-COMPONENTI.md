@@ -198,3 +198,7 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 ## Recensioni Facebook — 9 ottobre 2026
 
 Stesso layout delle altre schede; badge Consiglia al posto delle stelle per le raccomandazioni Facebook. Schede presenti su Google e Facebook: un solo testo e due collegamenti che vanno a capo quando necessario. Tre schede per riga PC, una su telefono, Mostra altro +3. Media unica home con convenzione positiva=5/5 approvata, calcolata dal generatore senza WhatsApp e senza duplicati; media Google originale nella pagina Recensioni.
+
+## Sfondi fotografici — 9 ottobre 2026
+
+`home-background.css` centralizza gli sfondi decorativi: `.hero-classroom` per la home e `.section-photo` con varianti tematiche. Opacità foto 20% PC, 15% fino a 780px; velo chiaro separato per leggibilità. Conservare le immagini ottimizzate WebP e scegliere il ritaglio in base al contenuto. Gli sfondi non entrano nell’Album documentario né aprono popup.

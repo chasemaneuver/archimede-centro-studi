@@ -1,4 +1,9 @@
-.hero-classroom{position:relative;isolation:isolate;background:var(--paper)}
-.hero-classroom::before{content:"";position:absolute;inset:0;z-index:-1;background:url("./aula-verde-sfondo.webp") center 58%/cover no-repeat;opacity:.143;pointer-events:none}
-.hero-classroom::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(250,249,245,.55),rgba(250,249,245,.1) 70%);pointer-events:none}
-@media(max-width:780px){.hero-classroom::before{background-position:43% center;opacity:.11}}
+.hero-classroom,.section-photo{position:relative;isolation:isolate;background:var(--paper)}
+.hero-classroom::before,.section-photo::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--section-photo,url("./aula-verde-sfondo.webp")) var(--photo-position,center 58%)/cover no-repeat;opacity:.20;pointer-events:none}
+.hero-classroom::after,.section-photo::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(250,249,245,.55),rgba(250,249,245,.1) 70%);pointer-events:none}
+.photo-study{--section-photo:url("./sfondo-nero-studio.webp");--photo-position:center 62%}
+.photo-cards{--section-photo:url("./sfondo-verde-gioco.webp");--photo-position:center 65%}
+.photo-material{--section-photo:url("./sfondo-terracotta-studio.webp");--photo-position:center 60%}
+.photo-community{--section-photo:url("./sfondo-petrolio-gioco.webp");--photo-position:center 65%}
+.photo-cinema{--section-photo:url("./sfondo-blu-cinema.webp");--photo-position:center 55%}
+@media(max-width:780px){.hero-classroom::before,.section-photo::before{background-position:var(--photo-mobile-position,43% center);opacity:.15}.photo-cinema{--photo-mobile-position:28% center}.photo-material{--photo-mobile-position:55% center}}

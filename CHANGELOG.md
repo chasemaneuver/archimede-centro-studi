@@ -1,3 +1,8 @@
+## 9 ottobre 2026 — Sfondi fotografici delle sezioni
+
+- Cinque nuovi sfondi tematici WebP: studio nei Servizi e Materiale, gioco nei Laboratori e Storie, cinema nelle esperienze creative.
+- Opacità condivisa: 20% PC e 15% telefono, anche per lo sfondo esistente della home.
+
 ## 9 ottobre 2026 — Verifica Search Console
 
 - Inserito il tag di verifica della proprietà HTTPS per l’account del centro, su conferma dell’utente. Conservare il tag per mantenere la verifica.

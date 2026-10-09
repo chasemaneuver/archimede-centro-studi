@@ -11,12 +11,12 @@
   <title>Tutti i servizi · Archimede Centro Studi</title>
   <link rel="icon" href="./logo.png">
   <link rel="stylesheet" href="./styles.css?v=footer-centro-20261009">
-<link rel="stylesheet" href="./servizi-grid.css?v=20261009"><link rel="stylesheet" href="./services-illustration.css?v=20261007"><link rel="stylesheet" href="./home-motion.css?v=services-motion-20261007"><link rel="canonical" href="{{publishing.baseUrl}}percorsi.html"></head>
+<link rel="stylesheet" href="./servizi-grid.css?v=20261009"><link rel="stylesheet" href="./services-illustration.css?v=20261007"><link rel="stylesheet" href="./home-motion.css?v=services-motion-20261007"><link rel="canonical" href="{{publishing.baseUrl}}percorsi.html"><link rel="stylesheet" href="./home-background.css?v=20261009c"></head>
 <body>
   <a class="skip" href="#contenuto">Vai al contenuto</a>
   {{header}}
   <main id="contenuto">
-<section class="page-intro" aria-labelledby="page-title"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Percorsi</span></nav><div class="services-intro-grid"><div class="page-intro-copy"><span class="eyebrow">Modi diversi di imparare</span><h1 id="page-title">Il supporto giusto,<br><em>partendo da te.</em></h1><p>Dalla scuola all’università, dai concorsi ai tirocini: nove servizi per costruire il tuo percorso, con il supporto di Archimede.</p></div><div class="services-illustration review-connections"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" fill="none" role="img" aria-label="Quaderno aperto, mappa del metodo, bussola e libri: strumenti per un percorso su misura.">
+<section class="page-intro section-photo photo-study" aria-labelledby="page-title"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Percorsi</span></nav><div class="services-intro-grid"><div class="page-intro-copy"><span class="eyebrow">Modi diversi di imparare</span><h1 id="page-title">Il supporto giusto,<br><em>partendo da te.</em></h1><p>Dalla scuola all’università, dai concorsi ai tirocini: nove servizi per costruire il tuo percorso, con il supporto di Archimede.</p></div><div class="services-illustration review-connections"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" fill="none" role="img" aria-label="Quaderno aperto, mappa del metodo, bussola e libri: strumenti per un percorso su misura.">
 <defs>
 <filter id="s-shadow" x="-35%" y="-35%" width="180%" height="180%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#004a59" flood-opacity=".13" /></filter>
 <pattern id="s-grid" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M18 0H0V18" stroke="#004a59" stroke-opacity=".075" stroke-width=".8" /></pattern>
