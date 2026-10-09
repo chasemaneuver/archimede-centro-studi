@@ -6,7 +6,8 @@ import build_site as site
 class SharedSourcesTests(unittest.TestCase):
     def test_current_pages_match_sources(self):
         output = site.generate()
-        self.assertEqual(len([p for p in output if p.endswith('.html')]), 14)
+        self.assertIn('index.html', output)
+        self.assertTrue(all(p.endswith('.html') for p in output if p != 'sitemap.xml' and p not in {'google-reviews.json','all-reviews.json'}))
         for name, text in output.items():
             with self.subTest(page=name):
                 self.assertEqual((site.ROOT/name).read_text(encoding='utf-8'), text)
@@ -64,5 +65,7 @@ class SharedSourcesTests(unittest.TestCase):
         config=copy.deepcopy(site.load_config())
         config['navigation'][0]['links'][0]['url']='./pagina-inesistente.html'
         with self.assertRaises(ValueError): site.generate(config=config)
+
+from test_editorial import EditorialTests
 
 if __name__=='__main__': unittest.main()

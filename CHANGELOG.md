@@ -146,3 +146,7 @@
 ## 2026-10-09 — Fonti condivise, prima fase
 
 Centralizzati contatti, preventivi distinti, menu/footer e riepilogo Google in `site-data.json`; estratti componenti comuni e modelli HTML leggibili. Aggiunto generatore Python senza dipendenze, controlli di sincronizzazione e regressione, workflow Pages per pubblicare solo i file statici generati. Layout, testi approvati, recensioni individuali e animazioni conservati. Articoli/eventi restano nella fase successiva. Aggiornate le istruzioni per tutte le modifiche future.
+
+## 2026-10-09 — Fonti editoriali e modelli, seconda fase
+
+Separati dati e corpi di articoli/eventi dai modelli comuni. Generati archivi, tag anche composti, schede Risorse e richiami opzionali ai laboratori, minuti di lettura, metadati e sitemap. Conservati articolo originale, immagini/tag, slug commenti e presentazione Pescara Solidale; conteggio parole dell’articolo corretto a 336, lettura ancora 2 minuti. Aggiunti test per nuove pubblicazioni e dati incoerenti; documentate fonti e passaggi Supabase ancora necessari per nuovi slug. Nessun contenuto di prova pubblicato.

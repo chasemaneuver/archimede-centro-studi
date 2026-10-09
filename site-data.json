@@ -168,5 +168,8 @@
   "addresses": {
     "display1": "Strada Comunale Piana 21/1 — 65129 Pescara",
     "display2": "Strada comunale piana, 21"
+  },
+  "publishing": {
+    "baseUrl": "https://chasemaneuver.github.io/archimede-centro-studi/"
   }
 }

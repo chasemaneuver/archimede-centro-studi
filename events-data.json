@@ -5,6 +5,16 @@
     "end": "2026-12-31",
     "url": "pescara-solidale.html",
     "image": "pescara-solidale-locandina.jpg",
-    "desc": "Attività socioeducative nel catalogo comunale 2026. Il voucher deve essere già attivo."
+    "desc": "Attività socioeducative nel catalogo comunale 2026. Il voucher deve essere già attivo.",
+    "layout": "existing",
+    "status": "current",
+    "contentFile": "pescara-solidale-2026.content.html",
+    "eyebrow": "Nessuno cresce da solo",
+    "titleFirst": "Crescere, imparare.",
+    "titleEmphasis": "Insieme.",
+    "intro": "Archimede Centro Studi APS ETS aderisce a Pescara Solidale 2026 come erogatore di attività socioeducative.",
+    "description": "Servizi Archimede nel catalogo Pescara Solidale 2026 e guida pratica all’utilizzo del voucher socioeducativo.",
+    "structuredName": "Pescara Solidale 2026: attività Archimede",
+    "structuredDescription": "Attività socioeducative Archimede nel programma Pescara Solidale 2026, guida per i beneficiari con voucher già attivo."
   }
 ]

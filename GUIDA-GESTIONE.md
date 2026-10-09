@@ -36,7 +36,7 @@ Puoi usare un messaggio più breve in questa chat; il prompt completo è utile p
 
 **Codex si occupa di:**
 
-- Usare `stili-di-apprendimento.html` come modello: titolo originale, corsivo/evidenziatore nello stile del sito, immagine, testo leggibile, data, autore, tag, condivisione e commenti.
+- Usare il modello comune `article.html.in`, con dati in `articles-data.json` e corpo in `slug.content.html`: titolo originale, corsivo/evidenziatore nello stile del sito, immagine, testo leggibile, data, autore, tag, condivisione e commenti.
 - Calcolare i minuti di lettura sul testo finale e mantenerli coerenti con la scheda nell’archivio.
 - Creare un URL stabile e aggiungere la scheda in `articoli.html`. Guide, articoli e news appartengono a questo archivio; ogni nuovo articolo non richiede un pulsante nel menu.
 - Collegare il contenuto da `risorse.html` quando è una risorsa gratuita, oppure dalla pagina pertinente.
@@ -65,7 +65,7 @@ Se Codex non ha accesso amministrativo al progetto, prepara il comando e il prop
 **Codex si occupa di:**
 
 - Creare una sezione o scheda nella pagina pertinente, ad esempio `laboratori-creativi.html`. Per molti dettagli, creare una pagina dedicata e collegarla dai laboratori.
-- Aggiungere sempre l’iniziativa in `eventi.html` e aggiornare `events-data.json` con URL, immagine, descrizione e data reale di conclusione. Il JSON non rigenera l’HTML.
+- Aggiungere sempre l’iniziativa in `eventi.html` e aggiornare `events-data.json` con URL, immagine, descrizione e data reale di conclusione. Il generatore rigenera l’archivio e le pagine dalle fonti editoriali, come documentato nella fase 2.
 - Inserire locandina e foto nell’Album; aggiornare le gallerie dei laboratori dove pertinente.
 - Curare SEO, anteprima social e sitemap. Usare dati strutturati `Event` per eventi con informazioni reali adatte a quello schema; non inventare date per servizi continuativi.
 - Controllare iscrizioni, date e collegamenti prima della pubblicazione.
@@ -210,4 +210,34 @@ Il solo caricamento di una foto o la sola modifica di un JSON non aggiorna tutte
 - Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
 - `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
 - Aggiungendo una pagina, creare il relativo `nome.html.in` con `{{header}}` e `{{footer}}`, inserirla dove pertinente in navigazione/footer, rigenerare e aggiornare sitemap e archivi. Gli URL pubblici, il JavaScript, i CSS e le animazioni rimangono quelli esistenti.
-- Articoli, eventi e relative raccolte non sono ancora migrati a un nuovo modello dati: questa è la prima fase della centralizzazione. Nessun servizio esterno o cookie nuovo.
+- Articoli ed eventi sono ora generati dalle fonti editoriali: vedere la fase 2 sotto. Nessun servizio esterno o cookie nuovo.
+
+## Modelli editoriali e archivi automatici — fase 2 (9 ottobre 2026)
+
+I contenuti restano statici e approvati da Archimede Regia. Articoli ed eventi ora vengono generati da fonti separate dall’impaginazione, senza nuovi servizi esterni.
+
+### Pubblicare o aggiornare un articolo
+
+1. Inserire il record in `articles-data.json`. L’articolo esistente documenta tutti i campi: slug/URL stabile, titolo visibile diviso in `titleFirst`/`titleEmphasis`, titolo SEO, descrizione e sintesi, sezione/capitolo, date ISO con fuso, autore, tag e immagine (file, alt, larghezza/altezza).
+2. Scrivere il corpo in `slug.content.html`: paragrafi, elenchi, citazioni, fonti e immagini editoriali, senza header/footer, metadati, sidebar o modulo commenti. I file HTML di contenuto sono fonti revisionate, non importazioni automatiche da paper o pagine web. Il modello può usare segnaposto immagine `{{article.imageUrl}}`, `{{article.imageAlt}}`, `{{article.imageWidth}}` e `{{article.imageHeight}}`.
+3. `article.html.in` è il layout comune; `article-comments.html.in` il modulo condiviso; `article-card.html.in` e `resource-card.html.in` generano le anteprime. Il vecchio `stili-di-apprendimento.html.in` è soltanto un segnaposto di compatibilità: modificare i dati e il corpo, non quel file. Un nuovo articolo non necessita di un nuovo modello di pagina.
+4. La generazione aggiorna pagina, scheda Articoli, filtri e link dei tag (anche tag con spazi), minuti di lettura, canonical/anteprima social, dati `BlogPosting` e sitemap. `featuredInResources: true` aggiunge anche la scheda a Risorse gratuite; `resourceSummary` consente una sintesi dedicata. Il calcolo usa 200 parole/minuto, arrotondato per eccesso, minimo un minuto; esclude menu, commenti e sidebar.
+5. `comments: true` mantiene il servizio Supabase e usa lo slug del record. Per nuovi slug resta necessario l’inserimento in `article_comment_pages` descritto nella sezione commenti: il generatore non scrive nel database. `comments: false` omette il modulo e i suoi script. Non cambiare lo slug di un articolo già commentato senza migrare i relativi collegamenti.
+
+L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag, autore e fonti. Regia revisiona e converte questi contenuti nelle fonti sopra; l’utente può continuare a inviare bozze senza scrivere JSON o HTML. Le foto nuove richiedono ancora ottimizzazione e aggiornamento dell’Album: la generazione editoriale non deduplica automaticamente le immagini.
+
+### Pubblicare o aggiornare un evento
+
+1. Inserire il record in `events-data.json`: slug, URL, titolo, conclusione `end` in formato `YYYY-MM-DD`, locandina `image`, sintesi `desc` e file del corpo `contentFile`. Per una pagina nuova usare `layout: "standard"`: `event-page.html.in` genera titolo, locandina, testo, eventuale link iscrizioni, metadati e navigazione. Si possono fornire `titleFirst`, `titleEmphasis`, `eyebrow`, `intro`, `description` e `tags`.
+2. `status` può essere `current`, `upcoming`, `past` o `cancelled`. I record conclusi/annullati sono inseriti nell’archivio storico; le iscrizioni della pagina standard non vengono mostrate per questi stati. Nel browser resta il passaggio automatico alle esperienze concluse dopo `end`, con data italiana. Questo non chiude autonomamente iscrizioni esterne né riscrive i testi delle pagine.
+3. `featuredInLabs: true` genera una scheda nella pagina Laboratori creativi per iniziative non concluse/annullate. Impostando `status: "past"` il richiamo viene tolto dai laboratori, ma pagina e scheda storica restano accessibili. Alla chiusura controllare comunque testi, locandine e iscrizioni esterne.
+4. Per pagine specifiche, come Pescara Solidale, `layout: "existing"` conserva il modello dedicato `pescara-solidale.html.in`; i testi delle sezioni sono in `pescara-solidale-2026.content.html`. Titolo SEO, sintesi archivio, immagine, data finale e dati della presentazione provengono dal record. Le altre scadenze e istruzioni del voucher restano contenuto da verificare con le fonti ufficiali.
+5. `Event` viene generato solo quando sono fornite data iniziale `startDate` e `location` reali; `endDate` è opzionale, altrimenti viene usata `end`. Un programma noto soltanto per la data finale conserva dati `WebPage`. Non inventare date, luogo, prezzi o disponibilità per completare lo schema. Eventi annullati dichiarano `EventCancelled`. Riferimenti: https://schema.org/Event e https://schema.org/BlogPosting.
+
+### Generazione e pubblicazione
+
+- Eseguire `python build_site.py`, poi `python -m unittest test_build_site.py` e `python build_site.py --check`. Il workflow esistente esegue anche i nuovi test editoriali tramite la suite principale.
+- La sitemap viene generata dalle pagine effettive; per gli articoli usa la data di modifica dichiarata. `publishing.baseUrl` in `site-data.json` centralizza il prefisso degli URL SEO/condivisione, mantenendo il valore già approvato.
+- Nessuna scheda vuota viene pubblicata come esempio. I test dei nuovi articoli/eventi usano contenuti di prova soltanto in memoria.
+- Fonti JSON editoriali, corpi `.content.html`, modelli e script Python non entrano nell’artefatto pubblico `_site`; il visitatore riceve le pagine complete.
+- Questa fase completa i modelli articolo/evento. Gallerie fotografiche e testi delle recensioni mantengono le procedure di aggiornamento documentate.

@@ -12,7 +12,7 @@
   <link rel="icon" href="./logo.png">
   <link rel="stylesheet" href="./styles.css?v=archivio-20261007">
 <link rel="stylesheet" href="./home-motion.css?v=gallery-20261007">
-<link rel="canonical" href="https://chasemaneuver.github.io/archimede-centro-studi/index.html"></head>
+<link rel="canonical" href="{{publishing.baseUrl}}index.html"></head>
 <body>
   <a class="skip" href="#contenuto">Vai al contenuto</a>
   {{header}}

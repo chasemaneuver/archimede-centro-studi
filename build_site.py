@@ -9,13 +9,14 @@ import copy
 import json
 import re
 import shutil
+import editorial
 
 ROOT = Path(__file__).resolve().parent
 TOKEN = re.compile(r'\{\{([A-Za-z][A-Za-z0-9_.]*)\}\}')
 MONTHS = ('gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre').split()
 
 def public_asset(path):
-    return path.name != 'site-data.json' and (path.suffix.lower() in {
+    return path.name not in {'site-data.json','articles-data.json','events-data.json'} and (path.suffix.lower() in {
         '.css','.js','.svg','.png','.jpg','.jpeg','.webp','.gif','.pdf','.json','.woff','.woff2','.ico','.xml'
     } or path.name in {'robots.txt','CNAME','.nojekyll'})
 
@@ -40,7 +41,7 @@ def values_for(config):
         match = re.fullmatch(r'\+39([0-9]{3})([0-9]{3})([0-9]{4})',number)
         data['contacts'][label_key] = '+39 ' + ' '.join(match.groups()) if match else number
     values = {}
-    for section in ('contacts', 'links', 'google', 'addresses'):
+    for section in ('contacts', 'links', 'google', 'addresses', 'publishing'):
         for key, value in data[section].items():
             values[section + '.' + key] = escape(str(value), quote=True)
     def link(item):
@@ -75,16 +76,20 @@ def render(template, values):
         raise ValueError('Segnaposto irrisolto nel modello.')
     return result
 
-def generate(root=ROOT, config=None):
+def generate(root=ROOT, config=None, articles=None, events=None):
     config = load_config(root) if config is None else config
     values = values_for(config)
     for component in ('header', 'footer'):
         values[component] = render((root / (component + '.html.in')).read_text(encoding='utf-8'), values)
-    output = {}
+    articles = editorial.read_records(root,'articles-data.json') if articles is None else articles
+    events = editorial.read_records(root,'events-data.json') if events is None else events
+    output, page_values, archive_values = editorial.prepare(root,config,values,render,articles,events)
+    values.update(archive_values)
     for source in sorted(root.glob('*.html.in')):
-        if source.name in ('header.html.in', 'footer.html.in'):
+        if source.name in {'header.html.in', 'footer.html.in'} | editorial.TEMPLATES:
             continue
-        output[source.name[:-3]] = render(source.read_text(encoding='utf-8'), values)
+        name=source.name[:-3]
+        output[name] = render(source.read_text(encoding='utf-8'), dict(values,**page_values.get(name,{})))
     if not output:
         raise ValueError('Nessuna pagina sorgente trovata.')
     for filename, fields in [('google-reviews.json', ('checkedAt', 'rating', 'count')),
@@ -95,6 +100,7 @@ def generate(root=ROOT, config=None):
             data[target] = config['google'][key]
         # Leave individual reviews untouched; avoid a formatting-only diff on first migration.
         output[filename] = original if json.loads(original) == data else json.dumps(data, ensure_ascii=False, indent=2) + '\n'
+    output['sitemap.xml'] = editorial.sitemap(root,output,config,articles,events)
     validate(output, root)
     return output
 
@@ -163,7 +169,7 @@ def main():
         else: path.write_text(text, encoding='utf-8')
     if stale:
         parser.exit(1, 'Output non aggiornati: ' + ', '.join(stale) + '\nEseguire python build_site.py\n')
-    print(f'OK: {len(output)-2} pagine, link locali e riepilogo Google verificati.')
+    print(f'OK: {sum(name.endswith(".html") for name in output)} pagine, dati editoriali, link e riepilogo Google verificati.')
 
 if __name__ == '__main__':
     main()

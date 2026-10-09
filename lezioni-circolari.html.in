@@ -12,7 +12,7 @@
   <link rel="icon" href="./logo.png">
   <link rel="stylesheet" href="./styles.css?v=archivio-20261007">
 <link rel="stylesheet" href="./home-motion.css?v=circular-20261007">
-<link rel="canonical" href="https://chasemaneuver.github.io/archimede-centro-studi/lezioni-circolari.html"></head>
+<link rel="canonical" href="{{publishing.baseUrl}}lezioni-circolari.html"></head>
 <body>
   <a class="skip" href="#contenuto">Vai al contenuto</a>
   {{header}}
