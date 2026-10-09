@@ -56,6 +56,9 @@ def values_for(config):
     checked = date.fromisoformat(google['checkedAt'])
     google['ratingLabel'] = f"{google['rating']:.1f}".replace('.', ',')
     google['checkedLabel'] = f'{checked.day} {MONTHS[checked.month - 1]} {checked.year}'
+    if 'facebook' in data:
+        fb_checked = date.fromisoformat(data['facebook']['checkedAt'])
+        data['facebook']['checkedLabel'] = f'{fb_checked.day} {MONTHS[fb_checked.month - 1]} {fb_checked.year}'
     data['contacts']['whatsapp'] = 'https://wa.me/' + data['contacts']['phone'].lstrip('+')
     for number_key, label_key in [('phone','phoneLabel'),('secondaryPhone','secondaryPhoneLabel')]:
         number = data['contacts'][number_key]

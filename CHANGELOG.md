@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Riepiloghi recensioni
+
+- Google e Facebook affiancati con stesso stile e divisore grigio; su telefono impilati con separatore orizzontale.
+
 ## 9 ottobre 2026 — Sfondi fotografici delle sezioni
 
 - Cinque nuovi sfondi tematici WebP: studio nei Servizi e Materiale, gioco nei Laboratori e Storie, cinema nelle esperienze creative.

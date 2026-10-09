@@ -1,0 +1,6 @@
+.review-platforms{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin:24px 0 28px;border-bottom:1px solid #dedfd9;padding:26px 0;gap:32px}
+.review-collection .review-platforms .platform-summary{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin:0;padding:0;border:0;min-width:0}
+.review-platforms .platform-summary+ .platform-summary{border-left:1px solid #c9ccc8;padding-left:32px}
+.review-platforms .platform-summary>div{flex:none;max-width:100%}
+.review-platforms .text-link{font-size:14px;line-height:1.6}
+@media(max-width:680px){.review-platforms{grid-template-columns:1fr;gap:22px}.review-platforms .platform-summary+ .platform-summary{border-left:0;border-top:1px solid #c9ccc8;padding-left:0;padding-top:22px}}
