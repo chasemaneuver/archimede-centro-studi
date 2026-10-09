@@ -194,3 +194,7 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 - `organization` in `site-data.json` contiene denominazione, CF e dicitura RUNTS confermati dall’utente. Sede legale confermata: Strada Comunale Piana 21, 65129 Pescara (PE). Non inventare estremi del registro.
 - Il footer mostra questi dati senza cifre delle entrate. Esplora Archimede è centrato sopra due colonne di link che mantengono l’ordine di lettura; su telefono i blocchi si impilano.
 - L’iscrizione RUNTS non equivale da sola all’accreditamento al 5×1000: prima di pubblicare un invito verificare l’accreditamento pertinente. Gli eventuali adempimenti di trasparenza vanno valutati annualmente; questa modifica non li certifica.
+
+## Recensioni Facebook — 9 ottobre 2026
+
+Stesso layout delle altre schede; badge Consiglia al posto delle stelle per le raccomandazioni Facebook. Schede presenti su Google e Facebook: un solo testo e due collegamenti che vanno a capo quando necessario. Tre schede per riga PC, una su telefono, Mostra altro +3. Media unica home con convenzione positiva=5/5 approvata, calcolata dal generatore senza WhatsApp e senza duplicati; media Google originale nella pagina Recensioni.

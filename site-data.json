@@ -188,5 +188,12 @@
     "registerLabel": "Iscritta al RUNTS",
     "fivePerMilleYear": 2026,
     "fivePerMilleCheckedAt": "2026-10-09"
+  },
+  "facebook": {
+    "url": "https://www.facebook.com/archimedecentrostudi/reviews",
+    "positivePercent": 100,
+    "count": 18,
+    "checkedAt": "2026-10-09",
+    "positiveRatingConvention": 5
   }
 }

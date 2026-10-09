@@ -1,3 +1,9 @@
+## 9 ottobre 2026 — Recensioni Facebook
+
+- 15 nuove schede Facebook nella raccolta unica, 50 schede complessive. Beatrice e Selene unite ai duplicati Google; recensione Robert Frasheri esclusa su richiesta.
+- Home: media calcolata dalle schede Google e Facebook uniche, convenzione positiva Facebook = 5/5 approvata. WhatsApp escluso dal calcolo; dati Google originali conservati.
+- Tag approvati, link Facebook, conteggi aggiornati e test di calcolo/pesi senza doppioni.
+
 ## 9 ottobre 2026 — Allineamento footer
 
 - Centrate le due colonne dei collegamenti rispetto al titolo Esplora Archimede; trattino corto nella sede legale condivisa.

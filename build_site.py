@@ -23,6 +23,29 @@ def public_asset(path):
 def load_config(root=ROOT):
     return json.loads((root / 'site-data.json').read_text(encoding='utf-8'))
 
+def overall_rating(records, positive_value):
+    """One vote per unique card; WhatsApp stars are decorative, not ratings."""
+    if positive_value != 5:
+        raise ValueError('Convenzione Facebook non approvata.')
+    votes = []
+    for record in records:
+        if record['kind'] == 'google':
+            vote = record['rating']
+        elif record['kind'] == 'facebook' and record.get('recommended') is True:
+            vote = positive_value
+        elif record['kind'] == 'facebook':
+            raise ValueError('Raccomandazione Facebook senza convenzione applicabile.')
+        else:
+            continue
+        if not 0 <= vote <= 5:
+            raise ValueError('Voto non valido nella raccolta.')
+        votes.append(vote)
+    if not votes:
+        raise ValueError('Nessun voto per il riepilogo complessivo.')
+    rating = sum(votes) / len(votes)
+    return {'rating': rating, 'maximum': 5, 'count': len(votes),
+            'ratingLabel': f'{rating:.1f}'.replace('.', ',')}
+
 def values_for(config):
     data = copy.deepcopy(config)
     google = data['google']
@@ -41,7 +64,9 @@ def values_for(config):
         match = re.fullmatch(r'\+39([0-9]{3})([0-9]{3})([0-9]{4})',number)
         data['contacts'][label_key] = '+39 ' + ' '.join(match.groups()) if match else number
     values = {}
-    for section in ('contacts', 'links', 'google', 'addresses', 'publishing', 'organization'):
+    for section in ('contacts', 'links', 'google', 'addresses', 'publishing', 'organization', 'facebook'):
+        if section not in data:
+            continue
         for key, value in data[section].items():
             values[section + '.' + key] = escape(str(value), quote=True)
     def link(item):
@@ -79,6 +104,10 @@ def render(template, values):
 def generate(root=ROOT, config=None, articles=None, events=None):
     config = load_config(root) if config is None else config
     values = values_for(config)
+    if 'facebook' in config:
+        records = json.loads((root / 'all-reviews.json').read_text(encoding='utf-8'))['reviews']
+        overall = overall_rating(records, config['facebook']['positiveRatingConvention'])
+        values.update({'overall.' + key: escape(str(value), quote=True) for key,value in overall.items()})
     for component in ('header', 'footer'):
         values[component] = render((root / (component + '.html.in')).read_text(encoding='utf-8'), values)
     articles = editorial.read_records(root,'articles-data.json') if articles is None else articles

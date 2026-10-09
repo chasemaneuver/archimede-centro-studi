@@ -4,6 +4,17 @@ import unittest
 import build_site as site
 
 class SharedSourcesTests(unittest.TestCase):
+    def test_overall_rating_counts_unique_rated_cards_only(self):
+        records = [{'kind':'google','rating':4,'additionalSources':[{'kind':'facebook'}]},
+                   {'kind':'facebook','recommended':True},
+                   {'kind':'manual','rating':5}]
+        result = site.overall_rating(records,5)
+        self.assertEqual(result['count'],2)
+        self.assertEqual(result['rating'],4.5)
+        self.assertEqual(result['ratingLabel'],'4,5')
+        with self.assertRaises(ValueError):
+            site.overall_rating([{'kind':'facebook','recommended':False}],5)
+
     def test_current_pages_match_sources(self):
         output = site.generate()
         self.assertIn('index.html', output)
@@ -34,8 +45,12 @@ class SharedSourcesTests(unittest.TestCase):
         config = copy.deepcopy(site.load_config())
         config['google'].update(rating=4.8, count=31, checkedAt='2026-11-02')
         output = site.generate(config=config)
-        self.assertIn('4,8/5', output['index.html'])
-        self.assertIn('data-count="4.8"', output['index.html'])
+        # Google platform metadata must not replace the distinct overall score.
+        records=json.loads((site.ROOT/'all-reviews.json').read_text(encoding='utf-8'))['reviews']
+        overall=site.overall_rating(records,5)
+        self.assertIn(overall['ratingLabel']+'/5', output['index.html'])
+        self.assertIn('data-count="'+str(overall['rating'])+'"', output['index.html'])
+        self.assertIn('4,8', output['recensioni.html'])
         self.assertIn('31 recensioni', output['recensioni.html'])
         self.assertIn('2 novembre 2026', output['recensioni.html'])
         self.assertEqual(json.loads(output['google-reviews.json'])['rating'],4.8)
