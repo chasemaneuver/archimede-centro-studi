@@ -1,3 +1,7 @@
+## 9 ottobre 2026 — Home fotografica
+
+Prima schermata a piena altezza disponibile, foto al 75%, solo titolo e freccia alla mission. Numeri spostati sotto la foto, tre pulsanti nel riquadro conversazione. Quaderno conservato come SVG riutilizzabile.
+
 # 9 ottobre 2026 — Badge recensioni
 
 Aggiunti badge «Lascia una recensione» sotto i riepiloghi Google Maps e Facebook, con link esterni alle rispettive recensioni e stile/accessibilità condivisi.

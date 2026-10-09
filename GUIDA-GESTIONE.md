@@ -265,3 +265,7 @@ Nessuna firma visibile; mantenere autore organizzazione nei metadati SEO. Usare 
 ## Badge per lasciare recensioni
 
 I badge personalizzati sotto i riepiloghi Google e Facebook sono link statici, senza SDK o widget esterni. Usano gli URL centralizzati `google.url` e `facebook.url` in `site-data.json`: aprono le pagine recensioni, dove il visitatore può scrivere il proprio contributo (la piattaforma può richiedere accesso). Stile comune in `review-platforms.css`. Per Trustpilot attendere il profilo e il codice/badge forniti dal centro.
+
+## Home fotografica — 9 ottobre 2026
+
+La prima schermata mostra solo eyebrow e titolo originali sopra la foto dell’aula verde, con opacità 75% su PC e telefono e ombra nera leggera sul testo. La freccia porta a `#metodo`, dove sono collocati prima i quattro dati di Archimede, poi mission e conversazione. Tre azioni affiancate nella conversazione: WhatsApp, email e percorsi (`percorsi.html`, Tutti i servizi). Il quaderno rimosso dalla home è conservato in `quaderno-home.svg`; CSS/JS condivisi delle animazioni restano per le altre grafiche. `home-layout.css` contiene le nuove regole dedicate: gli altri sfondi conservano opacità 20% PC / 15% telefono.

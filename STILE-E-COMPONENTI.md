@@ -202,3 +202,7 @@ Stesso layout delle altre schede; badge Consiglia al posto delle stelle per le r
 ## Sfondi fotografici — 9 ottobre 2026
 
 `home-background.css` centralizza gli sfondi decorativi: `.hero-classroom` per la home e `.section-photo` con varianti tematiche. Opacità foto 20% PC, 15% fino a 780px; velo chiaro separato per leggibilità. Conservare le immagini ottimizzate WebP e scegliere il ritaglio in base al contenuto. Gli sfondi non entrano nell’Album documentario né aprono popup.
+
+## Home fotografica — 9 ottobre 2026
+
+La prima schermata mostra solo eyebrow e titolo originali sopra la foto dell’aula verde, con opacità 75% su PC e telefono e ombra nera leggera sul testo. La freccia porta a `#metodo`, dove sono collocati prima i quattro dati di Archimede, poi mission e conversazione. Tre azioni affiancate nella conversazione: WhatsApp, email e percorsi (`percorsi.html`, Tutti i servizi). Il quaderno rimosso dalla home è conservato in `quaderno-home.svg`; CSS/JS condivisi delle animazioni restano per le altre grafiche. `home-layout.css` contiene le nuove regole dedicate: gli altri sfondi conservano opacità 20% PC / 15% telefono.
