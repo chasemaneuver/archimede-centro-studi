@@ -240,3 +240,6 @@ Separati dati e corpi di articoli/eventi dai modelli comuni. Generati archivi, t
 
 ## 9 ottobre 2026 — Titolo home più marcato
 Titolo molto grande e spesso, bianco/arancione; ombra nera intensa anche su sottotitolo e freccia, con adattamento mobile.
+
+## 10 ottobre 2026 — Loghi
+Rimosso dalla pagina Pescara Solidale il logo del Comune su richiesta del centro; i riferimenti informativi al programma rimangono. Nella pagina 5×1000 inserito logo grafico originale Archimede in SVG, non un marchio istituzionale. Stile dedicato in support-logos.css. Non reintrodurre lo stemma senza conferma del centro.
