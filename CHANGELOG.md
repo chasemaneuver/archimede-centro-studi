@@ -252,3 +252,6 @@ Google: 28 recensioni, media visualizzata 5,0. Trustpilot: 4 recensioni a 5 stel
 
 ## 11 ottobre 2026 — Stelle riepilogo Trustpilot
 Aggiunte stelle accanto al TrustScore, nello stile Google. Riempimento proporzionale al valore centralizzato, senza alterare punteggio o media home. Riepilogo Google con massimo /5 esplicito.
+
+## 11 ottobre 2026 — Footer
+Rimosso il collegamento Collaborazioni dal footer condiviso su richiesta del centro.
