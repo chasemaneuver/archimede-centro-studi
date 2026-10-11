@@ -13,7 +13,10 @@
     "tiktok": "https://www.tiktok.com/@archimedecentrostudi",
     "collaborations": "https://archimedecentrostudi.com/legal/",
     "fivePerMilleOfficial": "https://www.lavoro.gov.it/temi-e-priorita/terzo-settore-e-responsabilita-sociale-delle-imprese/focus/cinque-mille/pagine/anno-2026",
-    "fivePerMilleInstructions": "https://infoprecompilata.agenziaentrate.gov.it/portale/otto-cinque-e-due-per-mille"
+    "fivePerMilleInstructions": "https://infoprecompilata.agenziaentrate.gov.it/portale/otto-cinque-e-due-per-mille",
+    "googleWriteReview": "https://g.page/r/CUL8BahqcypPEBM/review",
+    "trustpilotWriteReview": "https://it.trustpilot.com/evaluate/archimedecentrostudi.com",
+    "facebookWriteReview": "https://www.facebook.com/archimedecentrostudi/reviews"
   },
   "google": {
     "rating": 5,
@@ -192,7 +195,7 @@
     "positiveRatingConvention": 5
   },
   "trustpilot": {
-    "trustScore": 4,
+    "trustScore": 4.0,
     "count": 4,
     "checkedAt": "2026-10-11",
     "url": "https://it.trustpilot.com/review/archimedecentrostudi.com"
