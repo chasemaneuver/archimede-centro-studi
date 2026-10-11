@@ -50,8 +50,8 @@
 @media(max-width:680px){.story-note.motion-reveal.motion-pending{translate:16px 32px;rotate:5deg}}
 @media(prefers-reduced-motion:reduce){.story-note.motion-reveal.motion-pending,.story-note.motion-reveal:not(.motion-pending){opacity:1;translate:none;rotate:0deg;transition:none}}
 
-/* Water is animated as one continuous motion around a fixed SVG origin. */
-.assembly-enter .water-shape{animation:none;opacity:1;translate:none;rotate:0deg;scale:1;transform-box:view-box;transform-origin:0 0}
+/* Class A and B backgrounds stay in their final shape throughout assembly. */
+.assembly-ready .assembly-backdrop,.assembly-enter .assembly-backdrop,.assembly-ready .water-shape,.assembly-enter .water-shape{animation:none;opacity:1;translate:none;rotate:0deg;scale:1;transform-box:view-box;transform-origin:0 0}
 /* Compact contact actions and an automatically scrolling photo strip. */
 .mission-contact .mission-contact-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mission-contact .mission-contact-buttons .button{padding:12px 13px;font-size:12px;gap:7px;min-width:0;justify-content:center}
