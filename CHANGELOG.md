@@ -259,3 +259,7 @@ Rimosso il collegamento Collaborazioni dal footer condiviso su richiesta del cen
 ## 11 ottobre 2026 — Link per scrivere recensioni
 
 Separati i link di lettura dai badge di scrittura: Google e Trustpilot usano i rispettivi moduli, Facebook apre la sezione recensioni/raccomandazioni della pagina. Widget Trustpilot ufficiale conservato con fallback al modulo di valutazione.
+
+## 11 ottobre 2026 — Sfondo grafico statico
+
+Rimosso il morphing acquatico della bolla verde acqua in entrambe le classi di grafiche. Lo sfondo resta nella forma finale anche prima dell’ingresso degli altri elementi; conservate ricomposizione, stelle, orbite e interazioni. Regole aggiornate in STILE-E-COMPONENTI.md.
