@@ -275,3 +275,7 @@ Sostituite le nove foto con librerie a tutta parete, schemi, aula rossa, libri c
 
 ## 11 ottobre 2026 - Foto concorsi scelta dal centro
 Sostituita la copertina Preparazione concorsi con immagine fornita dall’utente. Stile e contenuto conservati.
+
+
+## 11 ottobre 2026 - Quaderno nelle risorse gratuite
+Recuperata la grafica originale della home a destra del titolo di Risorse, sotto al testo su telefono. Animazioni condivise e bolla statica; preservati i link interni della pagina.
