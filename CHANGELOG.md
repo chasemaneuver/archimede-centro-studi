@@ -263,3 +263,7 @@ Separati i link di lettura dai badge di scrittura: Google e Trustpilot usano i r
 ## 11 ottobre 2026 — Sfondo grafico statico
 
 Rimosso il morphing acquatico della bolla verde acqua in entrambe le classi di grafiche. Lo sfondo resta nella forma finale anche prima dell’ingresso degli altri elementi; conservate ricomposizione, stelle, orbite e interazioni. Regole aggiornate in STILE-E-COMPONENTI.md.
+
+## 11 ottobre 2026 — Copertine fotografiche servizi
+
+Semplificato il fronte delle nove schede con foto tematiche, filtro scuro, titolo bianco bold e tag superiore. Retro e interazioni esistenti conservati.

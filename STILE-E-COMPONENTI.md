@@ -217,3 +217,7 @@ Rimosso dalla pagina Pescara Solidale il logo del Comune su richiesta del centro
 
 ## Organizzazione del repository — 11 ottobre 2026
 Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/images/`, CSS in `assets/css/`, JavaScript in `assets/js/`, note sulle immagini in `docs/`. Le menzioni storiche di nomi senza cartella vanno risolte in queste directory. I JSON, gli script Python, i test e gli HTML generati restano in radice. `layout.py` mantiene gli URL pubblici dei file invariati copiando gli asset nella radice del sito generato. Non inserire i prefissi delle cartelle sorgente negli URL HTML/CSS/JS: ad esempio `assets/images/logo.png` resta pubblicato come `./logo.png`. Per anteprime compilare con `python build_site.py --output-dir _site` e servire `_site`, non la radice del repository. I comandi di build e test restano invariati. `archivio/` non viene pubblicato.
+
+## Copertine servizi — 11 ottobre 2026
+
+Nove fotografie tematiche in WebP, decorative, con oscuramento CSS e gradiente più intenso nella fascia superiore. Sul fronte solo titolo bianco bold in alto a sinistra e piccolo tag in alto a destra. Le descrizioni rimangono nel retro e gli ID dei servizi e i controlli accessibili restano invariati. Le immagini editoriali generate non entrano nell’Album documentario; provenienza conservata nelle note interne in docs/.
