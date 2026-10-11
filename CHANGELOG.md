@@ -255,3 +255,7 @@ Aggiunte stelle accanto al TrustScore, nello stile Google. Riempimento proporzio
 
 ## 11 ottobre 2026 — Footer
 Rimosso il collegamento Collaborazioni dal footer condiviso su richiesta del centro.
+
+## 11 ottobre 2026 — Link per scrivere recensioni
+
+Separati i link di lettura dai badge di scrittura: Google e Trustpilot usano i rispettivi moduli, Facebook apre la sezione recensioni/raccomandazioni della pagina. Widget Trustpilot ufficiale conservato con fallback al modulo di valutazione.
