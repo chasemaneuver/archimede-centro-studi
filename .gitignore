@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+_site/
+_baseline_cleanup/
+_verify_cleanup/
+_test_layout_*/

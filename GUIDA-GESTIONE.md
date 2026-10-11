@@ -36,7 +36,7 @@ Puoi usare un messaggio più breve in questa chat; il prompt completo è utile p
 
 **Codex si occupa di:**
 
-- Usare il modello comune `article.html.in`, con dati in `articles-data.json` e corpo in `slug.content.html`: titolo originale, corsivo/evidenziatore nello stile del sito, immagine, testo leggibile, data, autore, tag, condivisione e commenti.
+- Usare il modello comune `templates/article.html.in`, con dati in `articles-data.json` e corpo in `slug.content.html`: titolo originale, corsivo/evidenziatore nello stile del sito, immagine, testo leggibile, data, autore, tag, condivisione e commenti.
 - Calcolare i minuti di lettura sul testo finale e mantenerli coerenti con la scheda nell’archivio.
 - Creare un URL stabile e aggiungere la scheda in `articoli.html`. Guide, articoli e news appartengono a questo archivio; ogni nuovo articolo non richiede un pulsante nel menu.
 - Collegare il contenuto da `risorse.html` quando è una risorsa gratuita, oppure dalla pagina pertinente.
@@ -70,7 +70,7 @@ Se Codex non ha accesso amministrativo al progetto, prepara il comando e il prop
 - Curare SEO, anteprima social e sitemap. Usare dati strutturati `Event` per eventi con informazioni reali adatte a quello schema; non inventare date per servizi continuativi.
 - Controllare iscrizioni, date e collegamenti prima della pubblicazione.
 
-**Automatismo attuale:** all’apertura di Eventi, `archive.js` sposta fra le esperienze concluse le schede con `data-end` precedente alla data corrente in Italia (`Europe/Rome`). L’ultimo giorno l’evento resta in corso; dal successivo viene mostrato come concluso. È una modifica della visualizzazione nel browser, non una riscrittura dei file GitHub. La pagina resta accessibile.
+**Automatismo attuale:** all’apertura di Eventi, `assets/js/archive.js` sposta fra le esperienze concluse le schede con `data-end` precedente alla data corrente in Italia (`Europe/Rome`). L’ultimo giorno l’evento resta in corso; dal successivo viene mostrato come concluso. È una modifica della visualizzazione nel browser, non una riscrittura dei file GitHub. La pagina resta accessibile.
 
 **Da aggiornare insieme alla chiusura:** testo della pagina, inviti a iscriversi, annunci nelle altre sezioni, eventuale resoconto e nuove foto. Annullamenti, rinvii, posti esauriti e nuove edizioni richiedono un intervento. L’automatismo riguarda soltanto la conclusione; uno stato «in arrivo» va gestito esplicitamente.
 
@@ -182,20 +182,20 @@ Codex legge questa guida prima di intervenire e la aggiorna quando cambia il fun
 | File | Ruolo |
 | --- | --- |
 | `index.html` | Home, numeri, mission, contatti, foto e storie |
-| `percorsi.html`, `percorsi.js`, `servizi-grid.css` | Tutti i servizi: nove schede flip, griglia 3×3 PC, due colonne tablet, una su telefono |
-| `laboratori-creativi.html`, `album.js` | Laboratori e tre gallerie |
+| `percorsi.html`, `assets/js/percorsi.js`, `assets/css/servizi-grid.css` | Tutti i servizi: nove schede flip, griglia 3×3 PC, due colonne tablet, una su telefono |
+| `laboratori-creativi.html`, `assets/js/album.js` | Laboratori e tre gallerie |
 | `materiale-personalizzato.html` | Strumenti, esempi e preventivo materiale |
 | `pescara-solidale.html`, `lezioni-circolari.html` | Programmi solidali |
 | `risorse.html`, `domande-frequenti.html` | Risorse gratuite e FAQ |
-| `recensioni.html`, `reviews.js` | Schede, filtri e «Mostra altro» |
+| `recensioni.html`, `assets/js/reviews.js` | Schede, filtri e «Mostra altro» |
 | `reviews.json`, `google-reviews.json`, `all-reviews.json` | Dati recensioni da tenere coerenti con l’HTML |
 | `stili-di-apprendimento.html` | Primo articolo e modello di riferimento |
-| `articoli.html`, `album.html`, `eventi.html`, `archive.js` | Archivi, filtri e conclusione eventi |
+| `articoli.html`, `album.html`, `eventi.html`, `assets/js/archive.js` | Archivi, filtri e conclusione eventi |
 | `events-data.json` | Registro eventi da aggiornare insieme all’HTML |
-| `article-comments.js`, `comments-config.js` | Commenti e configurazione pubblica Supabase |
-| `styles.css`, `archive.css` | Stile comune e impaginazione archivi |
-| `site.js`, `home.js`, `services-motion.js`, `percorsi.js` | Menu, popup, anno footer, animazioni e schede servizi |
-| `privacy.html`, `privacy.css` | Informativa privacy e cookie, indice e impaginazione leggibile |
+| `assets/js/article-comments.js`, `assets/js/comments-config.js` | Commenti e configurazione pubblica Supabase |
+| `assets/css/styles.css`, `assets/css/archive.css` | Stile comune e impaginazione archivi |
+| `assets/js/site.js`, `assets/js/home.js`, `assets/js/services-motion.js`, `assets/js/percorsi.js` | Menu, popup, anno footer, animazioni e schede servizi |
+| `privacy.html`, `assets/css/privacy.css` | Informativa privacy e cookie, indice e impaginazione leggibile |
 | `sitemap.xml`, `robots.txt` | Pagine e scansione |
 | `README.md`, `GUIDA-GESTIONE.md`, `CHANGELOG.md`, `AGENTS.md` | Presentazione, gestione, cronologia e riferimento Codex |
 
@@ -205,7 +205,7 @@ Il solo caricamento di una foto o la sola modifica di un JSON non aggiorna tutte
 ## Fonti condivise e generazione statica (9 ottobre 2026)
 
 - `site-data.json` è la fonte unica per contatti, link dei due preventivi, social, indirizzi, menu/footer e riepilogo Google (media, massimo, quantità, data verificata e URL). I form lezioni e materiale sono distinti. Il numero WhatsApp deriva dal telefono principale. Gli indirizzi pubblico e legale mantengono le formulazioni approvate.
-- `header.html.in` e `footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
+- `templates/header.html.in` e `templates/footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
 - `python build_site.py` rigenera le 15 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
 - Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
 - `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
@@ -220,7 +220,7 @@ I contenuti restano statici e approvati da Archimede Regia. Articoli ed eventi o
 
 1. Inserire il record in `articles-data.json`. L’articolo esistente documenta tutti i campi: slug/URL stabile, titolo visibile diviso in `titleFirst`/`titleEmphasis`, titolo SEO, descrizione e sintesi, sezione/capitolo, date ISO con fuso, autore, tag e immagine (file, alt, larghezza/altezza).
 2. Scrivere il corpo in `slug.content.html`: paragrafi, elenchi, citazioni, fonti e immagini editoriali, senza header/footer, metadati, sidebar o modulo commenti. I file HTML di contenuto sono fonti revisionate, non importazioni automatiche da paper o pagine web. Il modello può usare segnaposto immagine `{{article.imageUrl}}`, `{{article.imageAlt}}`, `{{article.imageWidth}}` e `{{article.imageHeight}}`.
-3. `article.html.in` è il layout comune; `article-comments.html.in` il modulo condiviso; `article-card.html.in` e `resource-card.html.in` generano le anteprime. Il vecchio `stili-di-apprendimento.html.in` è soltanto un segnaposto di compatibilità: modificare i dati e il corpo, non quel file. Un nuovo articolo non necessita di un nuovo modello di pagina.
+3. `templates/article.html.in` è il layout comune; `templates/article-comments.html.in` il modulo condiviso; `templates/article-card.html.in` e `templates/resource-card.html.in` generano le anteprime. Il vecchio `templates/stili-di-apprendimento.html.in` è soltanto un segnaposto di compatibilità: modificare i dati e il corpo, non quel file. Un nuovo articolo non necessita di un nuovo modello di pagina.
 4. La generazione aggiorna pagina, scheda Articoli, filtri e link dei tag (anche tag con spazi), minuti di lettura, canonical/anteprima social, dati `BlogPosting` e sitemap. `featuredInResources: true` aggiunge anche la scheda a Risorse gratuite; `resourceSummary` consente una sintesi dedicata. Il calcolo usa 200 parole/minuto, arrotondato per eccesso, minimo un minuto; esclude menu, commenti e sidebar.
 5. `comments: true` mantiene il servizio Supabase e usa lo slug del record. Per nuovi slug resta necessario l’inserimento in `article_comment_pages` descritto nella sezione commenti: il generatore non scrive nel database. `comments: false` omette il modulo e i suoi script. Non cambiare lo slug di un articolo già commentato senza migrare i relativi collegamenti.
 
@@ -228,10 +228,10 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 
 ### Pubblicare o aggiornare un evento
 
-1. Inserire il record in `events-data.json`: slug, URL, titolo, conclusione `end` in formato `YYYY-MM-DD`, locandina `image`, sintesi `desc` e file del corpo `contentFile`. Per una pagina nuova usare `layout: "standard"`: `event-page.html.in` genera titolo, locandina, testo, eventuale link iscrizioni, metadati e navigazione. Si possono fornire `titleFirst`, `titleEmphasis`, `eyebrow`, `intro`, `description` e `tags`.
+1. Inserire il record in `events-data.json`: slug, URL, titolo, conclusione `end` in formato `YYYY-MM-DD`, locandina `image`, sintesi `desc` e file del corpo `contentFile`. Per una pagina nuova usare `layout: "standard"`: `templates/event-page.html.in` genera titolo, locandina, testo, eventuale link iscrizioni, metadati e navigazione. Si possono fornire `titleFirst`, `titleEmphasis`, `eyebrow`, `intro`, `description` e `tags`.
 2. `status` può essere `current`, `upcoming`, `past` o `cancelled`. I record conclusi/annullati sono inseriti nell’archivio storico; le iscrizioni della pagina standard non vengono mostrate per questi stati. Nel browser resta il passaggio automatico alle esperienze concluse dopo `end`, con data italiana. Questo non chiude autonomamente iscrizioni esterne né riscrive i testi delle pagine.
 3. `featuredInLabs: true` genera una scheda nella pagina Laboratori creativi per iniziative non concluse/annullate. Impostando `status: "past"` il richiamo viene tolto dai laboratori, ma pagina e scheda storica restano accessibili. Alla chiusura controllare comunque testi, locandine e iscrizioni esterne.
-4. Per pagine specifiche, come Pescara Solidale, `layout: "existing"` conserva il modello dedicato `pescara-solidale.html.in`; i testi delle sezioni sono in `pescara-solidale-2026.content.html`. Titolo SEO, sintesi archivio, immagine, data finale e dati della presentazione provengono dal record. Le altre scadenze e istruzioni del voucher restano contenuto da verificare con le fonti ufficiali.
+4. Per pagine specifiche, come Pescara Solidale, `layout: "existing"` conserva il modello dedicato `templates/pescara-solidale.html.in`; i testi delle sezioni sono in `content/pescara-solidale-2026.content.html`. Titolo SEO, sintesi archivio, immagine, data finale e dati della presentazione provengono dal record. Le altre scadenze e istruzioni del voucher restano contenuto da verificare con le fonti ufficiali.
 5. `Event` viene generato solo quando sono fornite data iniziale `startDate` e `location` reali; `endDate` è opzionale, altrimenti viene usata `end`. Un programma noto soltanto per la data finale conserva dati `WebPage`. Non inventare date, luogo, prezzi o disponibilità per completare lo schema. Eventi annullati dichiarano `EventCancelled`. Riferimenti: https://schema.org/Event e https://schema.org/BlogPosting.
 
 ### Generazione e pubblicazione
@@ -246,7 +246,7 @@ L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag,
 
 Denominazione e CF provengono da `organization` in `site-data.json`; sede legale confermata dall’utente al numero 21. Il footer mostra i dati associativi e due colonne di navigazione.
 
-La pagina `cinque-per-mille.html.in` usa il CF condiviso, mostra l’anno finanziario effettivamente verificato e collega le fonti ufficiali. Accreditamento AF 2026 verificato il 9 ottobre nell’elenco aggiornato dell’8 maggio 2026 del Ministero; CF 91178750682, ETS/APS ARCHIMEDE CENTRO STUDI, sezione APS. Il numero di repertorio 154455 compare nella fonte ma non è aggiunto al footer su richiesta dell’utente.
+La pagina `templates/cinque-per-mille.html.in` usa il CF condiviso, mostra l’anno finanziario effettivamente verificato e collega le fonti ufficiali. Accreditamento AF 2026 verificato il 9 ottobre nell’elenco aggiornato dell’8 maggio 2026 del Ministero; CF 91178750682, ETS/APS ARCHIMEDE CENTRO STUDI, sezione APS. Il numero di repertorio 154455 compare nella fonte ma non è aggiunto al footer su richiesta dell’utente.
 
 Prima di una nuova campagna verificare l’accreditamento e aggiornare anno/fonti/data, istruzioni e scadenze della dichiarazione. Non presentare l’iscrizione RUNTS come prova sufficiente dell’accreditamento al 5×1000. Controllare separatamente gli eventuali obblighi di rendicontazione/pubblicazione per somme effettivamente ricevute. Non pubblicare IBAN, nomi dei donatori o dati della dichiarazione senza una richiesta specifica. Nessun pagamento o raccolta di dati avviene nella pagina; il pulsante copia soltanto il CF negli appunti su azione dell’utente.
 
@@ -264,11 +264,11 @@ Nessuna firma visibile; mantenere autore organizzazione nei metadati SEO. Usare 
 
 ## Badge per lasciare recensioni
 
-I badge personalizzati sotto i riepiloghi Google e Facebook sono link statici, senza SDK o widget esterni. Usano gli URL centralizzati `google.url` e `facebook.url` in `site-data.json`: aprono le pagine recensioni, dove il visitatore può scrivere il proprio contributo (la piattaforma può richiedere accesso). Stile comune in `review-platforms.css`. Trustpilot usa il Review Collector ufficiale fornito dal centro, come descritto sotto.
+I badge personalizzati sotto i riepiloghi Google e Facebook sono link statici, senza SDK o widget esterni. Usano gli URL centralizzati `google.url` e `facebook.url` in `site-data.json`: aprono le pagine recensioni, dove il visitatore può scrivere il proprio contributo (la piattaforma può richiedere accesso). Stile comune in `assets/css/review-platforms.css`. Trustpilot usa il Review Collector ufficiale fornito dal centro, come descritto sotto.
 
 ## Home fotografica — 9 ottobre 2026
 
-La prima schermata mostra solo eyebrow e titolo originali sopra la foto dell’aula verde, con opacità 75% su PC e telefono e ombra nera intensa sul titolo, sottotitolo e freccia. La freccia porta a `#metodo`, dove sono collocati prima i quattro dati di Archimede, poi mission e conversazione. Tre azioni affiancate nella conversazione: WhatsApp, email e percorsi (`percorsi.html`, Tutti i servizi). Il quaderno rimosso dalla home è conservato in `quaderno-home.svg`; CSS/JS condivisi delle animazioni restano per le altre grafiche. `home-layout.css` contiene le nuove regole dedicate: gli altri sfondi conservano opacità 20% PC / 15% telefono.
+La prima schermata mostra solo eyebrow e titolo originali sopra la foto dell’aula verde, con opacità 75% su PC e telefono e ombra nera intensa sul titolo, sottotitolo e freccia. La freccia porta a `#metodo`, dove sono collocati prima i quattro dati di Archimede, poi mission e conversazione. Tre azioni affiancate nella conversazione: WhatsApp, email e percorsi (`percorsi.html`, Tutti i servizi). Il quaderno rimosso dalla home è conservato in `assets/images/quaderno-home.svg`; CSS/JS condivisi delle animazioni restano per le altre grafiche. `assets/css/home-layout.css` contiene le nuove regole dedicate: gli altri sfondi conservano opacità 20% PC / 15% telefono.
 
 ## Trustpilot Review Collector — 9 ottobre 2026
 
@@ -281,3 +281,6 @@ Rimosso dalla pagina Pescara Solidale il logo del Comune su richiesta del centro
 
 ## 11 ottobre 2026 — Nuove recensioni
 Google: 28 recensioni, media visualizzata 5,0. Trustpilot: 4 recensioni a 5 stelle, TrustScore 4,0 distinto dalla media aritmetica. Testi integrali forniti dal centro. Davide, Alice, Valentina e Stefano: Scuola. Selen: Università, identità confermata uguale a Selen Giallorenzo/Selene Giallo: una scheda, testi differenti conservati con attribuzione e tre fonti. Raccolta: 54 schede, 46 valutazioni uniche nella media home (WhatsApp escluso). I voti Trustpilot entrano nel calcolo, il TrustScore no. Archivio originale in trustpilot-reviews.json; eventuali fonti aggiuntive non aggiungono voti.
+
+## Organizzazione del repository — 11 ottobre 2026
+Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/images/`, CSS in `assets/css/`, JavaScript in `assets/js/`, note sulle immagini in `docs/`. Le menzioni storiche di nomi senza cartella vanno risolte in queste directory. I JSON, gli script Python, i test e gli HTML generati restano in radice. `layout.py` mantiene gli URL pubblici dei file invariati copiando gli asset nella radice del sito generato. Non inserire i prefissi delle cartelle sorgente negli URL HTML/CSS/JS: ad esempio `assets/images/logo.png` resta pubblicato come `./logo.png`. Per anteprime compilare con `python build_site.py --output-dir _site` e servire `_site`, non la radice del repository. I comandi di build e test restano invariati. `archivio/` non viene pubblicato.

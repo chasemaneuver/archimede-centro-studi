@@ -83,5 +83,6 @@ class SharedSourcesTests(unittest.TestCase):
         with self.assertRaises(ValueError): site.generate(config=config)
 
 from test_editorial import EditorialTests
+from test_layout import LayoutTests
 
 if __name__=='__main__': unittest.main()

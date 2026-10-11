@@ -10,6 +10,7 @@ import json
 import re
 import shutil
 import editorial
+from layout import asset_files, asset_path
 
 ROOT = Path(__file__).resolve().parent
 TOKEN = re.compile(r'\{\{([A-Za-z][A-Za-z0-9_.]*)\}\}')
@@ -119,12 +120,12 @@ def generate(root=ROOT, config=None, articles=None, events=None):
         overall = overall_rating(records, config['facebook']['positiveRatingConvention'])
         values.update({'overall.' + key: escape(str(value), quote=True) for key,value in overall.items()})
     for component in ('header', 'footer'):
-        values[component] = render((root / (component + '.html.in')).read_text(encoding='utf-8'), values)
+        values[component] = render((root / 'templates' / (component + '.html.in')).read_text(encoding='utf-8'), values)
     articles = editorial.read_records(root,'articles-data.json') if articles is None else articles
     events = editorial.read_records(root,'events-data.json') if events is None else events
     output, page_values, archive_values = editorial.prepare(root,config,values,render,articles,events)
     values.update(archive_values)
-    for source in sorted(root.glob('*.html.in')):
+    for source in sorted((root / 'templates').glob('*.html.in')):
         if source.name in {'header.html.in', 'footer.html.in'} | editorial.TEMPLATES:
             continue
         name=source.name[:-3]
@@ -168,8 +169,8 @@ def validate(output, root):
             if parts.path.startswith('/'):
                 raise ValueError(f'{name}: usare link relativi alla sottocartella GitHub Pages: {url}')
             target = unquote(parts.path).removeprefix('./') or name
-            path = (root / target).resolve()
-            if target not in output and not (path.parent == root.resolve() and path.is_file() and public_asset(path)):
+            path = asset_path(root, target)
+            if target not in output and not (path is not None and path.is_file() and public_asset(path)):
                 raise ValueError(f'{name}: collegamento locale inesistente o non pubblicabile: {url}')
             if parts.fragment and target in pages and unquote(parts.fragment) not in pages[target].ids:
                 raise ValueError(f'{name}: ancora inesistente: {url}')
@@ -192,10 +193,9 @@ def main():
         if destination.exists() and any(destination.iterdir()):
             parser.error('La cartella di output deve essere vuota: scegliere una nuova cartella per evitare file residui.')
         destination.mkdir(parents=True, exist_ok=True)
-        for path in ROOT.iterdir():
-            if not path.is_file(): continue
+        for name, path in asset_files(ROOT).items():
             if public_asset(path):
-                shutil.copyfile(path, destination / path.name)
+                shutil.copyfile(path, destination / name)
         for name,text in output.items(): (destination/name).write_text(text,encoding='utf-8')
         print(f'OK: sito statico generato in {destination.name}, senza fonti e documenti interni.')
         return

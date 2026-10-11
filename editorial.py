@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlsplit
 import json
+from layout import asset_path
 import math
 import re
 import xml.etree.ElementTree as ET
@@ -38,7 +39,7 @@ def body_source(root, record):
     filename=record['contentFile']
     if not re.fullmatch(r'[a-z0-9][a-z0-9-]*\.content\.html',filename):
         raise ValueError('Nome del file di contenuto non valido: '+filename)
-    return (root/filename).read_text(encoding='utf-8')
+    return (root/'content'/filename).read_text(encoding='utf-8')
 
 def validate_records(articles, events, root):
     slugs=set();urls=set()
@@ -52,11 +53,11 @@ def validate_records(articles, events, root):
             slugs.add(slug);urls.add(url)
             if kind=='articolo' and slug!=url[:-5]:
                 raise ValueError('Slug commenti e URL articolo devono coincidere: '+slug)
-            if kind=='articolo' and (root/(url+'.in')).exists() and (root/(url+'.in')).read_text(encoding='utf-8').strip()!='{{articlePage}}':
+            if kind=='articolo' and (root/'templates'/(url+'.in')).exists() and (root/'templates'/(url+'.in')).read_text(encoding='utf-8').strip()!='{{articlePage}}':
                 raise ValueError('URL articolo già occupato da una pagina: '+url)
             body_source(root,record)
             image=record['image']['path'] if kind=='articolo' else record['image']
-            if not re.fullmatch(r'[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp|svg|gif)',image) or not (root/image).is_file():
+            if not re.fullmatch(r'[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp|svg|gif)',image) or asset_path(root,image) is None:
                 raise ValueError('Immagine editoriale mancante o non valida: '+image)
             if not record['title'].strip(): raise ValueError('Titolo vuoto: '+slug)
             if kind=='articolo':
@@ -76,7 +77,7 @@ def validate_records(articles, events, root):
                     raise ValueError('Evento termina prima di iniziare: '+slug)
                 for key in ('startDate','endDate'):
                     if record.get(key): datetime.fromisoformat(record[key])
-                if record.get('layout','standard')=='existing' and not (root/(url+'.in')).is_file():
+                if record.get('layout','standard')=='existing' and not (root/'templates'/(url+'.in')).is_file():
                     raise ValueError('Modello dedicato mancante: '+url)
     return urls
 
@@ -88,7 +89,7 @@ def prepare(root,config,common,render,articles=None,events=None):
     if not base.startswith('https://') or not base.endswith('/') or urlsplit(base).query or urlsplit(base).fragment:
         raise ValueError('L’URL pubblico deve essere HTTPS e terminare con /.')
     global_values={};pages={};page_values={};cards=[];resource_cards=[];tags=set()
-    def template(name,values): return render((root/name).read_text(encoding='utf-8'),values)
+    def template(name,values): return render((root/'templates'/name).read_text(encoding='utf-8'),values)
     for article in articles:
         image=article['image'];values=dict(common)
         scalars={'slug':article['slug'],'title':article['title'],'titleFirst':article['titleFirst'],
@@ -160,7 +161,7 @@ def prepare(root,config,common,render,articles=None,events=None):
         values['event.registration']=f'<a class="button primary" href="{escape(registration,quote=True)}">Iscriviti o chiedi informazioni ↗</a>' if registration and status not in ('past','cancelled') else ''
         if event.get('layout','standard')=='existing': page_values[event['url']]=values
         else:
-            if (root/(event['url']+'.in')).exists(): raise ValueError('URL evento standard già occupato: '+event['url'])
+            if (root/'templates'/(event['url']+'.in')).exists(): raise ValueError('URL evento standard già occupato: '+event['url'])
             pages[event['url']]=template('event-page.html.in',values)
         card=template('event-card.html.in',values)
         (past if status in ('past','cancelled') else current).append(card)

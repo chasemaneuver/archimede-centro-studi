@@ -17,7 +17,7 @@ class EditorialTests(unittest.TestCase):
 
     def test_existing_content_and_comment_identity_are_preserved(self):
         output=site.generate()
-        original=(site.ROOT/'stili-di-apprendimento.content.html').read_text(encoding='utf-8')
+        original=(site.ROOT/'content'/'stili-di-apprendimento.content.html').read_text(encoding='utf-8')
         self.assertIn('Lo stile di apprendimento può essere definito',output['stili-di-apprendimento.html'])
         self.assertIn('data-article="stili-di-apprendimento"',output['stili-di-apprendimento.html'])
         self.assertIn('2024-03-23T23:06:57+01:00',output['stili-di-apprendimento.html'])

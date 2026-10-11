@@ -246,3 +246,6 @@ Rimosso dalla pagina Pescara Solidale il logo del Comune su richiesta del centro
 
 ## 11 ottobre 2026 — Nuove recensioni
 Google: 28 recensioni, media visualizzata 5,0. Trustpilot: 4 recensioni a 5 stelle, TrustScore 4,0 distinto dalla media aritmetica. Testi integrali forniti dal centro. Davide, Alice, Valentina e Stefano: Scuola. Selen: Università, identità confermata uguale a Selen Giallorenzo/Selene Giallo: una scheda, testi differenti conservati con attribuzione e tre fonti. Raccolta: 54 schede, 46 valutazioni uniche nella media home (WhatsApp escluso). I voti Trustpilot entrano nel calcolo, il TrustScore no. Archivio originale in trustpilot-reviews.json; eventuali fonti aggiuntive non aggiungono voti.
+
+## 11 ottobre 2026 — Riordino repository
+150 file spostati in assets, templates, content, docs e archivio. Archiviati script Google obsoleto e stemma Comune non utilizzato. URL pubblici invariati tramite layout.py; aggiunti controlli di collisione nomi e di esclusione archivio. Aggiornate guide e istruzioni anteprima; nessuna modifica ai contenuti o al database.

@@ -1,85 +1,61 @@
 # Archimede Centro Studi
 
-Sito informativo in HTML, CSS e JavaScript, pubblicato su GitHub Pages.
+Sito statico pubblicato su [archimedecentrostudi.com](https://archimedecentrostudi.com/).
 
-- **Sito:** [chasemaneuver.github.io/archimede-centro-studi](https://archimedecentrostudi.com/)
-- **Gestione dei contenuti:** [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md)
-- **Titoli, grafiche, animazioni e link:** [STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md)
-- **Riferimento per Codex:** [AGENTS.md](./AGENTS.md)
-- **Privacy e cookie:** [informativa](./privacy.html)
-- **Cronologia:** [CHANGELOG.md](./CHANGELOG.md)
+## Dove lavorare
 
-Per pubblicare articoli, laboratori, eventi, foto e recensioni, scrivere a Codex con i contenuti disponibili. La guida spiega cosa inviare, quali pagine aggiornare, gli automatismi presenti e le manutenzioni suggerite.
+| Cartella o file | Contenuto |
+| --- | --- |
+| `templates/` | Modelli delle pagine, header/footer e componenti editoriali |
+| `content/` | Testi degli articoli e degli eventi, senza impaginazione |
+| `assets/images/` | Foto, miniature, loghi e illustrazioni SVG |
+| `assets/css/` | Fogli di stile |
+| `assets/js/` | Interazioni, animazioni e configurazione pubblica commenti |
+| `docs/` | Note di produzione e provenienza delle immagini |
+| `archivio/` | Materiali non più usati; esclusi dalla pubblicazione |
+| `site-data.json` | Contatti, menu, footer, preventivi e riepiloghi piattaforme |
+| `articles-data.json`, `events-data.json` | Dati editoriali |
+| `*-reviews.json`, `reviews.json` | Fonti delle recensioni; i testi delle schede si aggiornano anche nel modello |
+| `*.html`, `sitemap.xml` | Risultati generati e verificati, da non modificare direttamente |
+| `build_site.py`, `editorial.py`, `layout.py` | Generazione, validazione e mappatura degli URL |
+| `test_*.py` | Test eseguiti anche da GitHub Actions |
+| `.github/workflows/pages.yml` | Compilazione e pubblicazione automatica |
 
-## Struttura attuale
+Le istruzioni principali restano facilmente visibili in radice:
+[AGENTS.md](./AGENTS.md), [GUIDA-GESTIONE.md](./GUIDA-GESTIONE.md),
+[STILE-E-COMPONENTI.md](./STILE-E-COMPONENTI.md) e [CHANGELOG.md](./CHANGELOG.md).
 
-- **Il centro:** Home, La nostra mission, Recensioni, Domande frequenti, Il tuo 5×1000.
-- **Percorsi:** Tutti i servizi, Laboratori creativi, Materiale personalizzato.
-- **Risorse:** Pescara Solidale, Lezioni Circolari, Risorse gratuite.
-- **Archivio:** Album, Articoli, Eventi.
+## Aggiornamento e controlli
 
-Al controllo del 9 ottobre 2026: 15 pagine HTML, 43 immagini di contenuto senza duplicati nell'Album, 35 schede recensione (8 WhatsApp e 27 Google) e il primo articolo della guida all'apprendimento. Questi numeri vanno aggiornati insieme ai contenuti.
+```sh
+python build_site.py
+python -m unittest test_build_site.py
+python build_site.py --check
+python build_site.py --output-dir _site
+python -m http.server 8766 --directory _site
+```
 
-## Funzionamento
+La directory di output deve essere nuova o vuota. Aprire l'anteprima su `http://localhost:8766/`.
+Non servire la radice del repository: contiene le fonti e gli asset sono organizzati diversamente.
 
-- Layout responsive, menu a tendina, dettagli servizi, FAQ, gallerie e popup immagini con X.
-- Recensioni in una raccolta unica: tre schede iniziali, altre tre con «Mostra altro», filtri, stelle e link Google. L'aggiornamento da Google Maps è manuale.
-- Articoli con data, autore, minuti di lettura, tag, condivisione, metadati SEO e commenti senza login.
-- Commenti collegati a Supabase: nickname univoco nell'intero sito, invii moderati, pubblicazione con `approved=true` nella tabella `article_comments`. Ogni nuovo articolo richiede la registrazione dello slug nel progetto.
-- Eventi mostrati fra i conclusi dopo la data finale, usando il fuso italiano. Testi e iscrizioni richiedono un aggiornamento editoriale alla chiusura.
-- Contatori e grafiche animate con supporto al movimento ridotto. I valori dei contatori sono impostati dal centro.
-- Link WhatsApp, email, telefono e due moduli distinti per preventivi lezioni e materiale. Il sito non gestisce le risposte interne dei Google Forms.
+`layout.py` copia gli asset nel sito generato con gli stessi nomi pubblici precedenti.
+Ad esempio `assets/css/styles.css` viene pubblicato come `/styles.css`:
+non cambiare i riferimenti HTML/CSS/JS aggiungendo il prefisso `assets/`.
+Nomi pubblici duplicati bloccano la compilazione. Gli HTML e la sitemap conservano gli URL esistenti.
 
-La configurazione condivisa genera contatti, menu/footer e riepilogo Google tramite `build_site.py`; `articles-data.json` ed `events-data.json` generano pagine e archivi editoriali. Foto e recensioni seguono le procedure dedicate. I commenti vengono letti dal database senza ripubblicare il sito. Non è attivo un monitoraggio periodico automatico.
+GitHub Actions verifica i file generati e i test, crea `_site` e pubblica l'artefatto su GitHub Pages.
+Modelli, Python, documentazione e archivio non entrano nell'artefatto. La cronologia Git conserva
+le versioni precedenti: non aggiungere copie di backup o cartelle di prove al repository.
 
-## Pubblicazione e dominio
+## Contenuti e servizi
 
-GitHub Pages pubblica dal ramo `main`, cartella principale `/`. Non serve una compilazione locale. Verificare l'esito in Actions e il risultato pubblico dopo ogni aggiornamento.
+Il sito comprende 16 pagine, articoli ed eventi con archivi, gallerie fotografiche, FAQ e una
+raccolta unica di recensioni. I dati delle piattaforme vengono aggiornati manualmente e verificati:
+la home include Google, Facebook e Trustpilot, senza duplicati; le stelle WhatsApp sono decorative.
 
-Il collegamento GitHub Pages attualmente reindirizza a `archimedecentrostudi.com`; canonical e sitemap conservano la base URL precedente, centralizzata in `site-data.json`. La migrazione SEO del dominio va verificata separatamente. Collaborazioni rimanda al vecchio sito e va migrata prima di dismettere quell'hosting. Privacy e cookie policy è disponibile localmente in `privacy.html`.
+I commenti usano il progetto Supabase esistente. La pubblicazione del sito non modifica il database:
+per un nuovo articolo registrare lo slug come indicato nella guida. Non inserire segreti nei file.
 
-## Identità visiva
-
-Petrolio `#004A59`, arancione `#F07018`, crema `#FFF5CB`, verde acqua `#B6E3D4`, azzurro `#33A7B5`. Logo originale `logo.png`; illustrazioni in SVG e codice del sito.
-
-Classe A: grafiche elaborate di home e Tutti i servizi. Classe B: pagine secondarie, con ingresso, ellisse e satelliti dove presenti. Mantenere coerenza fra PC e telefono.
-
-## Fonti condivise e generazione statica (9 ottobre 2026)
-
-- `site-data.json` è la fonte unica per contatti, link dei due preventivi, social, indirizzi, menu/footer e riepilogo Google (media, massimo, quantità, data verificata e URL). I form lezioni e materiale sono distinti. Il numero WhatsApp deriva dal telefono principale. Gli indirizzi pubblico e legale mantengono le formulazioni approvate.
-- `header.html.in` e `footer.html.in` sono i componenti condivisi. I file `*.html.in` delle pagine contengono il testo, il markup e le grafiche originali con segnaposto `{{...}}`. Modificare queste fonti; non correggere soltanto l’HTML generato.
-- `python build_site.py` rigenera le 15 pagine e sincronizza esclusivamente i metadati Google di `google-reviews.json` e `all-reviews.json`. I testi e i tag delle singole recensioni restano nelle fonti attuali e devono essere aggiornati separatamente.
-- Prima del commit eseguire `python -m unittest test_build_site.py` e `python build_site.py --check`. Il controllo rileva pagine non sincronizzate, segnaposto irrisolti, collegamenti/ancore locali mancanti e valori Google non validi. Non sostituisce la verifica visiva PC/telefono o la verifica esterna dei dati.
-- `python build_site.py --output-dir _site` crea i file da pubblicare in una cartella nuova o vuota, escludendo modelli, script Python, configurazione centrale e documenti interni. GitHub Actions esegue test e controllo di sincronizzazione prima di creare e pubblicare questa versione statica.
-- Aggiungendo una pagina, creare il relativo `nome.html.in` con `{{header}}` e `{{footer}}`, inserirla dove pertinente in navigazione/footer, rigenerare e aggiornare sitemap e archivi. Gli URL pubblici, il JavaScript, i CSS e le animazioni rimangono quelli esistenti.
-- Articoli ed eventi sono ora generati dalle fonti editoriali: vedere la fase 2 sotto. Nessun servizio esterno o cookie nuovo.
-
-## Modelli editoriali e archivi automatici — fase 2 (9 ottobre 2026)
-
-I contenuti restano statici e approvati da Archimede Regia. Articoli ed eventi ora vengono generati da fonti separate dall’impaginazione, senza nuovi servizi esterni.
-
-### Pubblicare o aggiornare un articolo
-
-1. Inserire il record in `articles-data.json`. L’articolo esistente documenta tutti i campi: slug/URL stabile, titolo visibile diviso in `titleFirst`/`titleEmphasis`, titolo SEO, descrizione e sintesi, sezione/capitolo, date ISO con fuso, autore, tag e immagine (file, alt, larghezza/altezza).
-2. Scrivere il corpo in `slug.content.html`: paragrafi, elenchi, citazioni, fonti e immagini editoriali, senza header/footer, metadati, sidebar o modulo commenti. I file HTML di contenuto sono fonti revisionate, non importazioni automatiche da paper o pagine web. Il modello può usare segnaposto immagine `{{article.imageUrl}}`, `{{article.imageAlt}}`, `{{article.imageWidth}}` e `{{article.imageHeight}}`.
-3. `article.html.in` è il layout comune; `article-comments.html.in` il modulo condiviso; `article-card.html.in` e `resource-card.html.in` generano le anteprime. Il vecchio `stili-di-apprendimento.html.in` è soltanto un segnaposto di compatibilità: modificare i dati e il corpo, non quel file. Un nuovo articolo non necessita di un nuovo modello di pagina.
-4. La generazione aggiorna pagina, scheda Articoli, filtri e link dei tag (anche tag con spazi), minuti di lettura, canonical/anteprima social, dati `BlogPosting` e sitemap. `featuredInResources: true` aggiunge anche la scheda a Risorse gratuite; `resourceSummary` consente una sintesi dedicata. Il calcolo usa 200 parole/minuto, arrotondato per eccesso, minimo un minuto; esclude menu, commenti e sidebar.
-5. `comments: true` mantiene il servizio Supabase e usa lo slug del record. Per nuovi slug resta necessario l’inserimento in `article_comment_pages` descritto nella sezione commenti: il generatore non scrive nel database. `comments: false` omette il modulo e i suoi script. Non cambiare lo slug di un articolo già commentato senza migrare i relativi collegamenti.
-
-L’agente Autore consegna testo, proposta di titolo/sintesi, immagini/alt, tag, autore e fonti. Regia revisiona e converte questi contenuti nelle fonti sopra; l’utente può continuare a inviare bozze senza scrivere JSON o HTML. Le foto nuove richiedono ancora ottimizzazione e aggiornamento dell’Album: la generazione editoriale non deduplica automaticamente le immagini.
-
-### Pubblicare o aggiornare un evento
-
-1. Inserire il record in `events-data.json`: slug, URL, titolo, conclusione `end` in formato `YYYY-MM-DD`, locandina `image`, sintesi `desc` e file del corpo `contentFile`. Per una pagina nuova usare `layout: "standard"`: `event-page.html.in` genera titolo, locandina, testo, eventuale link iscrizioni, metadati e navigazione. Si possono fornire `titleFirst`, `titleEmphasis`, `eyebrow`, `intro`, `description` e `tags`.
-2. `status` può essere `current`, `upcoming`, `past` o `cancelled`. I record conclusi/annullati sono inseriti nell’archivio storico; le iscrizioni della pagina standard non vengono mostrate per questi stati. Nel browser resta il passaggio automatico alle esperienze concluse dopo `end`, con data italiana. Questo non chiude autonomamente iscrizioni esterne né riscrive i testi delle pagine.
-3. `featuredInLabs: true` genera una scheda nella pagina Laboratori creativi per iniziative non concluse/annullate. Impostando `status: "past"` il richiamo viene tolto dai laboratori, ma pagina e scheda storica restano accessibili. Alla chiusura controllare comunque testi, locandine e iscrizioni esterne.
-4. Per pagine specifiche, come Pescara Solidale, `layout: "existing"` conserva il modello dedicato `pescara-solidale.html.in`; i testi delle sezioni sono in `pescara-solidale-2026.content.html`. Titolo SEO, sintesi archivio, immagine, data finale e dati della presentazione provengono dal record. Le altre scadenze e istruzioni del voucher restano contenuto da verificare con le fonti ufficiali.
-5. `Event` viene generato solo quando sono fornite data iniziale `startDate` e `location` reali; `endDate` è opzionale, altrimenti viene usata `end`. Un programma noto soltanto per la data finale conserva dati `WebPage`. Non inventare date, luogo, prezzi o disponibilità per completare lo schema. Eventi annullati dichiarano `EventCancelled`. Riferimenti: https://schema.org/Event e https://schema.org/BlogPosting.
-
-### Generazione e pubblicazione
-
-- Eseguire `python build_site.py`, poi `python -m unittest test_build_site.py` e `python build_site.py --check`. Il workflow esistente esegue anche i nuovi test editoriali tramite la suite principale.
-- La sitemap viene generata dalle pagine effettive; per gli articoli usa la data di modifica dichiarata. `publishing.baseUrl` in `site-data.json` centralizza il prefisso degli URL SEO/condivisione, mantenendo il valore già approvato.
-- Nessuna scheda vuota viene pubblicata come esempio. I test dei nuovi articoli/eventi usano contenuti di prova soltanto in memoria.
-- Fonti JSON editoriali, corpi `.content.html`, modelli e script Python non entrano nell’artefatto pubblico `_site`; il visitatore riceve le pagine complete.
-- Questa fase completa i modelli articolo/evento. Gallerie fotografiche e testi delle recensioni mantengono le procedure di aggiornamento documentate.
+Per nuove pagine, immagini, recensioni o articoli seguire le guide e controllare sempre
+il risultato pubblico dopo il deploy. Il dominio pubblico e la base SEO sono centralizzati in
+`site-data.json`. Il quaderno della vecchia home resta disponibile in `assets/images/quaderno-home.svg`.

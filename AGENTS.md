@@ -12,4 +12,7 @@ Non pubblicare segreti Supabase. Riutilizzare il progetto esistente e registrare
 
 Prima del commit: `python -m unittest test_build_site.py` e `python build_site.py --check`. Non modificare soltanto gli HTML generati. La pubblicazione usa il workflow GitHub Pages con output `_site`.
 
-Non duplicare il modello di articolo per nuove pubblicazioni. Le nuove iniziative usano `event-page.html.in`; le pagine con presentazioni particolari possono mantenere `layout: "existing"`. Non presumere che generare un articolo registri lo slug in Supabase.
+Non duplicare il modello di articolo per nuove pubblicazioni. Le nuove iniziative usano `templates/event-page.html.in`; le pagine con presentazioni particolari possono mantenere `layout: "existing"`. Non presumere che generare un articolo registri lo slug in Supabase.
+
+## Organizzazione del repository — 11 ottobre 2026
+Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/images/`, CSS in `assets/css/`, JavaScript in `assets/js/`, note sulle immagini in `docs/`. Le menzioni storiche di nomi senza cartella vanno risolte in queste directory. I JSON, gli script Python, i test e gli HTML generati restano in radice. `layout.py` mantiene gli URL pubblici dei file invariati copiando gli asset nella radice del sito generato. Non inserire i prefissi delle cartelle sorgente negli URL HTML/CSS/JS: ad esempio `assets/images/logo.png` resta pubblicato come `./logo.png`. Per anteprime compilare con `python build_site.py --output-dir _site` e servire `_site`, non la radice del repository. I comandi di build e test restano invariati. `archivio/` non viene pubblicato.
