@@ -60,11 +60,10 @@ Le illustrazioni sono SVG e codice del sito, con elementi riconoscibili, curati 
 - Riutilizzare `.assembly-piece`, classi di ingresso e `assets/css/home-motion.css`/`assets/js/home.js`, preservando i transform propri dello SVG. La ricomposizione condivisa attuale dura 2,4 secondi più i piccoli ritardi dei singoli elementi.
 - Non nascondere permanentemente contenuto o grafica se JavaScript non funziona. L’aspetto statico deve essere completo e leggibile.
 
-**Macchia d’acqua**
+**Bolla verde acqua — Classe A e Classe B**
 
-- Arriva dall’alto a destra come una scia fluida, si avvolge e termina nella forma approvata dietro la composizione.
-- Riutilizzare il movimento continuo di `.water-shape`: nel codice attuale dura circa 5,5 secondi, con interpolazione dei punti, ondulazione e rotazione attorno a un’origine SVG stabile.
-- Evitare sequenze a scatti o cambi bruschi di centro/scala. Al termine ripristinare esattamente il tracciato e la posizione finali; ingresso una sola volta.
+- Resta visibile nella forma e posizione finali: nessun ingresso fluido, morphing, rotazione o ricomposizione dello sfondo.
+- Le classi `.water-shape` e `.assembly-backdrop` identificano lo sfondo statico; non applicare loro l’ingresso dei singoli elementi.
 
 **Stelline**
 
@@ -142,7 +141,7 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 
 - PC e telefono: titolo, testo e grafica senza tagli o sovrapposizioni, menu utilizzabile, griglie corrette, CTA leggibili.
 - Controllare evidenziatori, focus da tastiera, popup, comportamento touch e preferenze di movimento ridotto.
-- Animazioni: una sola ricomposizione, stelle indipendenti, acqua fluida, satelliti allineati al tracciato e pause fuori vista. Nessun elemento nascosto definitivamente per errore.
+- Animazioni: una sola ricomposizione, stelle indipendenti, sfondo verde acqua statico, satelliti allineati al tracciato e pause fuori vista. Nessun elemento nascosto definitivamente per errore.
 - Verificare entrambi i preventivi e tutti i link coinvolti; aggiornare archivi, conteggi, menu e metadati pertinenti.
 - Gli SVG possono essere incorporati nell’HTML. Modificare la grafica effettivamente renderizzata e tenere coerente l’eventuale file SVG sorgente: un asset esterno non usato dalla pagina può essere una versione vecchia.
 - Stili condivisi: `assets/css/styles.css`, `assets/css/home-motion.css`, `assets/css/services-illustration.css`, `assets/css/album.css`, `assets/css/archive.css`. Script condivisi: `assets/js/site.js`, `assets/js/home.js`, `assets/js/services-motion.js`, `assets/js/album.js`, `assets/js/percorsi.js`, `assets/js/reviews.js`, `assets/js/archive.js`.
