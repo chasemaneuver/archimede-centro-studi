@@ -279,3 +279,7 @@ Sostituita la copertina Preparazione concorsi con immagine fornita dall’utente
 
 ## 11 ottobre 2026 - Quaderno nelle risorse gratuite
 Recuperata la grafica originale della home a destra del titolo di Risorse, sotto al testo su telefono. Animazioni condivise e bolla statica; preservati i link interni della pagina.
+
+
+## 11 ottobre 2026 - Punteggi recensioni uniformi
+Google Maps e Trustpilot mostrano il punteggio completo con lo stesso stile, senza spazio prima di /5.
