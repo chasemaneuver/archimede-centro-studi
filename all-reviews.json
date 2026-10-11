@@ -1,8 +1,56 @@
 {
-  "googleCheckedAt": "2026-10-09",
+  "googleCheckedAt": "2026-10-11",
   "googleRating": 5,
-  "googleCount": 27,
+  "googleCount": 28,
   "reviews": [
+    {
+      "id": "google-27",
+      "name": "Alice Silvestri",
+      "title": "Le mie bimbe vanno molto volentieri",
+      "quote": "Persone stupende, con l'animo speciale, prepatate per ogni tipo di materia e soprattutto pronte a far stare a proprio agio i bambini! le mie bimbe vanno molto volentieri.",
+      "source": "https://maps.app.goo.gl/FwxeQ816fzpM2o5cA",
+      "kind": "google",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-valentina",
+      "name": "Valentina Scarponcini",
+      "title": "Centro professionale e accogliente",
+      "quote": "Centro professionale e accogliente, sempre disponibili a tutte le esigenze dei ragazzi e di noi genitori .",
+      "source": "https://it.trustpilot.com/reviews/6aca99f781695188ba3ab491",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-davide",
+      "name": "Davide Di iorio",
+      "title": "Tutor di Estimo davvero bravissima",
+      "quote": "Tutor di Estimo davvero bravissima Spiega gli argomenti in modo chiaro e semplice, è molto preparata , paziente e disponibile. Grazie al suo aiuto è più facile comprendere anche gli argomenti più difficili della materia. Consigliatissimo a chiunque abbia bisogno di un supporto nello studio. 5 stelle meritatissime!",
+      "source": "https://it.trustpilot.com/reviews/6aca871ad834deed882effee",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-stefano",
+      "name": "Stefano Cicalini",
+      "title": "Le spiegazioni sono chiare e sto migliorando molto",
+      "quote": "Frequento Archimede Centro Studi per tutte le materie, soprattutto informatica, matematica e sistemi e reti. Mi trovo davvero bene, le spiegazioni sono chiare e sto migliorando molto. Ottima esperienza, lo consiglio!",
+      "source": "https://it.trustpilot.com/reviews/6aca681ba0168617b8758503",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
     {
       "id": "francesco",
       "title": "Ultimo esame della magistrale",
@@ -208,6 +256,14 @@
           "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0y4vh18wWUL2b9ba25Thc5ZwRDJjCPyQJbZWyquKPNy2S2xHtwnpwYc42UjhuRPK1l&id=61573513765862",
           "recommended": true,
           "author": "Selene Giallo"
+        },
+        {
+          "kind": "trustpilot",
+          "url": "https://it.trustpilot.com/reviews/6acaa8afc689f7985c3f3a30",
+          "author": "Selen",
+          "rating": 5,
+          "quote": "Grazie alla preparazione e al supporto dei docenti di Archimede Centro Studi, ho superato con successo gli esami universitari di Microeconomia e Macroeconomia. Ho apprezzato particolarmente la chiarezza delle spiegazioni, la competenza e l’attenzione alle mie esigenze. Un centro studi serio e professionale, che consiglio vivamente!",
+          "title": "Esperienza eccellente! ⭐️⭐️⭐️⭐️⭐️"
         }
       ]
     },

@@ -29,7 +29,7 @@ def overall_rating(records, positive_value):
         raise ValueError('Convenzione Facebook non approvata.')
     votes = []
     for record in records:
-        if record['kind'] == 'google':
+        if record['kind'] in {'google', 'trustpilot'}:
             vote = record['rating']
         elif record['kind'] == 'facebook' and record.get('recommended') is True:
             vote = positive_value
@@ -59,6 +59,13 @@ def values_for(config):
     if 'facebook' in data:
         fb_checked = date.fromisoformat(data['facebook']['checkedAt'])
         data['facebook']['checkedLabel'] = f'{fb_checked.day} {MONTHS[fb_checked.month - 1]} {fb_checked.year}'
+    if 'trustpilot' in data:
+        tp = data['trustpilot']
+        if not 0 <= tp['trustScore'] <= 5 or not isinstance(tp['count'], int) or tp['count'] < 0:
+            raise ValueError('Riepilogo Trustpilot non valido.')
+        tp['scoreLabel'] = f"{tp['trustScore']:.1f}".replace('.', ',')
+        tp_date = date.fromisoformat(tp['checkedAt'])
+        tp['checkedLabel'] = f'{tp_date.day} {MONTHS[tp_date.month - 1]} {tp_date.year}'
     data['contacts']['whatsapp'] = 'https://wa.me/' + data['contacts']['phone'].lstrip('+')
     for number_key, label_key in [('phone','phoneLabel'),('secondaryPhone','secondaryPhoneLabel')]:
         number = data['contacts'][number_key]
@@ -67,7 +74,7 @@ def values_for(config):
         match = re.fullmatch(r'\+39([0-9]{3})([0-9]{3})([0-9]{4})',number)
         data['contacts'][label_key] = '+39 ' + ' '.join(match.groups()) if match else number
     values = {}
-    for section in ('contacts', 'links', 'google', 'addresses', 'publishing', 'organization', 'facebook'):
+    for section in ('contacts', 'links', 'google', 'addresses', 'publishing', 'organization', 'facebook', 'trustpilot'):
         if section not in data:
             continue
         for key, value in data[section].items():

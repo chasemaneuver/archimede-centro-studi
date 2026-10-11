@@ -1,8 +1,20 @@
 {
-  "checkedAt": "2026-10-09",
+  "checkedAt": "2026-10-11",
   "rating": 5,
-  "count": 27,
+  "count": 28,
   "reviews": [
+    {
+      "id": "google-27",
+      "name": "Alice Silvestri",
+      "title": "Le mie bimbe vanno molto volentieri",
+      "quote": "Persone stupende, con l'animo speciale, prepatate per ogni tipo di materia e soprattutto pronte a far stare a proprio agio i bambini! le mie bimbe vanno molto volentieri.",
+      "source": "https://maps.app.goo.gl/FwxeQ816fzpM2o5cA",
+      "kind": "google",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
     {
       "id": "google-0",
       "name": "Simona Madeddu",
@@ -329,4 +341,3 @@
     }
   ]
 }
-

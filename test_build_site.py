@@ -7,11 +7,12 @@ class SharedSourcesTests(unittest.TestCase):
     def test_overall_rating_counts_unique_rated_cards_only(self):
         records = [{'kind':'google','rating':4,'additionalSources':[{'kind':'facebook'}]},
                    {'kind':'facebook','recommended':True},
-                   {'kind':'manual','rating':5}]
+                   {'kind':'manual','rating':5},
+                   {'kind':'trustpilot','rating':5}]
         result = site.overall_rating(records,5)
-        self.assertEqual(result['count'],2)
-        self.assertEqual(result['rating'],4.5)
-        self.assertEqual(result['ratingLabel'],'4,5')
+        self.assertEqual(result['count'],3)
+        self.assertEqual(result['rating'],14/3)
+        self.assertEqual(result['ratingLabel'],'4,7')
         with self.assertRaises(ValueError):
             site.overall_rating([{'kind':'facebook','recommended':False}],5)
 

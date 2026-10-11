@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-11",
+  "trustScore": 4.0,
+  "count": 4,
+  "reviews": [
+    {
+      "id": "trustpilot-selen",
+      "name": "Selen",
+      "title": "Esperienza eccellente! ⭐️⭐️⭐️⭐️⭐️",
+      "quote": "Grazie alla preparazione e al supporto dei docenti di Archimede Centro Studi, ho superato con successo gli esami universitari di Microeconomia e Macroeconomia. Ho apprezzato particolarmente la chiarezza delle spiegazioni, la competenza e l’attenzione alle mie esigenze. Un centro studi serio e professionale, che consiglio vivamente!",
+      "source": "https://it.trustpilot.com/reviews/6acaa8afc689f7985c3f3a30",
+      "kind": "trustpilot",
+      "category": "universita",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false,
+      "mergedInto": "google-7"
+    },
+    {
+      "id": "trustpilot-valentina",
+      "name": "Valentina Scarponcini",
+      "title": "Centro professionale e accogliente",
+      "quote": "Centro professionale e accogliente, sempre disponibili a tutte le esigenze dei ragazzi e di noi genitori .",
+      "source": "https://it.trustpilot.com/reviews/6aca99f781695188ba3ab491",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-davide",
+      "name": "Davide Di iorio",
+      "title": "Tutor di Estimo davvero bravissima",
+      "quote": "Tutor di Estimo davvero bravissima Spiega gli argomenti in modo chiaro e semplice, è molto preparata , paziente e disponibile. Grazie al suo aiuto è più facile comprendere anche gli argomenti più difficili della materia. Consigliatissimo a chiunque abbia bisogno di un supporto nello studio. 5 stelle meritatissime!",
+      "source": "https://it.trustpilot.com/reviews/6aca871ad834deed882effee",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-stefano",
+      "name": "Stefano Cicalini",
+      "title": "Le spiegazioni sono chiare e sto migliorando molto",
+      "quote": "Frequento Archimede Centro Studi per tutte le materie, soprattutto informatica, matematica e sistemi e reti. Mi trovo davvero bene, le spiegazioni sono chiare e sto migliorando molto. Ottima esperienza, lo consiglio!",
+      "source": "https://it.trustpilot.com/reviews/6aca681ba0168617b8758503",
+      "kind": "trustpilot",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    }
+  ]
+}
