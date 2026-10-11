@@ -271,3 +271,7 @@ Semplificato il fronte delle nove schede con foto tematiche, filtro scuro, titol
 
 ## 11 ottobre 2026 - Copertine servizi diversificate
 Sostituite le nove foto con librerie a tutta parete, schemi, aula rossa, libri colorati, sede esame, Collemaggio, campus immaginario, cadetti con tricolore e aula blu. Template e dettagli conservati.
+
+
+## 11 ottobre 2026 - Foto concorsi scelta dal centro
+Sostituita la copertina Preparazione concorsi con immagine fornita dall’utente. Stile e contenuto conservati.
