@@ -292,3 +292,6 @@ Aggiunta Home e spostato Il tuo 5×1000 dopo Domande frequenti, seguendo l’ord
 
 ## 11 ottobre 2026 — Badge recensioni
 Rimosso il TrustBox Review Collector ridondante e il relativo script; conservato il link diretto per scrivere su Trustpilot.
+
+## 11 ottobre 2026 — Scambio sfondi
+Scambiati aula verde della home e aula rossa della pagina Materiale personalizzato, conservando le opacità delle sezioni.
