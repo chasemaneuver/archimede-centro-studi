@@ -283,3 +283,6 @@ Recuperata la grafica originale della home a destra del titolo di Risorse, sotto
 
 ## 11 ottobre 2026 - Punteggi recensioni uniformi
 Google Maps e Trustpilot mostrano il punteggio completo con lo stesso stile, senza spazio prima di /5.
+
+## 11 ottobre 2026 — Rimozione fotografia
+Rimossa home-gallery-08 dalla home, dai laboratori e dall’album (42 immagini). Eliminati originale e miniatura dal repository corrente.
