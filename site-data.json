@@ -168,11 +168,6 @@
     {
       "url": "./cinque-per-mille.html",
       "label": "Il tuo 5×1000"
-    },
-    {
-      "label": "Collaborazioni ↗",
-      "external": true,
-      "linkKey": "collaborations"
     }
   ],
   "addresses": {
@@ -197,7 +192,7 @@
     "positiveRatingConvention": 5
   },
   "trustpilot": {
-    "trustScore": 4.0,
+    "trustScore": 4,
     "count": 4,
     "checkedAt": "2026-10-11",
     "url": "https://it.trustpilot.com/review/archimedecentrostudi.com"
