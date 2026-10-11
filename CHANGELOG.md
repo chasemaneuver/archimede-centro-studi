@@ -249,3 +249,6 @@ Google: 28 recensioni, media visualizzata 5,0. Trustpilot: 4 recensioni a 5 stel
 
 ## 11 ottobre 2026 — Riordino repository
 150 file spostati in assets, templates, content, docs e archivio. Archiviati script Google obsoleto e stemma Comune non utilizzato. URL pubblici invariati tramite layout.py; aggiunti controlli di collisione nomi e di esclusione archivio. Aggiornate guide e istruzioni anteprima; nessuna modifica ai contenuti o al database.
+
+## 11 ottobre 2026 — Stelle riepilogo Trustpilot
+Aggiunte stelle accanto al TrustScore, nello stile Google. Riempimento proporzionale al valore centralizzato, senza alterare punteggio o media home. Riepilogo Google con massimo /5 esplicito.

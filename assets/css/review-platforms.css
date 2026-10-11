@@ -13,3 +13,5 @@
 .review-platforms .trustpilot-summary .review-summary-links{width:100%}
 .review-platforms .trustpilot-widget{width:100%;min-height:52px;margin-top:8px}
 @media(max-width:950px){.review-platforms{grid-template-columns:1fr;gap:22px}.review-platforms .platform-summary+ .platform-summary{border-left:0;border-top:1px solid #c9ccc8;padding-left:0;padding-top:22px}}
+
+.google-summary .google-stars.trustpilot-stars{position:relative;display:inline-block;color:#c9ccc8;white-space:nowrap}.trustpilot-stars .trustpilot-stars-fill{position:absolute;inset:0 auto 0 0;overflow:hidden;color:#b66c07;white-space:nowrap}

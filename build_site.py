@@ -65,6 +65,7 @@ def values_for(config):
         if not 0 <= tp['trustScore'] <= 5 or not isinstance(tp['count'], int) or tp['count'] < 0:
             raise ValueError('Riepilogo Trustpilot non valido.')
         tp['scoreLabel'] = f"{tp['trustScore']:.1f}".replace('.', ',')
+        tp['starsPercent'] = f"{tp['trustScore'] * 20:g}"
         tp_date = date.fromisoformat(tp['checkedAt'])
         tp['checkedLabel'] = f'{tp_date.day} {MONTHS[tp_date.month - 1]} {tp_date.year}'
     data['contacts']['whatsapp'] = 'https://wa.me/' + data['contacts']['phone'].lstrip('+')
