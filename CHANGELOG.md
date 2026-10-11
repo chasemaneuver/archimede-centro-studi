@@ -286,3 +286,6 @@ Google Maps e Trustpilot mostrano il punteggio completo con lo stesso stile, sen
 
 ## 11 ottobre 2026 — Rimozione fotografia
 Rimossa home-gallery-08 dalla home, dai laboratori e dall’album (42 immagini). Eliminati originale e miniatura dal repository corrente.
+
+## 11 ottobre 2026 — Ordine footer
+Aggiunta Home e spostato Il tuo 5×1000 dopo Domande frequenti, seguendo l’ordine richiesto in tutte le pagine.

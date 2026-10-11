@@ -109,6 +109,11 @@
   ],
   "footer": [
     {
+      "url": "./index.html",
+      "label": "Home",
+      "external": false
+    },
+    {
       "url": "./index.html#metodo",
       "label": "La nostra mission",
       "external": false
@@ -122,6 +127,10 @@
       "url": "./domande-frequenti.html",
       "label": "Domande frequenti",
       "external": false
+    },
+    {
+      "url": "./cinque-per-mille.html",
+      "label": "Il tuo 5×1000"
     },
     {
       "url": "./percorsi.html",
@@ -167,10 +176,6 @@
       "url": "./eventi.html",
       "label": "Eventi",
       "external": false
-    },
-    {
-      "url": "./cinque-per-mille.html",
-      "label": "Il tuo 5×1000"
     }
   ],
   "addresses": {
