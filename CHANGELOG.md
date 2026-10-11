@@ -289,3 +289,6 @@ Rimossa home-gallery-08 dalla home, dai laboratori e dall’album (42 immagini).
 
 ## 11 ottobre 2026 — Ordine footer
 Aggiunta Home e spostato Il tuo 5×1000 dopo Domande frequenti, seguendo l’ordine richiesto in tutte le pagine.
+
+## 11 ottobre 2026 — Badge recensioni
+Rimosso il TrustBox Review Collector ridondante e il relativo script; conservato il link diretto per scrivere su Trustpilot.
