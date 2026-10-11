@@ -267,3 +267,7 @@ Rimosso il morphing acquatico della bolla verde acqua in entrambe le classi di g
 ## 11 ottobre 2026 — Copertine fotografiche servizi
 
 Semplificato il fronte delle nove schede con foto tematiche, filtro scuro, titolo bianco bold e tag superiore. Retro e interazioni esistenti conservati.
+
+
+## 11 ottobre 2026 - Copertine servizi diversificate
+Sostituite le nove foto con librerie a tutta parete, schemi, aula rossa, libri colorati, sede esame, Collemaggio, campus immaginario, cadetti con tricolore e aula blu. Template e dettagli conservati.
