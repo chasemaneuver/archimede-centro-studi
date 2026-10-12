@@ -295,3 +295,6 @@ Rimosso il TrustBox Review Collector ridondante e il relativo script; conservato
 
 ## 11 ottobre 2026 — Scambio sfondi
 Scambiati aula verde della home e aula rossa della pagina Materiale personalizzato, conservando le opacità delle sezioni.
+
+## 12 ottobre 2026 — Nuove recensioni Trustpilot
+Inseriti testi integrali di Alexandra Boltasiu, Simona Madeddu e Manuel Meloni, link e tag; aggiornati conteggi e media complessiva. Testi differenti dalle recensioni già presenti. TrustScore 4,2 confermato dal centro.

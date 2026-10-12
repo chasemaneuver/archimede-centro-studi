@@ -1,8 +1,44 @@
 {
-  "checkedAt": "2026-10-11",
-  "trustScore": 4.0,
-  "count": 4,
+  "checkedAt": "2026-10-12",
+  "trustScore": 4.2,
+  "count": 7,
   "reviews": [
+    {
+      "id": "trustpilot-alexandra",
+      "name": "Alexandra Boltasiu",
+      "title": "Ho iniziato il mio percorso con Stella…",
+      "category": "universita",
+      "source": "https://it.trustpilot.com/reviews/6acc7cdb60df6a27bc1450ea",
+      "quote": "Ho iniziato il mio percorso con Stella tanti anni fa, quando frequentavo il liceo, ancora prima che esistesse il centro studi Archimede, e da allora è stata una figura fondamentale nel mio percorso scolastico e universitario. ❤️\nMi ha aiutata con matematica e fisica in un momento in cui pensavo davvero di non farcela. Senza di lei, probabilmente, non sarei riuscita ad andare avanti e a superare tante difficoltà.\nMa la cosa più bella è che il nostro percorso non si è fermato al liceo! Anche durante l'università, Stella è stata fondamentale per me, aiutandomi con materie impegnative come chimica, biologia e tantissima fisica. Mi ha letteralmente salvata in più di un'occasione! 😂❤️\nPer me, tutto questo va ben oltre le semplici ripetizioni. Negli anni ho trovato in Stella una persona competente, disponibile e capace di credere in te anche quando sei tu la prima a non credere abbastanza in te stessa.\nVedere nascere e crescere il centro studi archimede, sapendo che dietro c'è una persona che mi ha accompagnata per così tanti anni, rende tutto ancora più speciale.\nConsiglio Archimede con tutto il cuore a chiunque abbia bisogno di una mano con lo studio. A volte basta incontrare la persona giusta per cambiare completamente il proprio percorso, e per me quella persona è stata Stella. ❤️\nGrazie di cuore per avermi accompagnata dal liceo fino all'università e per avermi aiutata a raggiungere traguardi che, senza il tuo supporto, sarebbero stati molto più difficili da raggiungere.\nUna garanzia assoluta, sotto ogni punto di vista! Super consigliato! ⭐️❤️",
+      "kind": "trustpilot",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-simona",
+      "name": "Simona Madeddu",
+      "title": "Esperienza ottima con il Centro Studi…",
+      "category": "scuola",
+      "source": "https://it.trustpilot.com/reviews/6acbe71e9382ff54baca0e33",
+      "quote": "Esperienza ottima con il Centro Studi Archimede! Mia figlia doveva recuperare un debito in STA (Scienze e Tecnologie Applicate) e grazie alla loro preparazione, pazienza e metodo ha superato l'esame alla grande. Docenti preparatissimi, disponibili e bravissimi a spiegare. Ambiente serio, organizzato e accogliente. Consigliatissimi, 5 stelle meritatissime!",
+      "kind": "trustpilot",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "id": "trustpilot-manuel",
+      "name": "Manuel Meloni",
+      "title": "Qualità e umanità e versatilità di altissimo livello.......",
+      "category": "metodo",
+      "source": "https://it.trustpilot.com/reviews/6acbd27f457dc2b420318bd5",
+      "quote": "I professori e gli corsi sono di alta qualità, Le persone che compongono Archimede centro studi sono persone con una forte umanità, e sono molto qualificati, sono Adatti ad ogni fascia di età, e persone con varie forme di difficoltà e problematicità, purtroppo non posso mettere 10 stelle perché Non è possibile inserirlo, Lo consigliato lo consiglio e lo consiglierò",
+      "kind": "trustpilot",
+      "rating": 5,
+      "individualLink": true,
+      "truncated": false
+    },
     {
       "id": "trustpilot-selen",
       "name": "Selen",
