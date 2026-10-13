@@ -29,3 +29,4 @@
 @media(max-width:900px){.home-photo-hero .hero-grid{grid-template-columns:1fr;gap:34px}.hero-opening-actions{flex-direction:row;justify-content:flex-start;flex-wrap:wrap}.hero-opening-actions .button{min-width:190px}.home-photo-hero .eyebrow{margin-inline:0;max-width:none}}
 @media(max-width:700px){.home-photo-hero h1{font-size:clamp(44px,11.8vw,76px)}.hero-opening-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-opening-actions .button{min-width:0;padding-inline:12px;font-size:13px}.home-photo-hero .hero-grid{padding-block:48px}}
 
+.hero-opening-actions .button:first-child{background:var(--ink);color:#fff;border:1px solid var(--ink)}
