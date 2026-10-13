@@ -13,7 +13,7 @@
   <link rel="icon" href="./logo.png">
   <link rel="stylesheet" href="./styles.css?v=home-bold-20261009">
 <link rel="stylesheet" href="./home-motion.css?v=gallery-20261007">
-<link rel="canonical" href="{{publishing.baseUrl}}index.html"><link rel="stylesheet" href="./home-background.css?v=swap-20261011"><link rel="stylesheet" href="./home-layout.css?v=hero-actions-20261013"></head>
+<link rel="canonical" href="{{publishing.baseUrl}}index.html"><link rel="stylesheet" href="./home-background.css?v=swap-20261011"><link rel="stylesheet" href="./home-layout.css?v=hero-actions-20261013b"></head>
 <body class="home-page">
   <a class="skip" href="#contenuto">Vai al contenuto</a>
   {{header}}
@@ -37,6 +37,7 @@
 <script src="./home.js?v=fluid-water-20261007" defer></script>
 </body>
 </html>
+
 
 
 

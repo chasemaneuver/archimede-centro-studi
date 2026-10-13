@@ -25,8 +25,9 @@
 .home-photo-hero h1{font-size:clamp(54px,6.2vw,88px)}
 .hero-opening-actions{display:flex;flex-direction:column;gap:16px}
 .hero-opening-actions .button{justify-content:center;text-align:center;min-height:56px;font-weight:700;box-shadow:0 4px 18px rgba(0,0,0,.25)}
-.hero-opening-actions .ghost{background:rgba(250,249,245,.94);color:var(--ink);border-color:var(--ink)}
+.hero-opening-actions .ghost{background:rgba(250,249,245,.94);color:#004A59;border-color:#004A59}
 @media(max-width:900px){.home-photo-hero .hero-grid{grid-template-columns:1fr;gap:34px}.hero-opening-actions{flex-direction:row;justify-content:flex-start;flex-wrap:wrap}.hero-opening-actions .button{min-width:190px}.home-photo-hero .eyebrow{margin-inline:0;max-width:none}}
 @media(max-width:700px){.home-photo-hero h1{font-size:clamp(44px,11.8vw,76px)}.hero-opening-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-opening-actions .button{min-width:0;padding-inline:12px;font-size:13px}.home-photo-hero .hero-grid{padding-block:48px}}
 
-.hero-opening-actions .button:first-child{background:var(--ink);color:#fff;border:1px solid var(--ink)}
+.hero-opening-actions .button:first-child{background:#004A59;color:#fff;border:1px solid #004A59}
+
