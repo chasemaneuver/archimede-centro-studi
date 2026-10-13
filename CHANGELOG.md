@@ -304,3 +304,6 @@ Collegato contatore archimede-mv su tutte le pagine, produzione soltanto, statis
 
 ## 13 ottobre 2026 — Azioni nella prima schermata
 Titolo della home spostato a sinistra, freccia inferiore rimossa. Pulsanti a destra Esplora i percorsi verso mission e Contattaci verso conversazione; layout adattato su telefono.
+
+## 13 ottobre 2026 — Link percorsi home
+Il pulsante hero Esplora i percorsi apre direttamente Tutti i servizi (percorsi.html); freccia aggiornata a ↗.
