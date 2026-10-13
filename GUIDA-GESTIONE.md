@@ -284,3 +284,6 @@ Google: 28 recensioni, media visualizzata 5,0. Trustpilot: 4 recensioni a 5 stel
 
 ## Organizzazione del repository — 11 ottobre 2026
 Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/images/`, CSS in `assets/css/`, JavaScript in `assets/js/`, note sulle immagini in `docs/`. Le menzioni storiche di nomi senza cartella vanno risolte in queste directory. I JSON, gli script Python, i test e gli HTML generati restano in radice. `layout.py` mantiene gli URL pubblici dei file invariati copiando gli asset nella radice del sito generato. Non inserire i prefissi delle cartelle sorgente negli URL HTML/CSS/JS: ad esempio `assets/images/logo.png` resta pubblicato come `./logo.png`. Per anteprime compilare con `python build_site.py --output-dir _site` e servire `_site`, non la radice del repository. I comandi di build e test restano invariati. `archivio/` non viene pubblicato.
+
+## 13 ottobre 2026 — Statistiche GoatCounter
+Dashboard privata https://archimede-mv.goatcounter.com/. analytics.js nel footer condiviso carica il contatore solo sul dominio di produzione. Sessioni, visite individuali, localizzazione, schermo e lingua disattivati; referrer limitato al dominio, path senza query/hash. Conta visualizzazioni, non utenti unici. Non cambiare impostazioni senza riallineare privacy. Nessuna chiave API necessaria.

@@ -298,3 +298,6 @@ Scambiati aula verde della home e aula rossa della pagina Materiale personalizza
 
 ## 12 ottobre 2026 — Nuove recensioni Trustpilot
 Inseriti testi integrali di Alexandra Boltasiu, Simona Madeddu e Manuel Meloni, link e tag; aggiornati conteggi e media complessiva. Testi differenti dalle recensioni già presenti. TrustScore 4,2 confermato dal centro.
+
+## 13 ottobre 2026 — GoatCounter
+Collegato contatore archimede-mv su tutte le pagine, produzione soltanto, statistiche aggregate e dashboard privata; aggiornata privacy e rimossi riferimenti al widget Trustpilot non più attivo.
