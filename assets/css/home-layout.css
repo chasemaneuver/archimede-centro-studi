@@ -9,16 +9,23 @@
 .home-photo-hero .eyebrow{color:#fff;font-weight:900;font-size:clamp(15px,1.7vw,22px);letter-spacing:.055em;justify-content:center}
 .home-photo-hero h1{color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(54px,7.5vw,104px);line-height:1.02;letter-spacing:-.055em}
 .home-photo-hero h1 em{color:var(--orange);font-family:Georgia,serif;font-weight:700;text-shadow:4px 4px 6px rgba(0,0,0,.99),0 2px 18px rgba(0,0,0,.6)}
-.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);width:44px;height:48px;display:grid;place-items:center;color:#fff;border-radius:22px}
-.hero-scroll svg{width:24px;height:32px;filter:drop-shadow(4px 4px 4px rgba(0,0,0,.99)) drop-shadow(0 1px 8px rgba(0,0,0,.9));transition:transform .2s}
-.hero-scroll:hover svg{transform:translateY(4px)}
-.hero-scroll:focus-visible{outline:3px solid var(--orange);outline-offset:4px;background:var(--paper)}
 .home-mission{padding-top:0}
 .home-mission .hero-bottom{padding-block:40px;margin-bottom:48px;border-bottom:1px solid var(--line)}
 .home-mission .mission-contact .mission-contact-buttons{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
 .home-mission .mission-contact .mission-contact-buttons .button{font-size:11px;padding:11px 8px;gap:5px;line-height:1.4;text-align:center;min-height:58px}
 @media(max-width:700px){.home-photo-hero{min-height:calc(100svh - 74px)}.home-photo-hero .hero-grid{padding-block:70px 110px}.home-photo-hero::before{background-position:43% center}.home-photo-hero .eyebrow{font-size:15px;letter-spacing:.045em;max-width:330px;margin-inline:auto}.home-mission .hero-bottom{margin-bottom:32px;padding-block:32px}.home-mission .mission-contact{padding-inline:16px}}
 @media(max-width:380px){.home-mission .mission-contact .mission-contact-buttons .button{padding-inline:5px;font-size:10px;gap:3px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-scroll svg{transition:none}}
-
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(max-width:700px){.home-photo-hero h1{font-size:clamp(44px,11.8vw,76px)}.home-photo-hero .hero-grid{width:calc(100% - 36px)}}
+
+/* Opening title and actions, 13 October 2026. */
+.home-photo-hero .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:48px;align-items:center;text-align:left;padding-block:70px}
+.home-photo-hero .hero-copy{margin:0;min-width:0}
+.home-photo-hero .eyebrow{justify-content:flex-start}
+.home-photo-hero h1{font-size:clamp(54px,6.2vw,88px)}
+.hero-opening-actions{display:flex;flex-direction:column;gap:16px}
+.hero-opening-actions .button{justify-content:center;text-align:center;min-height:56px;font-weight:700;box-shadow:0 4px 18px rgba(0,0,0,.25)}
+.hero-opening-actions .ghost{background:rgba(250,249,245,.94);color:var(--ink);border-color:var(--ink)}
+@media(max-width:900px){.home-photo-hero .hero-grid{grid-template-columns:1fr;gap:34px}.hero-opening-actions{flex-direction:row;justify-content:flex-start;flex-wrap:wrap}.hero-opening-actions .button{min-width:190px}.home-photo-hero .eyebrow{margin-inline:0;max-width:none}}
+@media(max-width:700px){.home-photo-hero h1{font-size:clamp(44px,11.8vw,76px)}.hero-opening-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-opening-actions .button{min-width:0;padding-inline:12px;font-size:13px}.home-photo-hero .hero-grid{padding-block:48px}}
+

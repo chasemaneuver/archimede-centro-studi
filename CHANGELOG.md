@@ -301,3 +301,6 @@ Inseriti testi integrali di Alexandra Boltasiu, Simona Madeddu e Manuel Meloni, 
 
 ## 13 ottobre 2026 — GoatCounter
 Collegato contatore archimede-mv su tutte le pagine, produzione soltanto, statistiche aggregate e dashboard privata; aggiornata privacy e rimossi riferimenti al widget Trustpilot non più attivo.
+
+## 13 ottobre 2026 — Azioni nella prima schermata
+Titolo della home spostato a sinistra, freccia inferiore rimossa. Pulsanti a destra Esplora i percorsi verso mission e Contattaci verso conversazione; layout adattato su telefono.
