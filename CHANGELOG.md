@@ -311,3 +311,7 @@ Il pulsante hero Esplora i percorsi apre direttamente Tutti i servizi (percorsi.
 
 ## 14 ottobre 2026 — Nuova palette del brand
 Applicata la palette approvata: blu zaffiro #103B66, rosso rubino #C93B2B, bianco #FFFFFF, grigio #F4F6F9, carbone #1A1D20 e blu notte #0B2540. Aggiornati CSS condivisi, grafica SVG incorporata e sorgente, logo planetario vettoriale, favicon e metadati. Pulsanti rossi con testo bianco; footer blu notte. Le fotografie e i marchi di terzi mantengono i colori originali. Font, impaginazione, contenuti e animazioni rimangono quelli approvati. Il vecchio logo è conservato nell’archivio non pubblicato. Riferimento corrente: STILE-E-COMPONENTI.md.
+
+
+## 15 ottobre 2026 — Sfondi delle sezioni
+Introduzioni senza fotografia, Recensioni, elenco Servizi e Risorse gratuite su fondo azzurro derivato #E2E8EF. FAQ, sezioni program-tint senza fotografia e sostegno 5×1000 su rosa rubino tenue #F9E7E4. I riquadri di contatto finali usano blu zaffiro, testo bianco, pulsante rosso e alternativa con bordo bianco. Area commenti azzurra; corpi lunghi degli articoli e della privacy neutri. Regole condivise in styles.css e variabili --surface-blue/--surface-ruby; le fotografie mantengono opacità e ritaglio approvati. Alternare superfici e carta bianca nelle nuove sezioni, evitando di applicare sfondi scuri a testi lunghi.

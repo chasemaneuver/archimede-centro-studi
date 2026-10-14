@@ -224,3 +224,7 @@ Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/ima
 ## Copertine servizi — 11 ottobre 2026
 
 Nove fotografie tematiche in WebP, decorative, con oscuramento CSS e gradiente più intenso nella fascia superiore. Sul fronte solo titolo bianco bold in alto a sinistra e piccolo tag in alto a destra. Le descrizioni rimangono nel retro e gli ID dei servizi e i controlli accessibili restano invariati. Le immagini editoriali generate non entrano nell’Album documentario; provenienza conservata nelle note interne in docs/.
+
+
+## 15 ottobre 2026 — Sfondi delle sezioni
+Introduzioni senza fotografia, Recensioni, elenco Servizi e Risorse gratuite su fondo azzurro derivato #E2E8EF. FAQ, sezioni program-tint senza fotografia e sostegno 5×1000 su rosa rubino tenue #F9E7E4. I riquadri di contatto finali usano blu zaffiro, testo bianco, pulsante rosso e alternativa con bordo bianco. Area commenti azzurra; corpi lunghi degli articoli e della privacy neutri. Regole condivise in styles.css e variabili --surface-blue/--surface-ruby; le fotografie mantengono opacità e ritaglio approvati. Alternare superfici e carta bianca nelle nuove sezioni, evitando di applicare sfondi scuri a testi lunghi.

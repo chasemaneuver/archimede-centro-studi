@@ -1,25 +1,50 @@
-<!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#103b66">
-  <meta name="description" content="{{event.description}}">
-  <meta property="og:title" content="{{event.title}} · Archimede Centro Studi">
-  <meta property="og:description" content="{{event.description}}">
-  <meta property="og:type" content="website">
-  <title>{{event.title}} · Archimede Centro Studi</title>
-  <link rel="icon" href="./logo.svg?v=20261014">
-  <link rel="stylesheet" href="./styles.css?v=20261014-palette">
-<link rel="canonical" href="{{publishing.baseUrl}}pescara-solidale.html"><script type="application/ld+json">{{event.schema}}</script><link rel="stylesheet" href="./support-logos.css?v=20261014-palette"></head>
-<body>
-  <a class="skip" href="#contenuto">Vai al contenuto</a>
-  {{header}}
-  <main id="contenuto" aria-labelledby="page-title"><section class="page-intro"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><a href="./risorse.html">Risorse</a><span aria-hidden="true">/</span><span aria-current="page">Pescara Solidale</span></nav><div class="solidale-intro-grid"><div class="page-intro-copy"><span class="eyebrow">{{event.eyebrow}}</span><h1 id="page-title">{{event.titleFirst}}<br><em>{{event.titleEmphasis}}</em></h1><p>{{event.intro}}</p></div><div class="solidale-sponsors" aria-label="BuoniSpesa e Lascaux"><a class="solidale-sponsor sponsor-buonispesa" href="https://buonispesa.lascaux.it/" target="_blank" rel="noopener" aria-label="Vai a BuoniSpesa Lascaux"><img src="./sponsor-buonispesa-lascaux.webp" width="474" height="474" alt="BuoniSpesa"></a><div class="solidale-sponsor sponsor-lascaux"><img src="./sponsor-buonispesa-lascaux.webp" width="474" height="474" alt="Lascaux Digital Evolution"></div></div></div></div></section>{{event.body}}</main>
-  {{footer}}
-  <a class="whatsapp" href="{{contacts.whatsapp}}" target="_blank" rel="noopener" aria-label="Contatta Archimede su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.3-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8 7c.5 4 3 6.5 7 7l1.5-2-2-1-1 1c-1.4-.7-2.3-1.6-3-3l1-1-1-2Z"/></svg></a>
-  <script src="./site.js" defer></script>
-</body>
-</html>
-
-
+<!doctype html>
+
+<html lang="it">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#103b66">
+
+  <meta name="description" content="{{event.description}}">
+
+  <meta property="og:title" content="{{event.title}} · Archimede Centro Studi">
+
+  <meta property="og:description" content="{{event.description}}">
+
+  <meta property="og:type" content="website">
+
+  <title>{{event.title}} · Archimede Centro Studi</title>
+
+  <link rel="icon" href="./logo.svg?v=20261014">
+
+  <link rel="stylesheet" href="./styles.css?v=20261015-surfaces">
+
+<link rel="canonical" href="{{publishing.baseUrl}}pescara-solidale.html"><script type="application/ld+json">{{event.schema}}</script><link rel="stylesheet" href="./support-logos.css?v=20261014-palette"></head>
+
+<body>
+
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+
+  {{header}}
+
+  <main id="contenuto" aria-labelledby="page-title"><section class="page-intro"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><a href="./risorse.html">Risorse</a><span aria-hidden="true">/</span><span aria-current="page">Pescara Solidale</span></nav><div class="solidale-intro-grid"><div class="page-intro-copy"><span class="eyebrow">{{event.eyebrow}}</span><h1 id="page-title">{{event.titleFirst}}<br><em>{{event.titleEmphasis}}</em></h1><p>{{event.intro}}</p></div><div class="solidale-sponsors" aria-label="BuoniSpesa e Lascaux"><a class="solidale-sponsor sponsor-buonispesa" href="https://buonispesa.lascaux.it/" target="_blank" rel="noopener" aria-label="Vai a BuoniSpesa Lascaux"><img src="./sponsor-buonispesa-lascaux.webp" width="474" height="474" alt="BuoniSpesa"></a><div class="solidale-sponsor sponsor-lascaux"><img src="./sponsor-buonispesa-lascaux.webp" width="474" height="474" alt="Lascaux Digital Evolution"></div></div></div></div></section>{{event.body}}</main>
+
+  {{footer}}
+
+  <a class="whatsapp" href="{{contacts.whatsapp}}" target="_blank" rel="noopener" aria-label="Contatta Archimede su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.3-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8 7c.5 4 3 6.5 7 7l1.5-2-2-1-1 1c-1.4-.7-2.3-1.6-3-3l1-1-1-2Z"/></svg></a>
+
+  <script src="./site.js" defer></script>
+
+</body>
+
+</html>
+
+
+
+
+

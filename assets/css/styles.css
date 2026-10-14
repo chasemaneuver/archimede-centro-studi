@@ -402,3 +402,20 @@ h1,h2,h3{color:var(--brand-blue)}
 .path-row:nth-child(2) .step-dot{color:var(--brand-white)}
 .program-contact .button{background:var(--brand-red);color:var(--brand-white)}
 .program-contact .button:hover{background:#a72f23}
+
+/* Coloured section surfaces, 15 October 2026. Keep photographs visible and
+   leave long article/privacy bodies neutral for sustained reading. */
+:root{--surface-blue:#e2e8ef;--surface-ruby:#f9e7e4}
+.page-intro:not(.section-photo),.review-collection{background:var(--surface-blue)}
+.section.services,#risorse{background:var(--surface-blue)}
+.section.faq,.program-tint:not(.section-photo),.five-support{background:var(--surface-ruby)}
+.contact,.reviews-page .contact{background:var(--surface-blue)}
+.contact .contact-box{background:var(--brand-blue);color:var(--brand-white)}
+.contact .contact-box h2,.contact .contact-box .eyebrow{color:var(--brand-white)}
+.contact .contact-box p,.contact .contact-box .sub-link{color:var(--brand-white)}
+.contact .contact-box .contact-caption{color:#e2e8ef}
+.contact .contact-box .button.primary{background:var(--brand-red);color:var(--brand-white)}
+.contact .contact-box .button.primary:hover{background:#a72f23}
+.contact .contact-box .button.outline{border-color:var(--brand-white);color:var(--brand-white)}
+.contact .contact-box .button.outline:hover{background:#ffffff12}
+.article-comments{background:var(--surface-blue);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,36px)}
