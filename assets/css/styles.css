@@ -419,3 +419,42 @@ h1,h2,h3{color:var(--brand-blue)}
 .contact .contact-box .button.outline{border-color:var(--brand-white);color:var(--brand-white)}
 .contact .contact-box .button.outline:hover{background:#ffffff12}
 .article-comments{background:var(--surface-blue);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,36px)}
+
+/* Full brand colour on the two identity pages, 15 October 2026.
+   White cards keep long reviews readable; the surrounding bands alternate. */
+.reviews-hero{background:var(--brand-blue);color:var(--brand-white);padding:42px 0 58px}
+.reviews-hero h1,.reviews-hero h1 em,.reviews-hero .eyebrow{color:var(--brand-white)}
+.reviews-hero h1 em::after{background:var(--brand-red)}
+.reviews-platform-band{background:var(--brand-white);padding:22px 0}
+.reviews-platform-band .review-platforms{margin:0;border-bottom:0}
+.reviews-page .review-collection{background:var(--brand-midnight);color:var(--brand-white);padding:36px 0 56px}
+.reviews-page .review-tools{margin-top:0;border-color:#ffffff30}
+.reviews-page .review-count,.reviews-page .review-context{color:#e2e8ef}
+.reviews-page .review-filter{background:var(--brand-white);color:var(--brand-blue);border-color:var(--brand-white)}
+.reviews-page .review-filter[aria-pressed=true]{background:var(--brand-red);border-color:var(--brand-red);color:var(--brand-white)}
+.reviews-page .review-card{background:var(--brand-white);color:var(--brand-text)}
+.reviews-page .review-more .button{color:var(--brand-white);border-color:var(--brand-white)}
+.reviews-page .review-more .button:hover{background:#ffffff12}
+.reviews-page .contact{background:var(--brand-red)}
+.reviews-page .contact-box{background:transparent;border-radius:0;padding-inline:0}
+.reviews-page .contact-box .eyebrow::before{background:var(--brand-white)}
+.reviews-page .contact-box .button.primary{background:var(--brand-white);color:var(--brand-blue)}
+.reviews-page .contact-box .button.primary:hover{background:var(--surface-blue)}
+.services-page .page-intro{background:var(--brand-blue);color:var(--brand-white)}
+.services-page .page-intro::after{background:linear-gradient(90deg,rgba(16,59,102,.8),rgba(16,59,102,.35))}
+.services-page .page-intro h1,.services-page .page-intro h1 em,.services-page .page-intro .eyebrow{color:var(--brand-white)}
+.services-page .page-intro h1 em::after{background:var(--brand-red)}
+.services-page .page-intro p,.services-page .page-intro .breadcrumbs{color:#e2e8ef}
+.services-page .services{background:var(--brand-midnight);color:var(--brand-white)}
+.services-page .services h2,.services-page .services .eyebrow{color:var(--brand-white)}
+.services-page .section-head>p,.services-page .services-foot p,.services-page .flip-hint{color:#e2e8ef}
+.services-page .services-foot{border-color:#ffffff30}
+.services-page .services-foot .text-link{color:var(--brand-white)}
+.services-page .flip-toggle{background:var(--brand-white);color:var(--brand-blue)}
+.services-page .flip-toggle:hover{background:var(--surface-blue)}
+.services-page .page-next{background:var(--brand-white)}
+@media(max-width:680px){.reviews-hero{padding:32px 0 38px}.reviews-platform-band{padding:12px 0}.reviews-page .review-collection{padding:22px 0 38px}}
+
+.services-page .flip-help{color:#e2e8ef}
+.services-page .page-intro h1 em{background:none}
+.reviews-hero .notebook-star[fill="#103b66"],.reviews-hero .services-satellite[fill="#103b66"],.services-page .page-intro .notebook-star[fill="#103b66"],.services-page .page-intro .services-satellite[fill="#103b66"]{stroke:var(--brand-white);stroke-width:1.5;stroke-linejoin:round}

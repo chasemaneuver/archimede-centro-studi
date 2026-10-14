@@ -228,3 +228,9 @@ Nove fotografie tematiche in WebP, decorative, con oscuramento CSS e gradiente p
 
 ## 15 ottobre 2026 — Sfondi delle sezioni
 Introduzioni senza fotografia, Recensioni, elenco Servizi e Risorse gratuite su fondo azzurro derivato #E2E8EF. FAQ, sezioni program-tint senza fotografia e sostegno 5×1000 su rosa rubino tenue #F9E7E4. I riquadri di contatto finali usano blu zaffiro, testo bianco, pulsante rosso e alternativa con bordo bianco. Area commenti azzurra; corpi lunghi degli articoli e della privacy neutri. Regole condivise in styles.css e variabili --surface-blue/--surface-ruby; le fotografie mantengono opacità e ritaglio approvati. Alternare superfici e carta bianca nelle nuove sezioni, evitando di applicare sfondi scuri a testi lunghi.
+
+
+## 15 ottobre 2026 — Colori pieni nelle pagine identitarie
+Recensioni: quattro fasce distinte, introduzione blu zaffiro con titolo bianco, riepiloghi delle piattaforme su bianco, raccolta su blu notte con schede bianche, contatti su rosso rubino con testi bianchi. Filtri attivi rossi e altri filtri bianchi; testi lunghi delle recensioni scuri su carta bianca. Tutti i servizi: introduzione blu zaffiro con testo bianco e foto come trama, elenco su blu notte, titoli chiari e schede fotografiche originali; fascia finale chiara. Conservare l’alternanza bianco/colore e la leggibilità nelle future modifiche. Le altre pagine, inclusa 5×1000, mantengono gli sfondi approvati.
+
+Sugli sfondi blu pieni, stelle e satelliti blu delle grafiche hanno un sottile contorno bianco per mantenere la visibilità; le orbite e le animazioni restano invariate.

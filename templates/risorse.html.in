@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <title>Risorse · Archimede Centro Studi</title>
   <link rel="icon" href="./logo.svg?v=20261014">
-  <link rel="stylesheet" href="./styles.css?v=20261015-surfaces">
+  <link rel="stylesheet" href="./styles.css?v=20261015-rich">
 <link rel="stylesheet" href="./home-motion.css?v=20261014-palette">
 <link rel="canonical" href="{{publishing.baseUrl}}risorse.html"></head>
 <body data-preserve-section-links>
