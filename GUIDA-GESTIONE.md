@@ -291,3 +291,8 @@ Dashboard privata https://archimede-mv.goatcounter.com/. analytics.js nel footer
 
 ## 14 ottobre 2026 — Nuova palette del brand
 Applicata la palette approvata: blu zaffiro #103B66, rosso rubino #C93B2B, bianco #FFFFFF, grigio #F4F6F9, carbone #1A1D20 e blu notte #0B2540. Aggiornati CSS condivisi, grafica SVG incorporata e sorgente, logo planetario vettoriale, favicon e metadati. Pulsanti rossi con testo bianco; footer blu notte. Le fotografie e i marchi di terzi mantengono i colori originali. Font, impaginazione, contenuti e animazioni rimangono quelli approvati. Il vecchio logo è conservato nell’archivio non pubblicato. Riferimento corrente: STILE-E-COMPONENTI.md.
+
+
+## 15 ottobre 2026 — Sezioni, banner e capitoli della guida
+Tutti i servizi: ripristinati i colori naturali della foto introduttiva, senza velo blu, con titoli blu/rosso; elenco servizi rosso rubino, testo bianco e retro delle schede blu. Imparare facendo nei Laboratori su rosso; WhatsApp accanto alla mission rosso con testo bianco. Banner contatti con etichetta colorata, testi chiari, pulsante principale rosso o blu e alternativa su grigio. Introduzione Risorse su grigio #F4F6F9; Album su rosso e Eventi su blu pieno, testi e accenti adattati.
+I due capitoli della guida in Risorse gratuite sono in un unico componente .guide-gallery: mantenere integralmente le resource-card generate e i rispettivi link. Frecce precedente/successivo, contatore, scorrimento touch, focus/tastiera e prefers-reduced-motion gestiti da assets/js/guide-gallery.js; senza JavaScript i capitoli restano raggiungibili con scorrimento orizzontale. Non duplicare gli articoli o inventare nuove guide per separare i capitoli.
