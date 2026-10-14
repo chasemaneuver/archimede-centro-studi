@@ -8,12 +8,12 @@
 .flip-card h3{font-size:27px;line-height:1.18;overflow-wrap:break-word}
 .flip-back h3{font-size:23px}
 .flip-toggle{padding-inline:28px}
-.flip-card:nth-child(3n+1) .flip-front{background:#edf6f6}
-.flip-card:nth-child(3n+2) .flip-front{background:#edf6f0}
-.flip-card:nth-child(3n) .flip-front{background:#fff5eb}
-.flip-card:nth-child(3n+1) .service-icon{background:#d2e9e7}
+.flip-card:nth-child(3n+1) .flip-front{background:#f4f6f9}
+.flip-card:nth-child(3n+2) .flip-front{background:#f4f6f9}
+.flip-card:nth-child(3n) .flip-front{background:#f4f6f9}
+.flip-card:nth-child(3n+1) .service-icon{background:#e2e8ef}
 .flip-card:nth-child(3n+2) .service-icon{background:var(--mint)}
-.flip-card:nth-child(3n) .service-icon{background:#fae1cc}
+.flip-card:nth-child(3n) .service-icon{background:#f9e7e4}
 .service-mode{line-height:1.6}
 .service-source{font-size:11px;color:var(--mint);text-decoration:underline;text-underline-offset:3px;margin-bottom:18px;align-self:flex-start}
 @media(max-width:1050px){.flip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -41,13 +41,13 @@
 
 
 /* Photographic service covers: two labels, generous visible image. */
-.flip-card .service-photo-cover{position:relative;isolation:isolate;overflow:hidden;background:#142e34;padding:24px;min-height:350px}
+.flip-card .service-photo-cover{position:relative;isolation:isolate;overflow:hidden;background:#0b2540;padding:24px;min-height:350px}
 .service-cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%;filter:brightness(.64) saturate(.82);z-index:-2}
 .service-photo-cover::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.76),rgba(0,0,0,.18) 60%,rgba(0,0,0,.12));z-index:-1;pointer-events:none}
 .service-cover-header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px}
-.flip-card .service-cover-header h3{color:#fff;font-weight:800;font-size:clamp(23px,2.05vw,29px);line-height:1.16;letter-spacing:-.025em;margin:0;text-shadow:0 2px 6px rgba(0,0,0,.65)}
-.service-cover-tag{display:inline-block;max-width:110px;background:rgba(0,0,0,.52);border:1px solid rgba(255,255,255,.45);border-radius:6px;padding:6px 8px;color:#fff;font-size:10px;font-weight:700;line-height:1.35;letter-spacing:.02em;text-align:center}
+.flip-card .service-cover-header h3{color:#ffffff;font-weight:800;font-size:clamp(23px,2.05vw,29px);line-height:1.16;letter-spacing:-.025em;margin:0;text-shadow:0 2px 6px rgba(0,0,0,.65)}
+.service-cover-tag{display:inline-block;max-width:110px;background:rgba(0,0,0,.52);border:1px solid rgba(255,255,255,.45);border-radius:6px;padding:6px 8px;color:#ffffff;font-size:10px;font-weight:700;line-height:1.35;letter-spacing:.02em;text-align:center}
 @media(max-width:680px){.flip-card .service-photo-cover{min-height:300px;padding:22px}.flip-card .service-cover-header h3{font-size:26px}.service-cover-header{gap:10px}.service-cover-tag{max-width:96px;font-size:9px}}
 @media(max-width:360px){.flip-card .service-photo-cover{padding:18px}.flip-card .service-cover-header h3{font-size:23px}.service-cover-tag{max-width:82px;padding:5px 6px}}
 
-.service-back-mode{color:#dce9e8;font-size:9px;letter-spacing:.08em;line-height:1.5;margin-bottom:12px}
+.service-back-mode{color:#e2e8ef;font-size:9px;letter-spacing:.08em;line-height:1.5;margin-bottom:12px}

@@ -307,3 +307,7 @@ Titolo della home spostato a sinistra, freccia inferiore rimossa. Pulsanti a des
 
 ## 13 ottobre 2026 — Link percorsi home
 Il pulsante hero Esplora i percorsi apre direttamente Tutti i servizi (percorsi.html); freccia aggiornata a ↗.
+
+
+## 14 ottobre 2026 — Nuova palette del brand
+Applicata la palette approvata: blu zaffiro #103B66, rosso rubino #C93B2B, bianco #FFFFFF, grigio #F4F6F9, carbone #1A1D20 e blu notte #0B2540. Aggiornati CSS condivisi, grafica SVG incorporata e sorgente, logo planetario vettoriale, favicon e metadati. Pulsanti rossi con testo bianco; footer blu notte. Le fotografie e i marchi di terzi mantengono i colori originali. Font, impaginazione, contenuti e animazioni rimangono quelli approvati. Il vecchio logo è conservato nell’archivio non pubblicato. Riferimento corrente: STILE-E-COMPONENTI.md.

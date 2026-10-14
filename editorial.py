@@ -119,7 +119,7 @@ def prepare(root,config,common,render,articles=None,events=None):
         schema={'@context':'https://schema.org','@type':'BlogPosting','headline':article['seoTitle'],
                 'datePublished':article['datePublished'],'dateModified':article['dateModified'],
                 'author':author,'publisher':{'@type':'Organization','name':'Archimede Centro Studi',
-                'logo':{'@type':'ImageObject','url':base+'logo.png'}},'image':scalars['imageAbsolute'],
+                'logo':{'@type':'ImageObject','url':base+'logo.svg'}},'image':scalars['imageAbsolute'],
                 'mainEntityOfPage':scalars['canonical'],'keywords':article['tags'],
                 'articleSection':article['section'],'inLanguage':'it-IT','wordCount':count,'timeRequired':f'PT{minutes}M'}
         values['article.schema']=safe_json(schema)

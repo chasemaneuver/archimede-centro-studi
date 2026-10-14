@@ -287,3 +287,7 @@ Modelli in `templates/`, corpi editoriali in `content/`, immagini in `assets/ima
 
 ## 13 ottobre 2026 — Statistiche GoatCounter
 Dashboard privata https://archimede-mv.goatcounter.com/. analytics.js nel footer condiviso carica il contatore solo sul dominio di produzione. Sessioni, visite individuali, localizzazione, schermo e lingua disattivati; referrer limitato al dominio, path senza query/hash. Conta visualizzazioni, non utenti unici. Non cambiare impostazioni senza riallineare privacy. Nessuna chiave API necessaria.
+
+
+## 14 ottobre 2026 — Nuova palette del brand
+Applicata la palette approvata: blu zaffiro #103B66, rosso rubino #C93B2B, bianco #FFFFFF, grigio #F4F6F9, carbone #1A1D20 e blu notte #0B2540. Aggiornati CSS condivisi, grafica SVG incorporata e sorgente, logo planetario vettoriale, favicon e metadati. Pulsanti rossi con testo bianco; footer blu notte. Le fotografie e i marchi di terzi mantengono i colori originali. Font, impaginazione, contenuti e animazioni rimangono quelli approvati. Il vecchio logo è conservato nell’archivio non pubblicato. Riferimento corrente: STILE-E-COMPONENTI.md.

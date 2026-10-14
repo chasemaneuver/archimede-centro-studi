@@ -8,12 +8,15 @@ Le istruzioni esplicite più recenti di Archimede hanno precedenza. Le regole de
 
 | Uso | Colore |
 | --- | --- |
-| Petrolio, testo principale e dettagli | `#004A59` |
-| Arancione, accenti | `#F07018` |
-| Crema/giallo tenue, evidenziatori e riquadri | `#FFF5CB` |
-| Verde acqua, superfici e illustrazioni | `#B6E3D4` |
-| Azzurro, dettagli e orbite | `#33A7B5` |
-| Fondo pagina | `#FAF9F5` |
+| Blu zaffiro: titoli, logo, link e pulsanti principali | `#103B66` |
+| Rosso rubino: accenti, enfasi e azioni in evidenza | `#C93B2B` |
+| Bianco: carta, testo sui pulsanti e superfici | `#FFFFFF` |
+| Grigio chiaro: fondo pagina e superfici | `#F4F6F9` |
+| Carbone: testo corrente | `#1A1D20` |
+| Blu notte: footer e stati scuri | `#0B2540` |
+
+Palette approvata il **14 ottobre 2026**. Le superfici delle illustrazioni usano tinte chiare derivate (`#E2E8EF`, `#CAD5E2`, `#F9E7E4`) per distinguere fogli e oggetti senza ridurre il contrasto. I pulsanti rossi hanno testo bianco. Fotografie e marchi di terzi conservano i propri colori. Logo planetario vettoriale in `assets/images/logo.svg`; versione precedente conservata soltanto nell’archivio escluso dalla pubblicazione.
+Le variabili canoniche `--brand-*` sono in `styles.css`; gli alias storici `--petrol`, `--orange`, `--mint`, `--cream` e `--aqua` restano per compatibilità e ora indicano i nuovi colori.
 
 - Riutilizzare variabili e componenti di `assets/css/styles.css`, evitando una nuova palette o un framework estraneo.
 - Testo corrente in Arial/Helvetica/sans-serif; parti editoriali in corsivo in Georgia/Times New Roman/serif.
@@ -47,7 +50,7 @@ Le illustrazioni sono SVG e codice del sito, con elementi riconoscibili, curati 
 ### Classe B — pagine secondarie
 
 - Riferimenti attuali: **Recensioni, Domande frequenti, Laboratori creativi, Materiale personalizzato e Lezioni Circolari**.
-- Composizione più contenuta, ma rifinita; stessa palette, superfici tipo carta, grande ellisse tratteggiata e satelliti azzurro/arancione dove presenti. Ogni grafica deve richiamare il proprio tema.
+- Composizione più contenuta, ma rifinita; stessa palette, superfici tipo carta, grande ellisse tratteggiata e satelliti blu/rosso dove presenti. Ogni grafica deve richiamare il proprio tema.
 - Recensioni: connessioni, passaparola, cura e dedizione. FAQ: curiosità, domande, studenti/insegnanti e comunità. Laboratori: arte, storia e cultura italiana. Materiale: libri, globo e strumenti per studiare. Lezioni Circolari: condivisione del sapere e solidarietà.
 - Laboratori: mantenere il libro eliminato fuori dalla composizione; pennello con manico, ghiera e punta di setole chiaramente leggibili.
 - Lezioni Circolari: figure senza le vecchie braccia, con frecce comprensibili e senza sovrapposizioni che ne nascondano la direzione.
@@ -60,7 +63,7 @@ Le illustrazioni sono SVG e codice del sito, con elementi riconoscibili, curati 
 - Riutilizzare `.assembly-piece`, classi di ingresso e `assets/css/home-motion.css`/`assets/js/home.js`, preservando i transform propri dello SVG. La ricomposizione condivisa attuale dura 2,4 secondi più i piccoli ritardi dei singoli elementi.
 - Non nascondere permanentemente contenuto o grafica se JavaScript non funziona. L’aspetto statico deve essere completo e leggibile.
 
-**Bolla verde acqua — Classe A e Classe B**
+**Bolla azzurro chiaro — Classe A e Classe B**
 
 - Resta visibile nella forma e posizione finali: nessun ingresso fluido, morphing, rotazione o ricomposizione dello sfondo.
 - Le classi `.water-shape` e `.assembly-backdrop` identificano lo sfondo statico; non applicare loro l’ingresso dei singoli elementi.
@@ -141,7 +144,7 @@ Ordine footer attuale: La nostra mission, Le vostre storie, Domande frequenti, T
 
 - PC e telefono: titolo, testo e grafica senza tagli o sovrapposizioni, menu utilizzabile, griglie corrette, CTA leggibili.
 - Controllare evidenziatori, focus da tastiera, popup, comportamento touch e preferenze di movimento ridotto.
-- Animazioni: una sola ricomposizione, stelle indipendenti, sfondo verde acqua statico, satelliti allineati al tracciato e pause fuori vista. Nessun elemento nascosto definitivamente per errore.
+- Animazioni: una sola ricomposizione, stelle indipendenti, sfondo azzurro chiaro statico, satelliti allineati al tracciato e pause fuori vista. Nessun elemento nascosto definitivamente per errore.
 - Verificare entrambi i preventivi e tutti i link coinvolti; aggiornare archivi, conteggi, menu e metadati pertinenti.
 - Gli SVG possono essere incorporati nell’HTML. Modificare la grafica effettivamente renderizzata e tenere coerente l’eventuale file SVG sorgente: un asset esterno non usato dalla pagina può essere una versione vecchia.
 - Stili condivisi: `assets/css/styles.css`, `assets/css/home-motion.css`, `assets/css/services-illustration.css`, `assets/css/album.css`, `assets/css/archive.css`. Script condivisi: `assets/js/site.js`, `assets/js/home.js`, `assets/js/services-motion.js`, `assets/js/album.js`, `assets/js/percorsi.js`, `assets/js/reviews.js`, `assets/js/archive.js`.

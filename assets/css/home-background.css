@@ -1,6 +1,6 @@
 .hero-classroom,.section-photo{position:relative;isolation:isolate;background:var(--paper)}
 .hero-classroom::before,.section-photo::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--section-photo,url("./sfondo-terracotta-studio.webp")) var(--photo-position,center 58%)/cover no-repeat;opacity:.20;pointer-events:none}
-.hero-classroom::after,.section-photo::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(250,249,245,.55),rgba(250,249,245,.1) 70%);pointer-events:none}
+.hero-classroom::after,.section-photo::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(244,246,249,.55),rgba(244,246,249,.1) 70%);pointer-events:none}
 .photo-study{--section-photo:url("./sfondo-nero-studio.webp");--photo-position:center 62%}
 .photo-cards{--section-photo:url("./sfondo-verde-gioco.webp");--photo-position:center 65%}
 .photo-material{--section-photo:url("./aula-verde-sfondo.webp");--photo-position:center 60%}

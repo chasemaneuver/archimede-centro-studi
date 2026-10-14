@@ -6,8 +6,8 @@
 .home-photo-hero .hero-grid{display:block;text-align:center;padding-block:70px 110px}
 .home-photo-hero .hero-copy{margin-inline:auto;width:100%}
 .home-photo-hero .eyebrow,.home-photo-hero h1{text-shadow:4px 4px 6px rgba(0,0,0,.99),0 2px 18px rgba(0,0,0,.6)}
-.home-photo-hero .eyebrow{color:#fff;font-weight:900;font-size:clamp(15px,1.7vw,22px);letter-spacing:.055em;justify-content:center}
-.home-photo-hero h1{color:#fff;font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(54px,7.5vw,104px);line-height:1.02;letter-spacing:-.055em}
+.home-photo-hero .eyebrow{color:#ffffff;font-weight:900;font-size:clamp(15px,1.7vw,22px);letter-spacing:.055em;justify-content:center}
+.home-photo-hero h1{color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:clamp(54px,7.5vw,104px);line-height:1.02;letter-spacing:-.055em}
 .home-photo-hero h1 em{color:var(--orange);font-family:Georgia,serif;font-weight:700;text-shadow:4px 4px 6px rgba(0,0,0,.99),0 2px 18px rgba(0,0,0,.6)}
 .home-mission{padding-top:0}
 .home-mission .hero-bottom{padding-block:40px;margin-bottom:48px;border-bottom:1px solid var(--line)}
@@ -25,9 +25,9 @@
 .home-photo-hero h1{font-size:clamp(54px,6.2vw,88px)}
 .hero-opening-actions{display:flex;flex-direction:column;gap:16px}
 .hero-opening-actions .button{justify-content:center;text-align:center;min-height:56px;font-weight:700;box-shadow:0 4px 18px rgba(0,0,0,.25)}
-.hero-opening-actions .ghost{background:rgba(250,249,245,.94);color:#004A59;border-color:#004A59}
+.hero-opening-actions .ghost{background:rgba(244,246,249,.94);color:#103b66;border-color:#103b66}
 @media(max-width:900px){.home-photo-hero .hero-grid{grid-template-columns:1fr;gap:34px}.hero-opening-actions{flex-direction:row;justify-content:flex-start;flex-wrap:wrap}.hero-opening-actions .button{min-width:190px}.home-photo-hero .eyebrow{margin-inline:0;max-width:none}}
 @media(max-width:700px){.home-photo-hero h1{font-size:clamp(44px,11.8vw,76px)}.hero-opening-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hero-opening-actions .button{min-width:0;padding-inline:12px;font-size:13px}.home-photo-hero .hero-grid{padding-block:48px}}
 
-.hero-opening-actions .button:first-child{background:#004A59;color:#fff;border:1px solid #004A59}
+.hero-opening-actions .button:first-child{background:#103b66;color:#ffffff;border:1px solid #103b66}
 

@@ -8,7 +8,7 @@ import build_site as site
 class LayoutTests(unittest.TestCase):
     def test_public_assets_are_unique_and_archive_is_excluded(self):
         files=asset_files(site.ROOT)
-        self.assertIn('logo.png',files)
+        self.assertIn('logo.svg',files)
         self.assertIn('quaderno-home.svg',files)
         self.assertNotIn('google-reviews.js',files)
         self.assertNotIn('sponsor-citta-pescara.png',files)
