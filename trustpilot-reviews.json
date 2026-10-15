@@ -1,8 +1,34 @@
 {
-  "checkedAt": "2026-10-12",
-  "trustScore": 4.2,
-  "count": 7,
+  "checkedAt": "2026-10-16",
+  "trustScore": 4.3,
+  "count": 9,
   "reviews": [
+    {
+      "id": "trustpilot-veronica",
+      "name": "Veronica Ghinfanti",
+      "title": "Lezioni di Analisi 1",
+      "quote": "Sto preparando Analisi 1 con Michelle e, dopo diverse lezioni, posso dire che mi sto trovando molto bene: le spiegazioni sono chiare, concise e mirate alla preparazione dell’esame.\nInoltre, la tutor mette a disposizione tutto il materiale necessario per studiare ed esercitarsi anche autonomamente.\nConsiglio assolutamente questa esperienza a chi cerca una preparazione universitaria seria, efficace e personalizzata.",
+      "category": "universita",
+      "kind": "trustpilot",
+      "rating": 5,
+      "source": "https://it.trustpilot.com/reviews/6ad12b4c928fb22f708a907b",
+      "individualLink": true,
+      "truncated": false,
+      "checkedAt": "2026-10-16"
+    },
+    {
+      "id": "trustpilot-khady",
+      "name": "Khady Sonko",
+      "title": "La mia esperienza con Archimede",
+      "quote": "La mia esperienza con Archimede Centro Studi è stata fantastica. Avevo bisogno di un buon tutor di topografia che riuscisse a spiegarmi ciò che non comprendevo e fosse bravo a farmi capire gli argomenti e andando ad Archimede Centro Studi l’ho trovato.",
+      "category": "scuola",
+      "kind": "trustpilot",
+      "rating": 5,
+      "source": "https://it.trustpilot.com/reviews/6ace378cd9455c30336269dc",
+      "individualLink": true,
+      "truncated": false,
+      "checkedAt": "2026-10-16"
+    },
     {
       "id": "trustpilot-alexandra",
       "name": "Alexandra Boltasiu",

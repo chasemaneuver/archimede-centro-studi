@@ -1,8 +1,34 @@
 {
-  "checkedAt": "2026-10-11",
+  "checkedAt": "2026-10-16",
   "rating": 5,
-  "count": 28,
+  "count": 30,
   "reviews": [
+    {
+      "id": "google-28",
+      "name": "Amel Touit",
+      "title": "Un posto sicuro e perfetto",
+      "quote": "Per noi è stato un posto sicuro e perfetto per il nostro figlio : maestra molto disponibile e molto professionale sul suo lavoro,il mio figlio si è trovato molto bene in questa scuola ,di conseguenza noi siamo molto contenti di questa scuola",
+      "category": "scuola",
+      "kind": "google",
+      "rating": 5,
+      "source": "https://maps.app.goo.gl/fmN6LMSoKG62KBJf6",
+      "individualLink": true,
+      "truncated": false,
+      "checkedAt": "2026-10-16"
+    },
+    {
+      "id": "google-29",
+      "name": "Christie Aybar",
+      "title": "Ripetizioni online per la prima volta",
+      "quote": "Mio figlio  ha iniziato a fare ripetizioni online per la prima volta , si ha trovato benissimo e continuaremo a farlo . Grazie mille di tutto.",
+      "category": "scuola",
+      "kind": "google",
+      "rating": 5,
+      "source": "https://maps.app.goo.gl/9LXqqu8UD1hmCEQ26",
+      "individualLink": true,
+      "truncated": false,
+      "checkedAt": "2026-10-16"
+    },
     {
       "id": "google-27",
       "name": "Alice Silvestri",
