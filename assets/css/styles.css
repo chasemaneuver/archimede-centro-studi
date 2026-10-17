@@ -508,3 +508,7 @@ h1,h2,h3{color:var(--brand-blue)}
 .guide-gallery.is-enhanced .guide-track::-webkit-scrollbar{display:none}
 
 .services-page .services .eyebrow::before{background:var(--brand-white)}
+
+.resource-guides{display:grid;gap:36px;min-width:0}.resource-guide{min-width:0}.resource-guide>h3{font-size:18px;line-height:1.4;margin:0 0 16px;color:var(--brand-sapphire)}
+
+.article-image figcaption{font-size:13px;line-height:1.6;margin-top:9px;color:var(--brand-sapphire)}

@@ -67,5 +67,41 @@
     "featuredInResources": true,
     "resourceSummary": "Recupero attivo, controllo degli errori e ripasso distribuito: spunti per studiare con più consapevolezza.",
     "sidebarDescription": "Spunti per studenti, famiglie e insegnanti."
+  },
+  {
+    "slug": "scegliere-universita-era-ai",
+    "url": "scegliere-universita-era-ai.html",
+    "title": "Scegliere l’università nell’era dell’AI: da dove cominciare",
+    "titleFirst": "Scegliere l’università,",
+    "titleEmphasis": "nell’era dell’AI.",
+    "seoTitle": "Scegliere l’università nell’era dell’AI: guida pratica",
+    "description": "Come scegliere l’università nell’era dell’AI: interessi, competenze, piani di studio e dati sul lavoro per confrontare i corsi senza false promesse.",
+    "summary": "Un metodo per partire da interessi e attività concrete, leggere i piani di studio e usare i dati sul lavoro con prudenza.",
+    "section": "Orientamento universitario nell’era dell’AI",
+    "chapter": 1,
+    "datePublished": "2026-10-17T20:40:00+02:00",
+    "dateModified": "2026-10-17T20:40:00+02:00",
+    "author": {
+      "name": "Archimede Centro Studi",
+      "type": "Organization"
+    },
+    "tags": [
+      "Orientamento",
+      "Università",
+      "Intelligenza artificiale"
+    ],
+    "image": {
+      "path": "articolo-orientamento-universita-ai.webp",
+      "alt": "Uno studente e un familiare confrontano interessi e percorsi universitari",
+      "cardAlt": "Orientamento universitario nell’era dell’AI: una scelta da esplorare insieme",
+      "width": 1672,
+      "height": 941
+    },
+    "contentFile": "scegliere-universita-era-ai.content.html",
+    "comments": true,
+    "featuredInResources": true,
+    "resourceSummary": "Una scheda di confronto per esplorare tre corsi universitari, verificare le informazioni e preparare le domande di orientamento.",
+    "resourceCover": "Università nell’era dell’AI.",
+    "sidebarDescription": "Una guida in sei capitoli per studenti e famiglie: interessi, corsi, AI, dati e sostenibilità."
   }
 ]

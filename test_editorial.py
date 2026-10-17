@@ -45,6 +45,24 @@ class EditorialTests(unittest.TestCase):
         self.assertIn('Un titolo di prova',output['risorse.html'])
         self.assertIn('articolo-di-prova.html',output['sitemap.xml'])
 
+    def test_resource_guides_are_separate_and_controls_point_to_own_track(self):
+        article=copy.deepcopy(self.articles[0]);article.update(slug='nuova-guida-prova',url='nuova-guida-prova.html',
+            section='Orientamento di prova',title='Nuova guida distinta',resourceCover='Orientarsi oggi.')
+        page=site.generate(articles=self.articles+[article])['risorse.html']
+        groups=re.findall(r'<section class="resource-guide".*?</section>',page,re.S)
+        learning=next(g for g in groups if 'guida-stili-di-apprendimento-title' in g)
+        new=next(g for g in groups if 'guida-nuova-guida-prova-title' in g)
+        self.assertIn('studiare-per-ricordare.html',learning)
+        self.assertNotIn('nuova-guida-prova.html',learning)
+        self.assertIn('Nuova guida distinta',new)
+        self.assertIn('Orientarsi oggi.',new)
+        self.assertNotIn('stili-di-apprendimento.html',new)
+        tracks=re.findall(r'class="guide-track" id="([^"]+)"',page)
+        self.assertEqual(len(tracks),len(set(tracks)))
+        for group in groups:
+            track=re.search(r'class="guide-track" id="([^"]+)"',group)[1]
+            self.assertEqual(re.findall(r'aria-controls="([^"]+)"',group),[track,track])
+
     def test_new_event_generates_detail_archive_and_sitemap(self):
         event=copy.deepcopy(self.events[0]);event.update(slug='evento-di-prova',url='evento-di-prova.html',
             title='Evento di prova',titleFirst='Evento',titleEmphasis='di prova.',layout='standard',status='past',

@@ -329,3 +329,10 @@ I due capitoli della guida in Risorse gratuite sono in un unico componente .guid
 ## 16 ottobre 2026 — Nuove recensioni e verifica piattaforme
 Inserite Amel Touit e Christie Aybar da Google Maps (entrambe Scuola), Veronica Ghinfanti (Università) e Khady Sonko (Scuola) da Trustpilot. Tag confermati dall’utente. Testi completi e link individuali letti direttamente dalle pagine originali. Google: 5,0/5, 30 recensioni; Trustpilot: TrustScore 4,3/5, 9 recensioni, tutte a 5 stelle. Facebook verificato: 100% positivo, 18 recensioni; aggiornata la data del riepilogo, senza alterare le precedenti date di lettura delle singole schede. Tutte le verifiche del riepilogo sono del 16 ottobre 2026.
 Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto 22. Media home ricalcolata automaticamente sulle valutazioni effettive delle tre piattaforme, esclusi WhatsApp e duplicati; TrustScore distinto dalla media dei voti. Nessuna modifica a grafica o impaginazione.
+
+
+## 17 ottobre 2026 — Nuova guida orientamento e AI
+
+- Capitolo 1: interessi, piani di studio, competenze e sostenibilità; fonti primarie aggiornate e esercizio di confronto di tre corsi. Template articolo condiviso, due illustrazioni, citazioni celesti, fonti, tag, data e minuti di lettura.
+- Nuova serie distinta nelle Risorse; raggruppamento automatico per sezione con comandi indipendenti, copertina configurabile, test di separazione delle guide. Archivio Articoli, Album e sitemap aggiornati.
+- Commenti del nuovo slug abilitati in Supabase; piano dei sei capitoli e consegna social registrati nella guida di gestione.

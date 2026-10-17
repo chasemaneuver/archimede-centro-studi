@@ -88,7 +88,7 @@ def prepare(root,config,common,render,articles=None,events=None):
     base=config['publishing']['baseUrl']
     if not base.startswith('https://') or not base.endswith('/') or urlsplit(base).query or urlsplit(base).fragment:
         raise ValueError('L’URL pubblico deve essere HTTPS e terminare con /.')
-    global_values={};pages={};page_values={};cards=[];resource_cards=[];tags=set()
+    global_values={};pages={};page_values={};cards=[];resource_cards=[];resource_groups={};tags=set()
     def template(name,values): return render((root/'templates'/name).read_text(encoding='utf-8'),values)
     for article in articles:
         image=article['image'];values=dict(common)
@@ -102,7 +102,8 @@ def prepare(root,config,common,render,articles=None,events=None):
                  'cardAlt':image.get('cardAlt',image['alt']),'imageWidth':image['width'],'imageHeight':image['height'],
                  'canonical':base+article['url'],'resourceSummary':article.get('resourceSummary',article['summary']),
                  'sidebarDescription':article.get('sidebarDescription','Spunti per continuare a imparare.'),
-                 'shareSubject':quote(article['title'],safe='')}
+                 'shareSubject':quote(article['title'],safe=''),
+                 'resourceCover':article.get('resourceCover','Imparare a imparare.')}
         chapter=f"Capitolo {article['chapter']}" if article.get('chapter') else ''
         scalars['eyebrow']=article['section']+(' · '+chapter if chapter else '')
         scalars['tagsData']=json.dumps(article['tags'],ensure_ascii=False)
@@ -128,9 +129,23 @@ def prepare(root,config,common,render,articles=None,events=None):
         page=template('article.html.in',values);pages[article['url']]=page
         page_values[article['url']]={'articlePage':page}
         cards.append(template('article-card.html.in',values));tags.update(article['tags'])
-        if article.get('featuredInResources'): resource_cards.append(template('resource-card.html.in',values))
+        if article.get('featuredInResources'):
+            card=template('resource-card.html.in',values)
+            resource_cards.append(card)
+            group=resource_groups.setdefault(article['section'],{'id':'guida-'+article['slug'],'cards':[]})
+            group['cards'].append(card)
     global_values['archive.articleCards']=''.join(cards)
     global_values['archive.resourceCards']=''.join(resource_cards)
+    guides=[]
+    for section,group in resource_groups.items():
+        track=escape(group['id'],quote=True);title=escape(section)
+        guides.append('<section class="resource-guide" aria-labelledby="'+track+'-title"><h3 id="'+track+'-title">'+title+'</h3>'
+            '<div class="guide-gallery" role="region" aria-roledescription="galleria" aria-label="Capitoli: '+escape(section,quote=True)+'">'
+            '<div class="guide-track" id="'+track+'" tabindex="0">'+''.join(group['cards'])+'</div>'
+            '<div class="guide-controls" hidden><button type="button" class="guide-prev" aria-label="Capitolo precedente" aria-controls="'+track+'"><span aria-hidden="true">←</span></button>'
+            '<span class="guide-position" aria-live="polite" aria-atomic="true">Capitolo 1</span>'
+            '<button type="button" class="guide-next" aria-label="Capitolo successivo" aria-controls="'+track+'"><span aria-hidden="true">→</span></button></div></div></section>')
+    global_values['archive.resourceGuides']='<div class="resource-guides">'+''.join(guides)+'</div>'
     global_values['archive.articleFilters']='<button data-tag="" aria-pressed="true">Tutti</button>'+''.join(f'<button data-tag="{escape(tag,quote=True)}" aria-pressed="false">{escape(tag)}</button>' for tag in sorted(tags))
     current=[];past=[];lab_cards=[];event_tags=set()
     for event in events:

@@ -301,3 +301,23 @@ I due capitoli della guida in Risorse gratuite sono in un unico componente .guid
 ## 16 ottobre 2026 — Nuove recensioni e verifica piattaforme
 Inserite Amel Touit e Christie Aybar da Google Maps (entrambe Scuola), Veronica Ghinfanti (Università) e Khady Sonko (Scuola) da Trustpilot. Tag confermati dall’utente. Testi completi e link individuali letti direttamente dalle pagine originali. Google: 5,0/5, 30 recensioni; Trustpilot: TrustScore 4,3/5, 9 recensioni, tutte a 5 stelle. Facebook verificato: 100% positivo, 18 recensioni; aggiornata la data del riepilogo, senza alterare le precedenti date di lettura delle singole schede. Tutte le verifiche del riepilogo sono del 16 ottobre 2026.
 Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto 22. Media home ricalcolata automaticamente sulle valutazioni effettive delle tre piattaforme, esclusi WhatsApp e duplicati; TrustScore distinto dalla media dei voti. Nessuna modifica a grafica o impaginazione.
+
+
+## Guida di orientamento universitario nell’era dell’AI — 17 ottobre 2026
+
+Serie distinta dalla Guida all’apprendimento; sezione nei dati: `Orientamento universitario nell’era dell’AI`. Primo capitolo: `scegliere-universita-era-ai.html`, fonti ILO 2025, OECD 2026, AlmaLaurea 2026 e Universitaly, con riferimenti finali. Immagini editoriali originali conservate nel pacchetto di lavoro; WebP pubblici e Album aggiornati. Slug registrato in `article_comment_pages` in Supabase il 17 ottobre con SELECT di conferma; moderazione e nickname restano quelli condivisi.
+
+Le risorse raggruppano automaticamente gli articoli con `featuredInResources` per `section`, con gallerie e ID indipendenti. Mantenere identica la `section` nei capitoli della stessa guida, numerare `chapter` e aggiungere facoltativamente `resourceCover` per il testo della copertina. Una nuova serie non deve finire nella galleria di un’altra. Con un solo capitolo i comandi sono nascosti; da due capitoli il componente li attiva.
+
+Piano editoriale di riferimento, cadenza settimanale proposta (non pubblicazioni automatiche):
+
+| Capitolo | Tema | Data obiettivo |
+| --- | --- | --- |
+| 1 | Scegliere l’università nell’era dell’AI: da dove cominciare | 17 ottobre 2026 |
+| 2 | Dai tuoi interessi alle attività che vuoi imparare | 24 ottobre 2026 |
+| 3 | Leggere un piano di studi oltre il titolo | 31 ottobre 2026 |
+| 4 | AI e lavoro: interpretare dati e scenari | 7 novembre 2026 |
+| 5 | Costi, accesso e vita universitaria | 14 novembre 2026 |
+| 6 | Dalle informazioni a un piano di scelta | 21 novembre 2026 |
+
+Ricerca verifica fonti e annualità per ogni capitolo, Autore prepara testo e metadati, Fotografo le immagini, Conformità e Qualità le verifiche pertinenti; Regia pubblica. Social Media prepara il lancio del 18 ottobre; i materiali non equivalgono a post già programmati. Nessuna graduatoria di lauree immuni dall’AI o garanzia di occupazione. Distinguere esposizione dei compiti, adozione e sostituzione effettiva; non attribuire dati globali a studenti italiani.
