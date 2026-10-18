@@ -243,3 +243,7 @@ I due capitoli della guida in Risorse gratuite sono in un unico componente .guid
 
 ## 18 ottobre 2026 — Banner iniziative della home
 Dopo i numeri e prima di mission/contatti, due banner affiancati: blu zaffiro per Pescara Solidale, rosso rubino per Domenica si studia. Gratis. Titoli e testi bianchi, CTA su grigio chiaro con testo scuro, etichette piccole; cerchi decorativi statici. Sotto 700 px si impilano, senza autoplay o contenuti nascosti. Le iniziative provengono da events-data.json; non duplicare i dettagli inHTML. Il futuro laboratorio di corsivo non viene annunciato prima della relativa pagina.
+
+
+## 18 ottobre 2026 — Terzo banner e laboratorio di corsivo
+Aggiunto il laboratorio di corsivo al componente iniziative: blu notte #0B2540, testo bianco e pulsante grigio. Griglia adattiva con tre banner sulla stessa riga PC, due dove lo spazio lo consente e uno sotto 700px. Conservare i colori dei materiali social originali; non applicare la nuova palette alla locandina storica. Nessun autoplay.

@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <title>Tutti i servizi · Archimede Centro Studi</title>
   <link rel="icon" href="./logo.svg?v=20261014">
-  <link rel="stylesheet" href="./styles.css?v=20261018-initiatives">
+  <link rel="stylesheet" href="./styles.css?v=20261018-corsivo">
 <link rel="stylesheet" href="./servizi-grid.css?v=20261014-palette"><link rel="stylesheet" href="./services-illustration.css?v=20261014-palette"><link rel="stylesheet" href="./home-motion.css?v=20261014-palette"><link rel="canonical" href="{{publishing.baseUrl}}percorsi.html"><link rel="stylesheet" href="./home-background.css?v=20261014-palette"></head>
 <body class="services-page">
   <a class="skip" href="#contenuto">Vai al contenuto</a>

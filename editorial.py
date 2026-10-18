@@ -186,7 +186,7 @@ def prepare(root,config,common,render,articles=None,events=None):
             pages[event['url']]=template('event-page.html.in',values)
         if event.get('featuredInHome') and status not in ('past','cancelled'):
             theme=event.get('homeTheme','blue')
-            if theme not in {'blue','ruby'}: raise ValueError('Colore banner iniziativa non valido.')
+            if theme not in {'blue','ruby','midnight'}: raise ValueError('Colore banner iniziativa non valido.')
             home_banners.append('<article class="initiative-banner initiative-'+theme+'"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
                 '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p>'
                 '<a class="button" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')

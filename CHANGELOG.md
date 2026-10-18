@@ -342,3 +342,9 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 - Nuova pagina dell’iniziativa sociale, ripetizioni scolastiche gratuite in presenza con prenotazione WhatsApp; locandina sociale nell’Album e FAQ collegata.
 - Due banner visibili dopo i numeri della home: Pescara Solidale e domenichegratuite; impilati sul telefono. Nessun richiamo in Tutti i servizi.
 - Archivio eventi gestisce iniziative senza fine definita: nessuna scadenza fittizia, stato esplicito per archiviazione, periodLabel e test di regressione. SEO/sitemap e documenti aggiornati.
+
+
+## 18 ottobre 2026 — Riscopriamo il corsivo!
+- Nuova pagina del laboratorio per bambini e ragazzi, locandina social e contatto WhatsApp per informazioni e iscrizioni.
+- Aggiunti scheda Eventi, richiamo Laboratori creativi, terzo banner home blu notte e locandina nell’Album; griglia banner adattiva.
+- Nessuna data, quota, gratuità o modalità inventata; calendario e condizioni da concordare con la segreteria. Metadati e sitemap aggiornati.

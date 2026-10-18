@@ -54,5 +54,38 @@
     "homeTitle": "Domenica si studia. Gratis.",
     "homeSummary": "Ripetizioni gratuite in presenza per tutti i livelli scolastici. Puoi tornare ogni domenica, su prenotazione.",
     "homeCta": "Scopri le domeniche gratuite"
+  },
+  {
+    "slug": "laboratorio-corsivo",
+    "url": "laboratorio-corsivo.html",
+    "title": "Riscopriamo il corsivo!",
+    "titleFirst": "Riscopriamo",
+    "titleEmphasis": "il corsivo!",
+    "eyebrow": "Un gesto, tante possibilità",
+    "intro": "Un laboratorio di scrittura in corsivo per bambini e ragazzi, in piccoli gruppi. Lettere, collegamenti e un percorso passo dopo passo.",
+    "description": "Laboratorio di scrittura in corsivo per bambini e ragazzi da Archimede Centro Studi. Piccoli gruppi, leggibilità e fluidità: informazioni e iscrizioni aperte.",
+    "desc": "Un percorso in piccoli gruppi per bambini e ragazzi: scrivere in corsivo, collegare le lettere e lavorare su leggibilità e fluidità. Iscrizioni aperte.",
+    "image": "laboratorio-corsivo.webp",
+    "imageAlt": "Locandina Riscopriamo il corsivo!: corso per bambini e ragazzi in piccoli gruppi, iscrizioni aperte",
+    "imageWidth": 1024,
+    "imageHeight": 1280,
+    "layout": "standard",
+    "status": "current",
+    "contentFile": "laboratorio-corsivo.content.html",
+    "periodLabel": "Iscrizioni aperte · Calendario da concordare",
+    "dateModified": "2026-10-18",
+    "tags": [
+      "Scrittura",
+      "Bambini e ragazzi"
+    ],
+    "registrationUrl": "{{contacts.whatsapp}}?text=Ciao%20Archimede%2C%20vorrei%20informazioni%20sul%20laboratorio%20di%20corsivo.",
+    "registrationLabel": "Informazioni e iscrizioni",
+    "featuredInLabs": true,
+    "featuredInHome": true,
+    "homeTheme": "midnight",
+    "homeEyebrow": "Bambini e ragazzi",
+    "homeTitle": "Riscopriamo il corsivo!",
+    "homeSummary": "Un laboratorio in piccoli gruppi per scrivere, collegare le lettere e prendere confidenza con il corsivo. Iscrizioni aperte.",
+    "homeCta": "Scopri il laboratorio"
   }
 ]
