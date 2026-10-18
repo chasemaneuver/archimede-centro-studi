@@ -362,3 +362,7 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 
 ## 18 ottobre 2026 — Spaziatura dei pulsanti
 Controllate tutte le 19 pagine a 1280px e 390px. Corretto il distacco tra testo e azioni nei blocchi programma (inclusa la sezione domeniche in Risorse), schede laboratori, Pescara Solidale, contatti, richiamo materiale su telefono, testimonianza home, badge recensioni e barre laterali editoriali. Link interni al testo e gruppi di comandi mantengono il proprio impaginato.
+
+
+## 18 ottobre 2026 — Analisi 1 tra le guide
+Aggiunta in Risorse gratuite una scheda per la dispensa interattiva gratuita di Analisi 1 di Michelle Vrapi: teoria, esempi, esercizi svolti e grafici interattivi. Collegamento al sito esterno, senza duplicarne contenuti o articoli.

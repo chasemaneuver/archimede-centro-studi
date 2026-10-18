@@ -344,3 +344,7 @@ Scorrimento automatico ogni 4 secondi solo quando il banner è visibile e la sch
 
 ## 18 ottobre 2026 — Domeniche in Risorse gratuite
 Il campo evento `featuredInResources` genera una sezione con descrizione, locandina e collegamento alla pagina dell’iniziativa in Risorse gratuite. Sono mostrati soltanto eventi attivi; alla conclusione aggiornare lo stato e rigenerare il sito. Le domeniche sono gratuite, in presenza, per materie scolastiche; prenotazioni e dettagli restano nella pagina evento. Banner home accelerato da 7 a 4 secondi su richiesta.
+
+
+## 18 ottobre 2026 — Dispensa esterna di Analisi 1
+In Risorse gratuite, tra le guide, la sezione `guida-analisi-1` rimanda a https://chasemaneuver.github.io/Analisi-1/ con attribuzione a Michelle Vrapi. Link esterno in nuova scheda, indicazione accessibile e rel=noopener. Scheda nel modello Risorse; nessun articolo duplicato negli archivi e nessuna copia dei capitoli. Prima di cambiare descrizione o URL verificare il sito di destinazione.
