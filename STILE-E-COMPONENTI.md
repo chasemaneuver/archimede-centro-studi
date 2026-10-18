@@ -247,3 +247,7 @@ Dopo i numeri e prima di mission/contatti, due banner affiancati: blu zaffiro pe
 
 ## 18 ottobre 2026 — Terzo banner e laboratorio di corsivo
 Aggiunto il laboratorio di corsivo al componente iniziative: blu notte #0B2540, testo bianco e pulsante grigio. Griglia adattiva con tre banner sulla stessa riga PC, due dove lo spazio lo consente e uno sotto 700px. Conservare i colori dei materiali social originali; non applicare la nuova palette alla locandina storica. Nessun autoplay.
+
+
+## 18 ottobre 2026 — Revisione banner iniziative
+Un unico banner largo e basso, con foto-sfondo del centro all’80%, gradiente nero per leggibilità, titolo bianco molto grassetto e ombra, etichetta e descrizione chiare. Pulsante chiaro con testo blu verso la pagina evento. Foto diverse per iniziativa; controllo frecce, posizione e pausa discreti in basso a destra. Desktop circa 230 px; su telefono altezza adattata al testo. Nessuna nuova immagine generata e nessuna modifica al grande hero. Le precedenti tre card colorate sono sostituite dal carosello.

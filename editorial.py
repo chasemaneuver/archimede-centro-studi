@@ -185,11 +185,14 @@ def prepare(root,config,common,render,articles=None,events=None):
             if (root/'templates'/(event['url']+'.in')).exists(): raise ValueError('URL evento standard già occupato: '+event['url'])
             pages[event['url']]=template('event-page.html.in',values)
         if event.get('featuredInHome') and status not in ('past','cancelled'):
-            theme=event.get('homeTheme','blue')
-            if theme not in {'blue','ruby','midnight'}: raise ValueError('Colore banner iniziativa non valido.')
-            home_banners.append('<article class="initiative-banner initiative-'+theme+'"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
-                '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p>'
-                '<a class="button" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')
+            photo=event.get('homeImage','aula-verde-sfondo.webp')
+            if not re.fullmatch(r'[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)',photo) or asset_path(root,photo) is None:
+                raise ValueError('Foto del banner iniziativa mancante o non valida.')
+            home_banners.append('<article class="initiative-banner" role="group" aria-roledescription="diapositiva" aria-label="'+escape(event['title'],quote=True)+'">'
+                '<img class="initiative-photo" src="./'+escape(photo,quote=True)+'" alt="" aria-hidden="true" loading="lazy">'
+                '<div class="initiative-copy"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
+                '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p></div>'
+                '<a class="button initiative-cta" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')
         card=template('event-card.html.in',values)
         (past if status in ('past','cancelled') else current).append(card)
         if event.get('featuredInLabs') and status not in ('past','cancelled'):
@@ -197,7 +200,7 @@ def prepare(root,config,common,render,articles=None,events=None):
                 '</span><h3>'+values['event.title']+'</h3><p>'+values['event.desc']+
                 '</p><p class="program-note">'+values['event.period']+
                 '</p><a class="text-link" href="'+values['event.url']+'">Scopri il laboratorio ↗</a></article>')
-    global_values.update({'archive.homeBanners':'<section class="wrap home-initiatives" id="iniziative" aria-label="Iniziative in corso"><div class="initiative-grid">'+''.join(home_banners)+'</div></section>' if home_banners else '',
+    global_values.update({'archive.homeBanners':'<section class="wrap home-initiatives" id="iniziative" aria-label="Iniziative in corso" aria-roledescription="carosello"><div class="initiative-shell"><div class="initiative-track" id="iniziative-track" tabindex="0">'+''.join(home_banners)+'</div><div class="initiative-controls" hidden><button type="button" class="initiative-prev" aria-label="Iniziativa precedente" aria-controls="iniziative-track">←</button><span class="initiative-position" aria-live="off">1 / '+str(len(home_banners))+'</span><button type="button" class="initiative-next" aria-label="Iniziativa successiva" aria-controls="iniziative-track">→</button><button type="button" class="initiative-pause" aria-pressed="false">Pausa</button></div></div><p class="initiative-announcement" aria-live="polite" aria-atomic="true"></p></section>' if home_banners else '',
                           'archive.currentEvents':''.join(current),'archive.pastEvents':''.join(past),
                           'archive.pastEmptyHidden':' hidden' if past else '',
                           'archive.labEvents':'<section class="section"><div class="wrap"><span class="eyebrow">Ci vediamo in laboratorio</span><h2>Nuove idee,<br><em>da vivere insieme.</em></h2><div class="program-grid">'+''.join(lab_cards)+'</div></div></section>' if lab_cards else '',

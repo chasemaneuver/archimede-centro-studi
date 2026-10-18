@@ -348,3 +348,9 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 - Nuova pagina del laboratorio per bambini e ragazzi, locandina social e contatto WhatsApp per informazioni e iscrizioni.
 - Aggiunti scheda Eventi, richiamo Laboratori creativi, terzo banner home blu notte e locandina nell’Album; griglia banner adattiva.
 - Nessuna data, quota, gratuità o modalità inventata; calendario e condizioni da concordare con la segreteria. Metadati e sitemap aggiornati.
+
+
+## 18 ottobre 2026 — Banner fotografico delle iniziative
+- Sostituite le tre card della home con un unico banner orizzontale a scorrimento, foto del centro già presenti e titoli bianchi con ombra.
+- Autoplay ogni 7 secondi, frecce, pausa, tastiera/touch, sospensione fuori vista e supporto movimento ridotto; contenuti raggiungibili anche senza JavaScript.
+- Foto gestite nei dati degli eventi e CTA sempre alla relativa pagina, indipendenti dal pulsante WhatsApp interno all’evento.

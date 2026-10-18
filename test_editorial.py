@@ -134,6 +134,19 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(result['@type'],'Event')
         self.assertNotIn('endDate',result)
 
+    def test_initiative_carousel_uses_event_pages_and_valid_existing_photos(self):
+        page=site.generate()['index.html']
+        banner=re.search(r'<section class="wrap home-initiatives".*?</section>',page,re.S)[0]
+        self.assertIn('aria-roledescription="carosello"',banner)
+        self.assertIn('class="initiative-controls" hidden',banner)
+        self.assertNotIn('wa.me',banner)
+        for event in self.events:
+            if event.get('featuredInHome') and event.get('status','current') not in ('past','cancelled'):
+                self.assertIn('href="./'+event['url']+'"',banner)
+                self.assertIn('src="./'+event['homeImage']+'"',banner)
+        events=copy.deepcopy(self.events);events[0]['homeImage']='foto-inesistente.webp'
+        with self.assertRaises(ValueError): site.generate(events=events)
+
     def test_json_ld_is_safe_for_authored_punctuation(self):
         articles=copy.deepcopy(self.articles);articles[0]['seoTitle']='Un titolo </script> & "virgolette"'
         page=site.generate(articles=articles)['stili-di-apprendimento.html']
