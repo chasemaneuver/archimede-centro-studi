@@ -105,6 +105,35 @@ class EditorialTests(unittest.TestCase):
         self.assertNotIn('Laboratorio di prova',output['laboratori-creativi.html'])
         self.assertIn('Laboratorio di prova',output['eventi.html'])
 
+    def test_open_ended_initiative_has_no_fake_date_and_archives_by_explicit_status(self):
+        event=copy.deepcopy(self.events[0]);event.pop('end',None)
+        event.update(slug='iniziativa-aperta',url='iniziativa-aperta.html',layout='standard',title='Iniziativa senza scadenza',
+            homeTitle='Banner senza scadenza',periodLabel='Ogni domenica',featuredInHome=True,featuredInLabs=True)
+        output=site.generate(events=self.events+[event])
+        self.assertEqual(schema(output['iniziativa-aperta.html'])['@type'],'WebPage')
+        self.assertNotIn('datetime=""',output['iniziativa-aperta.html'])
+        self.assertNotIn('Conclusione:',output['iniziativa-aperta.html'])
+        self.assertIn('Ogni domenica',output['iniziativa-aperta.html'])
+        card=next(c for c in re.findall(r'<article class="archive-card event-card".*?</article>',output['eventi.html'],re.S) if 'iniziativa-aperta.html' in c)
+        self.assertNotIn('data-end=',card)
+        self.assertIn('Banner senza scadenza',output['index.html'])
+        self.assertIn('Iniziativa senza scadenza',output['laboratori-creativi.html'])
+        for status in ('past','cancelled'):
+            with self.subTest(status=status):
+                event['status']=status;closed=site.generate(events=self.events+[event])
+                self.assertNotIn('Banner senza scadenza',closed['index.html'])
+                self.assertNotIn('Iniziativa senza scadenza',closed['laboratori-creativi.html'])
+                self.assertNotIn('Iscriviti o chiedi informazioni',closed['iniziativa-aperta.html'])
+                self.assertIn('Iniziativa senza scadenza',closed['eventi.html'].split('id="events-past">')[1])
+
+    def test_dated_event_schema_keeps_start_without_invented_end(self):
+        event=copy.deepcopy(self.events[0]);event.pop('end',None)
+        event.update(slug='evento-senza-fine',url='evento-senza-fine.html',layout='standard',
+            startDate='2026-11-01T10:00:00+01:00',location={'@type':'Place','name':'Luogo di prova'})
+        result=schema(site.generate(events=self.events+[event])['evento-senza-fine.html'])
+        self.assertEqual(result['@type'],'Event')
+        self.assertNotIn('endDate',result)
+
     def test_json_ld_is_safe_for_authored_punctuation(self):
         articles=copy.deepcopy(self.articles);articles[0]['seoTitle']='Un titolo </script> & "virgolette"'
         page=site.generate(articles=articles)['stili-di-apprendimento.html']

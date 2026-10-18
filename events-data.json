@@ -15,6 +15,44 @@
     "intro": "Archimede Centro Studi APS ETS aderisce a Pescara Solidale 2026 come erogatore di attività socioeducative.",
     "description": "Servizi Archimede nel catalogo Pescara Solidale 2026 e guida pratica all’utilizzo del voucher socioeducativo.",
     "structuredName": "Pescara Solidale 2026: attività Archimede",
-    "structuredDescription": "Attività socioeducative Archimede nel programma Pescara Solidale 2026, guida per i beneficiari con voucher già attivo."
+    "structuredDescription": "Attività socioeducative Archimede nel programma Pescara Solidale 2026, guida per i beneficiari con voucher già attivo.",
+    "featuredInHome": true,
+    "homeTheme": "blue",
+    "homeEyebrow": "Un aiuto per le famiglie",
+    "homeTitle": "Pescara Solidale",
+    "homeSummary": "Hai già un voucher attivo? Scopri come utilizzarlo per le attività Archimede.",
+    "homeCta": "Scopri come usare il voucher"
+  },
+  {
+    "slug": "domenica-si-studia-gratis",
+    "url": "domenica-si-studia-gratis.html",
+    "title": "Domenica si studia. Gratis.",
+    "titleFirst": "Domenica si studia.",
+    "titleEmphasis": "Gratis.",
+    "eyebrow": "Il sapere si condivide",
+    "intro": "Ogni domenica, ripetizioni gratuite in presenza per tutti i livelli scolastici. Un’iniziativa sociale aperta a tutti, con prenotazione.",
+    "description": "Ripetizioni gratuite ogni domenica da Archimede Centro Studi a Pescara. Per tutti i livelli scolastici, in presenza e su prenotazione WhatsApp.",
+    "desc": "Ripetizioni gratuite in presenza per tutti i livelli scolastici. Puoi partecipare più domeniche: basta prenotare.",
+    "image": "domenica-si-studia-gratis.webp",
+    "imageAlt": "Locandina Domenica si studia. Gratis.: ripetizioni gratuite ogni domenica da Archimede",
+    "imageWidth": 1254,
+    "imageHeight": 1254,
+    "layout": "standard",
+    "status": "current",
+    "contentFile": "domenica-si-studia-gratis.content.html",
+    "periodLabel": "Ogni domenica · Iniziativa continuativa",
+    "dateModified": "2026-10-18",
+    "tags": [
+      "Scuola",
+      "Solidarietà"
+    ],
+    "registrationUrl": "{{contacts.whatsapp}}?text=Ciao%20Archimede%2C%20vorrei%20prenotare%20per%20le%20domeniche%20gratuite.",
+    "registrationLabel": "Prenota su WhatsApp",
+    "featuredInHome": true,
+    "homeTheme": "ruby",
+    "homeEyebrow": "Un’iniziativa sociale",
+    "homeTitle": "Domenica si studia. Gratis.",
+    "homeSummary": "Ripetizioni gratuite in presenza per tutti i livelli scolastici. Puoi tornare ogni domenica, su prenotazione.",
+    "homeCta": "Scopri le domeniche gratuite"
   }
 ]

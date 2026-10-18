@@ -336,3 +336,9 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 - Capitolo 1: interessi, piani di studio, competenze e sostenibilità; fonti primarie aggiornate e esercizio di confronto di tre corsi. Template articolo condiviso, due illustrazioni, citazioni celesti, fonti, tag, data e minuti di lettura.
 - Nuova serie distinta nelle Risorse; raggruppamento automatico per sezione con comandi indipendenti, copertina configurabile, test di separazione delle guide. Archivio Articoli, Album e sitemap aggiornati.
 - Commenti del nuovo slug abilitati in Supabase; piano dei sei capitoli e consegna social registrati nella guida di gestione.
+
+
+## 18 ottobre 2026 — Domenica si studia. Gratis.
+- Nuova pagina dell’iniziativa sociale, ripetizioni scolastiche gratuite in presenza con prenotazione WhatsApp; locandina sociale nell’Album e FAQ collegata.
+- Due banner visibili dopo i numeri della home: Pescara Solidale e domenichegratuite; impilati sul telefono. Nessun richiamo in Tutti i servizi.
+- Archivio eventi gestisce iniziative senza fine definita: nessuna scadenza fittizia, stato esplicito per archiviazione, periodLabel e test di regressione. SEO/sitemap e documenti aggiornati.

@@ -122,7 +122,7 @@ Frequenze suggerite, non attività già pianificate.
 | Cosa | Quando | Cosa aggiornare |
 | --- | --- | --- |
 | Pescara Solidale | A comunicazioni del Comune, prima delle scadenze e a ogni edizione | Avvisi ufficiali, ammissione, attivazione/utilizzo voucher, catalogo, servizi/tariffe, date, locandina, sponsor e link. Controllare anche richiami in Risorse gratuite, Lezioni Circolari, menu ed Eventi. |
-| Lezioni Circolari | A variazioni; verifica a inizio anno scolastico | Disponibilità del fondo, partecipazione, richieste e condizioni effettive. Non reintrodurre lezioni gratuite domenicali finché il centro non le riattiva. |
+| Lezioni Circolari | A variazioni; verifica a inizio anno scolastico | Disponibilità del fondo, partecipazione, richieste e condizioni effettive. Le domeniche gratuite sono state riattivate il 18 ottobre 2026 come iniziativa sociale autonoma; vedere la sezione dedicata sotto. |
 | Servizi e materiale personalizzato | A variazioni; revisione a inizio anno scolastico | Offerta, materie, fasce d’età, modalità, condizioni, esempi di materiale e FAQ collegate. |
 | Domande frequenti | A domande ricorrenti o risposte cambiate | Dubbi della segreteria, modalità, preventivi, accesso ai materiali e avvio dei percorsi. |
 | Preventivi e iscrizioni | A cambio di modulo; prova ogni trimestre | Link lezioni e materiale distinti; apertura, destinazione delle risposte e condizioni di accesso. Il materiale richiede oggi un account Google. |
@@ -321,3 +321,12 @@ Piano editoriale di riferimento, cadenza settimanale proposta (non pubblicazioni
 | 6 | Dalle informazioni a un piano di scelta | 21 novembre 2026 |
 
 Ricerca verifica fonti e annualità per ogni capitolo, Autore prepara testo e metadati, Fotografo le immagini, Conformità e Qualità le verifiche pertinenti; Regia pubblica. Social Media prepara il lancio del 18 ottobre; i materiali non equivalgono a post già programmati. Nessuna graduatoria di lauree immuni dall’AI o garanzia di occupazione. Distinguere esposizione dei compiti, adozione e sostituzione effettiva; non attribuire dati globali a studenti italiani.
+
+
+## 18 ottobre 2026 — Domeniche gratuite e banner iniziative
+
+Pagina `domenica-si-studia-gratis.html`: iniziativa sociale ripetibile, gratuita, in presenza e per le materie scolastiche (non universitarie), con prenotazione WhatsApp al numero principale. Orari e durata da concordare; nessuna fine fissata, prevista almeno fino a Natale 2026. Non presentarla come lezione di prova né archiviare automaticamente a Natale. Locandina recuperata dal post ufficiale e inserita nell’Album. FAQ collegata; nessun richiamo in Tutti i servizi.
+
+Gli eventi possono ora omettere `end` quando non hanno una conclusione definita. `periodLabel` descrive la ricorrenza senza inventare una data; pagina e scheda omettono `time` e `data-end` vuoti. `archive.js` sposta automaticamente solo gli eventi con una data finale reale. Per chiudere l’iniziativa usare `status: "past"` (o `cancelled`), aggiornando testo e prenotazioni; non serve introdurre una data fittizia. Gli eventi con data mantengono comportamento e scadenze precedenti. Lo schema resta WebPage senza una data iniziale e un luogo adatti a Event.
+
+`featuredInHome: true` genera un banner dopo i numeri della home per iniziative attive: due colonne PC, una su telefono, nessuno scorrimento automatico. I due attuali sono Pescara Solidale (blu) e domeniche (rosso). Campi facoltativi: `homeTheme` blue/ruby, `homeEyebrow`, `homeTitle`, `homeSummary`, `homeCta`. Stati past/cancelled rimuovono il banner alla rigenerazione. Alla scadenza di Pescara Solidale aggiornare lo stato e rigenerare anche i banner; il solo spostamento nel browser dell’archivio non modifica la home. Per il futuro laboratorio di corsivo riutilizzare il componente dopo conferma dei dettagli, senza schede vuote. `registrationLabel` personalizza il pulsante della pagina evento.

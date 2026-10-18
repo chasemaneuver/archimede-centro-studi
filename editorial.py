@@ -70,10 +70,10 @@ def validate_records(articles, events, root):
                     raise ValueError('Tag articolo non validi: '+slug)
                 if len(record['tags'])!=len(set(record['tags'])): raise ValueError('Tag duplicati: '+slug)
             else:
-                end=date.fromisoformat(record['end'])
+                end=date.fromisoformat(record['end']) if record.get('end') else None
                 if record.get('layout','standard') not in {'standard','existing'}: raise ValueError('Layout evento non valido: '+slug)
                 if record.get('status','current') not in STATUSES: raise ValueError('Stato evento non valido: '+slug)
-                if record.get('startDate') and date.fromisoformat(record['startDate'][:10])>end:
+                if end and record.get('startDate') and date.fromisoformat(record['startDate'][:10])>end:
                     raise ValueError('Evento termina prima di iniziare: '+slug)
                 for key in ('startDate','endDate'):
                     if record.get(key): datetime.fromisoformat(record[key])
@@ -147,17 +147,21 @@ def prepare(root,config,common,render,articles=None,events=None):
             '<button type="button" class="guide-next" aria-label="Capitolo successivo" aria-controls="'+track+'"><span aria-hidden="true">→</span></button></div></div></section>')
     global_values['archive.resourceGuides']='<div class="resource-guides">'+''.join(guides)+'</div>'
     global_values['archive.articleFilters']='<button data-tag="" aria-pressed="true">Tutti</button>'+''.join(f'<button data-tag="{escape(tag,quote=True)}" aria-pressed="false">{escape(tag)}</button>' for tag in sorted(tags))
-    current=[];past=[];lab_cards=[];event_tags=set()
+    current=[];past=[];lab_cards=[];home_banners=[];event_tags=set()
     for event in events:
         values=dict(common);status=event.get('status','current')
         scalars=dict(event,url='./'+event['url'],imageUrl='./'+event['image'],imageAbsolute=base+event['image'],
-                     canonical=base+event['url'],endLabel=date_label(event['end']),status=status,statusLabel=STATUSES[status])
+                     canonical=base+event['url'],end=event.get('end',''),endLabel=date_label(event['end']) if event.get('end') else event.get('periodLabel','Iniziativa continuativa'),status=status,statusLabel=STATUSES[status])
         scalars.setdefault('description',event['desc']);scalars.setdefault('intro',event['desc'])
         scalars.setdefault('eyebrow','Un’occasione per crescere');scalars.setdefault('titleFirst',event['title']);scalars.setdefault('titleEmphasis','Insieme.')
         values.update({'event.'+key:escape(str(value),quote=True) for key,value in scalars.items() if isinstance(value,(str,int,float))})
         tags=event.get('tags',[])
         if not isinstance(tags,list) or any(not isinstance(tag,str) or not tag.strip() for tag in tags): raise ValueError('Tag evento non validi.')
         event_tags.update(tags)
+        values['event.endAttribute']=' data-end="'+escape(event['end'],quote=True)+'"' if event.get('end') else ''
+        values['event.period']='Conclusione: <time datetime="'+escape(event['end'],quote=True)+'">'+values['event.endLabel']+'</time>' if event.get('end') else values['event.endLabel']
+        values['event.imageAttributes']=' width="'+str(event['imageWidth'])+'" height="'+str(event['imageHeight'])+'"' if event.get('imageWidth') and event.get('imageHeight') else ''
+        values['event.imageAlt']=escape(event.get('imageAlt',event['title']),quote=True)
         values['event.tagsData']=escape(json.dumps(tags,ensure_ascii=False),quote=True)
         values['event.tags']=''.join(f'<a href="./eventi.html?{escape(urlencode({"tag":tag}),quote=True)}">{escape(tag)}</a>' for tag in tags)
         values['event.body']=render(body_source(root,event),values)
@@ -167,25 +171,34 @@ def prepare(root,config,common,render,articles=None,events=None):
         if event.get('startDate') and event.get('location'):
             schema={'@context':'https://schema.org','@type':'Event','name':event['title'],'url':scalars['canonical'],
                     'description':scalars['description'],'image':scalars['imageAbsolute'],'startDate':event['startDate'],
-                    'endDate':event.get('endDate',event['end']),'location':event['location'],
+                    'location':event['location'],
                     'eventStatus':'https://schema.org/EventCancelled' if status=='cancelled' else 'https://schema.org/EventScheduled',
                     'organizer':{'@type':'Organization','name':'Archimede Centro Studi','url':base}}
+        if schema['@type']=='Event' and (event.get('endDate') or event.get('end')):
+            schema['endDate']=event.get('endDate') or event['end']
         values['event.schema']=safe_json(schema)
-        registration=event.get('registrationUrl')
+        registration=render(event.get('registrationUrl',''),common)
         if registration and not registration.startswith(('https://','mailto:')): raise ValueError('Link iscrizioni non ammesso.')
-        values['event.registration']=f'<a class="button primary" href="{escape(registration,quote=True)}">Iscriviti o chiedi informazioni ↗</a>' if registration and status not in ('past','cancelled') else ''
+        values['event.registration']=f'<a class="button primary" href="{escape(registration,quote=True)}">'+escape(event.get('registrationLabel','Iscriviti o chiedi informazioni'))+' ↗</a>' if registration and status not in ('past','cancelled') else ''
         if event.get('layout','standard')=='existing': page_values[event['url']]=values
         else:
             if (root/'templates'/(event['url']+'.in')).exists(): raise ValueError('URL evento standard già occupato: '+event['url'])
             pages[event['url']]=template('event-page.html.in',values)
+        if event.get('featuredInHome') and status not in ('past','cancelled'):
+            theme=event.get('homeTheme','blue')
+            if theme not in {'blue','ruby'}: raise ValueError('Colore banner iniziativa non valido.')
+            home_banners.append('<article class="initiative-banner initiative-'+theme+'"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
+                '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p>'
+                '<a class="button" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')
         card=template('event-card.html.in',values)
         (past if status in ('past','cancelled') else current).append(card)
         if event.get('featuredInLabs') and status not in ('past','cancelled'):
             lab_cards.append('<article class="program-card"><span class="eyebrow">'+values['event.statusLabel']+
                 '</span><h3>'+values['event.title']+'</h3><p>'+values['event.desc']+
-                '</p><p class="program-note">Conclusione: '+values['event.endLabel']+
+                '</p><p class="program-note">'+values['event.period']+
                 '</p><a class="text-link" href="'+values['event.url']+'">Scopri il laboratorio ↗</a></article>')
-    global_values.update({'archive.currentEvents':''.join(current),'archive.pastEvents':''.join(past),
+    global_values.update({'archive.homeBanners':'<section class="wrap home-initiatives" id="iniziative" aria-label="Iniziative in corso"><div class="initiative-grid">'+''.join(home_banners)+'</div></section>' if home_banners else '',
+                          'archive.currentEvents':''.join(current),'archive.pastEvents':''.join(past),
                           'archive.pastEmptyHidden':' hidden' if past else '',
                           'archive.labEvents':'<section class="section"><div class="wrap"><span class="eyebrow">Ci vediamo in laboratorio</span><h2>Nuove idee,<br><em>da vivere insieme.</em></h2><div class="program-grid">'+''.join(lab_cards)+'</div></div></section>' if lab_cards else '',
                           'archive.eventFilters':'<div class="archive-filters" aria-label="Filtra gli eventi per tag"><button data-tag="" aria-pressed="true">Tutti</button>'+''.join(f'<button data-tag="{escape(tag,quote=True)}" aria-pressed="false">{escape(tag)}</button>' for tag in sorted(event_tags))+'</div>' if event_tags else ''})
