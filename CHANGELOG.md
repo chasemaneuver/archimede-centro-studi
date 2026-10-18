@@ -359,3 +359,6 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 ## 18 ottobre 2026 — Banner più rapido e domeniche tra le risorse
 - Intervallo del banner iniziative ridotto da 7 a 4 secondi; pausa e comandi conservati.
 - Aggiunta in Risorse gratuite una sezione con locandina e link alla pagina delle domeniche gratuite, generata dai dati evento e rimossa quando archiviata.
+
+## 18 ottobre 2026 — Spaziatura dei pulsanti
+Controllate tutte le 19 pagine a 1280px e 390px. Corretto il distacco tra testo e azioni nei blocchi programma (inclusa la sezione domeniche in Risorse), schede laboratori, Pescara Solidale, contatti, richiamo materiale su telefono, testimonianza home, badge recensioni e barre laterali editoriali. Link interni al testo e gruppi di comandi mantengono il proprio impaginato.
