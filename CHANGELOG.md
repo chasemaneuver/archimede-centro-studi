@@ -354,3 +354,8 @@ Raccolta unica: 61 schede, filtri Scuola 25 / Università 14 / Metodo e supporto
 - Sostituite le tre card della home con un unico banner orizzontale a scorrimento, foto del centro già presenti e titoli bianchi con ombra.
 - Autoplay ogni 7 secondi, frecce, pausa, tastiera/touch, sospensione fuori vista e supporto movimento ridotto; contenuti raggiungibili anche senza JavaScript.
 - Foto gestite nei dati degli eventi e CTA sempre alla relativa pagina, indipendenti dal pulsante WhatsApp interno all’evento.
+
+
+## 18 ottobre 2026 — Banner più rapido e domeniche tra le risorse
+- Intervallo del banner iniziative ridotto da 7 a 4 secondi; pausa e comandi conservati.
+- Aggiunta in Risorse gratuite una sezione con locandina e link alla pagina delle domeniche gratuite, generata dai dati evento e rimossa quando archiviata.

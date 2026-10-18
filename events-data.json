@@ -53,7 +53,8 @@
     "homeTitle": "Domenica si studia. Gratis.",
     "homeSummary": "Ripetizioni scolastiche gratuite in presenza, ogni domenica su prenotazione.",
     "homeCta": "Scopri le domeniche gratuite",
-    "homeImage": "sfondo-nero-studio.webp"
+    "homeImage": "sfondo-nero-studio.webp",
+    "featuredInResources": true
   },
   {
     "slug": "laboratorio-corsivo",

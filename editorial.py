@@ -147,7 +147,7 @@ def prepare(root,config,common,render,articles=None,events=None):
             '<button type="button" class="guide-next" aria-label="Capitolo successivo" aria-controls="'+track+'"><span aria-hidden="true">→</span></button></div></div></section>')
     global_values['archive.resourceGuides']='<div class="resource-guides">'+''.join(guides)+'</div>'
     global_values['archive.articleFilters']='<button data-tag="" aria-pressed="true">Tutti</button>'+''.join(f'<button data-tag="{escape(tag,quote=True)}" aria-pressed="false">{escape(tag)}</button>' for tag in sorted(tags))
-    current=[];past=[];lab_cards=[];home_banners=[];event_tags=set()
+    current=[];past=[];lab_cards=[];resource_events=[];home_banners=[];event_tags=set()
     for event in events:
         values=dict(common);status=event.get('status','current')
         scalars=dict(event,url='./'+event['url'],imageUrl='./'+event['image'],imageAbsolute=base+event['image'],
@@ -193,6 +193,8 @@ def prepare(root,config,common,render,articles=None,events=None):
                 '<div class="initiative-copy"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
                 '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p></div>'
                 '<a class="button initiative-cta" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')
+        if event.get('featuredInResources') and status not in ('past','cancelled'):
+            resource_events.append('<section class="section program-tint" id="'+escape(event['slug'],quote=True)+'"><div class="wrap program-split"><div><span class="eyebrow">Il sapere si condivide</span><h2>'+values['event.title']+'</h2><p>'+values['event.desc']+'</p><p>Un’iniziativa sociale aperta a tutti, anche per più domeniche. Sono escluse le materie universitarie. Orari e durata si concordano con la segreteria.</p><a class="button primary" href="'+values['event.url']+'">Scopri le domeniche gratuite <span aria-hidden="true">↗</span></a></div><a href="'+values['event.url']+'" aria-label="Scopri le domeniche gratuite"><img src="./'+escape(event['image'],quote=True)+'" width="'+str(event['imageWidth'])+'" height="'+str(event['imageHeight'])+'" loading="lazy" alt="'+escape(event['imageAlt'],quote=True)+'" style="display:block;width:100%;max-width:420px;height:auto;margin:auto;border-radius:18px"></a></div></section>')
         card=template('event-card.html.in',values)
         (past if status in ('past','cancelled') else current).append(card)
         if event.get('featuredInLabs') and status not in ('past','cancelled'):
@@ -201,7 +203,7 @@ def prepare(root,config,common,render,articles=None,events=None):
                 '</p><p class="program-note">'+values['event.period']+
                 '</p><a class="text-link" href="'+values['event.url']+'">Scopri il laboratorio ↗</a></article>')
     global_values.update({'archive.homeBanners':'<section class="wrap home-initiatives" id="iniziative" aria-label="Iniziative in corso" aria-roledescription="carosello"><div class="initiative-shell"><div class="initiative-track" id="iniziative-track" tabindex="0">'+''.join(home_banners)+'</div><div class="initiative-controls" hidden><button type="button" class="initiative-prev" aria-label="Iniziativa precedente" aria-controls="iniziative-track">←</button><span class="initiative-position" aria-live="off">1 / '+str(len(home_banners))+'</span><button type="button" class="initiative-next" aria-label="Iniziativa successiva" aria-controls="iniziative-track">→</button><button type="button" class="initiative-pause" aria-pressed="false">Pausa</button></div></div><p class="initiative-announcement" aria-live="polite" aria-atomic="true"></p></section>' if home_banners else '',
-                          'archive.currentEvents':''.join(current),'archive.pastEvents':''.join(past),
+                          'archive.resourceEvents':''.join(resource_events),'archive.currentEvents':''.join(current),'archive.pastEvents':''.join(past),
                           'archive.pastEmptyHidden':' hidden' if past else '',
                           'archive.labEvents':'<section class="section"><div class="wrap"><span class="eyebrow">Ci vediamo in laboratorio</span><h2>Nuove idee,<br><em>da vivere insieme.</em></h2><div class="program-grid">'+''.join(lab_cards)+'</div></div></section>' if lab_cards else '',
                           'archive.eventFilters':'<div class="archive-filters" aria-label="Filtra gli eventi per tag"><button data-tag="" aria-pressed="true">Tutti</button>'+''.join(f'<button data-tag="{escape(tag,quote=True)}" aria-pressed="false">{escape(tag)}</button>' for tag in sorted(event_tags))+'</div>' if event_tags else ''})
