@@ -381,3 +381,6 @@ Riorganizzata la sezione guide di Risorse gratuite: titolo/eyebrow a sinistra, t
 
 ## 21 ottobre 2026 — Scorrimento banner più rapido
 Intervallo tra le iniziative della home ridotto da4a2secondi, mantenendo tutti i comandi e le condizioni di pausa.
+
+## 21 ottobre 2026 — Scheda corsivo a destra
+Nei Laboratori creativi, titolo della sezione iniziative a sinistra e scheda del corsivo a destra, con impilamento su telefono. Collegamento e contenuti invariati.
