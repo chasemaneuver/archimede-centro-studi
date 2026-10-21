@@ -359,3 +359,6 @@ Il footer usa footerGroups, generato dalle categorie di navigation con i testi d
 
 ## 21 ottobre 2026 — Griglia delle guide gratuite
 Risorse gratuite: introduzione con titolo/eyebrow a sinistra e testo/link archivio a destra. Sotto, resources-guide-grid mostra due guide per riga PC e una sotto850px. Ogni serie mantiene la sua galleria di capitoli e i propri controlli. La dispensa esterna Analisi1 è la terza guida, senza duplicazioni. CSS dedicato resources-layout.css caricato soltanto in Risorse.
+
+## 21 ottobre 2026 — Banner iniziative a 2 secondi
+Intervallo del carosello iniziative della home impostato a2000ms su richiesta. Pausa su hover/focus, controlli manuali, arresto fuori vista e movimento ridotto restano invariati.

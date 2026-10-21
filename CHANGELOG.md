@@ -378,3 +378,6 @@ Accorciato l’evidenziatore del titolo principale Lavora con noi su PC; resa pe
 
 ## 21 ottobre 2026 — Griglia delle guide gratuite
 Riorganizzata la sezione guide di Risorse gratuite: titolo/eyebrow a sinistra, testo a destra, schede sotto due per riga PC e una su telefono. Conservate gallerie dei capitoli, immagini, contenuti e link, inclusa la dispensa Analisi1.
+
+## 21 ottobre 2026 — Scorrimento banner più rapido
+Intervallo tra le iniziative della home ridotto da4a2secondi, mantenendo tutti i comandi e le condizioni di pausa.

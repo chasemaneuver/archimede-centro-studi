@@ -13,7 +13,7 @@
   <link rel="icon" href="./logo.svg?v=20261014">
   <link rel="stylesheet" href="./styles.css?v=20261021-footer">
 <link rel="stylesheet" href="./home-motion.css?v=20261014-palette">
-<link rel="canonical" href="{{publishing.baseUrl}}index.html"><link rel="stylesheet" href="./home-background.css?v=20261014-palette"><link rel="stylesheet" href="./home-layout.css?v=20261014-palette"><link rel="stylesheet" href="./initiative-carousel.css?v=20261018"><script src="./initiative-carousel.js?v=20261018b" defer></script></head>
+<link rel="canonical" href="{{publishing.baseUrl}}index.html"><link rel="stylesheet" href="./home-background.css?v=20261014-palette"><link rel="stylesheet" href="./home-layout.css?v=20261014-palette"><link rel="stylesheet" href="./initiative-carousel.css?v=20261018"><script src="./initiative-carousel.js?v=20261021-2s" defer></script></head>
 <body class="home-page">
   <a class="skip" href="#contenuto">Vai al contenuto</a>
   {{header}}

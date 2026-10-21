@@ -16,7 +16,7 @@ document.querySelectorAll('.home-initiatives').forEach(carousel => {
   function schedule() {
     stop();
     if (userPaused || reduced.matches || hovered || document.hidden || !inView || (carousel.contains(document.activeElement) && !resumeWithFocus)) return;
-    timer = setTimeout(() => { go(current + 1, false); schedule(); }, 4000);
+    timer = setTimeout(() => { go(current + 1, false); schedule(); }, 2000);
   }
   function buttonState() {
     pause.hidden = reduced.matches;
