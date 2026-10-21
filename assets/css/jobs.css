@@ -1,0 +1,12 @@
+.jobs-page .faq-intro-grid{grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.jobs-page .page-intro-copy{max-width:720px}
+.jobs-page .page-intro-copy h1{font-size:clamp(40px,4.5vw,60px)}
+.jobs-status{margin-top:26px;padding:20px 22px;background:var(--brand-white);border:1px solid var(--line);border-left:4px solid var(--brand-red);border-radius:0 12px 12px 0;line-height:1.65}
+.jobs-status strong,.jobs-status span{display:block}.jobs-status strong{color:var(--brand-blue)}.jobs-status span{margin-top:6px;color:var(--muted);font-size:14px}
+.jobs-page .page-intro-copy>.button{margin-top:24px}.jobs-art{max-width:500px;aspect-ratio:500/370}
+.jobs-values{background:var(--surface-blue,#e2e8ef)}.jobs-profiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+.jobs-lead{margin-top:24px;max-width:720px}.jobs-inline,.jobs-privacy a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.jobs-checklist{margin:24px 0;padding-left:22px;max-width:720px}.jobs-checklist li+li{margin-top:10px}
+.jobs-page .program-contact .jobs-privacy{margin-top:24px;font-size:14px;line-height:1.8;max-width:750px}.jobs-page .program-contact strong{color:var(--brand-white)}
+@media(max-width:850px){.jobs-page .faq-intro-grid{grid-template-columns:1fr;gap:0}.jobs-art{justify-self:center;margin:0 auto 40px;max-width:420px}.jobs-page .page-intro-copy{padding-bottom:28px}}
+@media(max-width:600px){.jobs-profiles{grid-template-columns:1fr}.jobs-status{padding:18px}.jobs-page .page-intro-copy h1{font-size:40px}.jobs-page #candidatura .button{max-width:100%;gap:12px}}

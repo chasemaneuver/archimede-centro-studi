@@ -47,6 +47,10 @@
           "label": "Domande frequenti"
         },
         {
+          "url": "./lavora-con-noi.html",
+          "label": "Lavora con noi"
+        },
+        {
           "url": "./cinque-per-mille.html",
           "label": "Il tuo 5×1000"
         }
@@ -127,6 +131,10 @@
       "url": "./domande-frequenti.html",
       "label": "Domande frequenti",
       "external": false
+    },
+    {
+      "url": "./lavora-con-noi.html",
+      "label": "Lavora con noi"
     },
     {
       "url": "./cinque-per-mille.html",

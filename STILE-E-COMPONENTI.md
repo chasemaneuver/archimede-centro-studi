@@ -507,3 +507,6 @@ Un unico banner largo e basso, con foto-sfondo del centro all’80%, gradiente n
 
 ## 18 ottobre 2026 — Spazio tra testo e azioni
 Nei componenti condivisi program-split, program-card, voucher-status-copy e program-contact, le azioni autonome dopo il testo hanno 24px di margine superiore. Titoli e paragrafi dei blocchi programma hanno rispettivamente 20px e 16px; le note delle schede sono separate dal testo di 12px. Conservare i gap dei gruppi flex/grid e i margini automatici delle schede, senza aggiungere margini ai link interni ai paragrafi. Badge recensioni separati dal riepilogo di 16px; azioni nelle barre laterali editoriali di 20px. Controllare ogni nuova sezione su PC e telefono.
+
+## 21 ottobre 2026 — Lavora con noi
+Lavora con noi usa un’illustrazione originale di classe B: profili su carta, grande ellisse con satelliti e animazioni condivise, sfondo statico, movimento ridotto rispettato. Stato senza posizioni aperte in evidenza nel primo schermo; non usare badge che simulano posti disponibili. Schede degli ambiti in due colonne PC e una mobile. Azioni via email con margine 24px; informativa collegata. CSS dedicato jobs.css, nessuna nuova fotografia.

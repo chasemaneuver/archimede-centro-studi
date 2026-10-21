@@ -366,3 +366,6 @@ Controllate tutte le 19 pagine a 1280px e 390px. Corretto il distacco tra testo 
 
 ## 18 ottobre 2026 — Analisi 1 tra le guide
 Aggiunta in Risorse gratuite una scheda per la dispensa interattiva gratuita di Analisi 1 di Michelle Vrapi: teoria, esempi, esercizi svolti e grafici interattivi. Collegamento al sito esterno, senza duplicarne contenuti o articoli.
+
+## 21 ottobre 2026 — Lavora con noi
+Aggiunta pagina Lavora con noi per sole candidature spontanee, con esplicita assenza di posizioni aperte, quattro ambiti, modalità in presenza/online e mailto alla segreteria. Menu/footer centralizzati e 20 pagine rigenerate, sitemap e metadati. Grafica classe B originale con animazioni condivise. Informativa candidature e conservazione massima email/CV di 12 mesi confermata dall’utente; nessun consenso generico, form, database o annuncio JobPosting.

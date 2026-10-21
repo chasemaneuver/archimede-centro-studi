@@ -101,6 +101,7 @@ def values_for(config):
                       + ''.join(link(item) for item in group['links']) + '</div></div>')
     values['navigation'] = ''.join(groups)
     values['footerLinks'] = ''.join(link(item) for item in data['footer'])
+    values['footerRows'] = str((len(data['footer']) + 1) // 2)
     return values
 
 def render(template, values):

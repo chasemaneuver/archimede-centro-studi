@@ -348,3 +348,8 @@ Il campo evento `featuredInResources` genera una sezione con descrizione, locand
 
 ## 18 ottobre 2026 — Dispensa esterna di Analisi 1
 In Risorse gratuite, tra le guide, la sezione `guida-analisi-1` rimanda a https://chasemaneuver.github.io/Analisi-1/ con attribuzione a Michelle Vrapi. Link esterno in nuova scheda, indicazione accessibile e rel=noopener. Scheda nel modello Risorse; nessun articolo duplicato negli archivi e nessuna copia dei capitoli. Prima di cambiare descrizione o URL verificare il sito di destinazione.
+
+## 21 ottobre 2026 — Lavora con noi
+Pagina lavora-con-noi.html, nel menu Il centro e nel footer dopo le FAQ. Stato confermato il 21 ottobre 2026: nessuna posizione aperta, candidature spontanee sempre ricevibili via email alla segreteria. Ambiti: docenza/tutoraggio, educazione/supporto allo studio, laboratori, segreteria. Modalità in presenza/online; competenze e titoli valutati per l’eventuale attività senza requisiti inventati. Il link mailto non invia automaticamente messaggi e non può allegare il CV: il candidato lo aggiunge nella propria app. Nessun JobPosting, nessun form o nuovo database. Informativa privacy #candidature-privacy e conservazione massima di 12 mesi dalla ricezione, approvata dall’utente; eliminazione periodica a cura del centro e link all’informativa al primo contatto utile. Prima di pubblicare vere offerte occorre aggiornarle con condizioni e requisiti verificati. Non modificare il numero WhatsApp per le candidature.
+
+Il numero di righe delle due colonne del footer è calcolato da build_site.py (`footerRows`) in base ai link, per evitare una terza colonna quando si aggiungono voci.
