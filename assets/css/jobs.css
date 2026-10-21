@@ -10,3 +10,8 @@
 .jobs-page .program-contact .jobs-privacy{margin-top:24px;font-size:14px;line-height:1.8;max-width:750px}.jobs-page .program-contact strong{color:var(--brand-white)}
 @media(max-width:850px){.jobs-page .faq-intro-grid{grid-template-columns:1fr;gap:0}.jobs-art{justify-self:center;margin:0 auto 40px;max-width:420px}.jobs-page .page-intro-copy{padding-bottom:28px}}
 @media(max-width:600px){.jobs-profiles{grid-template-columns:1fr}.jobs-status{padding:18px}.jobs-page .page-intro-copy h1{font-size:40px}.jobs-page #candidatura .button{max-width:100%;gap:12px}}
+/* Keep the email invitation fully legible on its blue background. */
+.jobs-page #candidatura h2{color:var(--brand-white);font-weight:600;line-height:1.2}
+.jobs-page #candidatura h2 em{color:var(--brand-white);background:none;font-weight:600}
+.jobs-page #candidatura h2 em::after{display:none}
+.jobs-page #candidatura .eyebrow{color:var(--brand-white)}

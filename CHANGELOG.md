@@ -369,3 +369,6 @@ Aggiunta in Risorse gratuite una scheda per la dispensa interattiva gratuita di 
 
 ## 21 ottobre 2026 — Lavora con noi
 Aggiunta pagina Lavora con noi per sole candidature spontanee, con esplicita assenza di posizioni aperte, quattro ambiti, modalità in presenza/online e mailto alla segreteria. Menu/footer centralizzati e 20 pagine rigenerate, sitemap e metadati. Grafica classe B originale con animazioni condivise. Informativa candidature e conservazione massima email/CV di 12 mesi confermata dall’utente; nessun consenso generico, form, database o annuncio JobPosting.
+
+## 21 ottobre 2026 — Contrasto invito candidature
+Titolo e corsivo della sezione Facciamoci conoscere bianchi e più marcati su blu, senza evidenziatore chiaro sotto le lettere. Correzione limitata alla pagina Lavora con noi.

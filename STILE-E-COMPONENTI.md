@@ -510,3 +510,5 @@ Nei componenti condivisi program-split, program-card, voucher-status-copy e prog
 
 ## 21 ottobre 2026 — Lavora con noi
 Lavora con noi usa un’illustrazione originale di classe B: profili su carta, grande ellisse con satelliti e animazioni condivise, sfondo statico, movimento ridotto rispettato. Stato senza posizioni aperte in evidenza nel primo schermo; non usare badge che simulano posti disponibili. Schede degli ambiti in due colonne PC e una mobile. Azioni via email con margine 24px; informativa collegata. CSS dedicato jobs.css, nessuna nuova fotografia.
+
+Nel banner blu delle candidature, titolo e corsivo sono bianchi di peso600, senza evidenziatore: il testo chiaro non deve sovrapporsi a una fascia chiara.
