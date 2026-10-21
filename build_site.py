@@ -101,7 +101,14 @@ def values_for(config):
                       + ''.join(link(item) for item in group['links']) + '</div></div>')
     values['navigation'] = ''.join(groups)
     values['footerLinks'] = ''.join(link(item) for item in data['footer'])
-    values['footerRows'] = str((len(data['footer']) + 1) // 2)
+    footer_labels = {(item.get('url') or data['links'].get(item.get('linkKey'))): item for item in data['footer']}
+    footer_groups = []
+    for group in data['navigation']:
+        heading_id = 'footer-' + group['id']
+        items = [footer_labels[item['url']] for item in group['links'] if item['url'] in footer_labels]
+        footer_groups.append('<div class="footer-explore-group" role="group" aria-labelledby="'+heading_id+'"><p class="footer-group-title" id="'+heading_id+'">'+escape(group['label'])+'</p><div class="footer-links">'+''.join(link(item) for item in items)+'</div></div>')
+    split = (len(footer_groups) + 1) // 2
+    values['footerGroups'] = ''.join('<div class="footer-explore-column">'+''.join(column)+'</div>' for column in (footer_groups[:split],footer_groups[split:]))
     return values
 
 def render(template, values):

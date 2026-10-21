@@ -372,3 +372,6 @@ Aggiunta pagina Lavora con noi per sole candidature spontanee, con esplicita ass
 
 ## 21 ottobre 2026 — Contrasto invito candidature
 Titolo e corsivo della sezione Facciamoci conoscere bianchi e più marcati su blu, senza evidenziatore chiaro sotto le lettere. Correzione limitata alla pagina Lavora con noi.
+
+## 21 ottobre 2026 — Titolo e categorie nel footer
+Accorciato l’evidenziatore del titolo principale Lavora con noi su PC; resa per singola riga su telefono. Footer riorganizzato con categorie del menu su due colonne e titolo Esplora Archimede a sinistra. Collegamenti conservati, generazione condivisa e versioni CSS aggiornate.

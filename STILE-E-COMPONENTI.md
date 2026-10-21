@@ -512,3 +512,6 @@ Nei componenti condivisi program-split, program-card, voucher-status-copy e prog
 Lavora con noi usa un’illustrazione originale di classe B: profili su carta, grande ellisse con satelliti e animazioni condivise, sfondo statico, movimento ridotto rispettato. Stato senza posizioni aperte in evidenza nel primo schermo; non usare badge che simulano posti disponibili. Schede degli ambiti in due colonne PC e una mobile. Azioni via email con margine 24px; informativa collegata. CSS dedicato jobs.css, nessuna nuova fotografia.
 
 Nel banner blu delle candidature, titolo e corsivo sono bianchi di peso600, senza evidenziatore: il testo chiaro non deve sovrapporsi a una fascia chiara.
+
+## 21 ottobre 2026 — Titolo e categorie nel footer
+Esplora Archimede è allineato a sinistra sopra due colonne di gruppi. Sottotitoli Il centro, Percorsi, Risorse e Archivio, con spazio distinto tra gruppo e link. Lavora con noi: evidenziatore principale più corto, limitato a76%/24rem su PC; sul telefono evidenzia soltanto le righe effettive con box-decoration-break, senza pseudo-elemento largo. Il titolo della candidatura su blu mantiene la correzione di contrasto precedente.

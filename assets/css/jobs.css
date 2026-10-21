@@ -15,3 +15,10 @@
 .jobs-page #candidatura h2 em{color:var(--brand-white);background:none;font-weight:600}
 .jobs-page #candidatura h2 em::after{display:none}
 .jobs-page #candidatura .eyebrow{color:var(--brand-white)}
+
+/* A shorter marker stays inside the title column on desktop. */
+.jobs-page .page-intro-copy h1 em::after{left:0;right:auto;width:76%;max-width:24rem}
+@media(max-width:850px){
+ .jobs-page .page-intro-copy h1 em{display:inline;background:linear-gradient(transparent 82%,var(--cream) 82%,var(--cream) 96%,transparent 96%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
+ .jobs-page .page-intro-copy h1 em::after{display:none}
+}

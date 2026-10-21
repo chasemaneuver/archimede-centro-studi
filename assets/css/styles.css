@@ -1035,3 +1035,12 @@ h1,h2,h3{color:var(--brand-blue)}
 .article-side p + a{margin-top:20px}
 .review-summary-links > p + .review-write-badge{margin-top:16px}
 @media(max-width:480px){.services-foot{gap:24px}}
+
+/* Footer follows the menu categories, arranged in two readable columns. */
+.footer-explore>.footer-title{text-align:left;font-size:12px}
+.footer-explore-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.footer-explore-column{display:flex;flex-direction:column;gap:24px;min-width:0}
+.footer-group-title{color:var(--brand-white);font-size:12px;font-weight:700;margin:0 0 12px;line-height:1.4}
+.footer-explore-group .footer-links{gap:9px}
+.footer-explore-group .footer-links a{width:fit-content;max-width:100%}
+@media(max-width:480px){.footer-explore-groups{gap:20px}.footer-explore-group .footer-links{font-size:12px}}
