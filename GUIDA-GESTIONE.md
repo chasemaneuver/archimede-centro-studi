@@ -356,3 +356,6 @@ Il numero di righe delle due colonne del footer è calcolato da build_site.py (`
 
 ## 21 ottobre 2026 — Titolo e categorie nel footer
 Il footer usa footerGroups, generato dalle categorie di navigation con i testi dei link definiti in footer. Mantiene due colonne: Il centro/Percorsi e Risorse/Archivio. Non duplicare i link in HTML; aggiornare le fonti centralizzate e rigenerare tutte le pagine. Il vecchio footerRows non è più utilizzato.
+
+## 21 ottobre 2026 — Griglia delle guide gratuite
+Risorse gratuite: introduzione con titolo/eyebrow a sinistra e testo/link archivio a destra. Sotto, resources-guide-grid mostra due guide per riga PC e una sotto850px. Ogni serie mantiene la sua galleria di capitoli e i propri controlli. La dispensa esterna Analisi1 è la terza guida, senza duplicazioni. CSS dedicato resources-layout.css caricato soltanto in Risorse.

@@ -375,3 +375,6 @@ Titolo e corsivo della sezione Facciamoci conoscere bianchi e più marcati su bl
 
 ## 21 ottobre 2026 — Titolo e categorie nel footer
 Accorciato l’evidenziatore del titolo principale Lavora con noi su PC; resa per singola riga su telefono. Footer riorganizzato con categorie del menu su due colonne e titolo Esplora Archimede a sinistra. Collegamenti conservati, generazione condivisa e versioni CSS aggiornate.
+
+## 21 ottobre 2026 — Griglia delle guide gratuite
+Riorganizzata la sezione guide di Risorse gratuite: titolo/eyebrow a sinistra, testo a destra, schede sotto due per riga PC e una su telefono. Conservate gallerie dei capitoli, immagini, contenuti e link, inclusa la dispensa Analisi1.

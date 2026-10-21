@@ -515,3 +515,6 @@ Nel banner blu delle candidature, titolo e corsivo sono bianchi di peso600, senz
 
 ## 21 ottobre 2026 — Titolo e categorie nel footer
 Esplora Archimede è allineato a sinistra sopra due colonne di gruppi. Sottotitoli Il centro, Percorsi, Risorse e Archivio, con spazio distinto tra gruppo e link. Lavora con noi: evidenziatore principale più corto, limitato a76%/24rem su PC; sul telefono evidenzia soltanto le righe effettive con box-decoration-break, senza pseudo-elemento largo. Il titolo della candidatura su blu mantiene la correzione di contrasto precedente.
+
+## 21 ottobre 2026 — Griglia delle guide gratuite
+La sezione Studiare oltre la lezione ha intestazione a due colonne, poi griglia delle guide a due colonne su PC e una su telefono. I capitoli restano all’interno della galleria della propria guida. Le schede mantengono testi, copertine e collegamenti approvati; titolo e introduzione non occupano una colonna accanto alle guide.
