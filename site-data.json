@@ -22,7 +22,7 @@
     "rating": 5,
     "maximum": 5,
     "count": 30,
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-23",
     "url": "https://www.google.it/maps/place/Archimede+Centro+Studi/@42.4515746,14.2072506,17z/data=!4m8!3m7!1s0x1331a7ec00d4c935:0x4f2a736aa805fc42!8m2!3d42.4515746!4d14.2098255!9m1!1b1!16s%2Fg%2F11tx68jhx4"
   },
   "navigation": [
@@ -203,14 +203,14 @@
   "facebook": {
     "url": "https://www.facebook.com/archimedecentrostudi/reviews",
     "positivePercent": 100,
-    "count": 18,
-    "checkedAt": "2026-10-16",
+    "count": 19,
+    "checkedAt": "2026-10-23",
     "positiveRatingConvention": 5
   },
   "trustpilot": {
-    "trustScore": 4.3,
-    "count": 9,
-    "checkedAt": "2026-10-16",
+    "trustScore": 4.4,
+    "count": 10,
+    "checkedAt": "2026-10-23",
     "url": "https://it.trustpilot.com/review/archimedecentrostudi.com"
   }
 }

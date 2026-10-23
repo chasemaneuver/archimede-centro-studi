@@ -384,3 +384,6 @@ Intervallo tra le iniziative della home ridotto da4a2secondi, mantenendo tutti i
 
 ## 21 ottobre 2026 — Scheda corsivo a destra
 Nei Laboratori creativi, titolo della sezione iniziative a sinistra e scheda del corsivo a destra, con impilamento su telefono. Collegamento e contenuti invariati.
+
+## 23 ottobre 2026 — Controllo recensioni
+Google invariato: 5,0/5 e 30 recensioni. Facebook: 100% positivo e 19 recensioni. Trustpilot: 4,4/5 e 10 recensioni; inserito il nuovo testo universitario di Maria Gatto, distinto da quello Google. Rimossa la scheda di Stefano Cicalini: la fonte restituisce pagina non trovata. Aggiornate date e media home. teo di michele e Alessia Blonna attendono conferma del tag prima dell’inserimento.

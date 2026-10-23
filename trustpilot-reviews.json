@@ -1,8 +1,21 @@
 {
-  "checkedAt": "2026-10-16",
-  "trustScore": 4.3,
-  "count": 9,
+  "checkedAt": "2026-10-23",
+  "trustScore": 4.4,
+  "count": 10,
   "reviews": [
+    {
+      "id": "trustpilot-maria-gatto",
+      "name": "Maria Gatto",
+      "title": "Mi sono rivolta al centro per delle lezioni di Analisi 1",
+      "quote": "Mi sono rivolta al centro per delle lezioni di matematica in preparazione all’esame universitario di Analisi 1 e non potevo fare scelta migliore. Stella è stata una presenza preziosa durante questo percorso, sempre disponibile, paziente e pronta ad aiutarmi ogni volta che ne avevo bisogno. Oltre alla sua competenza e alla chiarezza nelle spiegazioni, mi ha dato coraggio anche nei momenti di maggiore difficoltà facendomi sentire accompagnata e sostenuta durante tutta la preparazione. La consiglio davvero di cuore a chiunque abbia bisogno di un aiuto concreto per affrontare Analisi 1! ❤️",
+      "category": "universita",
+      "kind": "trustpilot",
+      "rating": 5,
+      "source": "https://it.trustpilot.com/reviews/6ad9d765f70f8724d90ef6e6",
+      "individualLink": true,
+      "truncated": false,
+      "checkedAt": "2026-10-23"
+    },
     {
       "id": "trustpilot-veronica",
       "name": "Veronica Ghinfanti",
@@ -96,18 +109,6 @@
       "title": "Tutor di Estimo davvero bravissima",
       "quote": "Tutor di Estimo davvero bravissima Spiega gli argomenti in modo chiaro e semplice, è molto preparata , paziente e disponibile. Grazie al suo aiuto è più facile comprendere anche gli argomenti più difficili della materia. Consigliatissimo a chiunque abbia bisogno di un supporto nello studio. 5 stelle meritatissime!",
       "source": "https://it.trustpilot.com/reviews/6aca871ad834deed882effee",
-      "kind": "trustpilot",
-      "category": "scuola",
-      "rating": 5,
-      "individualLink": true,
-      "truncated": false
-    },
-    {
-      "id": "trustpilot-stefano",
-      "name": "Stefano Cicalini",
-      "title": "Le spiegazioni sono chiare e sto migliorando molto",
-      "quote": "Frequento Archimede Centro Studi per tutte le materie, soprattutto informatica, matematica e sistemi e reti. Mi trovo davvero bene, le spiegazioni sono chiare e sto migliorando molto. Ottima esperienza, lo consiglio!",
-      "source": "https://it.trustpilot.com/reviews/6aca681ba0168617b8758503",
       "kind": "trustpilot",
       "category": "scuola",
       "rating": 5,
