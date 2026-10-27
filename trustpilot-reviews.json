@@ -4,6 +4,20 @@
   "count": 10,
   "reviews": [
     {
+      "name": "teo di michele",
+      "kind": "trustpilot",
+      "rating": 5,
+      "title": "Ottima esperienza",
+      "source": "https://it.trustpilot.com/reviews/6ad7a38ce1c66f88898507ac",
+      "quote": "Frequento questo centro studi per diverse materie in particolare latino e francese e trovo che l’esperienza sia estremamente positiva.Il percorso mi permette di migliorare giorno dopo giorno il mio metodo di studio e di affrontare le verifiche con più\nsicurezza.",
+      "publishedAt": "2026-10-20T19:23:24.000Z",
+      "checkedAt": "2026-10-23",
+      "id": "trustpilot-teo-di-michele",
+      "category": "scuola",
+      "individualLink": true,
+      "truncated": false
+    },
+    {
       "id": "trustpilot-maria-gatto",
       "name": "Maria Gatto",
       "title": "Mi sono rivolta al centro per delle lezioni di Analisi 1",

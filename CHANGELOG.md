@@ -387,3 +387,6 @@ Nei Laboratori creativi, titolo della sezione iniziative a sinistra e scheda del
 
 ## 23 ottobre 2026 — Controllo recensioni
 Google invariato: 5,0/5 e 30 recensioni. Facebook: 100% positivo e 19 recensioni. Trustpilot: 4,4/5 e 10 recensioni; inserito il nuovo testo universitario di Maria Gatto, distinto da quello Google. Rimossa la scheda di Stefano Cicalini: la fonte restituisce pagina non trovata. Aggiornate date e media home. teo di michele e Alessia Blonna attendono conferma del tag prima dell’inserimento.
+
+## 27 ottobre 2026 — Completamento recensioni approvate
+Pubblicate teo di michele (Trustpilot, Scuola) e Alessia Blonna (Facebook, Metodo e supporto), con testi e fonti letti il 23 ottobre e tag confermati dall’utente. Aggiornati filtri e media complessiva della home. Le date di consultazione dei riepiloghi restano al 23 ottobre: nessuna nuova verifica delle piattaforme dichiarata. Raccolta di 63 schede.

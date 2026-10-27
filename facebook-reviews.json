@@ -4,6 +4,20 @@
   "positivePercent": 100,
   "reviews": [
     {
+      "name": "Alessia Blonna",
+      "kind": "facebook",
+      "recommended": true,
+      "source": "https://www.facebook.com/alessia.blonna/posts/pfbid0JE9YLjnKBErpMkFAiuUysnY1h1umKEmXXArMX7vmJAEKfFCrqSD66m6aaipzUEM3l",
+      "quote": "Bravissima la Professoressa Stella che mi ha seguito per tutto il mio percorso di studi aiutandomi e sostenendomi alla grande! Persona fantastica,onesta e super gentile.Se avete problemi in matematica e fisica Stella è sicuramente la persona adatta che riuscirà ad aiutarvi,proprio come ha fatto con me.",
+      "publishedAt": "2019-08-20",
+      "checkedAt": "2026-10-23",
+      "id": "facebook-alessia-blonna",
+      "category": "metodo",
+      "title": "Mi ha seguito per tutto il mio percorso di studi",
+      "individualLink": true,
+      "truncated": false
+    },
+    {
       "id": "facebook-sophia-mariano",
       "name": "Sophia Mariano",
       "quote": "Mia figlia di 16 anni era stata rimandata di fisica e matematica col 4 al liceo scientifico, situazione davvero difficile considerando anche che mia figlia non si dimostrava particolarmente collaborativa. La professoressa si è dimostrata con polso fermo e con esperienza e dopo un primo momento difficile di assestamento, è stata mia figlia a chiedere di fare altre 10 lezioni on line (purtroppo non è stata possibile la presenza visto che abitiamo a Genova). Alla fine gli esami sono stati superati, anche se ancora con lacune ma soprattutto in matematica si è notato il netto miglioramento. Consiglio.",

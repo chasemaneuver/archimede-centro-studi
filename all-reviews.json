@@ -4,6 +4,34 @@
   "googleCount": 30,
   "reviews": [
     {
+      "name": "teo di michele",
+      "kind": "trustpilot",
+      "rating": 5,
+      "title": "Ottima esperienza",
+      "source": "https://it.trustpilot.com/reviews/6ad7a38ce1c66f88898507ac",
+      "quote": "Frequento questo centro studi per diverse materie in particolare latino e francese e trovo che l’esperienza sia estremamente positiva.Il percorso mi permette di migliorare giorno dopo giorno il mio metodo di studio e di affrontare le verifiche con più\nsicurezza.",
+      "publishedAt": "2026-10-20T19:23:24.000Z",
+      "checkedAt": "2026-10-23",
+      "id": "trustpilot-teo-di-michele",
+      "category": "scuola",
+      "individualLink": true,
+      "truncated": false
+    },
+    {
+      "name": "Alessia Blonna",
+      "kind": "facebook",
+      "recommended": true,
+      "source": "https://www.facebook.com/alessia.blonna/posts/pfbid0JE9YLjnKBErpMkFAiuUysnY1h1umKEmXXArMX7vmJAEKfFCrqSD66m6aaipzUEM3l",
+      "quote": "Bravissima la Professoressa Stella che mi ha seguito per tutto il mio percorso di studi aiutandomi e sostenendomi alla grande! Persona fantastica,onesta e super gentile.Se avete problemi in matematica e fisica Stella è sicuramente la persona adatta che riuscirà ad aiutarvi,proprio come ha fatto con me.",
+      "publishedAt": "2019-08-20",
+      "checkedAt": "2026-10-23",
+      "id": "facebook-alessia-blonna",
+      "category": "metodo",
+      "title": "Mi ha seguito per tutto il mio percorso di studi",
+      "individualLink": true,
+      "truncated": false
+    },
+    {
       "id": "trustpilot-maria-gatto",
       "name": "Maria Gatto",
       "title": "Mi sono rivolta al centro per delle lezioni di Analisi 1",
