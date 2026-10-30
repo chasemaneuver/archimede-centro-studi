@@ -362,3 +362,6 @@ Risorse gratuite: introduzione con titolo/eyebrow a sinistra e testo/link archiv
 
 ## 21 ottobre 2026 — Banner iniziative a 2 secondi
 Intervallo del carosello iniziative della home impostato a2000ms su richiesta. Pausa su hover/focus, controlli manuali, arresto fuori vista e movimento ridotto restano invariati.
+
+## 30 ottobre 2026 — Capitolo 2 orientamento universitario
+Slug: interessi-attivita-scelta-universitaria. Stessa section della guida universitaria, chapter2 e tag Orientamento/Università/Intelligenza artificiale. Diario senza punteggi e personaggi immaginari; copertina editoriale nella categoria Articoli dell’Album, senza inserirla nelle foto documentarie. Il capitolo1 collega il nuovo approfondimento. Per capitoli successivi mantenere raggruppamento e regole comuni.

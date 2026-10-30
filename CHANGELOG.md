@@ -390,3 +390,6 @@ Google invariato: 5,0/5 e 30 recensioni. Facebook: 100% positivo e 19 recensioni
 
 ## 27 ottobre 2026 — Completamento recensioni approvate
 Pubblicate teo di michele (Trustpilot, Scuola) e Alessia Blonna (Facebook, Metodo e supporto), con testi e fonti letti il 23 ottobre e tag confermati dall’utente. Aggiornati filtri e media complessiva della home. Le date di consultazione dei riepiloghi restano al 23 ottobre: nessuna nuova verifica delle piattaforme dichiarata. Raccolta di 63 schede.
+
+## 30 ottobre 2026 — Secondo capitolo della guida universitaria
+Pubblicato «Dai tuoi interessi alle attività che vuoi imparare», con nuova illustrazione editoriale, diario di tre esperienze e fonti OECD, Europass e Universitaly. Capitolo2 nella galleria della guida universitaria, scheda Articoli, collegamento dal capitolo1, immagine in Album/Articoli e sitemap aggiornati. Tag della serie, minuti di lettura e metadati condivisi.

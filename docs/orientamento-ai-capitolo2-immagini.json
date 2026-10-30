@@ -1,0 +1,18 @@
+{
+  "kind": "illustrazione editoriale generata",
+  "date": "2026-10-30",
+  "asset": "articolo-interessi-attivita-universita.webp",
+  "source": "Fotografo-cap2-interessi-attivita-copertina.png",
+  "alt": "Tre giovani adulti esplorano attività diverse: analizzare dati, costruire un piccolo oggetto e spiegare un fenomeno.",
+  "prompt": {
+    "date": "2026-10-30",
+    "tool": "image_gen built-in",
+    "referenceRole": "style only",
+    "dir": "C:/Users/miche/Documents/ChatGPT/Archimede centro studi/editoriali/orientamento-ai-cap2-2026-10-30",
+    "ref": "C:/Users/miche/Documents/ChatGPT/Archimede centro studi/editoriali/orientamento-ai-2026-10-17/Fotografo-orientamento-ai-copertina.png",
+    "prompt": "Use case illustration-story. Generate ONE original horizontal16:9 editorial cover for chapter 'From your interests to the activities you want to learn'. Input image is STYLE REFERENCE ONLY, match its refined paper-cut and gouache texture, calm expressive drawn figures, layered paper surfaces, clean blue/red/white illustration, NOT its composition or mother-son discussion. Three fictional young ADULT students aged19-23, two women and a man, each ACTIVELY TRYING one concrete activity together around an ordinary wide shared workshop table in a neutral conceptual illustrated space, not a real centre or university. Left woman analyzes a small unlabelled scatterplot on laptop while marking observations in notebook. Middle man physically assembles a small simple cardboard desk organizer from two interlocking cardboard pieces, with coherent fingers, pencil and ruler nearby, unfinished prototype clearly visible. Right woman explains a small water-cycle model with a glass bowl of water and paper cloud/rain cutouts to her peers, pointing at a simple diagram, visibly narrating a phenomenon. Unified scene, no separate panels, equal prominence of three activities, curiosity and experimentation, natural non-posed expressions, believable hands, every tool purposeful. Composition gives each activity breathing room, main people and objects inside central85%, no cropped heads, moderate margins, light background. Palette sapphire#103B66 and ruby#C93B2B accents, white#FFFFFF, gray#F4F6F9, charcoal#1A1D20, midnight#0B2540, pale blue/rose tints; natural varied skin tones permitted. No text, lettering, numbers, captions, logos, watermark, university buildings, robot, circuit-brain, glowing AI symbol, graduation cap or stereotyped career rankings. No invented actual services or facilities: clearly a conceptual illustration. Rich tactile paper grain and subtle gouache shadows consistent with reference, attractive polished magazine illustration.",
+    "source": "C:\\Users\\miche\\.codex\\generated_images\\01a1201d-d38a-7272-997e-3f83a44bae02\\exec-01f65a92-effb-4a06-8018-947c9451ca3b.png",
+    "file": "C:/Users/miche/Documents/ChatGPT/Archimede centro studi/editoriali/orientamento-ai-cap2-2026-10-30/Fotografo-cap2-interessi-attivita-copertina.png",
+    "classification": "Illustrazione editoriale generata; figure inventate; non fotografia documentaria"
+  }
+}

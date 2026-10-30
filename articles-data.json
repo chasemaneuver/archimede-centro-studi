@@ -80,7 +80,7 @@
     "section": "Orientamento universitario nell’era dell’AI",
     "chapter": 1,
     "datePublished": "2026-10-17T20:40:00+02:00",
-    "dateModified": "2026-10-17T20:40:00+02:00",
+    "dateModified": "2026-10-30T17:37:37+01:00",
     "author": {
       "name": "Archimede Centro Studi",
       "type": "Organization"
@@ -101,6 +101,41 @@
     "comments": true,
     "featuredInResources": true,
     "resourceSummary": "Una scheda di confronto per esplorare tre corsi universitari, verificare le informazioni e preparare le domande di orientamento.",
+    "resourceCover": "Università nell’era dell’AI.",
+    "sidebarDescription": "Una guida in sei capitoli per studenti e famiglie: interessi, corsi, AI, dati e sostenibilità."
+  },
+  {
+    "slug": "interessi-attivita-scelta-universitaria",
+    "url": "interessi-attivita-scelta-universitaria.html",
+    "title": "Dai tuoi interessi alle attività che vuoi imparare",
+    "titleFirst": "Dai tuoi interessi,",
+    "titleEmphasis": "alle attività che vuoi imparare.",
+    "seoTitle": "Interessi e scelta universitaria: attività da esplorare",
+    "description": "Un diario di esperienze e piccole prove per esplorare interessi e competenze e preparare la scelta universitaria nell’era dell’AI.",
+    "summary": "Un diario, due esempi e una piccola prova per conoscere meglio ciò che vuoi imparare.",
+    "section": "Orientamento universitario nell’era dell’AI",
+    "chapter": 2,
+    "datePublished": "2026-10-30T17:37:37+01:00",
+    "dateModified": "2026-10-30T17:37:37+01:00",
+    "author": {
+      "name": "Archimede Centro Studi",
+      "type": "Organization"
+    },
+    "tags": [
+      "Orientamento",
+      "Università",
+      "Intelligenza artificiale"
+    ],
+    "image": {
+      "path": "articolo-interessi-attivita-universita.webp",
+      "alt": "Tre giovani adulti esplorano attività diverse: analizzare dati, costruire un piccolo oggetto e spiegare un fenomeno.",
+      "width": 1672,
+      "height": 941
+    },
+    "contentFile": "interessi-attivita-scelta-universitaria.content.html",
+    "comments": false,
+    "featuredInResources": true,
+    "resourceSummary": "Esplora interessi e competenze con tre esperienze reali, una domanda da verificare e un confronto sui programmi universitari.",
     "resourceCover": "Università nell’era dell’AI.",
     "sidebarDescription": "Una guida in sei capitoli per studenti e famiglie: interessi, corsi, AI, dati e sostenibilità."
   }
