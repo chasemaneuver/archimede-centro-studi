@@ -68,6 +68,20 @@ class SharedSourcesTests(unittest.TestCase):
         self.assertIn('https://example.invalid/materiale',output['materiale-personalizzato.html'])
         self.assertNotIn('https://example.invalid/lezioni',output['materiale-personalizzato.html'])
 
+    def test_home_url_is_consistent_across_seo_and_navigation(self):
+        import xml.etree.ElementTree as ET
+        output = site.generate()
+        base = site.load_config()['publishing']['baseUrl']
+        self.assertIn('<link rel="canonical" href="'+base+'">', output['index.html'])
+        self.assertIn('<meta property="og:url" content="'+base+'">', output['index.html'])
+        locs = [node.text for node in ET.fromstring(output['sitemap.xml']).iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+        self.assertEqual(locs.count(base), 1)
+        self.assertNotIn(base+'index.html', locs)
+        for name, html in output.items():
+            if name.endswith('.html'):
+                self.assertNotIn('href="./index.html', html, name)
+                self.assertIn('href="./"', html, name)
+
     def test_invalid_config_and_unknown_tokens_fail(self):
         with self.assertRaises(ValueError): site.render('{{missing.value}}',{})
         config=copy.deepcopy(site.load_config())

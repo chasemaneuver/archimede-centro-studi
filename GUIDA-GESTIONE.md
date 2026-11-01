@@ -1,3 +1,9 @@
+## 1 novembre 2026 — Home canonica e piano rinviato
+
+La home pubblica usa https://archimedecentrostudi.com/ come unico URL canonico. Navigazione, logo, breadcrumb e collegamenti alle ancore usano ./ e ./#ancora; il file index.html rimane il documento servito. La sitemap elenca soltanto la radice. Non reintrodurre index.html nei link alla home.
+
+Su richiesta dell’utente, gli interventi del report completo, incluse le pagine dei singoli servizi e l’estensione SEO locale, sono rinviati a fine febbraio 2027. Non avviarli nel frattempo senza una nuova richiesta. Questa nota non configura promemoria automatici.
+
 # Come aggiorniamo il sito Archimede
 
 Guida per Archimede e per Codex. Revisione del **9 ottobre 2026**. Il sito comprende 15 pagine, inclusa l’informativa privacy locale.

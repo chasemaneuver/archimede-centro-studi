@@ -3,7 +3,7 @@
 </head>
 <body class="reviews-page"><a class="skip" href="#contenuto">Vai al contenuto</a>{{header}}
 <main id="contenuto">
-<div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Recensioni</span></nav></div>
+<div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Recensioni</span></nav></div>
 <section class="reviews-hero" id="testimonianze" aria-labelledby="collection-title"><div class="wrap"><div class="review-collection-head"><div><span class="eyebrow">Le vostre esperienze</span><h1 id="collection-title">Storie diverse,<br><em>un’unica raccolta.</em></h1></div><div class="review-connections"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 370" fill="none" role="img" aria-label="Persone collegate da un filo di dialogo, con un cuore al centro: ascolto, cura e passaparola.">
 <defs><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#103b66" flood-opacity=".09" /></filter><pattern id="squares" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#103b66" stroke-opacity=".06" /></pattern></defs>
 <g transform="translate(30 0) scale(.8 .7)"><path d="M43 211C22 107 111 33 227 32C373 30 480 74 503 189C525 301 467 423 353 464C245 503 135 446 81 366C46 317 53 262 43 211Z" fill="#e2e8ef" class="assembly-piece assembly-backdrop water-shape" />

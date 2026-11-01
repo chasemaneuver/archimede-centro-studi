@@ -31,11 +31,11 @@
       "label": "Il centro",
       "links": [
         {
-          "url": "./index.html",
+          "url": "./",
           "label": "Home"
         },
         {
-          "url": "./index.html#metodo",
+          "url": "./#metodo",
           "label": "La nostra mission"
         },
         {
@@ -113,12 +113,12 @@
   ],
   "footer": [
     {
-      "url": "./index.html",
+      "url": "./",
       "label": "Home",
       "external": false
     },
     {
-      "url": "./index.html#metodo",
+      "url": "./#metodo",
       "label": "La nostra mission",
       "external": false
     },

@@ -34,7 +34,7 @@
 
   <main id="contenuto">
 
-<section class="page-intro" aria-labelledby="page-title"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Domande frequenti</span></nav><div class="faq-intro-grid"><div class="page-intro-copy"><span class="eyebrow">Ogni dubbio merita spazio</span><h1 id="page-title">Le risposte,<br><em>per cominciare.</em></h1><p>Lezioni, preventivi, materiali, voucher Pescara Solidale e 5×1000: le risposte alle domande più frequenti.</p></div><div class="review-connections faq-community"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 370" fill="none" role="img" aria-label="Studenti e insegnante condividono domande, idee e aiuto attorno a un libro aperto.">
+<section class="page-intro" aria-labelledby="page-title"><div class="wrap"><nav class="breadcrumbs" aria-label="Percorso di navigazione"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Domande frequenti</span></nav><div class="faq-intro-grid"><div class="page-intro-copy"><span class="eyebrow">Ogni dubbio merita spazio</span><h1 id="page-title">Le risposte,<br><em>per cominciare.</em></h1><p>Lezioni, preventivi, materiali, voucher Pescara Solidale e 5×1000: le risposte alle domande più frequenti.</p></div><div class="review-connections faq-community"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 370" fill="none" role="img" aria-label="Studenti e insegnante condividono domande, idee e aiuto attorno a un libro aperto.">
 
 <defs><filter id="faq-soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#103b66" flood-opacity=".09" /></filter><pattern id="faq-squares" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" stroke="#103b66" stroke-opacity=".07" /></pattern></defs>
 
@@ -58,7 +58,7 @@
 
 <circle cx="250" cy="185" r="4" fill="#103b66" class="services-satellite" data-phase="0" /><circle cx="250" cy="185" r="4" fill="#c93b2b" class="services-satellite" data-phase="3.141592653589793" /></svg></div></div></div></section>
 
-<section class="section faq" id="faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div class="faq-copy"><span class="eyebrow">Facciamo chiarezza</span><h2 id="faq-title">Hai qualche<br>domanda?</h2><p>È il posto giusto da cui iniziare. E se non trovi la risposta, siamo qui per ascoltarti.</p><a class="text-link" href="./index.html#contatti">Parla con la segreteria <span aria-hidden="true">↗</span></a></div><div class="faq-list">
+<section class="section faq" id="faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div class="faq-copy"><span class="eyebrow">Facciamo chiarezza</span><h2 id="faq-title">Hai qualche<br>domanda?</h2><p>È il posto giusto da cui iniziare. E se non trovi la risposta, siamo qui per ascoltarti.</p><a class="text-link" href="./#contatti">Parla con la segreteria <span aria-hidden="true">↗</span></a></div><div class="faq-list">
 
       <details><summary>Posso seguire le lezioni online?</summary><p>Sì. Le lezioni individuali, il coaching sul metodo di studio e il potenziamento DSA, BES e ADHD sono disponibili anche online. Il doposcuola e l’aiutocompiti si svolgono in presenza. <a href="./percorsi.html">Scopri tutti i servizi</a>.</p></details>
 
@@ -78,7 +78,7 @@
 
     </div></div></section>
 
-<div class="wrap page-next"><a class="text-link" href="./index.html#contatti">Parliamone insieme <span aria-hidden="true">↗</span></a><a href="./percorsi.html">Esplora i percorsi <span aria-hidden="true">↗</span></a></div>
+<div class="wrap page-next"><a class="text-link" href="./#contatti">Parliamone insieme <span aria-hidden="true">↗</span></a><a href="./percorsi.html">Esplora i percorsi <span aria-hidden="true">↗</span></a></div>
 
   <section class="contact" id="contatti" aria-labelledby="contatti-title"><div class="wrap contact-box"><div class="contact-copy"><span class="eyebrow">Il primo passo è una conversazione</span><h2 id="contatti-title">La prossima storia<br>parte da te.</h2><p>Raccontaci il tuo obiettivo. Con una prima consulenza gratuita, troviamo insieme il supporto più adatto alle tue esigenze.</p></div><div class="contact-actions"><a class="button primary" href="{{contacts.whatsapp}}?text=Ciao%20Archimede%2C%20vorrei%20informazioni%20per%20una%20consulenza%20gratuita." target="_blank" rel="noopener">Scrivici su WhatsApp <span class="arrow" aria-hidden="true">↗</span></a><a class="button outline" href="mailto:{{contacts.email}}?subject=Richiesta%20consulenza%20gratuita">Preferisci l’email? Scrivici <span class="arrow" aria-hidden="true">↗</span></a><p class="contact-caption">Prima consulenza gratuita, senza impegno.</p><p class="contact-caption">Puoi anche chiamarci: <a href="tel:{{contacts.phone}}">{{contacts.phoneLabel}}</a> · <a href="tel:{{contacts.secondaryPhone}}">{{contacts.secondaryPhoneLabel}}</a></p><a class="sub-link" href="{{links.lessonQuote}}" target="_blank" rel="noopener">Oppure richiedi un preventivo per le lezioni</a></div></div></section>
 

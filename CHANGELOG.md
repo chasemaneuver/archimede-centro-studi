@@ -1,3 +1,7 @@
+## 1 novembre 2026 — URL canonico della home
+
+Home canonica alla radice del dominio: canonical e og:url, sitemap e collegamenti condivisi uniformati. /index.html resta accessibile per compatibilità. Validazione dei link relativi alla directory e test di coerenza SEO aggiunti.
+
 ## 9 ottobre 2026 — Trustpilot Review Collector
 
 Integrato il widget ufficiale fornito dal centro nella pagina Recensioni, terzo riquadro responsive con fallback al profilo. Aggiornata privacy e documentazione; nessun punteggio Trustpilot inventato o aggiunto alla media.

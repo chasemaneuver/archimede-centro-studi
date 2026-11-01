@@ -177,7 +177,7 @@ def validate(output, root):
             if parts.scheme or parts.netloc: continue
             if parts.path.startswith('/'):
                 raise ValueError(f'{name}: usare link relativi alla sottocartella GitHub Pages: {url}')
-            target = unquote(parts.path).removeprefix('./') or name
+            target = 'index.html' if parts.path in ('.', './') else (unquote(parts.path).removeprefix('./') or name)
             path = asset_path(root, target)
             if target not in output and not (path is not None and path.is_file() and public_asset(path)):
                 raise ValueError(f'{name}: collegamento locale inesistente o non pubblicabile: {url}')

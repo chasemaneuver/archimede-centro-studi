@@ -212,12 +212,12 @@ def prepare(root,config,common,render,articles=None,events=None):
 def sitemap(root,output,config,articles,events):
     namespace='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',namespace)
     previous=ET.fromstring((root/'sitemap.xml').read_text(encoding='utf-8'))
-    dates={Path(node.find('{'+namespace+'}loc').text).name:node.find('{'+namespace+'}lastmod').text
+    dates={(urlsplit(node.find('{'+namespace+'}loc').text).path.rsplit('/',1)[-1] or 'index.html'):node.find('{'+namespace+'}lastmod').text
            for node in previous if node.find('{'+namespace+'}lastmod') is not None}
     dates.update({a['url']:a['dateModified'][:10] for a in articles})
     dates.update({e['url']:e['dateModified'][:10] for e in events if e.get('dateModified')})
     xml=ET.Element('{'+namespace+'}urlset')
     for name in sorted(n for n in output if n.endswith('.html')):
-        url=ET.SubElement(xml,'{'+namespace+'}url');ET.SubElement(url,'{'+namespace+'}loc').text=config['publishing']['baseUrl']+name
+        url=ET.SubElement(xml,'{'+namespace+'}url');ET.SubElement(url,'{'+namespace+'}loc').text=config['publishing']['baseUrl']+('' if name == 'index.html' else name)
         if name in dates: ET.SubElement(url,'{'+namespace+'}lastmod').text=dates[name]
     return '<?xml version="1.0" encoding="UTF-8"?>'+ET.tostring(xml,encoding='unicode')+'\n'
