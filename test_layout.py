@@ -24,3 +24,26 @@ class LayoutTests(unittest.TestCase):
             (root/'assets'/'css'/'styles.css').write_text('new')
             with self.assertRaises(ValueError): asset_files(root)
             with self.assertRaises(ValueError): asset_path(root,'styles.css')
+
+    def test_rendered_images_reserve_space_and_previews_keep_original_links(self):
+        from html.parser import HTMLParser
+        class Images(HTMLParser):
+            def __init__(self, html):
+                super().__init__(); self.images=[]; self.link=None; self.feed(html)
+            def handle_starttag(self, tag, attrs):
+                attrs=dict(attrs)
+                if tag=='a': self.link=attrs.get('href')
+                if tag=='img': self.images.append((attrs,self.link))
+            def handle_endtag(self, tag):
+                if tag=='a': self.link=None
+        for name,html in site.generate().items():
+            if not name.endswith('.html'): continue
+            for image,link in Images(html).images:
+                self.assertTrue(image.get('width') and image.get('height'), (name,image))
+                src=image.get('src','')
+                if src.endswith('-thumb.webp'):
+                    self.assertIsNotNone(link,(name,src))
+                    self.assertTrue(link.endswith('.jpg'),(name,src,link))
+                    original=asset_path(site.ROOT,link.removeprefix('./'))
+                    preview=asset_path(site.ROOT,src.removeprefix('./'))
+                    self.assertLess(preview.stat().st_size,original.stat().st_size,(name,src))

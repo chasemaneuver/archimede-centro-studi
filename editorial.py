@@ -189,7 +189,7 @@ def prepare(root,config,common,render,articles=None,events=None):
             if not re.fullmatch(r'[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)',photo) or asset_path(root,photo) is None:
                 raise ValueError('Foto del banner iniziativa mancante o non valida.')
             home_banners.append('<article class="initiative-banner" role="group" aria-roledescription="diapositiva" aria-label="'+escape(event['title'],quote=True)+'">'
-                '<img class="initiative-photo" src="./'+escape(photo,quote=True)+'" alt="" aria-hidden="true" loading="lazy">'
+                '<img class="initiative-photo" width="1280" height="720" src="./'+escape(photo,quote=True)+'" alt="" aria-hidden="true" loading="lazy">'
                 '<div class="initiative-copy"><span class="initiative-label">'+escape(event.get('homeEyebrow','Iniziativa in corso'))+'</span>'
                 '<h2>'+escape(event.get('homeTitle',event['title']))+'</h2><p>'+escape(event.get('homeSummary',event['desc']))+'</p></div>'
                 '<a class="button initiative-cta" href="'+values['event.url']+'">'+escape(event.get('homeCta','Scopri l’iniziativa'))+' <span aria-hidden="true">↗</span></a></article>')

@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <title>Tutti i servizi · Archimede Centro Studi</title>
   <link rel="icon" href="./logo.svg?v=20261014">
-  <link rel="stylesheet" href="./styles.css?v=20261021-footer">
+  <link rel="stylesheet" href="./styles.css?v=20261103">
 <link rel="stylesheet" href="./servizi-grid.css?v=20261014-palette"><link rel="stylesheet" href="./services-illustration.css?v=20261014-palette"><link rel="stylesheet" href="./home-motion.css?v=20261014-palette"><link rel="canonical" href="{{publishing.baseUrl}}percorsi.html"><link rel="stylesheet" href="./home-background.css?v=20261014-palette"></head>
 <body class="services-page">
   <a class="skip" href="#contenuto">Vai al contenuto</a>
@@ -73,9 +73,9 @@
   </main>
   {{footer}}
   <a class="whatsapp" href="{{contacts.whatsapp}}" target="_blank" rel="noopener" aria-label="Contatta Archimede su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.3-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8 7c.5 4 3 6.5 7 7l1.5-2-2-1-1 1c-1.4-.7-2.3-1.6-3-3l1-1-1-2Z"/></svg></a>
-  <script src="./site.js" defer></script>
+  <script src="./site.js?v=20261103" defer></script>
 <script src="./percorsi.js?v=20261009" defer></script>
-<script src="./home.js?v=services-motion-20261007" defer></script><script src="./services-motion.js?v=20261007" defer></script></body>
+<script src="./home.js?v=20261103" defer></script><script src="./services-motion.js?v=20261007" defer></script></body>
 </html>
 
 

@@ -9,14 +9,14 @@ document.querySelectorAll('.home-initiatives').forEach(carousel => {
   const position = controls.querySelector('.initiative-position');
   const announcement = carousel.querySelector('.initiative-announcement');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let current = 0, timer, userPaused = false, hovered = false, inView = false, resumeWithFocus = false;
+  let current = 0, rendered = -1, scrollFrame = 0, timer, userPaused = false, hovered = false, inView = false, resumeWithFocus = false;
   controls.hidden = false;
   carousel.classList.add('is-enhanced');
   function stop() { clearTimeout(timer); }
   function schedule() {
     stop();
     if (userPaused || reduced.matches || hovered || document.hidden || !inView || (carousel.contains(document.activeElement) && !resumeWithFocus)) return;
-    timer = setTimeout(() => { go(current + 1, false); schedule(); }, 2000);
+    timer = setTimeout(() => go(current + 1, false), 2000);
   }
   function buttonState() {
     pause.hidden = reduced.matches;
@@ -26,7 +26,13 @@ document.querySelectorAll('.home-initiatives').forEach(carousel => {
   }
   function update() {
     const left = track.getBoundingClientRect().left;
-    current = slides.reduce((best, slide, index) => Math.abs(slide.getBoundingClientRect().left - left) < Math.abs(slides[best].getBoundingClientRect().left - left) ? index : best, 0);
+    let distance = Infinity;
+    slides.forEach((slide, index) => {
+      const nextDistance = Math.abs(slide.getBoundingClientRect().left - left);
+      if (nextDistance < distance) { distance = nextDistance; current = index; }
+    });
+    if (rendered === current) return;
+    rendered = current;
     slides.forEach((slide, index) => { slide.inert = index !== current; slide.setAttribute('aria-hidden', String(index !== current)); });
     position.textContent = `${current + 1} / ${slides.length}`;
   }
@@ -40,7 +46,9 @@ document.querySelectorAll('.home-initiatives').forEach(carousel => {
   previous.addEventListener('click', () => go(current - 1));
   next.addEventListener('click', () => go(current + 1));
   pause.addEventListener('click', () => { userPaused = !userPaused; resumeWithFocus = !userPaused; buttonState(); schedule(); });
-  track.addEventListener('scroll', update, {passive: true});
+  track.addEventListener('scroll', () => {
+    if (!scrollFrame) scrollFrame = requestAnimationFrame(() => { scrollFrame = 0; update(); });
+  }, {passive: true});
   track.addEventListener('pointerdown', event => { if (event.pointerType !== 'mouse') { userPaused = true; buttonState(); stop(); } });
   track.addEventListener('keydown', event => {
     if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;

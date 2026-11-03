@@ -1,3 +1,7 @@
+## 3 novembre 2026 — Manutenzione tecnica e anteprime leggere
+
+Anteprime WebP (-27,2% rispetto alle miniature JPEG), caroselli con scroll raggruppato e timer unico, listener della mappa solo dove presenti, home attiva nel menu, analytics defer, dimensioni delle immagini, variabile palette corretta e chiusura stabile delle schede servizi. Originali e URL precedenti conservati. Rapporto in docs/MANUTENZIONE-CODICE-2026-11-03.md.
+
 ## 1 novembre 2026 — URL canonico della home
 
 Home canonica alla radice del dominio: canonical e og:url, sitemap e collegamenti condivisi uniformati. /index.html resta accessibile per compatibilità. Validazione dei link relativi alla directory e test di coerenza SEO aggiunti.

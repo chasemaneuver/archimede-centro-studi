@@ -75,9 +75,11 @@ window.addEventListener('hashchange',followMovedSection);
     map.style.setProperty('--mission-progress', progress);
   };
   const onScroll = () => { if (!scrollFrame) scrollFrame = requestAnimationFrame(updateLine); };
-  addEventListener('scroll', onScroll, {passive:true});
-  addEventListener('resize', onScroll);
-  updateLine();
+  if (map) {
+    addEventListener('scroll', onScroll, {passive:true});
+    addEventListener('resize', onScroll);
+    updateLine();
+  }
 
   const satellites = [...document.querySelectorAll('.orbit-satellite')];
   const visible = new Set();

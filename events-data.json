@@ -5,6 +5,8 @@
     "end": "2026-12-31",
     "url": "pescara-solidale.html",
     "image": "pescara-solidale-locandina.jpg",
+    "imageWidth": 512,
+    "imageHeight": 640,
     "desc": "Attività socioeducative nel catalogo comunale 2026. Il voucher deve essere già attivo.",
     "layout": "existing",
     "status": "current",

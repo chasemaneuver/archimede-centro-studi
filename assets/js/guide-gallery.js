@@ -8,12 +8,15 @@ document.querySelectorAll('.guide-gallery').forEach(gallery => {
   if (cards.length < 2) return;
   controls.hidden = false;
   gallery.classList.add('is-enhanced');
-  let current = 0;
+  let current = 0, scrollFrame = 0;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   function update() {
     const left = track.getBoundingClientRect().left;
-    current = cards.reduce((best, card, index) =>
-      Math.abs(card.getBoundingClientRect().left - left) < Math.abs(cards[best].getBoundingClientRect().left - left) ? index : best, 0);
+    let distance = Infinity;
+    cards.forEach((card, index) => {
+      const nextDistance = Math.abs(card.getBoundingClientRect().left - left);
+      if (nextDistance < distance) { distance = nextDistance; current = index; }
+    });
     previous.disabled = current === 0;
     next.disabled = current === cards.length - 1;
     const label = `Capitolo ${current + 1} di ${cards.length}`;
@@ -25,11 +28,14 @@ document.querySelectorAll('.guide-gallery').forEach(gallery => {
   }
   previous.addEventListener('click', () => go(current - 1));
   next.addEventListener('click', () => go(current + 1));
-  track.addEventListener('scroll', update, {passive: true});
+  const scheduleUpdate = () => {
+    if (!scrollFrame) scrollFrame = requestAnimationFrame(() => { scrollFrame = 0; update(); });
+  };
+  track.addEventListener('scroll', scheduleUpdate, {passive: true});
   track.addEventListener('keydown', event => {
     if (event.target !== track || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
     event.preventDefault(); go(current + (event.key === 'ArrowRight' ? 1 : -1));
   });
-  new ResizeObserver(update).observe(track);
+  new ResizeObserver(scheduleUpdate).observe(track);
   update();
 });

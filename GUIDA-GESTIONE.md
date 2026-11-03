@@ -371,3 +371,7 @@ Intervallo del carosello iniziative della home impostato a2000ms su richiesta. P
 
 ## 30 ottobre 2026 — Capitolo 2 orientamento universitario
 Slug: interessi-attivita-scelta-universitaria. Stessa section della guida universitaria, chapter2 e tag Orientamento/Università/Intelligenza artificiale. Diario senza punteggi e personaggi immaginari; copertina editoriale nella categoria Articoli dell’Album, senza inserirla nelle foto documentarie. Il capitolo1 collega il nuovo approfondimento. Per capitoli successivi mantenere raggruppamento e regole comuni.
+
+## 3 novembre 2026 — Manutenzione tecnica
+
+Le gallerie usano le anteprime -thumb.webp; i link di ingrandimento conservano gli originali. Procedura riproducibile in tools/optimize_previews.py, con Pillow richiesto solo per la manutenzione delle immagini. Normale build senza dipendenze aggiuntive. Conservare dimensioni width/height e lazy loading. Prima di nuove modifiche consultare docs/MANUTENZIONE-CODICE-2026-11-03.md e rieseguire test e build check.

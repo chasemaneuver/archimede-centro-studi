@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <title>Materiale personalizzato · Archimede Centro Studi</title>
   <link rel="icon" href="./logo.svg?v=20261014">
-  <link rel="stylesheet" href="./styles.css?v=20261021-footer">
+  <link rel="stylesheet" href="./styles.css?v=20261103">
 <link rel="stylesheet" href="./home-motion.css?v=20261014-palette">
 <link rel="canonical" href="{{publishing.baseUrl}}materiale-personalizzato.html"><link rel="stylesheet" href="./home-background.css?v=20261014-palette"></head>
 <body>
@@ -33,8 +33,8 @@
 <section class="section program-contact" id="preventivo-materiale"><div class="wrap"><span class="eyebrow">Un preventivo su misura</span><h2>Di quale materiale hai bisogno?</h2><p>Indicaci materia, argomenti, tipo di materiale e quando ti serve. Il team dedicato valuterà la richiesta e ti risponderà con un preventivo. Il modulo richiede l’accesso con un account Google.</p><a class="button primary" href="{{links.materialQuote}}" target="_blank" rel="noopener">Richiedi un preventivo ↗</a><a class="text-link" href="mailto:{{contacts.email}}?subject=Preventivo%20materiale%20personalizzato">Oppure via email ↗</a><p class="program-note">Cerchi contenuti liberamente consultabili? Esplora le <a href="./risorse.html" style="color:inherit">risorse gratuite</a>.</p></div></section></main>
   {{footer}}
   <a class="whatsapp" href="{{contacts.whatsapp}}" target="_blank" rel="noopener" aria-label="Contatta Archimede su WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.3-4.6A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8 7c.5 4 3 6.5 7 7l1.5-2-2-1-1 1c-1.4-.7-2.3-1.6-3-3l1-1-1-2Z"/></svg></a>
-  <script src="./site.js" defer></script>
-<script src="./home.js?v=material-class-b-20261007" defer></script>
+  <script src="./site.js?v=20261103" defer></script>
+<script src="./home.js?v=20261103" defer></script>
 <script src="./services-motion.js?v=material-class-b-20261007" defer></script>
 </body>
 </html>

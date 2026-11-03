@@ -1020,11 +1020,11 @@ h1,h2,h3{color:var(--brand-blue)}
 
 
 
-.resource-guides{display:grid;gap:36px;min-width:0}.resource-guide{min-width:0}.resource-guide>h3{font-size:18px;line-height:1.4;margin:0 0 16px;color:var(--brand-sapphire)}
+.resource-guides{display:grid;gap:36px;min-width:0}.resource-guide{min-width:0}.resource-guide>h3{font-size:18px;line-height:1.4;margin:0 0 16px;color:var(--brand-blue)}
 
 
 
-.article-image figcaption{font-size:13px;line-height:1.6;margin-top:9px;color:var(--brand-sapphire)}
+.article-image figcaption{font-size:13px;line-height:1.6;margin-top:9px;color:var(--brand-blue)}
 
 /* Shared copy-to-action rhythm: keep prose separate from standalone actions. */
 :is(.program-split > div, .program-card, .voucher-status-copy, .program-contact > .wrap) > :is(p, ul, ol) + :is(.button, .text-link){margin-top:24px}
@@ -1044,3 +1044,4 @@ h1,h2,h3{color:var(--brand-blue)}
 .footer-explore-group .footer-links{gap:9px}
 .footer-explore-group .footer-links a{width:fit-content;max-width:100%}
 @media(max-width:480px){.footer-explore-groups{gap:20px}.footer-explore-group .footer-links{font-size:12px}}
+

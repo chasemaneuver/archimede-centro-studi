@@ -14,7 +14,7 @@ document.getElementById('year').textContent=new Date().getFullYear();
 
 // Highlight the current page consistently across the shared navigation.
 const currentPage=location.pathname.split('/').pop()||'index.html';
-nav.querySelectorAll('a').forEach(link=>{const target=new URL(link.href,location.href);if(target.origin===location.origin&&target.pathname.split('/').pop()===currentPage&&!target.hash){link.setAttribute('aria-current','page');link.closest('.nav-group')?.classList.add('current-group');}});
+nav.querySelectorAll('a').forEach(link=>{const target=new URL(link.href,location.href);if(target.origin===location.origin&&(target.pathname.split('/').pop()||'index.html')===currentPage&&!target.hash){link.setAttribute('aria-current','page');link.closest('.nav-group')?.classList.add('current-group');}});
 
 // One accessible image dialog for every image enlargement link on the site.
 const imageLinks=[...document.querySelectorAll('a[href]')].filter(link=>link.querySelector('img')&&/\.(png|jpe?g|webp|gif|avif)$/i.test(new URL(link.href).pathname));

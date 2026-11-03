@@ -7,6 +7,7 @@ document.querySelectorAll('.flip-card').forEach(card=>{
   const title=front.querySelector('h3').textContent;
   let expanded=false;
   let pinned=false;
+  let suppressHover=false;
   function showDetails(open){
     expanded=open;
     card.classList.toggle('is-flipped',open);
@@ -22,9 +23,9 @@ document.querySelectorAll('.flip-card').forEach(card=>{
   card.classList.add('is-enhanced');
   button.hidden=false;
   showDetails(false);
-  card.addEventListener('pointerenter',event=>{if(canHover.matches&&event.pointerType==='mouse'&&!pinned)showDetails(true);});
-  card.addEventListener('pointerleave',()=>{if(!pinned&&!card.contains(document.activeElement))showDetails(false);});
-  button.addEventListener('click',()=>{if(pinned){pinned=false;showDetails(false);}else{pinned=true;showDetails(true);}});
+  card.addEventListener('pointerenter',event=>{if(canHover.matches&&event.pointerType==='mouse'&&!pinned&&!suppressHover)showDetails(true);});
+  card.addEventListener('pointerleave',()=>{suppressHover=false;if(!pinned&&!card.contains(document.activeElement))showDetails(false);});
+  button.addEventListener('click',()=>{if(pinned){pinned=false;suppressHover=true;showDetails(false);}else{pinned=true;showDetails(true);}});
   card.addEventListener('focusout',event=>{if(event.relatedTarget&&!card.contains(event.relatedTarget)&&!pinned)showDetails(false);});
   card.addEventListener('keydown',event=>{if(event.key==='Escape'&&expanded){event.preventDefault();pinned=false;showDetails(false);button.focus();}});
 });
