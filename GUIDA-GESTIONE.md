@@ -375,3 +375,7 @@ Slug: interessi-attivita-scelta-universitaria. Stessa section della guida univer
 ## 3 novembre 2026 — Manutenzione tecnica
 
 Le gallerie usano le anteprime -thumb.webp; i link di ingrandimento conservano gli originali. Procedura riproducibile in tools/optimize_previews.py, con Pillow richiesto solo per la manutenzione delle immagini. Normale build senza dipendenze aggiuntive. Conservare dimensioni width/height e lazy loading. Prima di nuove modifiche consultare docs/MANUTENZIONE-CODICE-2026-11-03.md e rieseguire test e build check.
+
+## 5 novembre 2026 — Testimonianze senza piattaforma
+
+Stefano Cicalini e Davide Di iorio sono conservati come kind:manual, senza link o marchio Trustpilot, con testi e tag Scuola originali. Gli ID storici sono mantenuti per i collegamenti alle schede. Non rimuoverli automaticamente confrontando l’elenco Trustpilot. Non conteggiarli nel riepilogo Trustpilot o nella media complessiva delle piattaforme.

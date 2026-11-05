@@ -1,3 +1,7 @@
+## 5 novembre 2026 — Testimonianze Stefano e Davide
+
+Ripristinata Stefano Cicalini e mantenuta Davide Di iorio come recensioni senza attribuzione o link alla piattaforma, su richiesta del centro. Testi, tag Scuola e voti originali conservati. Testimonianze manuali escluse dai conteggi delle piattaforme e dalla media esterna complessiva; Trustpilot riallineato al valore osservato 4,3/9.
+
 ## 3 novembre 2026 — Manutenzione tecnica e anteprime leggere
 
 Anteprime WebP (-27,2% rispetto alle miniature JPEG), caroselli con scroll raggruppato e timer unico, listener della mappa solo dove presenti, home attiva nel menu, analytics defer, dimensioni delle immagini, variabile palette corretta e chiusura stabile delle schede servizi. Originali e URL precedenti conservati. Rapporto in docs/MANUTENZIONE-CODICE-2026-11-03.md.

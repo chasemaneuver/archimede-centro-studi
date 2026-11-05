@@ -4,6 +4,18 @@
   "googleCount": 30,
   "reviews": [
     {
+      "id": "trustpilot-stefano",
+      "name": "Stefano Cicalini",
+      "title": "Le spiegazioni sono chiare e sto migliorando molto",
+      "quote": "Frequento Archimede Centro Studi per tutte le materie, soprattutto informatica, matematica e sistemi e reti. Mi trovo davvero bene, le spiegazioni sono chiare e sto migliorando molto. Ottima esperienza, lo consiglio!",
+      "source": "",
+      "kind": "manual",
+      "category": "scuola",
+      "rating": 5,
+      "individualLink": false,
+      "truncated": false
+    },
+    {
       "name": "teo di michele",
       "kind": "trustpilot",
       "rating": 5,
@@ -161,11 +173,11 @@
       "name": "Davide Di iorio",
       "title": "Tutor di Estimo davvero bravissima",
       "quote": "Tutor di Estimo davvero bravissima Spiega gli argomenti in modo chiaro e semplice, è molto preparata , paziente e disponibile. Grazie al suo aiuto è più facile comprendere anche gli argomenti più difficili della materia. Consigliatissimo a chiunque abbia bisogno di un supporto nello studio. 5 stelle meritatissime!",
-      "source": "https://it.trustpilot.com/reviews/6aca871ad834deed882effee",
-      "kind": "trustpilot",
+      "source": "",
+      "kind": "manual",
       "category": "scuola",
       "rating": 5,
-      "individualLink": true,
+      "individualLink": false,
       "truncated": false
     },
     {
